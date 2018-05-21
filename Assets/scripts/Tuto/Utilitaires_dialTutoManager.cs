@@ -19,23 +19,23 @@ public class dialTutoManager : MonoBehaviour {
 		dialogues[0].GetComponent<DialogueComponent>().StartDialogue();
 		dialCounter++;
 		GetComponent <Animator>().speed = 0.55f;
-		tempRange = GetComponent <EnemyBehaviourTuto> ().maxDetectionRange;
-		tempRangeAttack= GetComponent <EnemyBehaviourTuto> ().attackRangeMax;
+		tempRange = GetComponent <EnemyBehaviour> ().maxDetectionRange;
+		tempRangeAttack= GetComponent <EnemyBehaviour> ().attackRangeMax;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		isTalking = dialTester.activeSelf;
 		if (isTalking == true){
-			GetComponent <EnemyBehaviourTuto> ().maxDetectionRange = 0;
-			GetComponent<EnemyBehaviourTuto> ().attackRangeMax = 0;
+			GetComponent <EnemyBehaviour> ().maxDetectionRange = 0;
+			GetComponent<EnemyBehaviour> ().attackRangeMax = 0;
 		}
 		else{
-			GetComponent <EnemyBehaviourTuto> ().maxDetectionRange = tempRange;
-			GetComponent <EnemyBehaviourTuto> ().attackRangeMax = tempRangeAttack;
+			GetComponent <EnemyBehaviour> ().maxDetectionRange = tempRange;
+			GetComponent <EnemyBehaviour> ().attackRangeMax = tempRangeAttack;
 
 		}
-		GetComponent <EnemyBehaviourTuto> ().idleCanMove = false;
+		GetComponent <EnemyBehaviour> ().idleCanMove = false;
 		//les activations des attaques
 		if(GetComponent<health>().life <8 && GetComponent<health>().life >6){
 			thirdDial = true;
