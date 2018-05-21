@@ -82,7 +82,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.63, y: 0.54}
+    oldSize: {x: 2.52, y: 2.16}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   timerWaitRepousse: 0
   idleCanMove: 0
   idling: 0
-  grabberPercentage: 0
+  grabberPercentage: 20
   isGrabbing: 0
   speedBurst: 1.5
   timeBursting: 1.5
@@ -230,7 +230,6 @@ MonoBehaviour:
   opacityShader: 0.1
   aEteRepousse: 0
   beatAllowAttack: 0
-  rythmeScript: {fileID: 0}
   rythmeRangeMax: 4
 --- !u!114 &114146336610939310
 MonoBehaviour:
