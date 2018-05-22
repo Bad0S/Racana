@@ -3,7 +3,7 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:0,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:3138,x:32719,y:32712,varname:node_3138,prsc:2|emission-5969-RGB,clip-5969-A,voffset-2656-OUT;n:type:ShaderForge.SFN_Tex2d,id:5969,x:32219,y:32620,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:node_5969,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:051a0b71e2b513c49bca9b760569678d,ntxv:0,isnm:False;n:type:ShaderForge.SFN_VertexColor,id:782,x:32101,y:32924,varname:node_782,prsc:2;n:type:ShaderForge.SFN_Multiply,id:2656,x:32276,y:33058,varname:node_2656,prsc:2|A-782-R,B-3000-OUT;n:type:ShaderForge.SFN_ValueProperty,id:68,x:31479,y:33435,ptovrint:False,ptlb:Intensity,ptin:_Intensity,varname:node_68,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Time,id:1989,x:31076,y:33705,varname:node_1989,prsc:2;n:type:ShaderForge.SFN_Cos,id:2237,x:31319,y:33705,varname:node_2237,prsc:2|IN-1989-T;n:type:ShaderForge.SFN_TexCoord,id:3122,x:31076,y:33478,varname:node_3122,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Multiply,id:7422,x:31511,y:33572,varname:node_7422,prsc:2|A-3122-V,B-2237-OUT;n:type:ShaderForge.SFN_FragmentPosition,id:1225,x:31299,y:33131,varname:node_1225,prsc:2;n:type:ShaderForge.SFN_Sin,id:7896,x:31534,y:33198,varname:node_7896,prsc:2|IN-1225-X;n:type:ShaderForge.SFN_Multiply,id:5131,x:31764,y:33271,varname:node_5131,prsc:2|A-7896-OUT,B-9660-OUT;n:type:ShaderForge.SFN_Multiply,id:9660,x:31650,y:33435,varname:node_9660,prsc:2|A-68-OUT,B-7422-OUT;n:type:ShaderForge.SFN_Append,id:3000,x:31997,y:33179,varname:node_3000,prsc:2|A-5131-OUT,B-5172-OUT,C-5131-OUT;n:type:ShaderForge.SFN_Vector1,id:5172,x:31935,y:33010,varname:node_5172,prsc:2,v1:0;proporder:5969-68;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:True,bamd:0,cgin:,lico:0,lgpr:1,limd:0,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:3138,x:32719,y:32712,varname:node_3138,prsc:2|emission-5969-RGB,clip-5969-A,voffset-2656-OUT;n:type:ShaderForge.SFN_Tex2d,id:5969,x:32219,y:32620,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:node_5969,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:051a0b71e2b513c49bca9b760569678d,ntxv:0,isnm:False;n:type:ShaderForge.SFN_VertexColor,id:782,x:32101,y:32924,varname:node_782,prsc:2;n:type:ShaderForge.SFN_Multiply,id:2656,x:32276,y:33058,varname:node_2656,prsc:2|A-782-R,B-3000-OUT;n:type:ShaderForge.SFN_ValueProperty,id:68,x:31479,y:33435,ptovrint:False,ptlb:Intensity,ptin:_Intensity,varname:node_68,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Time,id:1989,x:31076,y:33705,varname:node_1989,prsc:2;n:type:ShaderForge.SFN_Cos,id:2237,x:31319,y:33705,varname:node_2237,prsc:2|IN-1989-T;n:type:ShaderForge.SFN_TexCoord,id:3122,x:31076,y:33478,varname:node_3122,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Multiply,id:7422,x:31511,y:33572,varname:node_7422,prsc:2|A-3122-V,B-2237-OUT;n:type:ShaderForge.SFN_FragmentPosition,id:1225,x:31299,y:33131,varname:node_1225,prsc:2;n:type:ShaderForge.SFN_Sin,id:7896,x:31534,y:33198,varname:node_7896,prsc:2|IN-1225-Y;n:type:ShaderForge.SFN_Multiply,id:5131,x:31764,y:33271,varname:node_5131,prsc:2|A-7896-OUT,B-9660-OUT;n:type:ShaderForge.SFN_Multiply,id:9660,x:31650,y:33435,varname:node_9660,prsc:2|A-68-OUT,B-7422-OUT;n:type:ShaderForge.SFN_Append,id:3000,x:31997,y:33179,varname:node_3000,prsc:2|A-5131-OUT,B-5172-OUT,C-5131-OUT;n:type:ShaderForge.SFN_Vector1,id:5172,x:31935,y:33010,varname:node_5172,prsc:2,v1:0;proporder:5969-68;pass:END;sub:END;*/
 
 Shader "Herbe_Move" {
     Properties {
@@ -15,6 +15,7 @@ Shader "Herbe_Move" {
         Tags {
             "Queue"="AlphaTest"
             "RenderType"="TransparentCutout"
+            "CanUseSpriteAtlas"="True"
         }
         Pass {
             Name "FORWARD"
@@ -50,7 +51,7 @@ Shader "Herbe_Move" {
                 o.uv0 = v.texcoord0;
                 o.vertexColor = v.vertexColor;
                 float4 node_1989 = _Time;
-                float node_5131 = (sin(mul(unity_ObjectToWorld, v.vertex).r)*(_Intensity*(o.uv0.g*cos(node_1989.g))));
+                float node_5131 = (sin(mul(unity_ObjectToWorld, v.vertex).g)*(_Intensity*(o.uv0.g*cos(node_1989.g))));
                 v.vertex.xyz += (o.vertexColor.r*float3(node_5131,0.0,node_5131));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityObjectToClipPos( v.vertex );
@@ -105,7 +106,7 @@ Shader "Herbe_Move" {
                 o.uv0 = v.texcoord0;
                 o.vertexColor = v.vertexColor;
                 float4 node_1989 = _Time;
-                float node_5131 = (sin(mul(unity_ObjectToWorld, v.vertex).r)*(_Intensity*(o.uv0.g*cos(node_1989.g))));
+                float node_5131 = (sin(mul(unity_ObjectToWorld, v.vertex).g)*(_Intensity*(o.uv0.g*cos(node_1989.g))));
                 v.vertex.xyz += (o.vertexColor.r*float3(node_5131,0.0,node_5131));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityObjectToClipPos( v.vertex );
