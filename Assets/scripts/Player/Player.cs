@@ -101,6 +101,7 @@ public class Player: MonoBehaviour
 			if (Input.GetAxisRaw ("Horizontal") != 0 || Input.GetAxisRaw ("Vertical") != 0) 
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
+                déplacement = déplacement.normalized;
 				body.position += (déplacement*MovSpeed*speedMultiplicator);
 				anim.SetBool ("IsIdle", false);
 				anim.SetBool ("IsMoving", true);
@@ -234,12 +235,12 @@ public class Player: MonoBehaviour
         audioSource.Play();
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
-			body.AddForce (déplacement * 5f, ForceMode2D.Impulse);
+			body.AddForce (déplacement * 25f, ForceMode2D.Impulse);
 		}
 		else
 		{
 			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			body.AddForce ( vecTmp * 4.5f, ForceMode2D.Impulse);
+			body.AddForce ( vecTmp * 22.5f, ForceMode2D.Impulse);
 		}
 
 		yield return new WaitForSeconds (1f);

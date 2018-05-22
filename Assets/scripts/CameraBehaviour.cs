@@ -11,15 +11,11 @@ public class CameraBehaviour : MonoBehaviour
 	public Transform triggerEntrée;
 	private bool cinematique;
 	private Camera cam;
-    private AudioSource camSource;
-    public AudioClip calme;
-    public AudioClip combat;
 	private Vector3 originalPos;
 	public bool Effect;
 	void Start()
 	{
 		cam = GetComponent<Camera>();
-        camSource = GetComponent<AudioSource>();
 	}
 	//si on appuie sur R, recharge la scène
 	public IEnumerator ScreenShake (float TimeToShake, float magnitude, float frequency)

@@ -20,9 +20,24 @@ GameObject:
   m_Component:
   - component: {fileID: 4625659489068558}
   - component: {fileID: 212095815360465122}
-  - component: {fileID: 58895696679017734}
+  - component: {fileID: 60352919899352470}
   m_Layer: 0
   m_Name: arbre_Particules 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1673843030954836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4304818246949770}
+  m_Layer: 0
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,35 +60,49 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4304818246949770
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673843030954836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.88, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4625659489068558}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4625659489068558
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1434269236214566}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.7, y: -36.8, z: 0}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -36.29, y: -3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4304818246949770}
   - {fileID: 4920304285694574}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!4 &4920304285694574
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805310237082200}
-  m_LocalRotation: {x: 0.41120464, y: 0.5752484, z: -0.41120473, w: 0.5752484}
-  m_LocalPosition: {x: 0, y: 2.2, z: 1.43}
+  m_LocalRotation: {x: 0.41120657, y: -0.57524705, z: 0.41120657, w: 0.57524705}
+  m_LocalPosition: {x: -0.13, y: 1.85, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4625659489068558}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 71.117004, y: 90.00001, z: 0}
---- !u!58 &58895696679017734
-CircleCollider2D:
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 71.117004, y: -90, z: 0}
+--- !u!60 &60352919899352470
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -84,9 +113,65 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.8897839, y: -3.4348927}
-  serializedVersion: 2
-  m_Radius: 0.8238659
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.92, y: 9.48}
+    newSize: {x: 9.92, y: 9.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.79999995, y: -3.58}
+      - {x: -1.04, y: -3.4199998}
+      - {x: -0.9013338, y: -2.8516502}
+      - {x: -1.434555, y: -2.144021}
+      - {x: -1.8765564, y: -2.3125}
+      - {x: -2.1012287, y: -2.4835396}
+      - {x: -2.367076, y: -3.005848}
+      - {x: -3.0870762, y: -3.0481567}
+      - {x: -3.1647663, y: -3.4646187}
+      - {x: -3.6941528, y: -3.502308}
+      - {x: -3.9412284, y: -3.5964622}
+      - {x: -4, y: -3.6999998}
+      - {x: -3.9599998, y: -3.78}
+      - {x: -2.6047668, y: -3.6224594}
+      - {x: -2.1106138, y: -4.0766068}
+      - {x: -2.04, y: -4.3470764}
+      - {x: -1.8235378, y: -4.2976875}
+      - {x: -1.7787714, y: -4.0976906}
+      - {x: -0.68, y: -4.06}
+      - {x: -0.56, y: -3.98}
+    - - {x: -1.8903275, y: -2.6368256}
+      - {x: -1.6319885, y: -2.566949}
+      - {x: -1.4435272, y: -2.837862}
+    - - {x: -1.6237488, y: -2.5675611}
+      - {x: -1.6152725, y: -2.6566095}
+      - {x: -1.8508453, y: -3.045313}
+    - - {x: -1.7637787, y: -2.9349136}
+      - {x: -1.8226776, y: -3.0055876}
+      - {x: -1.667778, y: -3.040391}
+    - - {x: -1.3961945, y: -2.9650574}
+      - {x: -1.5158081, y: -2.9817438}
+      - {x: -1.6811371, y: -2.6553316}
+    - - {x: -1.8165894, y: -3.0413952}
+      - {x: -1.5470123, y: -2.6582222}
+      - {x: -1.7710266, y: -3.129284}
+    - - {x: -1.9633789, y: -3.0959167}
+      - {x: -1.6031876, y: -3.1802359}
+      - {x: -1.4680557, y: -2.855134}
+    - - {x: -1.8837357, y: -3.0693913}
+      - {x: -1.68573, y: -2.984848}
+      - {x: -1.473465, y: -2.6559448}
+    - - {x: -1.6100998, y: -2.8367462}
+      - {x: -1.9163513, y: -2.9545345}
+      - {x: -1.605339, y: -2.7853413}
+    - - {x: -1.7350082, y: -2.5560827}
+      - {x: -2.0198593, y: -3.2861223}
+      - {x: -1.4847183, y: -2.7477055}
 --- !u!198 &198950361108757796
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -147,7 +232,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1810759131
+  randomSeed: 1082835307
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -598,7 +683,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0, y: 4.3083334, z: 1.3059901}
+    m_Scale: {x: 0, y: 6.937064, z: 1.0788207}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -3483,7 +3568,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 4
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
