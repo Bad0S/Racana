@@ -30,7 +30,6 @@ public class CasterGauche : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if (shoot){
 			casting = true;
 			decasting = false;
@@ -46,7 +45,7 @@ public class CasterGauche : MonoBehaviour {
 
 		transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast+frame)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast+frame)), 0);
 
-		if(timerCasting<=timeCast - frame)
+		if(timerCasting<=timeCast - frame )
 			playerDirection = new Vector3 (player.position.x - transform.position.x, player.position.y - transform.position.y, 0);
 
 		if (timerCasting >= timeCast&& casting ==true) {
@@ -66,13 +65,14 @@ public class CasterGauche : MonoBehaviour {
 		if (canShoot == true){
 			hit = Physics2D.Raycast(transform.position, playerDirection,Mathf.Infinity, layerLaser);
 			laserLength = hit.distance;
+			print (hit.distance);
 			hitV3 = new Vector3 (hit.point.x, hit.point.y, 0);
 			angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 			if (hit.collider != null)
 			{
 				print ("yes");
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength,0.2f,1);
+				laserInstance.transform.localScale = new Vector3 (laserLength,00.5f,1);
 				laserInstance.transform.parent = gameObject.transform.parent;
 			}
 			canShoot = false;

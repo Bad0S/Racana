@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114077473619726288}
   - component: {fileID: 82488925251086460}
   - component: {fileID: 50239371310091894}
+  - component: {fileID: 114539674322676308}
   - component: {fileID: 61407679711949700}
   - component: {fileID: 95385866726901226}
   m_Layer: 11
@@ -251,6 +252,18 @@ MonoBehaviour:
   currentTime: 0
   LifeBar: []
   pvVide: {fileID: 0}
+--- !u!114 &114539674322676308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1105373812463650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ae5f7e6dce1045bd513822ac6dbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementsPasseArriere: []
 --- !u!212 &212489112934010194
 SpriteRenderer:
   m_ObjectHideFlags: 1

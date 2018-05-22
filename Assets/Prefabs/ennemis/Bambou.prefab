@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212629119678052814}
   - component: {fileID: 114351700486098980}
   - component: {fileID: 50736473437373358}
+  - component: {fileID: 114663973737568956}
   - component: {fileID: 61374980280513532}
   - component: {fileID: 114197351360464022}
   - component: {fileID: 95042793818668666}
@@ -150,8 +151,19 @@ MonoBehaviour:
   opacityShader: 0
   aEteRepousse: 0
   beatAllowAttack: 0
-  rythmeScript: {fileID: 0}
   rythmeRangeMax: 0
+--- !u!114 &114663973737568956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1328815842497554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ae5f7e6dce1045bd513822ac6dbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementsPasseArriere: []
 --- !u!212 &212629119678052814
 SpriteRenderer:
   m_ObjectHideFlags: 1

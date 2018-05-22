@@ -65,13 +65,14 @@ public class CasterDroit : MonoBehaviour {
 		if (canShoot == true){
 			hit = Physics2D.Raycast(transform.position, playerDirection,Mathf.Infinity, layerLaser);
 			laserLength = hit.distance;
+			print (hit.distance);
 			hitV3 = new Vector3 (hit.point.x, hit.point.y, 0);
 			angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 			if (hit.collider != null)
 			{
 				print ("yes");
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength,0.2f,1);
+				laserInstance.transform.localScale = new Vector3 (laserLength,00.5f,1);
 				laserInstance.transform.parent = gameObject.transform.parent;
 			}
 			canShoot = false;
