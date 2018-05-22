@@ -65,7 +65,7 @@ public class health : MonoBehaviour {
 		//fait drop un objet de soin
 		if (life <= 0f)
 		{
-			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot")
+			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot"|| gameObject.tag == "Boss")
 			{
 				//GameObject drop = (GameObject)Instantiate (healItem, transform.position, transform.rotation);
 				try

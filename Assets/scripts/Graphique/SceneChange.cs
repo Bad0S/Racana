@@ -9,11 +9,12 @@ public class SceneChange : MonoBehaviour {
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
 	public enum FadeDirection
+
 	{
 		In, //Alpha = 1
 		Out // Alpha = 0
 	}
-
+	public string scene;
 	void OnEnable()
 	{
 		StartCoroutine(Fade(FadeDirection.Out));
@@ -21,7 +22,7 @@ public class SceneChange : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player"){
-			StartCoroutine (FadeAndLoadScene (FadeDirection.In, "Showcase"));
+			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 			//SceneManager.LoadScene("Showcase");
 
 		}
