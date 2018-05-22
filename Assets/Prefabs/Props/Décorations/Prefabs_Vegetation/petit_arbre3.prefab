@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1677748049737264}
   m_IsPrefabParent: 1
+--- !u!1 &1501343181877160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4599400115236064}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1677748049737264
 GameObject:
   m_ObjectHideFlags: 0
@@ -20,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4484320611369086}
   - component: {fileID: 212163518602150734}
-  - component: {fileID: 58900113581028640}
+  - component: {fileID: 60159527729843220}
   m_Layer: 0
   m_Name: petit_arbre3
   m_TagString: Untagged
@@ -37,12 +52,26 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -78.13, y: 4.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4599400115236064}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58900113581028640
-CircleCollider2D:
+--- !u!4 &4599400115236064
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501343181877160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.116, y: -1.363, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4484320611369086}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60159527729843220
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -53,9 +82,67 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.6713979}
-  serializedVersion: 2
-  m_Radius: 0.21445704
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.16, y: 4.32}
+    newSize: {x: 2.16, y: 4.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.23968506, y: -1.3605323}
+      - {x: -0.23963928, y: -1.5995541}
+      - {x: -0.2006607, y: -1.6005235}
+      - {x: -0.20142365, y: -1.8387775}
+      - {x: -0.24064636, y: -1.8396928}
+      - {x: -0.24095154, y: -2.0393522}
+      - {x: -0.20020294, y: -2.0394378}
+      - {x: -0.20036316, y: -2.160798}
+      - {x: -0.15973663, y: -2.160798}
+      - {x: -0.15977478, y: -1.9600899}
+      - {x: -0.20018768, y: -1.9601672}
+      - {x: -0.20046234, y: -1.920363}
+      - {x: -0.16034698, y: -1.92016}
+      - {x: -0.16033936, y: -1.8804097}
+      - {x: -0.12012482, y: -1.8804741}
+      - {x: -0.11982727, y: -1.8393044}
+      - {x: -0.07954407, y: -1.8395128}
+      - {x: -0.08010864, y: -1.8005242}
+      - {x: 0.0007324219, y: -1.7996783}
+      - {x: 0.0007324219, y: -1.8031917}
+      - {x: 0.0004043579, y: -1.8809397}
+      - {x: 0.12021637, y: -1.8801014}
+      - {x: 0.12032318, y: -1.8410492}
+      - {x: 0.40132904, y: -1.841039}
+      - {x: 0.39994812, y: -1.7999673}
+      - {x: 0.24065399, y: -1.8004243}
+      - {x: 0.23971558, y: -1.760246}
+      - {x: 0.11969757, y: -1.7598743}
+      - {x: 0.121284485, y: -1.6809809}
+      - {x: 0.16044617, y: -1.6816483}
+      - {x: 0.15956116, y: -1.6412647}
+      - {x: 0.24069214, y: -1.6398115}
+      - {x: 0.24108124, y: -1.5602813}
+      - {x: 0.28128052, y: -1.5614798}
+      - {x: 0.28133392, y: -1.4805281}
+      - {x: 0.16047668, y: -1.4808941}
+      - {x: 0.15951538, y: -1.5585375}
+      - {x: 0.08026886, y: -1.559207}
+      - {x: 0.08049011, y: -1.5190065}
+      - {x: 0.0011444092, y: -1.5200584}
+      - {x: 0.00091552734, y: -1.4805315}
+      - {x: -0.080215454, y: -1.4774535}
+      - {x: -0.07971954, y: -1.3597138}
+    - - {x: 0.02027893, y: -1.6319807}
+      - {x: -0.11818695, y: -1.789943}
+      - {x: -0.078186035, y: -1.5268202}
+    - - {x: -0.1751709, y: -1.8054676}
+      - {x: -0.072761536, y: -1.7703018}
+      - {x: 0.09378815, y: -1.6289248}
 --- !u!212 &212163518602150734
 SpriteRenderer:
   m_ObjectHideFlags: 1

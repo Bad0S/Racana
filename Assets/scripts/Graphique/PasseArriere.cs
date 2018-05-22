@@ -46,7 +46,7 @@ public class PasseArriere : MonoBehaviour
         if (firstChildren.Length == 0)
         {
             firstChildren = new Transform[1];
-            firstChildren[0] = GetComponentInChildren<Transform>();
+            firstChildren[0] = GetComponentInParent<Transform>();
         }
         return firstChildren[0];
     }
