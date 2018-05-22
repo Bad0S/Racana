@@ -64,7 +64,7 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	// le rythme
 	public bool beatAllowAttack;
-	public Rythme rythmeScript;
+	private Rythme rythmeScript;
 	private int rythmeRange;
 	public int rythmeRangeMax;
 	private int counterRythme;
