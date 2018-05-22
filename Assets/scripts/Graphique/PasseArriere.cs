@@ -19,7 +19,6 @@ public class PasseArriere : MonoBehaviour
 		{
             elementRend = checkPasseArriere.GetComponent<SpriteRenderer>();
             childrenTrans = getFirstChildren(checkPasseArriere);
-            print(childrenTrans);
 			if (childrenTrans.position.y > transform.position.y) 
 			{
 				elementRend.sortingOrder = 1;
