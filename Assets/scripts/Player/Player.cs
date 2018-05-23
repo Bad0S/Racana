@@ -8,12 +8,17 @@ using XInputDotNetPure;
 
 public class Player: MonoBehaviour 
 {
-	//Sound
-	public AudioSource audioSource;
-    public AudioClip charge;
-    public AudioClip attaque;
-    public AudioClip repousse;
-    public AudioClip dash;
+    //Sound
+    [FMODUnity.EventRef]
+    public string selectsoundCharge;
+    public string selectsoundAttaque;
+    public string selectsoundRepousse;
+    public string selectsoundDash;
+    FMOD.Studio.EventInstance soundCharge;
+    FMOD.Studio.EventInstance soundAttaque;
+    FMOD.Studio.EventInstance soundRepousse;
+    FMOD.Studio.EventInstance soundDash;
+
 
     //Visual
     public Animator anim;
@@ -57,13 +62,16 @@ public class Player: MonoBehaviour
 	void Start () 
 	{
 		body = GetComponent<Rigidbody2D> ();
-		audioSource = GetComponent<AudioSource>();
 		anim = GetComponent<Animator> ();
 		animAttaques = GetComponentInChildren<Animator> ();
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
-		shaderDeBase = Shader.Find("Sprites/Default"); 
-	}
+		shaderDeBase = Shader.Find("Sprites/Default");
+        soundCharge = FMODUnity.RuntimeManager.CreateInstance(selectsoundCharge);
+        soundAttaque = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaque);
+        soundRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
+        soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -130,8 +138,7 @@ public class Player: MonoBehaviour
 		{
             if (Input.GetButtonDown("Fire1"))
             {
-                audioSource.clip = charge;
-                audioSource.Play();
+                soundCharge.start();
             }
 			if (Input.GetButton ("Fire1")) 
 			{
@@ -201,8 +208,8 @@ public class Player: MonoBehaviour
 
 	IEnumerator slashCoroutine()
 	{
-        audioSource.clip = attaque;
-        audioSource.Play();
+        soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        soundAttaque.start();
 		GetComponent<health> ().damage = Mathf.CeilToInt (chargeAttaque);
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
@@ -213,8 +220,7 @@ public class Player: MonoBehaviour
 	}
 	IEnumerator repousseCoroutine()
 	{
-        audioSource.clip = repousse;
-        audioSource.Play();
+        soundRepousse.start();
 		//float angleShoot = Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical")) * Mathf.Rad2Deg;
 		//GameObject projectileRepousse = (GameObject)Instantiate (attaqueRepousse, transform.position, Quaternion.Euler(0, 0, angleShoot));
 		//projectileRepousse.GetComponent<Rigidbody2D> ().AddForce (Vector3.up, ForceMode2D.Impulse);
@@ -231,8 +237,7 @@ public class Player: MonoBehaviour
 		canDash = false;
 		GetComponent <health> ().invincible = true;
 		GetComponent <health> ().currentTime =GetComponent <health> ().invincibleTime - 1 ;
-        audioSource.clip = dash;
-        audioSource.Play();
+        soundDash.start();
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
 			body.AddForce (déplacement * 25f, ForceMode2D.Impulse);

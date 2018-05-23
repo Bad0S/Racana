@@ -18,12 +18,28 @@ public class Rythme : MonoBehaviour
 	public PostProcessingProfile Transcendance;
 	public bool isBeating;
     private AudioSource[] sources;
+
+    public string selectsoundNormal;
+    public string selectsoundTranse;
+    public string selectsoundTranscendance;
+    FMOD.Studio.EventInstance soundNormal;
+    FMOD.Studio.EventInstance soundTranse;
+    FMOD.Studio.EventInstance soundTranscendance;
     // Use this for initialization
     void Start()
     {
+        soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
+        soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
+        soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
+
         sourceSon = GetComponent<AudioSource>();
         bpm = bpmInitial;
         sources = GameObject.FindGameObjectWithTag("MainCamera").GetComponents<AudioSource>();
+        soundNormal.start();
+        soundTranse.start();
+        soundTranscendance.start();
+        soundTranse.setVolume(0f);
+        soundTranscendance.setVolume(0f);
     }
 
     // Update is called once per frame
@@ -31,7 +47,6 @@ public class Rythme : MonoBehaviour
     {
         musicTime += Time.deltaTime;
         timeRBetweenBeats += Time.deltaTime;
-        bpm = bpmInitial * sourceSon.pitch;
         timeBetweenBeatsInSeconds = 60 / bpm;
 		//print (isBeating); 
 
@@ -45,55 +60,31 @@ public class Rythme : MonoBehaviour
 		}
 		if (combo <= 0) 
 		{
-            foreach (AudioSource source in sources)
-            {
-                if (source.priority == 128)
-                {
-                    source.volume = 1f;
-                }
-                if (source.priority != 128)
-                {
-                    source.volume = 0f;
-                }
-            }
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = initial;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-		}
+            soundNormal.setVolume(1f);
+            soundTranse.setVolume(0f);
+            soundTranscendance.setVolume(0f);
+        }
 		if (combo < 30 && combo > 0)
         {
-            foreach (AudioSource source in sources)
-            {
-                if (source.priority == 129)
-                {
-                    source.volume = combo/30f;
-                }
-                if (source.priority != 129)
-                {
-                    source.volume = 0f;
-                }
-            }
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
 			GetComponent<Player> ().MovSpeed = 0.1f + combo/600;
-			sourceSon.pitch = 1 + combo / 300;
+            soundNormal.setVolume(0f);
+            soundTranse.setVolume(combo/30);
+            soundTranscendance.setVolume(0f);
         }
 		if (combo >= 30)
 		{
             foreach (AudioSource source in sources)
-            {
-                if (source.priority == 130)
-                {
-                    source.volume = 1f;
-                }
-                if (source.priority != 130)
-                {
-                    source.volume = 0f;
-                }
-            }
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
 			GetComponent<Player> ().MovSpeed = 0.1f;
 			GetComponent<Player> ().transcendance = true;
-		}
+            soundNormal.setVolume(0f);
+            soundTranse.setVolume(0f);
+            soundTranscendance.setVolume(1f);
+        }
     }
 }

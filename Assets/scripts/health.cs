@@ -87,7 +87,8 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Player") 
 			{
 				StartCoroutine (PlayerDeath());
-			}
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMove = false;
+            }
 		}
 	}
 		

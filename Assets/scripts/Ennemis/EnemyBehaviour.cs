@@ -46,9 +46,6 @@ public class EnemyBehaviour : MonoBehaviour {
 	float timerGrabbing;
 	public bool grabbed;
 
-    public List<AudioClip> groupieClips;
-    private AudioSource groupieSource;
-
 	//ATTENTION IL VA ATTAQUER
 	private Shader shaderDeCouleur;
 	private Shader shaderDeBase;
@@ -69,6 +66,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	public int rythmeRangeMax;
 	private int counterRythme;
 
+    public string selectsoundAttaqueGroupie;
+    FMOD.Studio.EventInstance soundAttaqueGroupie;
+
     void Start ()
     {
 		rythmeRange = Random.Range (1, rythmeRangeMax +1);
@@ -87,11 +87,12 @@ public class EnemyBehaviour : MonoBehaviour {
 			enemyRenderer.color = Color.red;
 			transform.localScale= new Vector3(1.2f,1.2f,1);
 		}
-        groupieSource = GetComponent<AudioSource>();
 		couleurDeBase = enemyRenderer.color;
 		playerRB= target.GetComponent <Rigidbody2D>();
 
-	}
+        soundAttaqueGroupie = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaqueGroupie);
+
+    }
 
 	void Update () 
 	{
@@ -229,7 +230,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		targetVectorAttacking = targetVector;
 		yield return new WaitForSeconds (0.2f);
 		anim.SetBool ("IsAttacking", true);
-        groupieSource.Play();
+        soundAttaqueGroupie.start();
 
 		//anim.SetTrigger ("Fighting");
 		rb2D.velocity = new Vector3 (0,0,0);
