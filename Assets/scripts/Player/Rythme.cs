@@ -35,11 +35,14 @@ public class Rythme : MonoBehaviour
         sourceSon = GetComponent<AudioSource>();
         bpm = bpmInitial;
         sources = GameObject.FindGameObjectWithTag("MainCamera").GetComponents<AudioSource>();
-        soundNormal.start();
-        soundTranse.start();
-        soundTranscendance.start();
-        soundTranse.setVolume(0f);
-        soundTranscendance.setVolume(0f);
+        FMOD.Studio.PLAYBACK_STATE fmodPbState;
+        soundNormal.getPlaybackState(out fmodPbState);
+        if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            soundNormal.start();
+            soundTranse.start();
+            soundTranscendance.start();
+        }
     }
 
     // Update is called once per frame

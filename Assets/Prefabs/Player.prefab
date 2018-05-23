@@ -36,7 +36,7 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4049204348115722}
+  - component: {fileID: 4957575177440426}
   - component: {fileID: 212511208469966242}
   m_Layer: 0
   m_Name: Water Reflect
@@ -114,7 +114,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4257735075969996}
-  - component: {fileID: 212415483405572276}
   m_Layer: 0
   m_Name: ombrePERSO
   m_TagString: Untagged
@@ -190,6 +189,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4239793589601784}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4957575177440426
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142266551554490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50054056086805600
 Rigidbody2D:
@@ -393,9 +405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpmInitial: 80
   bpm: 80
+  timeBetweenBeatsInSeconds: 0.75
   beats: 1
   combo: -50
-  timeBetweenBeatsInSeconds: 0.75
   initial: {fileID: 11400000, guid: f224147513273c94093cad963d4df7ee, type: 2}
   transe: {fileID: 11400000, guid: 9ae8379bd52baa34dbe5a16af30afb9f, type: 2}
   Transcendance: {fileID: 11400000, guid: 0c433e990ee8b824cbd5872a21080699, type: 2}
