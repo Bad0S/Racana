@@ -25,6 +25,9 @@ public class DialogueComponent : MonoBehaviour
     [Tooltip("La touche à presser pour passer le dialogue")]
     public KeyCode skipKey = KeyCode.Mouse0;
 	private KeyCode skipKey2 = KeyCode.JoystickButton0;
+	private KeyCode skipKey3 = KeyCode.JoystickButton2;
+
+	private bool skipKeyDown3 = false;
 
 	private bool skipKeyDown2 = false;
     private bool skipKeyDown = false;
@@ -69,6 +72,7 @@ public class DialogueComponent : MonoBehaviour
         // La coroutine a du mal à récuperer les input car elle n'est pas sur le même thread que l'Update
         skipKeyDown = Input.GetKeyDown(skipKey);
 		skipKeyDown2 = Input.GetKeyDown(skipKey2);
+		skipKeyDown3 = Input.GetKeyDown(skipKey3);
 
     }
 
@@ -76,6 +80,11 @@ public class DialogueComponent : MonoBehaviour
     {
         // On empêche le dialogue de se lancer deux fois
         inDialogue = true;
+		GameObject player=  GameObject.FindGameObjectWithTag ("Player") ;	
+		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
+		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
+		player.GetComponent <Player>().enabled = false ;
+
 
         // On établit où est-ce qu'on en est
         int currentLine = 0;
@@ -93,7 +102,7 @@ public class DialogueComponent : MonoBehaviour
             //Text loop
             while (true)
             {
-				if (skipKeyDown|| skipKeyDown2)
+				if (skipKeyDown|| skipKeyDown2|| skipKeyDown3)
                 {
                     skipKeyDown = false;
 					skipKeyDown2 = false;
@@ -139,6 +148,7 @@ public class DialogueComponent : MonoBehaviour
 
         // Si on est sorti de la boucle, c'est qu'on a affiché toutes les lignes, on peut donc désactiver l'UI de la boite de dialogue
         dialogueBox.SetActive(false);
+		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
 
         // On dit qu'on peut relancer le dialogue
         inDialogue = false;

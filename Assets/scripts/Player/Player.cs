@@ -16,7 +16,7 @@ public class Player: MonoBehaviour
     public AudioClip dash;
 
     //Visual
-    private Animator anim;
+    public Animator anim;
 	private Animator animAttaques;
 	private SpriteRenderer render;
 	private Shader shaderDeBase;
