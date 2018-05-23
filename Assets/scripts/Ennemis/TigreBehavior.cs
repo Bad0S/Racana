@@ -19,10 +19,18 @@ public class TigreBehavior : MonoBehaviour {
 	private Vector3 targetVector;
 	private bool isFighting = false ;
 
+	//pathfinding Frankenstein
+	float timerRandAngle;
+	float angle;
+	Vector3 moveVector;
+
 	//combat
 	public float dashMultiplicator = 1;
 	private float timerDegats;
 	private Vector3 targetVectorAttacking;
+	private EdgeCollider2D head;
+	private int probaAttaque;
+	private int probaPattern;
 
 
 	//arrêt du saut et saut
@@ -59,6 +67,10 @@ public class TigreBehavior : MonoBehaviour {
 	public int rythmeRangeMax;
 	private int counterRythme;
 
+	//un flip propre
+	private float timerFlip;
+	private float pastFlip;
+
 	void Start ()
 	{
 		rythmeRange = Random.Range (1, rythmeRangeMax +1);
@@ -75,12 +87,15 @@ public class TigreBehavior : MonoBehaviour {
 	//	groupieSource = GetComponent<AudioSource>();
 		couleurDeBase = enemyRenderer.color;
 		playerRB= target.GetComponent <Rigidbody2D>();
-
+		head = GetComponent <EdgeCollider2D> ();
 	}
 	// Update is called once per frame
 	void Update () 
 	{
+		timerFlip += Time.deltaTime;
+		timerRandAngle += Time.deltaTime;
 		beatAllowAttack = rythmeScript.isBeating;
+		print (rb2D.velocity);
 		/*if (beatAllowAttack == true){
 			if(counterRythme <= rythmeRangeMax){
 
@@ -95,14 +110,6 @@ public class TigreBehavior : MonoBehaviour {
 			}
 		}*/
 
-
-		if(rb2D.velocity.y <0){
-			anim.SetBool ("Orientation",false);
-		}
-		else if (rb2D.velocity.y>0){
-			anim.SetBool ("Orientation",true);
-
-		}
 		timerWaitRepousse += Time.deltaTime;
 		timerDegats += Time.deltaTime;
 		if (timerWaitRepousse>0.35f && aEteRepousse == true){
@@ -110,36 +117,68 @@ public class TigreBehavior : MonoBehaviour {
 			aEteRepousse = false;
 		}
 		targetVector = target.transform.position -transform.position;
-
+		if(timerRandAngle>0.5f){
+			angle = Random.Range (-30, 31);
+			moveVector = targetVector;
+			timerRandAngle = 0;
+		}
 		if (targetVector.magnitude < attackRangeMax  && isFighting == false&&beatAllowAttack == true) {
 
 			if(aEteRepousse == false){
-				if(Random.Range (0,2)== 0){
+				int test= Random.Range(0,10);
+				if(test + probaPattern< 5){
 					StartCoroutine ("BiteSequence");
+					probaPattern += Random.Range (1, 3);
 				}
 				else{
 					StartCoroutine ("RoarSequence");
+					probaPattern -= Random.Range (1, 3);
+
 				}
 			}
 		}
 
 		//PATHFINDING
-		if (targetVector.magnitude < maxDetectionRange && isFighting == false) {
+		if (targetVector.magnitude < maxDetectionRange && isFighting == false && targetVector.magnitude>=attackRangeMax) {
 			
 			anim.SetBool ("IsMoving", true);
 			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
-				rb2D.velocity = Vector3.Normalize (targetVector) * speed;
+
+				rb2D.velocity = Vector3.Normalize (Quaternion.Euler (0, 0, angle)*moveVector) * speed;
 			} else if (aEteRepousse = false) {
 				aEteRepousse = false;
 				timerWaitRepousse = 0;
 			}
 			anim.SetBool ("IsMoving", true);
-			if (targetVector.x > 0) {
+
+		}
+		else if(targetVector.magnitude<attackRangeMax -1&& isFighting == false){
+			anim.SetBool ("IsMoving", true);
+			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
+				rb2D.velocity = Vector3.Normalize (Quaternion.Euler (0, 0, angle)*moveVector) * speed;
+			} else if (aEteRepousse = false) {
+				aEteRepousse = false;
+				timerWaitRepousse = 0;
+			}
+			anim.SetBool ("IsMoving", true);
+		}
+		else if(isFighting == false) {
+			anim.SetBool ("IsMoving", false);
+			anim.SetBool ("IsJumping",false);
+			anim.SetBool ("IsAttacking",false);
+
+			anim.SetBool ("IsIdle", true);
+		}
+		if(timerFlip >0.3f&&rb2D.velocity.x != pastFlip ){
+			if (rb2D.velocity.x > 0f ) {
 				GetComponent<SpriteRenderer> ().flipX = false;
-			} else {
+			} else  {
 				GetComponent<SpriteRenderer> ().flipX = true;
 			}
+			pastFlip = rb2D.velocity.x;
+			timerFlip = 0;
 		}
+
 		/*if (Physics2D.OverlapCollider (GetComponent<Collider2D> (), cFilter, resultings) > 0) {
 			if (resultings [0].tag == "AttackHitbox") {
 				Vector3 KnockbackVector = Vector3.Normalize(transform.position - resultings[0].transform.position);
@@ -152,23 +191,53 @@ public class TigreBehavior : MonoBehaviour {
 	IEnumerator BiteSequence()
 	{
 		canShake = true;
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/4);
-		WhiteSprite ();
 		isFighting = true;
+		rb2D.velocity = new Vector3 (0,0,0);
 		anim.SetBool ("IsMoving", false);
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/4);
-		NormalSprite ();
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/4);
+		anim.SetBool ("IsIdle", true);
+
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
+		GetComponent<SpriteRenderer> ().flipX = true;
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
+		GetComponent<SpriteRenderer> ().flipX = false;
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
+
+		GetComponent<SpriteRenderer> ().flipX = true;
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
+		int test = Random.Range (0, 10);
+		if(test - probaAttaque<7){
+			probaAttaque -= 1;
+			anim.SetBool ("IsIdle", false);
+
+		}
+		else{
+			probaAttaque += 2;
+			isFighting = false;
+
+			yield break;
+
+		}
+
+
+		WhiteSprite ();
+		anim.SetBool ("IsMoving", true);
 		targetVectorAttacking = targetVector;
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/4);
+
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
+		NormalSprite ();
+
 		//anim.SetBool ("IsAttacking", true);
 		//groupieSource.Play();
+		anim.SetBool ("IsMoving", false);
 
 		//anim.SetBool ("Fighting",true);
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
 		anim.SetBool ("IsJumping",true);
-		rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+		if (targetVector.magnitude < maxDetectionRange){
+			rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+
+		}
 		//Instantiate (attackHitbox, transform);
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/2);
 		rb2D.velocity = new Vector3 (0,0,0);
@@ -181,11 +250,12 @@ public class TigreBehavior : MonoBehaviour {
 
 		isJumping = false;
 
-		print (targetVectorAttacking);
+		//print (Quaternion.Euler (0, 0, 90)*targetVectorAttacking);
 		//anim.SetBool ("IsJumping", true);
-		rb2D.AddForce ((new Vector3 ((targetVectorAttacking.x+Random.Range (-targetVectorAttacking.x*0.3f,targetVectorAttacking.x*0.3f )),(targetVectorAttacking.y+Random.Range (-targetVectorAttacking.y*0.3f,targetVectorAttacking.y*0.3f )),0) * vitesseBond), ForceMode2D.Impulse);
+		//rb2D.AddForce ( Quaternion.Euler (0, 0, 90)*targetVector*vitesseBond/2, ForceMode2D.Impulse);
+		//rb2D.AddForce ((new Vector3 ((targetVector.y+Random.Range (-targetVector.y*0.1f,targetVector.y*0.1f )),(targetVector.x+Random.Range (-targetVector.x*0.1f,targetVector.x*0.1f )),0) * vitesseBond), ForceMode2D.Impulse);
 		//print (new Vector3 ((targetVectorAttacking.x+Random.Range (-targetVectorAttacking.x*2f,targetVectorAttacking.x*2f )),(targetVectorAttacking.y+Random.Range (-targetVectorAttacking.y*2f,targetVectorAttacking.y*02f )),0));
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1.25f);
+		//yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1f);
 		isFighting = false;
 	//	anim.SetBool ("IsJumping",false);
 		//anim.SetBool ("IsAttacking", false);
@@ -194,16 +264,22 @@ public class TigreBehavior : MonoBehaviour {
 	IEnumerator RoarSequence()
 	{
 		isFighting = true;
+
 		anim.SetBool ("IsMoving", false);
+
+		anim.SetBool ("IsAttacking",true);
+
 		//anim.SetBool ("IsAttack", true);
-		anim.SetTrigger ("IsAttacking");
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*2);
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1.35f);
 		GameObject laserInstance = (GameObject)Instantiate (attackRoar, transform);
 		laserInstance.SetActive (true);
 		laserInstance.GetComponent <RoarScript>().beat = rythmeScript.timeBetweenBeatsInSeconds;
 		laserInstance.transform.SetParent (null);
+		anim.SetBool ("IsAttacking",false);
+
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds);
 		isFighting = false;
+
 	}
 
 	IEnumerator PlayerDamage(){
@@ -236,7 +312,7 @@ public class TigreBehavior : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Player") 
 		{
-			if(isJumping == true){
+			if(isJumping == true&&other.otherCollider == head){
 				print ("test");
 				other.gameObject.GetComponent<health>().Hurt(damage);
 				StartCoroutine (PlayerDamage ());

@@ -49,6 +49,7 @@ public class Player: MonoBehaviour
 	public float speedMultiplicator=1;
 
 	//Dash
+	public bool isDashing;
 	public bool canDash = true;
 	public float DashSpeed = 4;
 	public Transform dashTarget;
@@ -130,7 +131,7 @@ public class Player: MonoBehaviour
 		if (isAttacking == false) 
 		{
 			attaqueSlash.transform.localPosition = déplacement*0.1f;
-			attaqueSlash.transform.localRotation = Quaternion.Euler (0, 0, -(Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
+			attaqueSlash.transform.localRotation = Quaternion.Euler (0, 0, (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (-Input.GetAxisRaw ("Vertical"))) * Mathf.Rad2Deg));
 			//attaqueRepousse.transform.localPosition = déplacement*0.1f;
 			//attaqueRepousse.transform.localRotation = Quaternion.Euler (0, 0, (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
 		}
@@ -235,6 +236,8 @@ public class Player: MonoBehaviour
 	IEnumerator dashCoroutine()
 	{
 		canDash = false;
+		isDashing=true;
+
 		GetComponent <health> ().invincible = true;
 		GetComponent <health> ().currentTime =GetComponent <health> ().invincibleTime - 1 ;
         soundDash.start();
@@ -245,10 +248,14 @@ public class Player: MonoBehaviour
 		else
 		{
 			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			body.AddForce ( vecTmp * 22.5f, ForceMode2D.Impulse);
+			body.AddForce ( vecTmp*7 , ForceMode2D.Impulse);
 		}
+		yield return new WaitForSeconds (0.5f);
 
-		yield return new WaitForSeconds (1f);
+		isDashing=false;
+
+
+		yield return new WaitForSeconds (0.5f);
 		canDash = true;
 	}
 }

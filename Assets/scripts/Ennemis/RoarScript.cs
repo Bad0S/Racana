@@ -10,14 +10,15 @@ public class RoarScript : MonoBehaviour {
 	public float beat;
 	public float speedGrowth=0.1f;
 	private Color alphaColor;
-	public float timerFade;
+	private float timerFade;
 	private bool startFade = false;
 
 
 	// Use this for initialization
 	void Start () {
 	//	beat = GetComponentInParent <TigreBehavior> ().rythmeScript.timeBetweenBeatsInSeconds;
-		Destroy (gameObject,beat*4);
+		Destroy (gameObject,beat*2);
+		print ((beat)); 
 		canShake = true;
 		//transform.SetParent (transform);
 		alphaColor = GetComponent<SpriteRenderer>().color;
@@ -30,21 +31,8 @@ public class RoarScript : MonoBehaviour {
 		timerFade += Time.deltaTime;
 		//print (startFade);
 
-		if (startFade = false) {
-			print (startFade);
 
-			if (timerFade > beat * 3) {
-				timerFade = 0;
-				startFade = true;
-			} 
-		}
-		else {
-				//print (startFade);
-
-			GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, alphaColor,timerFade);
-
-
-		}
+		GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, alphaColor,timerFade-beat);
 
 		//
 
@@ -56,8 +44,10 @@ public class RoarScript : MonoBehaviour {
 		{
 			
 			other.gameObject.GetComponent<health>().Hurt(damage);
+			if(other.GetComponent <Player>().isDashing== false){
+				StartCoroutine (PlayerDamage ());
 
-			StartCoroutine (PlayerDamage ());
+			}
 		
 		}
 	}
