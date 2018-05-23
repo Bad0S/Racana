@@ -22,8 +22,8 @@ public class PorteBoss : MonoBehaviour {
 		{
 			activation = true;
 
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2f, 0.01f,0.05f);
-			StartCoroutine (Vibration (2f, 0.5f));
+			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (3.5f, 0.01f,0.08f);
+			StartCoroutine (Vibration (3.5f, 0.5f));
 		}
 	}
 
