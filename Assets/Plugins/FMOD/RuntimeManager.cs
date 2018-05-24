@@ -198,11 +198,11 @@ namespace FMODUnity
             if (fmodSettings.IsLiveUpdateEnabled(fmodPlatform))
             {
                 studioInitFlags |= FMOD.Studio.INITFLAGS.LIVEUPDATE;
-
-                #if UNITY_5_0 || UNITY_5_1 // These versions of Unity shipped with FMOD4 profiling enabled consuming our port number.
+                lowlevelSystem.setDSPBufferSize(256, 2);
+#if UNITY_5_0 || UNITY_5_1 // These versions of Unity shipped with FMOD4 profiling enabled consuming our port number.
                 UnityEngine.Debug.LogWarning("FMOD Studio: Live Update port in-use by Unity, switching to port 9265");
                 advancedSettings.profilePort = 9265;
-                #endif
+#endif
             }
 
 retry:

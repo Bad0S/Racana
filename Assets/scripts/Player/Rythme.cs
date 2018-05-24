@@ -5,19 +5,17 @@ using UnityEngine.PostProcessing;
 
 public class Rythme : MonoBehaviour
 {
-    public float bpmInitial = 110;
+    public float bpmInitial;
     public float bpm;
     private AudioSource sourceSon;
     public float timeBetweenBeatsInSeconds;
-    private float timeRBetweenBeats;
-    private float musicTime;
+    public float musicTime;
     public int beats = 1;
     public float combo;
     public PostProcessingProfile initial;
     public PostProcessingProfile transe;
 	public PostProcessingProfile Transcendance;
 	public bool isBeating;
-    private AudioSource[] sources;
 
     public string selectsoundNormal;
     public string selectsoundTranse;
@@ -31,10 +29,8 @@ public class Rythme : MonoBehaviour
         soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
         soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
         soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
-
-        sourceSon = GetComponent<AudioSource>();
+        
         bpm = bpmInitial;
-        sources = GameObject.FindGameObjectWithTag("MainCamera").GetComponents<AudioSource>();
         FMOD.Studio.PLAYBACK_STATE fmodPbState;
         soundNormal.getPlaybackState(out fmodPbState);
         if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
@@ -49,17 +45,18 @@ public class Rythme : MonoBehaviour
     void Update()
     {
         musicTime += Time.deltaTime;
-        timeRBetweenBeats += Time.deltaTime;
         timeBetweenBeatsInSeconds = 60 / bpm;
-		//print (isBeating); 
-
-		if (musicTime >= timeBetweenBeatsInSeconds * beats) {
+        //print (isBeating); 
+		if (musicTime >= timeBetweenBeatsInSeconds * beats)
+        {
 			beats += 1;
 			isBeating = true;
-			timeRBetweenBeats = 0;
-		} else{
-			isBeating = false;
-
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canAttack = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canDash = true;
+        }
+        else
+        {
+            isBeating = false;
 		}
 		if (combo <= 0) 
 		{
@@ -80,7 +77,6 @@ public class Rythme : MonoBehaviour
         }
 		if (combo >= 30)
 		{
-            foreach (AudioSource source in sources)
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
 			GetComponent<Player> ().MovSpeed = 0.1f;
