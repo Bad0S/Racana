@@ -42,7 +42,7 @@ public class Player: MonoBehaviour
 	public GameObject attaqueRepousse;
 	public GameObject dashTranscendanceTargeter;
 	private bool isAttacking = false;
-	public int chargeAttaque;
+	public int chargeAttaque = 1;
 
 	//FightEnemies
 	public bool grabbed;
@@ -90,10 +90,19 @@ public class Player: MonoBehaviour
 			Physics2D.IgnoreLayerCollision (8, 11, false);
 		}
 
-		if(projectileShake == true){
+		if(projectileShake == true)
+        {
 			StartCoroutine (Vibration (0.07f, 0.6f));
 			projectileShake = false;
 		}
+        if (GetComponent<Rythme>().isBeating == true)
+        {
+            chargeAttaque += 1;
+        }
+        if (chargeAttaque == 5)
+        {
+            chargeAttaque = 1;
+        }
 	}
 
 	void FixedUpdate()
@@ -136,18 +145,7 @@ public class Player: MonoBehaviour
 		}
 		if (canAttack == true )
 		{
-            if (Input.GetButtonDown("Fire1"))
-            {
-                soundCharge.start();
-            }
-			if (Input.GetButton ("Fire1")) 
-			{
-                if (GetComponent<Rythme>().isBeating == true && chargeAttaque < 3)
-                {
-                    chargeAttaque += 1;
-                }
-            }
-			if (Input.GetButtonUp ("Fire1") && isAttacking == false)
+			if (Input.GetButtonDown ("Fire1") && isAttacking == false)
             {
                 StartCoroutine(slashCoroutine());
                 anim.SetTrigger ("Attack_Slash");
@@ -222,7 +220,6 @@ public class Player: MonoBehaviour
         yield return new WaitForSeconds (0.28f);
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
-        chargeAttaque = 0;
 	}
 	IEnumerator repousseCoroutine()
 	{
