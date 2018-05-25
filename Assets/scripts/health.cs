@@ -23,6 +23,8 @@ public class health : MonoBehaviour {
 	private Shader shaderDeBase;
 	private SpriteRenderer rend;
 	private Color couleurDeBase;
+
+	private GameObject player;
 	// Use this for initialization
 	void Start () 
 	{
@@ -30,6 +32,7 @@ public class health : MonoBehaviour {
 		shaderDeBase = Shader.Find("Sprites/Default");
 		rend = GetComponent <SpriteRenderer> ();
 		couleurDeBase = rend.color;
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	//si se fait soigner
 	public void Heal( int lifeToGain)// la fonction pour soigner
@@ -45,7 +48,9 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Player") 
 			{
 				LifeBar [life-1] = pvVide;
-				StartCoroutine (Damage (0.2f));
+				StartCoroutine (Vibration (0.07f, 0.6f));
+
+				StartCoroutine (Damage (0.2f,0.14f, 0.02f));
 				invincible = true;
 				currentTime = 0;
 
@@ -53,12 +58,21 @@ public class health : MonoBehaviour {
 			}
 			if (gameObject.tag == "Enemy") 
 			{
-				StartCoroutine (Damage (0.2f));
-				GameObject.FindGameObjectWithTag ("Player").GetComponent <Rythme>().combo += lifeToLose ;
+				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
+				StartCoroutine (Vibration (0.05f, 01f));
+				player.GetComponent <Rythme>().combo += lifeToLose ;
+				player.GetComponent <Rythme>().timerCombo =0 ;
+				player.GetComponent <Rythme>().timerComboSpeed =0 ;
+				player.GetComponent <Rythme>().comboDecreaseSpeed =1 ;
 			}
 			if (gameObject.tag == "Boss") 
 			{
-				GameObject.FindGameObjectWithTag ("Player").GetComponent <Rythme>().combo += lifeToLose ;
+				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
+				player.GetComponent <Rythme>().combo += lifeToLose ;
+				player.GetComponent <Rythme>().timerCombo =0 ;
+				player.GetComponent <Rythme>().timerComboSpeed =0 ;
+				player.GetComponent <Rythme>().comboDecreaseSpeed =1 ;
+
 			}
 			life -= lifeToLose;
 		}
@@ -81,7 +95,7 @@ public class health : MonoBehaviour {
 					
 				}
 				GamePad.SetVibration (0,0,0);
-				Destroy (gameObject, 0.2f);
+				Destroy (gameObject);
 
 			}
 			if (gameObject.tag == "Player") 
@@ -124,6 +138,12 @@ public class health : MonoBehaviour {
 			Hurt (other.GetComponentInParent<health>().damage);
 		}
 	}*/
+	IEnumerator Vibration(float duree, float puissance){
+		GamePad.SetVibration (0,puissance,puissance);
+		yield return new WaitForSeconds(duree);
+		GamePad.SetVibration (0,0f,0f);
+
+	}
 
 	IEnumerator PlayerDeath()
 	{
@@ -134,9 +154,10 @@ public class health : MonoBehaviour {
 		rend.color = couleurDeBase ;
 		Destroy (gameObject);
 	}
-	IEnumerator Damage(float timeRed){
+	IEnumerator Damage(float timeRed , float timeShake, float magShake ){
 		rend.material.shader = shaderDeCouleur;
 		rend.color = Color.red;
+		Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (timeShake, timeShake,0.04f);
 		yield return new WaitForSeconds(timeRed);
 		rend.material.shader = shaderDeBase;
 		rend.color = couleurDeBase ;

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 95789367127731110}
   - component: {fileID: 68242718442779294}
   - component: {fileID: 60328139432623236}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fauve
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 7
+  m_LinearDrag: 9
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 5
+  life: 9
   damage: 1
   invincible: 0
   invincibleTime: 0

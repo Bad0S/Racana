@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using XInputDotNetPure;
 
 
 public class BambouBehaviour : MonoBehaviour {
@@ -49,7 +48,6 @@ public class BambouBehaviour : MonoBehaviour {
 
 	//feedback
 	public bool aEteRepousse;
-	private bool canShake=false;
 
 	// le rythme
 	public bool beatAllowAttack;
@@ -149,7 +147,6 @@ public class BambouBehaviour : MonoBehaviour {
 
 	IEnumerator ShootSequence()
 	{
-		canShake = true;
 		yield return new WaitForSeconds (0.15f);
 		//WhiteSprite ();
 		isFighting = true;
@@ -183,11 +180,7 @@ public class BambouBehaviour : MonoBehaviour {
 
 
 	IEnumerator PlayerDamage(){
-		if(canShake == true){
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.14f, 0.02f,0.04f);
-			StartCoroutine (Vibration (0.07f, 0.6f));
-			canShake = false;
-		}
+
 		playerRB.velocity = Vector2.zero;
 		playerRB.AddForce (new Vector2(targetVector.x,targetVector.y).normalized*2f,ForceMode2D.Impulse);
 		yield return new WaitForSeconds(0.10f);
@@ -202,9 +195,6 @@ public class BambouBehaviour : MonoBehaviour {
 				GetComponent <health> ().Hurt (target.GetComponentInParent<health> ().damage);
 				timerDegats = 0;
 			}
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.07f, 0.06f,0.01f);
-			StartCoroutine (Vibration (0.05f, 0.014f));
-			//print ("zgeg");
 			isJumping = false;
 			StartCoroutine (Knockback ());
 		}
@@ -235,21 +225,12 @@ public class BambouBehaviour : MonoBehaviour {
 	}
 
 	//FEEDBACKS
-	IEnumerator Vibration(float duree, float puissance){
-		GamePad.SetVibration (0,puissance,puissance);
-		yield return new WaitForSeconds(duree);
-		GamePad.SetVibration (0,0f,0f);
-	}
+
 	void WhiteSprite() {
 		enemyRenderer.material.shader = shaderDeCouleur;
 		enemyRenderer.color = new Color(1f,0.9f,0.9f);
 	}
 
-	void RedSprite() {
-		enemyRenderer.material.shader = shaderDeCouleur;
-		enemyRenderer.color = new Color(0.95f,0,0);
-
-	}
 
 	void NormalSprite() {
 		enemyRenderer.material.shader = shaderDeBase;

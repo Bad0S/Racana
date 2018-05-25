@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using XInputDotNetPure;
 
 
 public class TirHerbe : MonoBehaviour {
@@ -22,16 +21,12 @@ public class TirHerbe : MonoBehaviour {
 		{
 			other.GetComponent <Player>().projectileShake = true;
 			other.GetComponent<health> ().Hurt (damage);
-			StartCoroutine (PlayerDamage ());
 
 			Destroy (gameObject);
 		}
 		//dans l'autre, on récupère dans player la fonction hurt
 
 	}
-	IEnumerator PlayerDamage(){
-		Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.14f, 0.02f,0.04f);
-		yield return new WaitForSeconds(0.10f);
-	}
+
 		
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using XInputDotNetPure;
 
 public class EnemyBehaviour : MonoBehaviour {
 
@@ -57,7 +56,6 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	//feedback
 	public bool aEteRepousse;
-	private bool canShake=false;
 
 	// le rythme
 	public bool beatAllowAttack;
@@ -207,12 +205,6 @@ public class EnemyBehaviour : MonoBehaviour {
 		enemyRenderer.color = new Color(1f,0.9f,0.9f);
 	}
 
-	void RedSprite() {
-		enemyRenderer.material.shader = shaderDeCouleur;
-		enemyRenderer.color = new Color(0.95f,0,0);
-
-	}
-
 	void NormalSprite() {
 		enemyRenderer.material.shader = shaderDeBase;
 		enemyRenderer.color = couleurDeBase;
@@ -220,7 +212,6 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	IEnumerator FightSequence()
 	{
-		canShake = true;
 		yield return new WaitForSeconds (0.15f);
 		WhiteSprite ();
 		isFighting = true;
@@ -274,9 +265,6 @@ public class EnemyBehaviour : MonoBehaviour {
 				GetComponent <health> ().Hurt (target.GetComponentInParent<health> ().damage);
 				timerDegats = 0;
 			}
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.05f, 0.03f,0.01f);
-			StartCoroutine (Vibration (0.05f, 0.014f));
-			//print ("zgeg");
 			isJumping = false;
 			StartCoroutine (Knockback ());
 			if(grabbed == true)
@@ -325,12 +313,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 	}*/
 
-	IEnumerator Vibration(float duree, float puissance){
-		GamePad.SetVibration (0,puissance,puissance);
-		yield return new WaitForSeconds(duree);
-		GamePad.SetVibration (0,0f,0f);
 
-	}
 
 
 	IEnumerator Knockback(){
@@ -347,18 +330,13 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 		GetComponent<BoxCollider2D> ().isTrigger = false;
 		rb2D.velocity = Vector2.zero;
-		rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*8f,ForceMode2D.Impulse);
+		rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*20f,ForceMode2D.Impulse);
 		yield return new WaitForSeconds(0.07f);
 		yield return new WaitForSeconds(0.07f);
 
 	}
 
 	IEnumerator PlayerDamage(){
-		if(canShake == true){
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.14f, 0.02f,0.04f);
-			StartCoroutine (Vibration (0.07f, 0.6f));
-			canShake = false;
-		}
 		playerRB.velocity = Vector2.zero;
 		playerRB.AddForce (new Vector2(targetVector.x,targetVector.y).normalized*2f,ForceMode2D.Impulse);
 		yield return new WaitForSeconds(0.10f);

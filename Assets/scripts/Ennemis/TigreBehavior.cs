@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using XInputDotNetPure;
 
 
 public class TigreBehavior : MonoBehaviour {
@@ -31,6 +30,8 @@ public class TigreBehavior : MonoBehaviour {
 	private EdgeCollider2D head;
 	private int probaAttaque;
 	private int probaPattern;
+	private float timerChase;
+	bool chase;
 
 
 	//arrêt du saut et saut
@@ -58,7 +59,6 @@ public class TigreBehavior : MonoBehaviour {
 
 	//feedback
 	public bool aEteRepousse;
-	private bool canShake=false;
 
 	// le rythme
 	public bool beatAllowAttack;
@@ -94,6 +94,9 @@ public class TigreBehavior : MonoBehaviour {
 	{
 		timerFlip += Time.deltaTime;
 		timerRandAngle += Time.deltaTime;
+		timerWaitRepousse += Time.deltaTime;
+		timerDegats += Time.deltaTime;
+		timerChase += Time.deltaTime;
 		beatAllowAttack = rythmeScript.isBeating;
 		print (rb2D.velocity);
 		/*if (beatAllowAttack == true){
@@ -110,8 +113,7 @@ public class TigreBehavior : MonoBehaviour {
 			}
 		}*/
 
-		timerWaitRepousse += Time.deltaTime;
-		timerDegats += Time.deltaTime;
+
 		if (timerWaitRepousse>0.35f && aEteRepousse == true){
 			isFighting = false;
 			aEteRepousse = false;
@@ -125,21 +127,27 @@ public class TigreBehavior : MonoBehaviour {
 		if (targetVector.magnitude < attackRangeMax  && isFighting == false&&beatAllowAttack == true) {
 
 			if(aEteRepousse == false){
-				int test= Random.Range(0,10);
-				if(test + probaPattern< 5){
+				if (targetVector.magnitude<11.5f&& timerChase>rythmeScript.timeBetweenBeatsInSeconds*4){
+					chase = true;
+					timerChase = 0;
+				}
+
+				float test= targetVector.normalized.magnitude*10;
+				if(test + probaPattern> 5|| chase == true){
 					StartCoroutine ("BiteSequence");
-					probaPattern += Random.Range (1, 3);
+					probaPattern -= Random.Range (1, 3);
+					chase = false;
 				}
 				else{
 					StartCoroutine ("RoarSequence");
-					probaPattern -= Random.Range (1, 3);
+					probaPattern += Random.Range (1, 3);
 
 				}
 			}
 		}
 
 		//PATHFINDING
-		if (targetVector.magnitude < maxDetectionRange && isFighting == false && targetVector.magnitude>=attackRangeMax) {
+		if (targetVector.magnitude < maxDetectionRange && isFighting == false) {
 			
 			anim.SetBool ("IsMoving", true);
 			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
@@ -151,16 +159,6 @@ public class TigreBehavior : MonoBehaviour {
 			}
 			anim.SetBool ("IsMoving", true);
 
-		}
-		else if(targetVector.magnitude<attackRangeMax -1&& isFighting == false){
-			anim.SetBool ("IsMoving", true);
-			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
-				rb2D.velocity = Vector3.Normalize (Quaternion.Euler (0, 0, angle)*moveVector) * speed;
-			} else if (aEteRepousse = false) {
-				aEteRepousse = false;
-				timerWaitRepousse = 0;
-			}
-			anim.SetBool ("IsMoving", true);
 		}
 		else if(isFighting == false) {
 			anim.SetBool ("IsMoving", false);
@@ -190,7 +188,6 @@ public class TigreBehavior : MonoBehaviour {
 
 	IEnumerator BiteSequence()
 	{
-		canShake = true;
 		isFighting = true;
 		rb2D.velocity = new Vector3 (0,0,0);
 		anim.SetBool ("IsMoving", false);
@@ -203,7 +200,7 @@ public class TigreBehavior : MonoBehaviour {
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
 
 		GetComponent<SpriteRenderer> ().flipX = true;
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
+
 		int test = Random.Range (0, 10);
 		if(test - probaAttaque<7){
 			probaAttaque -= 1;
@@ -219,12 +216,18 @@ public class TigreBehavior : MonoBehaviour {
 		}
 
 
+	
+
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 		WhiteSprite ();
 		anim.SetBool ("IsMoving", true);
 		targetVectorAttacking = targetVector;
 
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
+
+
 		NormalSprite ();
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 
 		//anim.SetBool ("IsAttacking", true);
 		//groupieSource.Play();
@@ -234,7 +237,7 @@ public class TigreBehavior : MonoBehaviour {
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
 		anim.SetBool ("IsJumping",true);
-		if (targetVector.magnitude < maxDetectionRange){
+		if (targetVector.magnitude < maxDetectionRange-0.5f){
 			rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
 
 		}
@@ -283,11 +286,7 @@ public class TigreBehavior : MonoBehaviour {
 	}
 
 	IEnumerator PlayerDamage(){
-		if(canShake == true){
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.14f, 0.02f,0.04f);
-			StartCoroutine (Vibration (0.07f, 0.6f));
-			canShake = false;
-		}
+
 		playerRB.velocity = Vector2.zero;
 		playerRB.AddForce (new Vector2(targetVector.x,targetVector.y).normalized*2f,ForceMode2D.Impulse);
 		yield return new WaitForSeconds(0.10f);
@@ -298,13 +297,10 @@ public class TigreBehavior : MonoBehaviour {
 	{
 		if (other.tag == "PlayerAttack") 
 		{
-			if (timerDegats > 0.28f) {
+			if (timerDegats > rythmeScript.timeBetweenBeatsInSeconds) {
 				GetComponent <health> ().Hurt (target.GetComponentInParent<health> ().damage);
 				timerDegats = 0;
 			}
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (0.05f, 0.03f,0.01f);
-			StartCoroutine (Vibration (0.05f, 0.014f));
-			//print ("zgeg");
 			isJumping = false;
 			//StartCoroutine (Knockback ());
 		}
@@ -336,21 +332,12 @@ public class TigreBehavior : MonoBehaviour {
 	}
 
 	//FEEDBACKS
-	IEnumerator Vibration(float duree, float puissance){
-		GamePad.SetVibration (0,puissance,puissance);
-		yield return new WaitForSeconds(duree);
-		GamePad.SetVibration (0,0f,0f);
-	}
 	void WhiteSprite() {
 		enemyRenderer.material.shader = shaderDeCouleur;
 		enemyRenderer.color = new Color(1f,0.9f,0.9f);
 	}
 
-	void RedSprite() {
-		enemyRenderer.material.shader = shaderDeCouleur;
-		enemyRenderer.color = new Color(0.95f,0,0);
 
-	}
 
 	void NormalSprite() {
 		enemyRenderer.material.shader = shaderDeBase;

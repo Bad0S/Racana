@@ -11,6 +11,10 @@ public class PorteBoss : MonoBehaviour {
 	public float speed;
 	public GameObject cacheBoss;
 	public GameObject hitboxPorte;
+	public List<GameObject> disabling;
+	bool disable;
+	bool enable;
+
 	// Use this for initialization
 	void Start () {
 		originalPos = transform.position.y;
@@ -38,13 +42,68 @@ public class PorteBoss : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (activation == true && descending <=1){
+
+		if (activation == true && descending<=1){
+			if (disable== false){
+				foreach (var vivant in disabling) {
+					if(vivant.tag == "Player"){
+						vivant.GetComponent <Player>().enabled = false;
+						vivant.GetComponent <Animator>().speed=0;
+
+					}
+					else{
+						try{
+							vivant.GetComponent <EnemyBehaviour>().enabled = false;
+							vivant.GetComponent <Animator>().speed=0;
+
+						}
+						catch{}
+						try{
+							vivant.GetComponent <BambouBehaviour>().enabled = false;
+							vivant.GetComponent <Animator>().speed=0;
+
+						}
+						catch{}
+					}
+				}
+				disable = true;
+			}
+
 			descending += Time.deltaTime/(1/speed);
 			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-3, descending),0);
 		}
 		else if(transform.position.y == originalPos-3){
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;
 			hitboxPorte.GetComponent <BoxCollider2D>().enabled = false;
+			if (enable == false){
+				foreach (var vivant in disabling) {
+					if(vivant.tag == "Player"){
+						vivant.GetComponent <Player>().enabled = true;
+						vivant.GetComponent <Animator>().speed=1;
+
+					}
+					else{
+						try{
+							vivant.GetComponent <EnemyBehaviour>().enabled = true;
+							vivant.GetComponent <Animator>().speed=1;
+
+						}
+						catch{}
+						try{
+							vivant.GetComponent <BambouBehaviour>().enabled = true;
+							vivant.GetComponent <Animator>().speed=1;
+
+
+
+						}
+						catch{}
+					}
+				}
+				enable = true;
+
+			}
+			
 		}
 	}
+
 }

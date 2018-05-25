@@ -42,7 +42,9 @@ public class Player: MonoBehaviour
 	public GameObject attaqueRepousse;
 	public GameObject dashTranscendanceTargeter;
 	private bool isAttacking = false;
-	private float chargeAttaque;
+	public float chargeAttaque;
+	public int tauxCharge=1;
+	private float beat;
 
 	//FightEnemies
 	public bool grabbed;
@@ -72,11 +74,24 @@ public class Player: MonoBehaviour
         soundAttaque = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaque);
         soundRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
         soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
+		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
     }
 
 	// Update is called once per frame
 	void Update () 
 	{
+		//charge sur beat
+		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+		chargeAttaque += Time.deltaTime;
+		print (beat);
+		if (chargeAttaque > beat && tauxCharge < 3) {
+			tauxCharge++;
+			chargeAttaque = 0;
+		}
+		else if (chargeAttaque > beat && tauxCharge >= 3){
+			tauxCharge = 0;
+			chargeAttaque = 0;
+		}
 		//Le dash en transcendance
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
 		dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
@@ -141,11 +156,16 @@ public class Player: MonoBehaviour
             {
                 soundCharge.start();
             }
-			if (Input.GetButton ("Fire1")) 
+			/*if (Input.GetButton ("Fire1")) 
 			{
 				chargeAttaque += Time.deltaTime;
-            }
-			if (Input.GetButtonUp ("Fire1") && isAttacking == false) 
+				print (beat);
+				if(chargeAttaque > beat && tauxCharge<3){
+					tauxCharge++;
+					chargeAttaque = 0;
+				}
+            }*/
+			if (Input.GetButtonDown ("Fire1") && isAttacking == false) 
 			{
 				anim.SetTrigger ("Attack_Slash");
 				StartCoroutine(slashCoroutine ());
@@ -211,7 +231,7 @@ public class Player: MonoBehaviour
 	{
         soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         soundAttaque.start();
-		GetComponent<health> ().damage = Mathf.CeilToInt (chargeAttaque);
+		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
 		yield return new WaitForSeconds (0.28f);

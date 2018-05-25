@@ -26,6 +26,13 @@ public class Rythme : MonoBehaviour
     FMOD.Studio.EventInstance soundTranse;
     FMOD.Studio.EventInstance soundTranscendance;
     // Use this for initialization
+
+	//diminution combo
+	float timerComboPas;
+	public float timerCombo;
+	public float timerComboSpeed;
+	public float comboDecreaseSpeed =1;
+
     void Start()
     {
         soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
@@ -45,6 +52,26 @@ public class Rythme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		timerCombo+= Time.deltaTime;
+		timerComboSpeed+= Time.deltaTime;
+		timerComboPas += Time.deltaTime;
+		if(timerCombo> timeBetweenBeatsInSeconds *4*comboDecreaseSpeed&&timerComboPas>timeBetweenBeatsInSeconds&& combo>0){
+			timerComboPas = 0;
+			combo--;
+			timerCombo = 0;
+		}
+		if(timerComboSpeed>timeBetweenBeatsInSeconds*4&&comboDecreaseSpeed>0f&&combo<=20){
+			comboDecreaseSpeed -= 0.25f;
+			timerComboSpeed = 0;
+		}
+		else if(combo>20 && comboDecreaseSpeed>0.5f){
+			comboDecreaseSpeed = 0.5f;
+		}
+		else if(timerComboSpeed>timeBetweenBeatsInSeconds*4&&comboDecreaseSpeed>0){
+			comboDecreaseSpeed -= 0.5f;
+			timerComboSpeed = 0;
+		}
+
         musicTime += Time.deltaTime;
         timeRBetweenBeats += Time.deltaTime;
         timeBetweenBeatsInSeconds = 60 / bpm;
@@ -66,7 +93,7 @@ public class Rythme : MonoBehaviour
             soundTranse.setVolume(0f);
             soundTranscendance.setVolume(0f);
         }
-		if (combo < 30 && combo > 0)
+		if (combo < 20 && combo > 0)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
@@ -75,7 +102,7 @@ public class Rythme : MonoBehaviour
             soundTranse.setVolume(combo/30);
             soundTranscendance.setVolume(0f);
         }
-		if (combo >= 30)
+		if (combo >= 20)
 		{
             foreach (AudioSource source in sources)
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
