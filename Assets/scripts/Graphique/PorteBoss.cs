@@ -11,33 +11,47 @@ public class PorteBoss : MonoBehaviour {
 	public float speed;
 	public GameObject cacheBoss;
 	public GameObject hitboxPorte;
+    public GameObject Particle;
 	// Use this for initialization
 	void Start () {
 		originalPos = transform.position.y;
+        Particle.SetActive(false);
 
-	}
-	private void OnTriggerEnter2D(Collider2D other)
+
+    }
+    private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player"&& activation == false) 
 		{
 			activation = true;
-
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2f, 0.01f,0.05f);
+            StartCoroutine(EmitParticle(2f));
+            Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2f, 0.01f,0.05f);
 			StartCoroutine (Vibration (2f, 0.5f));
 		}
 	}
 
-	IEnumerator Vibration(float duree, float puissance){
-		GamePad.SetVibration (0,puissance,0);// POUR LA FREQUECNE, DEMANDER A MICHAEL
-		yield return new WaitForSeconds(duree);
-		GamePad.SetVibration (0,0f,0f);
+    IEnumerator Vibration(float duree, float puissance)
+    {
+        GamePad.SetVibration(0, puissance, 0);// POUR LA FREQUECNE, DEMANDER A MICHAEL
+        yield return new WaitForSeconds(duree);
+        GamePad.SetVibration(0, 0f, 0f);
 
-	}
+    }
+
+    IEnumerator EmitParticle(float duree)
+    {
+        Particle.SetActive(true);
+
+        yield return new WaitForSeconds(duree);
+        Particle.SetActive(false);
+
+
+    }
 
 
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 		if (activation == true && descending <=1){
 			descending += Time.deltaTime/(1/speed);
 			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-3, descending),0);
