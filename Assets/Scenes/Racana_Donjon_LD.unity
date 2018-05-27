@@ -3766,6 +3766,21 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[92]
       value: 
       objectReference: {fileID: 1225211805}
+      objectReference: {fileID: 0}
+      value: event:/Fond Musical
+      propertyPath: selectsoundNormal
+        type: 2}
+    - target: {fileID: 114003182990049282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+      objectReference: {fileID: 0}
+      value: 130
+      propertyPath: bpmInitial
+    - target: {fileID: 114003182990049282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      objectReference: {fileID: 0}
+      value: 0
+        type: 2}
+      propertyPath: combo
+    - target: {fileID: 114003182990049282, guid: 7ceec7312b3913249886d2dc6adb66d5,
     - target: {fileID: 114003182990049282, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: combo
@@ -25690,7 +25705,11 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82673222613548888, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
+    - {fileID: 82691299468526952, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
+    - {fileID: 82922917325202250, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
+    - {fileID: 81879783384006814, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1720253903 stripped

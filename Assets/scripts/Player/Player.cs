@@ -106,10 +106,19 @@ public class Player: MonoBehaviour
 			Physics2D.IgnoreLayerCollision (8, 11, false);
 		}
 
-		if(projectileShake == true){
+		if(projectileShake == true)
+        {
 			StartCoroutine (Vibration (0.07f, 0.6f));
 			projectileShake = false;
 		}
+        if (GetComponent<Rythme>().isBeating == true)
+        {
+            chargeAttaque += 1;
+        }
+        if (chargeAttaque == 5)
+        {
+            chargeAttaque = 1;
+        }
 	}
 
 	void FixedUpdate()
@@ -152,10 +161,8 @@ public class Player: MonoBehaviour
 		}
 		if (canAttack == true )
 		{
-            if (Input.GetButtonDown("Fire1"))
+			if (Input.GetButtonDown ("Fire1") && isAttacking == false)
             {
-                soundCharge.start();
-            }
 			/*if (Input.GetButton ("Fire1")) 
 			{
 				chargeAttaque += Time.deltaTime;
@@ -169,6 +176,8 @@ public class Player: MonoBehaviour
 			{
 				anim.SetTrigger ("Attack_Slash");
 				StartCoroutine(slashCoroutine ());
+                soundCharge.start();
+            }
 			}
 			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
 			{
@@ -186,7 +195,8 @@ public class Player: MonoBehaviour
 					}
 				}*/
 			}
-			if(canDash==true){
+			if(canDash==true)
+            {
 				dashTranscendanceTargeter.transform.localPosition = déplacement;
 				dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
 
@@ -206,7 +216,8 @@ public class Player: MonoBehaviour
 			//StartCoroutine (Vibration (0.07f, 0.6f));
 		}
 	}*/
-	IEnumerator Vibration(float duree, float puissance){
+	IEnumerator Vibration(float duree, float puissance)
+    {
 		GamePad.SetVibration (0,puissance,puissance);
 		yield return new WaitForSeconds(duree);
 		GamePad.SetVibration (0,0f,0f);
@@ -228,16 +239,17 @@ public class Player: MonoBehaviour
 	}
 
 	IEnumerator slashCoroutine()
-	{
+    {
+        soundAttaque.start();
         soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         soundAttaque.start();
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
-		yield return new WaitForSeconds (0.28f);
+        canAttack = false;
+        yield return new WaitForSeconds (0.28f);
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
-		chargeAttaque = 0f;
 	}
 	IEnumerator repousseCoroutine()
 	{
@@ -248,9 +260,10 @@ public class Player: MonoBehaviour
 
 		//attaqueRepousse.SetActive (true);
 		isAttacking = true;
-		yield return new WaitForSeconds (0.5f);
-		//attaqueRepousse.SetActive (false);
-		isAttacking = false;
+        canAttack = false;
+        yield return new WaitForSeconds (0.5f);
+        //attaqueRepousse.SetActive (false);
+        isAttacking = false;
 	}
 
 	IEnumerator dashCoroutine()
