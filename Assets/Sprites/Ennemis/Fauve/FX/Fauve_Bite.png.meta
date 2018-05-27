@@ -1,13 +1,14 @@
 fileFormatVersion: 2
-guid: ff91c79eed7e7d548b9d9fe897f916c2
-timeCreated: 1527281195
+guid: 20fc536832041194486aa734efb57adb
+timeCreated: 1527281842
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character_Attack_Back_0
-    21300002: Character_Attack_Back_1
-    21300004: Character_Attack_Back_2
-    21300006: Character_Attack_Back_3
+    21300000: Fauve_Bite_0
+    21300002: Fauve_Bite_1
+    21300004: Fauve_Bite_2
+    21300006: Fauve_Bite_3
+    21300008: Fauve_Bite_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,13 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Attack_Back_0
+      name: Fauve_Bite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 75
-        height: 60
+        width: 85
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,13 +100,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_1
+      name: Fauve_Bite_1
       rect:
         serializedVersion: 2
-        x: 75
+        x: 85
         y: 0
-        width: 75
-        height: 60
+        width: 85
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,13 +114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_2
+      name: Fauve_Bite_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 170
         y: 0
-        width: 75
-        height: 60
+        width: 85
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,13 +128,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_3
+      name: Fauve_Bite_3
       rect:
         serializedVersion: 2
-        x: 225
+        x: 255
         y: 0
-        width: 75
-        height: 60
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fauve_Bite_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -33,6 +33,8 @@ public class TigreBehavior : MonoBehaviour {
 	private float timerChase;
 	bool chase;
 
+	//morsure
+	public GameObject bite;
 
 	//arrêt du saut et saut
 	bool isJumping;
@@ -118,7 +120,7 @@ public class TigreBehavior : MonoBehaviour {
 			isFighting = false;
 			aEteRepousse = false;
 		}
-		targetVector = target.transform.position -transform.position;
+		targetVector = target.transform.position -bite.transform.position;
 		if(timerRandAngle>0.5f){
 			angle = Random.Range (-30, 31);
 			moveVector = targetVector;
@@ -169,9 +171,10 @@ public class TigreBehavior : MonoBehaviour {
 		}
 		if(timerFlip >0.3f&&rb2D.velocity.x != pastFlip ){
 			if (rb2D.velocity.x > 0f ) {
-				GetComponent<SpriteRenderer> ().flipX = false;
+				transform.rotation = Quaternion.Euler(0,180,0);		
+
 			} else  {
-				GetComponent<SpriteRenderer> ().flipX = true;
+				transform.rotation =Quaternion.Euler(0,-0,0);		
 			}
 			pastFlip = rb2D.velocity.x;
 			timerFlip = 0;
@@ -198,9 +201,7 @@ public class TigreBehavior : MonoBehaviour {
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 		GetComponent<SpriteRenderer> ().flipX = false;
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
-
 		GetComponent<SpriteRenderer> ().flipX = true;
-
 		int test = Random.Range (0, 10);
 		if(test - probaAttaque<7){
 			probaAttaque -= 1;
@@ -215,15 +216,12 @@ public class TigreBehavior : MonoBehaviour {
 
 		}
 
-
-	
-
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 		WhiteSprite ();
 		anim.SetBool ("IsMoving", true);
 		targetVectorAttacking = targetVector;
 
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
+	//	yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 
 
 		NormalSprite ();
@@ -232,19 +230,19 @@ public class TigreBehavior : MonoBehaviour {
 		//anim.SetBool ("IsAttacking", true);
 		//groupieSource.Play();
 		anim.SetBool ("IsMoving", false);
-
+		bite.SetActive (true);
+		bite.GetComponent <BiteScript> ().bite = false;
 		//anim.SetBool ("Fighting",true);
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
 		anim.SetBool ("IsJumping",true);
-		if (targetVector.magnitude < maxDetectionRange-0.5f){
-			rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+		rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
 
-		}
 		//Instantiate (attackHitbox, transform);
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/2);
 		rb2D.velocity = new Vector3 (0,0,0);
 		//anim.SetBool ("IsBiting", true);
+		bite.SetActive (false);
 
 		anim.SetBool ("IsJumping",false);
 
@@ -285,12 +283,7 @@ public class TigreBehavior : MonoBehaviour {
 
 	}
 
-	IEnumerator PlayerDamage(){
 
-		playerRB.velocity = Vector2.zero;
-		playerRB.AddForce (new Vector2(targetVector.x,targetVector.y).normalized*2f,ForceMode2D.Impulse);
-		yield return new WaitForSeconds(0.10f);
-	}
 
 	//DEGATS
 	private void OnTriggerEnter2D(Collider2D other)
@@ -303,17 +296,6 @@ public class TigreBehavior : MonoBehaviour {
 			}
 			isJumping = false;
 			//StartCoroutine (Knockback ());
-		}
-	}
-	private void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.tag == "Player") 
-		{
-			if(isJumping == true&&other.otherCollider == head){
-				print ("test");
-				other.gameObject.GetComponent<health>().Hurt(damage);
-				StartCoroutine (PlayerDamage ());
-
-			}
 		}
 	}
 
