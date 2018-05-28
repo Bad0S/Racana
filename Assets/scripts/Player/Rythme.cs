@@ -20,9 +20,9 @@ public class Rythme : MonoBehaviour
     public string selectsoundNormal;
     public string selectsoundTranse;
     public string selectsoundTranscendance;
-    FMOD.Studio.EventInstance soundNormal;
-    FMOD.Studio.EventInstance soundTranse;
-    FMOD.Studio.EventInstance soundTranscendance;
+ //   FMOD.Studio.EventInstance soundNormal;
+   // FMOD.Studio.EventInstance soundTranse;
+ //   FMOD.Studio.EventInstance soundTranscendance;
     // Use this for initialization
 
 	//diminution combo
@@ -33,19 +33,19 @@ public class Rythme : MonoBehaviour
 
     void Start()
     {
-      	soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
-        soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
-        soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
+     // 	soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
+     //   soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
+     //   soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
         
         bpm = bpmInitial;
-    	FMOD.Studio.PLAYBACK_STATE fmodPbState;
-        soundNormal.getPlaybackState(out fmodPbState);
-        if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
-        {
-            soundNormal.start();
-            soundTranse.start();
-            soundTranscendance.start();
-        }
+    //	FMOD.Studio.PLAYBACK_STATE fmodPbState;
+     //   soundNormal.getPlaybackState(out fmodPbState);
+     //   if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+     //   {
+    //        soundNormal.start();
+    //        soundTranse.start();
+    //        soundTranscendance.start();
+     //   }
     }
 
     // Update is called once per frame
@@ -89,18 +89,18 @@ public class Rythme : MonoBehaviour
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = initial;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-            soundNormal.setVolume(1f);
-            soundTranse.setVolume(0f);
-            soundTranscendance.setVolume(0f);
+         //   soundNormal.setVolume(1f);
+         //   soundTranse.setVolume(0f);
+         //   soundTranscendance.setVolume(0f);
         }
 		if (combo < 20 && combo > 0)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
 			GetComponent<Player> ().MovSpeed = 0.1f + combo/600;
-            soundNormal.setVolume(0f);
-            soundTranse.setVolume(combo/30);
-            soundTranscendance.setVolume(0f);
+           // soundNormal.setVolume(0f);
+          //  soundTranse.setVolume(combo/30);
+          //  soundTranscendance.setVolume(0f);
         }
 		if (combo >= 20)
 		{
@@ -108,9 +108,9 @@ public class Rythme : MonoBehaviour
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
 			GetComponent<Player> ().MovSpeed = 0.1f;
 			GetComponent<Player> ().transcendance = true;
-            soundNormal.setVolume(0f);
-            soundTranse.setVolume(0f);
-            soundTranscendance.setVolume(1f);
+         //   soundNormal.setVolume(0f);
+			//soundTranse.setVolume (0f);
+          //  soundTranscendance.setVolume(1f);
         }
     }
 }

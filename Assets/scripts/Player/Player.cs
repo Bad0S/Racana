@@ -9,15 +9,15 @@ using XInputDotNetPure;
 public class Player: MonoBehaviour 
 {
     //Sound
-    [FMODUnity.EventRef]
+//    [FMODUnity.EventRef]
     public string selectsoundCharge;
     public string selectsoundAttaque;
     public string selectsoundRepousse;
     public string selectsoundDash;
-    FMOD.Studio.EventInstance soundCharge;
+   /* FMOD.Studio.EventInstance soundCharge;
     FMOD.Studio.EventInstance soundAttaque;
     FMOD.Studio.EventInstance soundRepousse;
-    FMOD.Studio.EventInstance soundDash;
+    FMOD.Studio.EventInstance soundDash;*/
 
 
     //Visual
@@ -70,10 +70,10 @@ public class Player: MonoBehaviour
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
-        soundCharge = FMODUnity.RuntimeManager.CreateInstance(selectsoundCharge);
+      /*  soundCharge = FMODUnity.RuntimeManager.CreateInstance(selectsoundCharge);
         soundAttaque = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaque);
         soundRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
-        soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
+        soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);*/
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
     }
 
@@ -165,7 +165,7 @@ public class Player: MonoBehaviour
 			{
 				anim.SetTrigger ("Attack_Slash");
 				StartCoroutine(slashCoroutine ());
-                soundCharge.start();
+               // soundCharge.start();
             }
 			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
 			{
@@ -228,9 +228,9 @@ public class Player: MonoBehaviour
 
 	IEnumerator slashCoroutine()
     {
-        soundAttaque.start();
-        soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        soundAttaque.start();
+      //  soundAttaque.start();
+     //  soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+       // soundAttaque.start();
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
@@ -243,7 +243,7 @@ public class Player: MonoBehaviour
 	}
 	IEnumerator repousseCoroutine()
 	{
-        soundRepousse.start();
+       // soundRepousse.start();
 		//float angleShoot = Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical")) * Mathf.Rad2Deg;
 		//GameObject projectileRepousse = (GameObject)Instantiate (attaqueRepousse, transform.position, Quaternion.Euler(0, 0, angleShoot));
 		//projectileRepousse.GetComponent<Rigidbody2D> ().AddForce (Vector3.up, ForceMode2D.Impulse);
@@ -265,7 +265,7 @@ public class Player: MonoBehaviour
 
 		GetComponent <health> ().invincible = true;
 		GetComponent <health> ().currentTime =GetComponent <health> ().invincibleTime - 1 ;
-        soundDash.start();
+       // soundDash.start();
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
 			body.AddForce (déplacement * 25f, ForceMode2D.Impulse);
