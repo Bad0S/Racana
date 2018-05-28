@@ -59,7 +59,7 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Enemy") 
 			{
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
-				StartCoroutine (Vibration (0.05f, 01f));
+				StartCoroutine (Vibration (0.05f, 0.9f));
 				player.GetComponent <Rythme>().combo += lifeToLose ;
 				player.GetComponent <Rythme>().timerCombo =0 ;
 				player.GetComponent <Rythme>().timerComboSpeed =0 ;
@@ -68,6 +68,8 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Boss") 
 			{
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
+				StartCoroutine (Vibration (0.05f, 01f));
+
 				player.GetComponent <Rythme>().combo += lifeToLose ;
 				player.GetComponent <Rythme>().timerCombo =0 ;
 				player.GetComponent <Rythme>().timerComboSpeed =0 ;
@@ -79,7 +81,7 @@ public class health : MonoBehaviour {
 		//fait drop un objet de soin
 		if (life <= 0f)
 		{
-			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot"|| gameObject.tag == "Boss")
+			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot")
 			{
 				//GameObject drop = (GameObject)Instantiate (healItem, transform.position, transform.rotation);
 				try
@@ -96,6 +98,20 @@ public class health : MonoBehaviour {
 				}
 				GamePad.SetVibration (0,0,0);
 				Destroy (gameObject);
+
+			}
+			if ( gameObject.tag == "Boss"){
+				if(gameObject.GetComponent <patternTir>().finalPhase ==1){
+					life = 1;
+				}
+				else{
+					Time.timeScale = 0.2f;
+					gameObject.GetComponent <patternTir>().finalPhase = 3;
+					StartCoroutine (BossDeath(1));
+				}
+
+				//Events stylés et Fx!
+
 
 			}
 			if (gameObject.tag == "Player") 
@@ -138,6 +154,12 @@ public class health : MonoBehaviour {
 			Hurt (other.GetComponentInParent<health>().damage);
 		}
 	}*/
+	IEnumerator BossDeath(float duree){
+		yield return new WaitForSeconds (duree);
+		Destroy (gameObject);
+
+	}
+
 	IEnumerator Vibration(float duree, float puissance){
 		GamePad.SetVibration (0,puissance,puissance);
 		yield return new WaitForSeconds(duree);

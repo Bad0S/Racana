@@ -8,8 +8,8 @@ public class laser : MonoBehaviour {
 	int damage =1;
 
 	void Start () {
-		Destroy (gameObject, GetComponentInParent <patternTir>().beatLength);
-
+		GetComponentInParent <patternTir> ().laserListe.Add (gameObject);
+		StartCoroutine (RemoveList ());
 	}
 	private void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Player") 
@@ -19,5 +19,11 @@ public class laser : MonoBehaviour {
 		}
 	}
 	// Update is called once per frame
+	IEnumerator RemoveList(){
+		yield return new WaitForSeconds ( GetComponentInParent <patternTir>().beatLength);
+		GetComponentInParent <patternTir> ().laserListe.Remove (gameObject);
 
+		Destroy (gameObject);
+
+	}
 }

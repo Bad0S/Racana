@@ -16,7 +16,7 @@ public class TigreBehavior : MonoBehaviour {
 
 	private Rigidbody2D rb2D;
 	private Vector3 targetVector;
-	private bool isFighting = false ;
+	public bool isFighting = false ;
 
 	//pathfinding Frankenstein
 	float timerRandAngle;
@@ -115,7 +115,7 @@ public class TigreBehavior : MonoBehaviour {
 			}
 		}*/
 
-
+		print (rythmeScript.timeBetweenBeatsInSeconds);
 		if (timerWaitRepousse>0.35f && aEteRepousse == true){
 			isFighting = false;
 			aEteRepousse = false;

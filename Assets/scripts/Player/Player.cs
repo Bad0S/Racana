@@ -83,13 +83,12 @@ public class Player: MonoBehaviour
 		//charge sur beat
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
-		print (beat);
-		if (chargeAttaque > beat && tauxCharge < 3) {
+		if (chargeAttaque > beat && tauxCharge < 4) {
 			tauxCharge++;
 			chargeAttaque = 0;
 		}
-		else if (chargeAttaque > beat && tauxCharge >= 3){
-			tauxCharge = 0;
+		else if (chargeAttaque > beat && tauxCharge >= 4){
+			tauxCharge = 1;
 			chargeAttaque = 0;
 		}
 		//Le dash en transcendance
@@ -161,24 +160,13 @@ public class Player: MonoBehaviour
 		}
 		if (canAttack == true )
 		{
-			if (Input.GetButtonDown ("Fire1") && isAttacking == false)
-            {
-			/*if (Input.GetButton ("Fire1")) 
-			{
-				chargeAttaque += Time.deltaTime;
-				print (beat);
-				if(chargeAttaque > beat && tauxCharge<3){
-					tauxCharge++;
-					chargeAttaque = 0;
-				}
-            }*/
+
 			if (Input.GetButtonDown ("Fire1") && isAttacking == false) 
 			{
 				anim.SetTrigger ("Attack_Slash");
 				StartCoroutine(slashCoroutine ());
                 soundCharge.start();
             }
-			}
 			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
 			{
 				StartCoroutine (repousseCoroutine ());
@@ -247,9 +235,11 @@ public class Player: MonoBehaviour
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
         canAttack = false;
-        yield return new WaitForSeconds (0.28f);
+		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds);
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
+		canAttack = true;
+
 	}
 	IEnumerator repousseCoroutine()
 	{
@@ -264,6 +254,8 @@ public class Player: MonoBehaviour
         yield return new WaitForSeconds (0.5f);
         //attaqueRepousse.SetActive (false);
         isAttacking = false;
+		canAttack = true;
+
 	}
 
 	IEnumerator dashCoroutine()

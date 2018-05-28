@@ -33,12 +33,12 @@ public class Rythme : MonoBehaviour
 
     void Start()
     {
-        soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
+      	soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
         soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
         soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
         
         bpm = bpmInitial;
-        FMOD.Studio.PLAYBACK_STATE fmodPbState;
+    	FMOD.Studio.PLAYBACK_STATE fmodPbState;
         soundNormal.getPlaybackState(out fmodPbState);
         if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {

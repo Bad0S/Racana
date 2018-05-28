@@ -81,8 +81,6 @@ GameObject:
   - component: {fileID: 114061833848478418}
   - component: {fileID: 114049315844223938}
   - component: {fileID: 114556869141637456}
-  - component: {fileID: 114063098727946758}
-  - component: {fileID: 114992367655081788}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -154,7 +152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.330692, y: -24.143972, z: -1}
+  m_LocalPosition: {x: 9.7, y: 84.8, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -336,7 +334,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017261267, y: -0.13037395}
+  m_Offset: {x: 0.003191948, y: -0.107364655}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -347,7 +345,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32971048, y: 0.8292484}
+  m_Size: {x: 0.3603897, y: 0.619606}
   m_EdgeRadius: 0
 --- !u!95 &95007285118369544
 Animator:
@@ -405,26 +403,6 @@ MonoBehaviour:
   timerCombo: 0
   timerComboSpeed: 0
   comboDecreaseSpeed: 1
---- !u!114 &114063098727946758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1804523527741744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - actorName: Ohm
-    line: "Bonjour bonjour!  Je suis l\xE0 pour vous pr\xE9senter les dialogues!"
-  - actorName: "L\xE9o"
-    line: "Ouais, faut bien s'en occuper \xE0 un moment , non?"
-  dialogueBox: {fileID: 0}
-  delayBetweenEachLetter: 0.01
-  skipKey: 323
-  inDialogue: 0
 --- !u!114 &114141408560518316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -524,17 +502,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   pvVide: {fileID: 21300000, guid: 003b3ee5018fd82408ccd61f89c339e1, type: 3}
---- !u!114 &114992367655081788
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1804523527741744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d54acfc84339544a0e34282a8201f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212124668634726418
 SpriteRenderer:
   m_ObjectHideFlags: 1
