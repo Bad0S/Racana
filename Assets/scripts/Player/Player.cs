@@ -81,6 +81,7 @@ public class Player: MonoBehaviour
 	void Update () 
 	{
 		//charge sur beat
+		//print (body.velocity);
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
 		if (chargeAttaque > beat && tauxCharge < 4) {
@@ -134,13 +135,14 @@ public class Player: MonoBehaviour
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
-				body.position += (déplacement*MovSpeed*speedMultiplicator);
+				body.velocity = (déplacement*MovSpeed*speedMultiplicator);
 				anim.SetBool ("IsIdle", false);
 				anim.SetBool ("IsMoving", true);
 				//float angle = (Mathf.Atan2(Input.GetAxisRaw("Horizontal"), (Input.GetAxisRaw("Vertical"))) * -Mathf.Rad2Deg);
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
 			} else 
 			{
+				body.velocity = Vector3.zero;
 				anim.SetBool ("IsIdle", true);
 				anim.SetBool ("IsMoving", false);
 			}

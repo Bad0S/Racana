@@ -1914,18 +1914,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1569406207449264, guid: 9a4724e37c2990645be2318cce408367, type: 2}
-      propertyPath: m_Name
-      value: Fauve (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569406207449264, guid: 9a4724e37c2990645be2318cce408367, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654800405480728, guid: 9a4724e37c2990645be2318cce408367, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114619198813701068, guid: 9a4724e37c2990645be2318cce408367,
         type: 2}
       propertyPath: target
@@ -1936,34 +1924,9 @@ Prefab:
       propertyPath: rythmeScript
       value: 
       objectReference: {fileID: 1765663171}
-    - target: {fileID: 114619198813701068, guid: 9a4724e37c2990645be2318cce408367,
-        type: 2}
-      propertyPath: maxDetectionRange
-      value: 375
-      objectReference: {fileID: 0}
-    - target: {fileID: 114619198813701068, guid: 9a4724e37c2990645be2318cce408367,
-        type: 2}
-      propertyPath: attackRangeMax
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114619198813701068, guid: 9a4724e37c2990645be2318cce408367,
-        type: 2}
-      propertyPath: speed
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715584422813862, guid: 9a4724e37c2990645be2318cce408367, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212042963162822186, guid: 9a4724e37c2990645be2318cce408367,
-        type: 2}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212042963162822186, guid: 9a4724e37c2990645be2318cce408367,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 1
+    - target: {fileID: 1569406207449264, guid: 9a4724e37c2990645be2318cce408367, type: 2}
+      propertyPath: m_Name
+      value: Fauve (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a4724e37c2990645be2318cce408367, type: 2}
