@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105373812463650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.37, y: 17.26, z: 1.0970763}
+  m_LocalPosition: {x: -315.9, y: 127.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,18 +77,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.030309677, y: 0.47568703}
+  m_Offset: {x: 0, y: 11.95}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.52, y: 2.16}
+    oldSize: {x: 63, y: 54}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8888664, y: 0.7690315}
+  m_Size: {x: 22.22166, y: 19.225788}
   m_EdgeRadius: 0
 --- !u!95 &95385866726901226
 Animator:
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7549b1347878b0941b082d63593cd17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  maxDetectionRange: 7.5
-  attackRangeMax: 5
+  speed: 75
+  maxDetectionRange: 187.5
+  attackRangeMax: 125
   target: {fileID: 0}
   isFighting: 0
   health: 0
@@ -129,10 +129,10 @@ MonoBehaviour:
   timerWaitRepousse: 0
   idleCanMove: 0
   idling: 0
-  grabberPercentage: 20
+  grabberPercentage: 0
   isGrabbing: 0
   speedBurst: 1.5
-  timeBursting: 1.5
+  timeBursting: 3
   grabbed: 0
   couleurDeBase: {r: 0, g: 0, b: 0, a: 0}
   opacityShader: 0.1
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 6
+  life: 8
   damage: 1
   invincible: 0
   invincibleTime: 0

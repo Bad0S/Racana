@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1725882550928660}
   m_IsPrefabParent: 1
+--- !u!1 &1122306875948822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4816242425166646}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1725882550928660
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,11 +49,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1725882550928660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -150, y: -35.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4816242425166646}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4816242425166646
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122306875948822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.354433, y: -6.079495, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4277576242188124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &60576496765827852
@@ -57,7 +86,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 0.68}
+    oldSize: {x: 32, y: 17}
     newSize: {x: 1.28, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -65,14 +94,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.43215322, y: -0.1831336}
-      - {x: -0.34117126, y: -0.2558136}
-      - {x: 0.32940197, y: -0.19724894}
-      - {x: 0.3733263, y: -0.13818216}
-      - {x: 0.35528755, y: -0.040406704}
-      - {x: 0.2206459, y: 0.021554947}
-      - {x: -0.28653145, y: 0.014234543}
-      - {x: -0.40287066, y: -0.08772755}
+    - - {x: -10.80383, y: -4.57834}
+      - {x: -8.529283, y: -6.39534}
+      - {x: 8.23505, y: -4.9312224}
+      - {x: 9.333158, y: -3.454555}
+      - {x: 8.88219, y: -1.0101675}
+      - {x: 5.5161476, y: 0.53887373}
+      - {x: -7.163285, y: 0.3558635}
+      - {x: -10.071768, y: -2.1931887}
 --- !u!212 &212181988924373376
 SpriteRenderer:
   m_ObjectHideFlags: 1

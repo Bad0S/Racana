@@ -73,7 +73,6 @@ public class Rythme : MonoBehaviour
 
         musicTime += Time.deltaTime;
         timeBetweenBeatsInSeconds = 60 / bpm;
-        print (isBeating); 
 		if (musicTime >= timeBetweenBeatsInSeconds * beats)
         {
 			beats += 1;
@@ -97,7 +96,7 @@ public class Rythme : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-			GetComponent<Player> ().MovSpeed = 0.1f + combo/600;
+			GetComponent<Player> ().MovSpeed = 4.5f + combo/600;
            // soundNormal.setVolume(0f);
           //  soundTranse.setVolume(combo/30);
           //  soundTranscendance.setVolume(0f);
@@ -106,7 +105,7 @@ public class Rythme : MonoBehaviour
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
-			GetComponent<Player> ().MovSpeed = 0.1f;
+			GetComponent<Player> ().MovSpeed = 04.5f;
 			GetComponent<Player> ().transcendance = true;
          //   soundNormal.setVolume(0f);
 			//soundTranse.setVolume (0f);

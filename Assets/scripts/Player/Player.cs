@@ -268,7 +268,9 @@ public class Player: MonoBehaviour
        // soundDash.start();
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
-			body.AddForce (déplacement * 25f, ForceMode2D.Impulse);
+			body.AddForce (déplacement * DashSpeed, ForceMode2D.Impulse);
+			print (déplacement);
+
 		}
 		else
 		{

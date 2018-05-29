@@ -140,8 +140,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890790748244800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.9, y: -9.6, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: -275, y: -240, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 4
@@ -153,8 +153,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385214278821552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11, y: -10.29, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: 275, y: -257.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 5
@@ -166,8 +166,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052260354293858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.24, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: 36, y: -4.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 1
@@ -179,8 +179,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1856475378063890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7486596, y: -12.6, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: -70, y: -315, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 2
@@ -192,8 +192,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1899128042785900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: -0.98, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: -36, y: -4.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 0
@@ -205,8 +205,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721886381390958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.34, y: -12.6, z: 0}
-  m_LocalScale: {x: 0.19477054, y: 0.19477054, z: 0.19477054}
+  m_LocalPosition: {x: 70, y: -315, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.19477054}
   m_Children: []
   m_Father: {fileID: 4831151667826982}
   m_RootOrder: 3
@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006081655161628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: 11.43, z: 0}
+  m_LocalPosition: {x: -1445.6405, y: -46.81938, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4661402719425798}
@@ -245,8 +245,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.16, y: 7.96}
+    pivot: {x: 0.47840455, y: 0.41064495}
+    oldSize: {x: 179, y: 199}
     newSize: {x: 1.79, y: 1.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -282,10 +282,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee585920380b4344bb78ccd8f18066e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -295,6 +300,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!114 &114556337781206388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,10 +312,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee585920380b4344bb78ccd8f18066e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -319,6 +330,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!114 &114584271973545540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,6 +343,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  laserListe: []
+  phase: 1
   beatLength: 1
   externesBas:
   - {fileID: 1856475378063890}
@@ -339,6 +353,8 @@ MonoBehaviour:
   - {fileID: 1890790748244800}
   - {fileID: 1385214278821552}
   firstPattern2: 0
+  firstPattern3: 0
+  finalPhase: 1
 --- !u!114 &114593244079758260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -350,10 +366,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a5a46a4e3d908448e2daf6752bca34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -363,6 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!114 &114699339018487828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,10 +396,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee585920380b4344bb78ccd8f18066e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -387,6 +414,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!114 &114729905854326702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,10 +446,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee585920380b4344bb78ccd8f18066e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -431,6 +464,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!114 &114876004791760966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -442,10 +476,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da4852b65bee494eaf315df5f98b12f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerCasting: 0
+  canShoot: 0
+  isAiming: 1
+  casting: 0
   timeCast: 1
   player: {fileID: 0}
   casterFrom: 0.75
   casterTo: 1.25
+  decasting: 0
   speedGrowth: 1
   laser: {fileID: 1634442118792188, guid: 66b2ce15b23951b4e8e22edfbc9fdf2b, type: 2}
   angleShoot: 0
@@ -455,6 +494,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   shoot: 0
+  deathPhase: 0
 --- !u!212 &212041774394282244
 SpriteRenderer:
   m_ObjectHideFlags: 1

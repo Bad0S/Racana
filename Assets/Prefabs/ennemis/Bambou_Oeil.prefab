@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4720401760733916
 Transform:
   m_ObjectHideFlags: 1
@@ -58,14 +58,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.48, y: 0.48}
+    oldSize: {x: 12, y: 12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08913648, y: 0.0795393}
+  m_Size: {x: 4.456824, y: 3.976964}
   m_EdgeRadius: 0
 --- !u!114 &114612466691908218
 MonoBehaviour:
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6ea685fa6fad442b789a91c0e371ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSpeed: 12
+  shootSpeed: 300
   damage: 1
 --- !u!212 &212834182112688336
 SpriteRenderer:

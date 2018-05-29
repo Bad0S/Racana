@@ -35,7 +35,7 @@ public class OisoBehaviour : MonoBehaviour {
 	{
 		idleCanMove = false;
 		idling = true;
-		rb2D.velocity = (new Vector2 (Random.Range(-0.3f,0.3f),Random.Range(-0.3f,0.3f)));
+		rb2D.velocity = (new Vector2 (Random.Range(-0.3f*25f,0.3f*25f),Random.Range(-0.3f*25f,0.3f*25f)));
 		anim.SetBool ("IsMoving", true);
 		yield return new WaitForSeconds(secMove);
 		rb2D.velocity = (new Vector2 (0,0));

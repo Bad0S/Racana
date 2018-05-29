@@ -115,7 +115,7 @@ public class TigreBehavior : MonoBehaviour {
 			}
 		}*/
 
-		print (rythmeScript.timeBetweenBeatsInSeconds);
+		//print (beatAllowAttack);
 		if (timerWaitRepousse>0.35f && aEteRepousse == true){
 			isFighting = false;
 			aEteRepousse = false;
@@ -169,7 +169,7 @@ public class TigreBehavior : MonoBehaviour {
 
 			anim.SetBool ("IsIdle", true);
 		}
-		if(timerFlip >0.5f&&rb2D.velocity.x != pastFlip ){
+		if(timerFlip >0.5f&& rb2D.velocity.x *pastFlip  <=0){
 			if (rb2D.velocity.x > 0f ) {
 				transform.rotation = Quaternion.Euler(0,180,0);		
 
