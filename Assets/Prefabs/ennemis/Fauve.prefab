@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569406207449264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.25, y: -11.67, z: 0}
+  m_LocalPosition: {x: 13.711345, y: -36.23967, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4233132571657142}
@@ -225,7 +225,6 @@ MonoBehaviour:
   maxDetectionRange: 15
   attackRangeMax: 8
   target: {fileID: 0}
-  isFighting: 0
   dashMultiplicator: 1
   bite: {fileID: 1654800405480728}
   vitesseBond: 10
@@ -234,7 +233,8 @@ MonoBehaviour:
   opacityShader: 0
   aEteRepousse: 0
   beatAllowAttack: 0
-  rythmeScript: {fileID: 0}
+  rythmeScript: {fileID: 114003182990049282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
   rythmeRangeMax: 0
 --- !u!114 &114775350652938218
 MonoBehaviour:
