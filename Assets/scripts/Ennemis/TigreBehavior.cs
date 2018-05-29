@@ -100,7 +100,7 @@ public class TigreBehavior : MonoBehaviour {
 		timerDegats += Time.deltaTime;
 		timerChase += Time.deltaTime;
 		beatAllowAttack = rythmeScript.isBeating;
-		print (rb2D.velocity);
+		//print (rb2D.velocity);
 		/*if (beatAllowAttack == true){
 			if(counterRythme <= rythmeRangeMax){
 
@@ -126,7 +126,7 @@ public class TigreBehavior : MonoBehaviour {
 			moveVector = targetVector;
 			timerRandAngle = 0;
 		}
-		if (targetVector.magnitude < attackRangeMax  && isFighting == false&&beatAllowAttack == true) {
+		if (targetVector.magnitude < attackRangeMax  && isFighting == false &&beatAllowAttack == true) {
 
 			if(aEteRepousse == false){
 				if (targetVector.magnitude<11.5f&& timerChase>rythmeScript.timeBetweenBeatsInSeconds*4){
@@ -169,7 +169,7 @@ public class TigreBehavior : MonoBehaviour {
 
 			anim.SetBool ("IsIdle", true);
 		}
-		if(timerFlip >0.3f&&rb2D.velocity.x != pastFlip ){
+		if(timerFlip >0.5f&&rb2D.velocity.x != pastFlip ){
 			if (rb2D.velocity.x > 0f ) {
 				transform.rotation = Quaternion.Euler(0,180,0);		
 

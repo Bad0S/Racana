@@ -635,4 +635,182 @@ public class patternTir : MonoBehaviour {
 
 		inPattern = false;
 	}
+	IEnumerator Pattern0Etat4(float dureeBeat){
+		inPattern = true;
+
+		yield return new WaitForSeconds (3 * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas1 ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();
+		TirExterneGauche();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();
+		TirExterneGauche ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+		TirExterneDroit ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas1();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas1() ;
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (1.5f * dureeBeat);
+		TirGauche ();
+		TirExterneGauche ();
+		TirBas1 ();
+		TirBas2 ();
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas1 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas1 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();
+		TirExterneDroit ();
+		TirExterneGauche ();
+		TirBas1 ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirBas1 ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirDroit ();
+		TirGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirBas1 ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirExterneDroit ();
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (0.5f * dureeBeat);
+		TirDroit ();
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas1 ();
+		TirBas2 ();
+		TirExterneDroit ();
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirBas1 ();
+		TirBas2 ();
+		TirExterneDroit ();
+		TirExterneGauche ();
+		TirDroit ();
+		TirGauche ();
+		inPattern = false;
+
+		firstPattern3 = true;
+
+	}
 }

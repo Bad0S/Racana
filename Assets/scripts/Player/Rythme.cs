@@ -73,7 +73,7 @@ public class Rythme : MonoBehaviour
 
         musicTime += Time.deltaTime;
         timeBetweenBeatsInSeconds = 60 / bpm;
-        //print (isBeating); 
+        print (isBeating); 
 		if (musicTime >= timeBetweenBeatsInSeconds * beats)
         {
 			beats += 1;
