@@ -30,7 +30,7 @@ public class Player: MonoBehaviour
 	//Move
 	private Vector2 déplacement;
 	public bool canMove = true;
-	public float MovSpeed = 0.13f;
+	public float MovSpeed = 0.18f;
 
 	//Physics
 	private Rigidbody2D body;
