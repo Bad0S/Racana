@@ -1323,7 +1323,7 @@ Prefab:
     - target: {fileID: 20079801336551240, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
         type: 2}
       propertyPath: orthographic size
-      value: 5.5
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 114816446050764968, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
         type: 2}
@@ -2214,6 +2214,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1008.2673
@@ -2250,7 +2255,7 @@ Prefab:
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[0]
       value: 
-      objectReference: {fileID: 169865055}
+      objectReference: {fileID: 1504396369}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[1]
@@ -2266,6 +2271,11 @@ Prefab:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 1431673084}
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.data[3]
+      value: 
+      objectReference: {fileID: 1851141869}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
