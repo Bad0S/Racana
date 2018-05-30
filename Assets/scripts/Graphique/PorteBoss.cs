@@ -29,8 +29,8 @@ public class PorteBoss : MonoBehaviour {
 		{
 			activation = true;
 
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2f, 0.01f,0.05f);
-			StartCoroutine (Vibration (2f, 0.5f));
+			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2.5f, 0.003f,0.05f);
+			StartCoroutine (Vibration (2.5f, 0.5f));
 			StartCoroutine(EmitParticle(2f));
 		}
 	}
@@ -72,9 +72,10 @@ public class PorteBoss : MonoBehaviour {
 				}
 				disable = true;
 			}
+			print (descending);
 
 			descending += Time.deltaTime/(1/speed);
-			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-3, descending),0);
+			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-100, descending),0);
 		}
 		else if(transform.position.y == originalPos-3){
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;

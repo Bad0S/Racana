@@ -140,9 +140,11 @@ public class Player: MonoBehaviour
 				anim.SetBool ("IsMoving", true);
 				//float angle = (Mathf.Atan2(Input.GetAxisRaw("Horizontal"), (Input.GetAxisRaw("Vertical"))) * -Mathf.Rad2Deg);
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
-			} else 
-			{
+			} else if (isDashing == false){
 				body.velocity = Vector3.zero;
+
+			}else
+			{
 				anim.SetBool ("IsIdle", true);
 				anim.SetBool ("IsMoving", false);
 			}
