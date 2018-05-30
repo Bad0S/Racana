@@ -143,8 +143,15 @@ public class patternTir : MonoBehaviour {
 			}
 		} else if (phase == 4) {
 			if(finalPhase ==2){
+				StartCoroutine (Pattern0Etat4 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
 				timerDeath += Time.deltaTime/4;
+
+
+			}
+			else if(finalPhase == 3){
 				beatLength = 120;
+				GetComponent <PolygonCollider2D>().enabled = true;
+
 				externesBas [0].SetActive (true);
 				externesBas [1].SetActive (true);
 				externesCotes [0].SetActive (true);
@@ -174,8 +181,10 @@ public class patternTir : MonoBehaviour {
 				externesCotes[0]. GetComponent <CasterExterne> ().canShoot = true;
 				externesCotes[1]. GetComponent <CasterExterne> ().canShoot = true;
 
-			}
-			else if(finalPhase == 3){
+				GetComponent <SpriteRenderer>().color = new Color(0f, 0,0);
+
+			}	
+			else if(finalPhase == 4){
 				laserListe.Clear ();
 				//Events stylés et Fx!
 			}
@@ -261,8 +270,8 @@ public class patternTir : MonoBehaviour {
 		TirGauche ();
 		GetComponentInChildren <CasterDroit> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
 		GetComponentInChildren <CasterGauche> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.25f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.25f;
+		GetComponentInChildren <CasterDroit> ().casterTo = 5.5f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 5.5f;
 		yield return new WaitForSeconds(1*dureeBeat);
 		TirDroit ();
 		TirGauche ();
@@ -281,8 +290,8 @@ public class patternTir : MonoBehaviour {
 		yield return new WaitForSeconds(1*dureeBeat);
 		TirDroit ();
 		TirGauche ();
-		GetComponentInChildren <CasterDroit> ().casterTo = 0.75f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 0.75f;
+		GetComponentInChildren <CasterDroit> ().casterTo = 05f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 05f;
 		inPattern = false;
 	}
 	IEnumerator Pattern2Etat2(float dureeBeat){
@@ -296,19 +305,19 @@ public class patternTir : MonoBehaviour {
 		TirGauche ();
 		TirBas2 ();
 		yield return new WaitForSeconds(3*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.4f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.4f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.4f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.4f;
+		GetComponentInChildren <CasterDroit> ().casterTo = 6f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 6f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 6f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 6f;
 		TirDroit ();
 		TirGauche ();
 		TirBas1 ();
 		TirBas2 ();
 		yield return new WaitForSeconds(2*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.25f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.25f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.25f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.25f;
+		GetComponentInChildren <CasterDroit> ().casterTo =5f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 5f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 5f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 5f;
 
 
 		inPattern = false;
@@ -324,19 +333,19 @@ public class patternTir : MonoBehaviour {
 		TirDroit ();
 		TirBas1 ();
 		yield return new WaitForSeconds(3*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.4f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.4f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.4f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.4f;
+		GetComponentInChildren <CasterDroit> ().casterTo = 6f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 6f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 6f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 6f;
 		TirDroit ();
 		TirGauche ();
 		TirBas1 ();
 		TirBas2 ();
 		yield return new WaitForSeconds(2*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.25f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.25f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.25f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.25f;
+		GetComponentInChildren <CasterDroit> ().casterTo = 5f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 5f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 5f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 5f;
 
 
 		inPattern = false;
@@ -348,6 +357,7 @@ public class patternTir : MonoBehaviour {
 		TirDroit ();
 
 		yield return new WaitForSeconds(1*dureeBeat);
+
 		TirGauche ();
 
 		yield return new WaitForSeconds(1*dureeBeat);
@@ -416,9 +426,167 @@ public class patternTir : MonoBehaviour {
 
 		inPattern = false;
 	}
+
 	IEnumerator Pattern0Etat3(float dureeBeat){
 		inPattern = true;
 
+		yield return new WaitForSeconds (3 * dureeBeat);
+		TirDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas2 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas1 ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirDroit ();
+		TirGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneDroit ();
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirBas1 ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirGauche ();
+		TirExterneDroit ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();		
+		TirExterneGauche ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneDroit ();
+		TirBas1 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirExterneGauche ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirGauche ();
+		TirExterneDroit ();
+		TirBas1 ();
+
+		yield return new WaitForSeconds (1 * dureeBeat);
+		TirDroit ();
+		TirExterneGauche ();
+		TirBas2 ();
+
+		yield return new WaitForSeconds (2 * dureeBeat);
+		TirGauche ();
+		TirExterneDroit ();
+		TirBas1 ();
+		TirDroit ();
+		TirExterneGauche ();
+		TirBas2 ();
+
+		firstPattern3 = true;
+
+	}
+
+
+	IEnumerator Pattern1Etat3(float dureeBeat){
+		inPattern = true;
+
+		yield return new WaitForSeconds(3*dureeBeat);
+		GetComponentInChildren <CasterDroit> ().casterTo = 6f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 6f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 6f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 6f;
+		externesCotes[0].GetComponent <CasterExterne> ().casterTo = 6f;
+		externesCotes[1].GetComponent <CasterExterne> ().casterTo = 6f;
+
+		TirDroit ();
+		TirGauche ();
+		TirBas1 ();
+		TirBas2 ();
+		TirExterneDroit ();
+		TirExterneGauche ();
+		yield return new WaitForSeconds(1*dureeBeat);
+		GetComponentInChildren <CasterDroit> ().casterTo = 5f;
+		GetComponentInChildren <CasterGauche> ().casterTo = 5f;
+		externesBas[0].GetComponent <CasterExterne> ().casterTo = 5f;
+		externesBas[1].GetComponent <CasterExterne> ().casterTo = 5f;
+		externesCotes[0].GetComponent <CasterExterne> ().casterTo = 5f;
+		externesCotes[1].GetComponent <CasterExterne> ().casterTo = 5f;
+	
+		inPattern = false;
+	}
+	IEnumerator Pattern2Etat3(float dureeBeat){
+		inPattern = true;
+
+		yield return new WaitForSeconds(2*dureeBeat);
+		TirGauche ();
+		TirBas1 ();
+		TirExterneDroit ();
+		yield return new WaitForSeconds(2*dureeBeat);
+		TirDroit ();
+		TirBas2 ();
+		TirExterneGauche ();
+		yield return new WaitForSeconds(2*dureeBeat);
+		TirGauche ();
+		TirBas1 ();
+		TirExterneDroit ();
+		yield return new WaitForSeconds(2*dureeBeat);
+		TirDroit ();
+		TirBas2 ();
+		TirExterneGauche ();
+
+
+		inPattern = false;
+	}
+	IEnumerator Pattern3Etat3(float dureeBeat){
+		inPattern = true;
+
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirGauche ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirExterneGauche ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirBas1 ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirBas2 ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirExterneDroit ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirDroit ();	
+
+		inPattern = false;
+	}
+	IEnumerator Pattern4Etat3(float dureeBeat){
+		inPattern = true;
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirDroit ();	
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirExterneDroit ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirBas2 ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirBas1 ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirExterneGauche ();
+		yield return new WaitForSeconds(0.5f*dureeBeat);
+		TirGauche ();
+		inPattern = false;
+	}
+	IEnumerator Pattern0Etat4(float dureeBeat){
+		inPattern = true;
+		GetComponent <PolygonCollider2D>().enabled = false;
+		GetComponent <SpriteRenderer>().color = new Color(0.3f, 0,0);
 		yield return new WaitForSeconds (3 * dureeBeat);
 		TirDroit ();
 
@@ -511,96 +679,12 @@ public class patternTir : MonoBehaviour {
 		TirExterneGauche ();
 		TirDroit ();
 		TirGauche ();
+		yield return new WaitForSeconds (2 * dureeBeat);
+		finalPhase++;
 		inPattern = false;
 
-		firstPattern3 = true;
 
 	}
-	IEnumerator Pattern1Etat3(float dureeBeat){
-		inPattern = true;
-
-		yield return new WaitForSeconds(3*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.4f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.4f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.4f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.4f;
-		externesCotes[0].GetComponent <CasterExterne> ().casterTo = 1.4f;
-		externesCotes[1].GetComponent <CasterExterne> ().casterTo = 1.4f;
-
-		TirDroit ();
-		TirGauche ();
-		TirBas1 ();
-		TirBas2 ();
-		TirExterneDroit ();
-		TirExterneGauche ();
-		yield return new WaitForSeconds(1*dureeBeat);
-		GetComponentInChildren <CasterDroit> ().casterTo = 1.25f;
-		GetComponentInChildren <CasterGauche> ().casterTo = 1.25f;
-		externesBas[0].GetComponent <CasterExterne> ().casterTo = 1.25f;
-		externesBas[1].GetComponent <CasterExterne> ().casterTo = 1.25f;
-		externesCotes[0].GetComponent <CasterExterne> ().casterTo = 1.25f;
-		externesCotes[1].GetComponent <CasterExterne> ().casterTo = 1.25f;
-	
-		inPattern = false;
-	}
-	IEnumerator Pattern2Etat3(float dureeBeat){
-		inPattern = true;
-
-		yield return new WaitForSeconds(2*dureeBeat);
-		TirGauche ();
-		TirBas1 ();
-		TirExterneDroit ();
-		yield return new WaitForSeconds(2*dureeBeat);
-		TirDroit ();
-		TirBas2 ();
-		TirExterneGauche ();
-		yield return new WaitForSeconds(2*dureeBeat);
-		TirGauche ();
-		TirBas1 ();
-		TirExterneDroit ();
-		yield return new WaitForSeconds(2*dureeBeat);
-		TirDroit ();
-		TirBas2 ();
-		TirExterneGauche ();
-
-
-		inPattern = false;
-	}
-	IEnumerator Pattern3Etat3(float dureeBeat){
-		inPattern = true;
-
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirGauche ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirExterneGauche ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirBas1 ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirBas2 ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirExterneDroit ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirDroit ();	
-
-		inPattern = false;
-	}
-	IEnumerator Pattern4Etat3(float dureeBeat){
-		inPattern = true;
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirDroit ();	
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirExterneDroit ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirBas2 ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirBas1 ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirExterneGauche ();
-		yield return new WaitForSeconds(0.5f*dureeBeat);
-		TirGauche ();
-		inPattern = false;
-	}
-
 	IEnumerator Pattern1Etat4(float dureeBeat){
 		beatLength = 120;
 		inPattern = true;
@@ -635,7 +719,7 @@ public class patternTir : MonoBehaviour {
 
 		inPattern = false;
 	}
-	IEnumerator Pattern0Etat4(float dureeBeat){
+	IEnumerator Pattern0Etat4HARD(float dureeBeat){
 		inPattern = true;
 
 		yield return new WaitForSeconds (3 * dureeBeat);
@@ -813,4 +897,6 @@ public class patternTir : MonoBehaviour {
 		firstPattern3 = true;
 
 	}
+
+
 }

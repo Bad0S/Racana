@@ -47,7 +47,7 @@ public class CasterExterne : MonoBehaviour {
 			timerCasting -= Time.deltaTime;
 		}
 
-		transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast+frame)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast+frame)), 0);
+		transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), 0);
 
 
 		if(timerCasting>=timeCast  - player.GetComponent <Rythme>().timeBetweenBeatsInSeconds && decasting == false ){
@@ -66,7 +66,7 @@ public class CasterExterne : MonoBehaviour {
 				angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength,00.1f,1);
+				laserInstance.transform.localScale = new Vector3 (laserLength/4,00.8f,1);
 				laserInstance.transform.parent = gameObject.transform.parent;
 				laserInstance.GetComponent <BoxCollider2D>().enabled = false;
 				isAiming= 3;
@@ -99,7 +99,7 @@ public class CasterExterne : MonoBehaviour {
 				angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 
 				GameObject laserInstanceMini = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstanceMini.transform.localScale = new Vector3 (laserLength,00.1f,1);
+				laserInstanceMini.transform.localScale = new Vector3 (laserLength/4,00.8f,1);
 				laserInstanceMini.transform.parent = gameObject.transform.parent;
 				laserInstanceMini.GetComponent <BoxCollider2D>().enabled = false;
 				isAiming= 3;
@@ -109,7 +109,7 @@ public class CasterExterne : MonoBehaviour {
 
 				print ("yes");
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength,00.5f,1);
+				laserInstance.transform.localScale = new Vector3 (laserLength/4,004f,1);
 				laserInstance.transform.parent = gameObject.transform.parent;
 				isAiming = 1;
 			}

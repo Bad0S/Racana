@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114775350652938218}
   - component: {fileID: 50628451761736588}
   - component: {fileID: 95789367127731110}
-  - component: {fileID: 60328139432623236}
+  - component: {fileID: 60123245772279944}
   m_Layer: 11
   m_Name: Fauve
   m_TagString: Enemy
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654800405480728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.62, y: 0.25, z: -1.590867}
+  m_LocalPosition: {x: -75.7, y: 14.9, z: -1.590867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4715584422813862}
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569406207449264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.25, y: -11.67, z: 0}
+  m_LocalPosition: {x: -326.4, y: 155.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4233132571657142}
@@ -98,7 +98,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &60328139432623236
+--- !u!60 &60123245772279944
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,7 +114,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.08, y: 4.4}
+    oldSize: {x: 177, y: 110}
     newSize: {x: 7.08, y: 4.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -122,18 +122,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5177345, y: -0.8488388}
-      - {x: -0.29753113, y: -0.8788986}
-      - {x: -1.0459557, y: -0.8276634}
-      - {x: -1.482687, y: -0.7591362}
-      - {x: -1.6902847, y: -0.66679}
-      - {x: -1.9254684, y: -0.47573853}
-      - {x: -1.6908083, y: 0.24978638}
-      - {x: -1.2569351, y: 0.64501953}
-      - {x: -0.42447853, y: 0.66080475}
-      - {x: 0.12826633, y: 0.5490341}
-      - {x: 0.9119091, y: 0.30719376}
-      - {x: 0.9879055, y: -0.68507004}
+    - - {x: 23.507717, y: 1.5344486}
+      - {x: 6.5103984, y: 11.133739}
+      - {x: -15.042565, y: 19.191597}
+      - {x: -43.592785, y: 7.3560505}
+      - {x: -47.817883, y: -13.93552}
+      - {x: -24.738342, y: -17.610394}
+      - {x: -1.7586746, y: -19.235188}
+      - {x: 15.680231, y: -17.609348}
+      - {x: 26.075039, y: -17.609348}
 --- !u!60 &60984558703832940
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -150,7 +147,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.4, y: 2.92}
+    oldSize: {x: 85, y: 73}
     newSize: {x: 3.4, y: 2.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -158,11 +155,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8284807, y: 1.1791306}
-      - {x: -1.6004057, y: 1.5629349}
-      - {x: -1.3714828, y: -0.7418442}
-      - {x: -0.26308632, y: -0.5179329}
-      - {x: -0.10133743, y: 0.17467117}
+    - - {x: 0.6375986, y: 29.796347}
+      - {x: -5.765455, y: 30.641775}
+      - {x: -11.752828, y: 28.242975}
+      - {x: -17.207647, y: 13.50725}
+      - {x: -8.85658, y: -20.012005}
+      - {x: 6.744242, y: -19.15107}
+      - {x: 22.086058, y: -4.8290296}
+      - {x: 19.965109, y: 5.7486854}
 --- !u!95 &95251654832433044
 Animator:
   serializedVersion: 3
@@ -220,10 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebe5ce50746224468f8f8ba74410535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 300
   attackRoar: {fileID: 1858586831451386, guid: f3d5b3104bfbb624e8cacb1f065de383, type: 2}
-  maxDetectionRange: 15
-  attackRangeMax: 8
+  maxDetectionRange: 375
+  attackRangeMax: 200
   target: {fileID: 0}
   isFighting: 0
   dashMultiplicator: 1
@@ -292,7 +292,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03a089047934a8d41b9a77a76a0bb90d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 7.08, y: 4.4}

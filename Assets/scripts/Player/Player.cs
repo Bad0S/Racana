@@ -30,7 +30,7 @@ public class Player: MonoBehaviour
 	//Move
 	private Vector2 déplacement;
 	public bool canMove = true;
-	public float MovSpeed = 0.18f;
+	public float MovSpeed = 0.13f;
 
 	//Physics
 	private Rigidbody2D body;
@@ -56,6 +56,10 @@ public class Player: MonoBehaviour
 	public float DashSpeed = 4;
 	public Transform dashTarget;
 
+	//Repousse
+	public GameObject repousse;
+
+
 	//Rythm
 	public bool transcendance = false;
 
@@ -66,7 +70,7 @@ public class Player: MonoBehaviour
 	{
 		body = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
-		animAttaques = GetComponentInChildren<Animator> ();
+		//animAttaques = GetComponentInChildren<Animator> ();
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
@@ -81,6 +85,7 @@ public class Player: MonoBehaviour
 	void Update () 
 	{
 		//charge sur beat
+		//print (body.velocity);
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
 		if (chargeAttaque > beat && tauxCharge < 4) {
@@ -95,6 +100,7 @@ public class Player: MonoBehaviour
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
 		dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
 		Attack ();
+
 		//	Debug.Log (body.velocity.sqrMagnitude);
 		if (body.velocity.sqrMagnitude > 2f) 
 		{
@@ -134,13 +140,19 @@ public class Player: MonoBehaviour
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
-				body.position += (déplacement*MovSpeed*speedMultiplicator);
+				body.velocity = (déplacement*MovSpeed*speedMultiplicator);
 				anim.SetBool ("IsIdle", false);
 				anim.SetBool ("IsMoving", true);
 				//float angle = (Mathf.Atan2(Input.GetAxisRaw("Horizontal"), (Input.GetAxisRaw("Vertical"))) * -Mathf.Rad2Deg);
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
 			} else 
 			{
+				if (isDashing == false){
+					body.velocity = Vector3.zero;
+					print((Input.GetAxisRaw ("Horizontal") ) );
+
+
+				}
 				anim.SetBool ("IsIdle", true);
 				anim.SetBool ("IsMoving", false);
 			}
@@ -163,13 +175,22 @@ public class Player: MonoBehaviour
 
 			if (Input.GetButtonDown ("Fire1") && isAttacking == false) 
 			{
-				anim.SetTrigger ("Attack_Slash");
+
+
 				StartCoroutine(slashCoroutine ());
+
+
                // soundCharge.start();
             }
+
 			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
 			{
+
+
 				StartCoroutine (repousseCoroutine ());
+				anim.SetTrigger ("Attack_Repousse");
+
+
 			}
 
 			if (transcendance == true) 
@@ -231,6 +252,10 @@ public class Player: MonoBehaviour
       //  soundAttaque.start();
      //  soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
        // soundAttaque.start();
+		anim.SetBool("IsAttacking", true);
+
+		anim.SetTrigger ("Attack_Slash");
+
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
@@ -239,14 +264,24 @@ public class Player: MonoBehaviour
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
 		canAttack = true;
+		anim.SetBool("IsAttacking", false);
 
+		//anim.ResetTrigger("Attack_Slash");
 	}
 	IEnumerator repousseCoroutine()
 	{
-       // soundRepousse.start();
-		//float angleShoot = Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical")) * Mathf.Rad2Deg;
-		//GameObject projectileRepousse = (GameObject)Instantiate (attaqueRepousse, transform.position, Quaternion.Euler(0, 0, angleShoot));
-		//projectileRepousse.GetComponent<Rigidbody2D> ().AddForce (Vector3.up, ForceMode2D.Impulse);
+
+		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
+		repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
+		repousseInstance.transform.SetParent (transform);
+		repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
+		repousseInstance.transform.SetParent (null);
+
+		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+		repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
+
+		repousseInstance.GetComponent <Rigidbody2D>().freezeRotation = true;
+
 
 		//attaqueRepousse.SetActive (true);
 		isAttacking = true;
@@ -255,6 +290,7 @@ public class Player: MonoBehaviour
         //attaqueRepousse.SetActive (false);
         isAttacking = false;
 		canAttack = true;
+		//anim.ResetTrigger ("Attack_Repousse");
 
 	}
 
@@ -268,7 +304,9 @@ public class Player: MonoBehaviour
        // soundDash.start();
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
-			body.AddForce (déplacement * 25f, ForceMode2D.Impulse);
+			body.AddForce (déplacement * DashSpeed, ForceMode2D.Impulse);
+			print (déplacement);
+
 		}
 		else
 		{

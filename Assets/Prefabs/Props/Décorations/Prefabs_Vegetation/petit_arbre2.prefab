@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4349163615932758}
   - component: {fileID: 212544631894390068}
-  - component: {fileID: 60680653523991582}
+  - component: {fileID: 60458814980082994}
   m_Layer: 0
   m_Name: petit_arbre2
   m_TagString: Untagged
@@ -49,14 +49,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408212947054828}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -64.59, y: 18.92, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -3203.1, y: -275.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4818634055000188}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4818634055000188
 Transform:
   m_ObjectHideFlags: 1
@@ -64,13 +64,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1671265750139088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.858, y: -0.904, z: 0}
+  m_LocalPosition: {x: 21.45, y: -22.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4349163615932758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60680653523991582
+--- !u!60 &60458814980082994
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,7 +86,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.36, y: 3.64}
+    oldSize: {x: 109, y: 91}
     newSize: {x: 4.36, y: 3.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -94,56 +94,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.8214493, y: -1.019556}
-      - {x: 1.8203964, y: -0.90338707}
-      - {x: 1.9792404, y: -0.90169716}
-      - {x: 1.9807281, y: -0.93855095}
-      - {x: 2.0608902, y: -0.93847084}
-      - {x: 2.060135, y: -0.9820137}
-      - {x: 2.1044998, y: -0.9794998}
-      - {x: 2.1030502, y: -0.8999996}
-      - {x: 2.022705, y: -0.90093803}
-      - {x: 2.0229645, y: -0.82139206}
-      - {x: 1.7412643, y: -0.81965256}
-      - {x: 1.7403259, y: -0.94008636}
-      - {x: 1.7011566, y: -0.940464}
-      - {x: 1.7004852, y: -0.900259}
-      - {x: 1.6202698, y: -0.9005432}
-      - {x: 1.6200867, y: -0.8597336}
-      - {x: 1.5800934, y: -0.85996056}
-      - {x: 1.5794144, y: -0.81840515}
-      - {x: 1.5399475, y: -0.81879807}
-      - {x: 1.5388718, y: -0.78018}
-      - {x: 1.4203262, y: -0.7794857}
-      - {x: 1.4194565, y: -0.7390976}
-      - {x: 1.3802414, y: -0.7392845}
-      - {x: 1.379425, y: -0.6198044}
-      - {x: 1.3408127, y: -0.6183071}
-      - {x: 1.3393555, y: -0.5799694}
-      - {x: 1.3009262, y: -0.5796299}
-      - {x: 1.3010178, y: -0.61940765}
-      - {x: 1.2205048, y: -0.62007904}
-      - {x: 1.2208557, y: -0.65945435}
-      - {x: 1.139801, y: -0.6580639}
-      - {x: 1.139061, y: -0.6993675}
-      - {x: 0.6897049, y: -0.75777626}
-      - {x: 0.7816391, y: -0.8992977}
-      - {x: 1.0891571, y: -0.89980316}
-      - {x: 1.3229752, y: -1.1975441}
-      - {x: 1.0998688, y: -1.2282677}
-      - {x: 1.1386795, y: -1.5791035}
-      - {x: 1.2182007, y: -1.5792904}
-      - {x: 1.2168045, y: -1.815731}
-      - {x: 1.267456, y: -1.8199997}
-      - {x: 1.2589264, y: -1.546938}
-      - {x: 1.2322006, y: -1.3072319}
-      - {x: 1.387413, y: -1.3026733}
-      - {x: 1.4587402, y: -1.1814518}
-      - {x: 1.4631271, y: -1.0636215}
-      - {x: 1.7019043, y: -1.0596542}
-    - - {x: 1.1753769, y: -0.8830128}
-      - {x: 1.1833267, y: -1.0423832}
-      - {x: 1.2916031, y: -0.98332787}
+    - - {x: 28.096191, y: -23.276001}
+      - {x: 32.11255, y: -30.162018}
+      - {x: 43.526855, y: -24.214539}
+      - {x: 33.868896, y: -15.070923}
+      - {x: 21.621094, y: -17.417145}
+      - {x: 20.414307, y: -22.590118}
 --- !u!212 &212544631894390068
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -177,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bdea262fbdfbd1e40aea63f0d49e67ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
