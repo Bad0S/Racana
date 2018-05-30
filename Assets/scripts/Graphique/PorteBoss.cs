@@ -77,7 +77,7 @@ public class PorteBoss : MonoBehaviour {
 			descending += Time.deltaTime/(1/speed);
 			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-100, descending),0);
 		}
-		else if(transform.position.y == originalPos-3){
+		else if(transform.position.y == originalPos-100){
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;
 			hitboxPorte.GetComponent <BoxCollider2D>().enabled = false;
 			if (enable == false){
