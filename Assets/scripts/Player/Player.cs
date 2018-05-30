@@ -56,6 +56,10 @@ public class Player: MonoBehaviour
 	public float DashSpeed = 4;
 	public Transform dashTarget;
 
+	//Repousse
+	public GameObject repousse;
+
+
 	//Rythm
 	public bool transcendance = false;
 
@@ -251,6 +255,14 @@ public class Player: MonoBehaviour
 		//float angleShoot = Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical")) * Mathf.Rad2Deg;
 		//GameObject projectileRepousse = (GameObject)Instantiate (attaqueRepousse, transform.position, Quaternion.Euler(0, 0, angleShoot));
 		//projectileRepousse.GetComponent<Rigidbody2D> ().AddForce (Vector3.up, ForceMode2D.Impulse);
+		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
+		repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
+		repousseInstance.transform.localPosition = transform.position*1.01f;
+		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+		repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
+
+		repousseInstance.GetComponent <Rigidbody2D>().freezeRotation = true;
+
 
 		//attaqueRepousse.SetActive (true);
 		isAttacking = true;

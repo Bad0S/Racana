@@ -464,8 +464,8 @@ MonoBehaviour:
   selectsoundDash: event:/Dash
   anim: {fileID: 0}
   canMove: 1
-  MovSpeed: 4.5
-  canAttack: 1
+  MovSpeed: 200
+  canAttack: 0
   attaqueSlash: {fileID: 1492656577959142}
   attaqueRepousse: {fileID: 1955622777952468}
   dashTranscendanceTargeter: {fileID: 1752530113218724}
@@ -477,6 +477,7 @@ MonoBehaviour:
   canDash: 1
   DashSpeed: 625
   dashTarget: {fileID: 0}
+  repousse: {fileID: 0}
   transcendance: 0
   projectileShake: 0
 --- !u!114 &114915059078695548
