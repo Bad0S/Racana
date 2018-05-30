@@ -70,7 +70,7 @@ public class Player: MonoBehaviour
 	{
 		body = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
-		animAttaques = GetComponentInChildren<Animator> ();
+		//animAttaques = GetComponentInChildren<Animator> ();
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
@@ -100,6 +100,7 @@ public class Player: MonoBehaviour
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
 		dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
 		Attack ();
+
 		//	Debug.Log (body.velocity.sqrMagnitude);
 		if (body.velocity.sqrMagnitude > 2f) 
 		{
@@ -144,11 +145,14 @@ public class Player: MonoBehaviour
 				anim.SetBool ("IsMoving", true);
 				//float angle = (Mathf.Atan2(Input.GetAxisRaw("Horizontal"), (Input.GetAxisRaw("Vertical"))) * -Mathf.Rad2Deg);
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
-			} else if (isDashing == false){
-				body.velocity = Vector3.zero;
-
-			}else
+			} else 
 			{
+				if (isDashing == false){
+					body.velocity = Vector3.zero;
+					print((Input.GetAxisRaw ("Horizontal") ) );
+
+
+				}
 				anim.SetBool ("IsIdle", true);
 				anim.SetBool ("IsMoving", false);
 			}
@@ -171,13 +175,22 @@ public class Player: MonoBehaviour
 
 			if (Input.GetButtonDown ("Fire1") && isAttacking == false) 
 			{
-				anim.SetTrigger ("Attack_Slash");
+
+
 				StartCoroutine(slashCoroutine ());
+
+
                // soundCharge.start();
             }
+
 			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
 			{
+
+
 				StartCoroutine (repousseCoroutine ());
+				anim.SetTrigger ("Attack_Repousse");
+
+
 			}
 
 			if (transcendance == true) 
@@ -239,6 +252,10 @@ public class Player: MonoBehaviour
       //  soundAttaque.start();
      //  soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
        // soundAttaque.start();
+		anim.SetBool("IsAttacking", true);
+
+		anim.SetTrigger ("Attack_Slash");
+
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
@@ -247,17 +264,19 @@ public class Player: MonoBehaviour
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
 		canAttack = true;
+		anim.SetBool("IsAttacking", false);
 
+		//anim.ResetTrigger("Attack_Slash");
 	}
 	IEnumerator repousseCoroutine()
 	{
-       // soundRepousse.start();
-		//float angleShoot = Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical")) * Mathf.Rad2Deg;
-		//GameObject projectileRepousse = (GameObject)Instantiate (attaqueRepousse, transform.position, Quaternion.Euler(0, 0, angleShoot));
-		//projectileRepousse.GetComponent<Rigidbody2D> ().AddForce (Vector3.up, ForceMode2D.Impulse);
+
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
 		repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
-		repousseInstance.transform.localPosition = transform.position*1.01f;
+		repousseInstance.transform.SetParent (transform);
+		repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
+		repousseInstance.transform.SetParent (null);
+
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
 
@@ -271,6 +290,7 @@ public class Player: MonoBehaviour
         //attaqueRepousse.SetActive (false);
         isAttacking = false;
 		canAttack = true;
+		//anim.ResetTrigger ("Attack_Repousse");
 
 	}
 
