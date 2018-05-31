@@ -152,7 +152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -88, y: -1630, z: -1}
+  m_LocalPosition: {x: -450, y: -339, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -484,6 +484,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114547591711496900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,7 +513,7 @@ MonoBehaviour:
   localRotation: {x: 0, y: 180, z: -180}
   sprite: {fileID: 0}
   spriteLayer: Default
-  spriteLayerOrder: -25
+  spriteLayerOrder: -12
 --- !u!114 &114841462141412520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -537,6 +538,7 @@ MonoBehaviour:
   dashTranscendanceTargeter: {fileID: 1752530113218724}
   chargeAttaque: 0
   tauxCharge: 1
+  inDanger: 1
   grabbed: 0
   speedMultiplicator: 1
   isDashing: 0

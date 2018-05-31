@@ -12793,7 +12793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &309154152
 Transform:
   m_ObjectHideFlags: 0
@@ -16547,7 +16547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_Name
-      value: FadeToBlack (1)
+      value: Foret>Village
       objectReference: {fileID: 0}
     - target: {fileID: 114598738511987808, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -16579,16 +16579,42 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.y
-      value: 11.971016
+      value: 299.2755
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.x
-      value: 1.8799152
+      value: 46.997875
+      objectReference: {fileID: 0}
+    - target: {fileID: 212257427398263066, guid: d4e831f036a4f8c40b825c3b8699c93a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 212257427398263066, guid: d4e831f036a4f8c40b825c3b8699c93a,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &491422196 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a,
+    type: 2}
+  m_PrefabInternal: {fileID: 491422195}
+--- !u!114 &491422197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491422196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d16bce0e7b29143a939a4f81b6378c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492074562
 GameObject:
   m_ObjectHideFlags: 0
@@ -20216,11 +20242,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: elementsPasseArriere.Array.size
-      value: 70
-      objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -450
@@ -20598,11 +20619,6 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[68]
       value: 
       objectReference: {fileID: 1656339156}
-    - target: {fileID: 114556869141637456, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: spriteLayerOrder
-      value: -12
-      objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[69]
@@ -28190,7 +28206,7 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.x
-      value: 7.461198
+      value: 186.52995
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -28200,7 +28216,7 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.y
-      value: 1.0280671
+      value: 25.701675
       objectReference: {fileID: 0}
     - target: {fileID: 114598738511987808, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -28239,12 +28255,12 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 7.16
+      value: 179
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 7.96
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -28270,6 +28286,10 @@ Prefab:
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.41064495
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
+      propertyPath: m_Name
+      value: Foret>Donjon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
@@ -31389,6 +31409,11 @@ Prefab:
         type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
         type: 2}

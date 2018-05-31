@@ -28,7 +28,7 @@ public class Player: MonoBehaviour
 
 
 	//Move
-	private Vector2 déplacement;
+	public Vector2 déplacement;
 	public bool canMove = true;
 	public float MovSpeed = 0.13f;
 
@@ -45,6 +45,10 @@ public class Player: MonoBehaviour
 	public float chargeAttaque;
 	public int tauxCharge=1;
 	private float beat;
+
+	//ANIM
+	public bool inDanger;
+
 
 	//FightEnemies
 	public bool grabbed;
@@ -141,6 +145,7 @@ public class Player: MonoBehaviour
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
 				body.velocity = (déplacement*MovSpeed*speedMultiplicator);
+				anim.SetBool ("IsIdleFighting", false);
 				anim.SetBool ("IsIdle", false);
 				anim.SetBool ("IsMoving", true);
 				//float angle = (Mathf.Atan2(Input.GetAxisRaw("Horizontal"), (Input.GetAxisRaw("Vertical"))) * -Mathf.Rad2Deg);
@@ -153,8 +158,15 @@ public class Player: MonoBehaviour
 
 
 				}
-				anim.SetBool ("IsIdle", true);
+				if(inDanger){
+					anim.SetBool ("IsIdleFighting", true);
+				}else{
+					anim.SetBool ("IsIdle", true);
+
+				}
 				anim.SetBool ("IsMoving", false);
+				anim.SetFloat ("LastX", déplacement.x);
+				anim.SetFloat ("LastY", déplacement.y);
 			}
 			anim.SetFloat ("XSpeed", Input.GetAxisRaw ("Horizontal"));
 			anim.SetFloat ("YSpeed", Input.GetAxisRaw ("Vertical"));
@@ -321,4 +333,8 @@ public class Player: MonoBehaviour
 		yield return new WaitForSeconds (0.5f);
 		canDash = true;
 	}
+	void FlipX(){
+		GetComponent <SpriteRenderer>().flipX = !GetComponent <SpriteRenderer>().flipX ;
+	}
+
 }

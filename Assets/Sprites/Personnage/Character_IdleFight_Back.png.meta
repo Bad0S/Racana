@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: ff91c79eed7e7d548b9d9fe897f916c2
-timeCreated: 1527281195
+guid: bb0f4f9353da88844bed36002dc7a5e0
+timeCreated: 1527758453
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character_Attack_Back_0
-    21300002: Character_Attack_Back_1
-    21300004: Character_Attack_Back_2
-    21300006: Character_Attack_Back_3
+    21300000: Character_IdleFight_Back_0
+    21300002: Character_IdleFight_Back_1
+    21300004: Character_IdleFight_Back_2
+    21300006: Character_IdleFight_Back_3
+    21300008: Character_IdleFight_Back_4
+    21300010: Character_IdleFight_Back_5
+    21300012: Character_IdleFight_Back_6
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -65,7 +68,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,57 +88,99 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Attack_Back_0
+      name: Character_IdleFight_Back_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 75
+        width: 30
         height: 60
       alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+      pivot: {x: 0.5, y: 0.43}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_1
+      name: Character_IdleFight_Back_1
       rect:
         serializedVersion: 2
-        x: 75
+        x: 30
         y: 0
-        width: 75
+        width: 30
         height: 60
       alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+      pivot: {x: 0.5, y: 0.43}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_2
+      name: Character_IdleFight_Back_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_IdleFight_Back_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 30
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_IdleFight_Back_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 30
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_IdleFight_Back_5
       rect:
         serializedVersion: 2
         x: 150
         y: 0
-        width: 75
+        width: 30
         height: 60
       alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+      pivot: {x: 0.5, y: 0.43}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_Back_3
+      name: Character_IdleFight_Back_6
       rect:
         serializedVersion: 2
-        x: 225
+        x: 180
         y: 0
-        width: 75
+        width: 30
         height: 60
       alignment: 9
-      pivot: {x: 0.46, y: 0.5}
+      pivot: {x: 0.5, y: 0.43}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
