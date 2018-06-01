@@ -15,7 +15,7 @@ public class health : MonoBehaviour {
 	public bool invincible;
 	public float invincibleTime;
 	public float currentTime;
-	public List<Sprite> LifeBar;
+	public List<Image> LifeBar;
 	public Sprite pvVide;
 
 	//feedback damage
@@ -47,7 +47,7 @@ public class health : MonoBehaviour {
 		{
 			if (gameObject.tag == "Player") 
 			{
-				LifeBar [life-1] = pvVide;
+				LifeBar [life-1].sprite = pvVide;
 				StartCoroutine (Vibration (0.07f, 0.6f));
 
 				StartCoroutine (Damage (0.2f,0.14f, 0.02f));

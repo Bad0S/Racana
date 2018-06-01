@@ -161,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1673587254044118
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4033338677476802
 Transform:
   m_ObjectHideFlags: 1
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100, y: 326.8, z: -1}
+  m_LocalPosition: {x: 241, y: 1919, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -433,8 +433,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
-  m_AngularDrag: 1
+  m_LinearDrag: 7
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -722,15 +722,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &114547591711496900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -759,7 +750,7 @@ MonoBehaviour:
   localRotation: {x: 0, y: 180, z: -180}
   sprite: {fileID: 0}
   spriteLayer: Default
-  spriteLayerOrder: -12
+  spriteLayerOrder: -11
 --- !u!114 &114841462141412520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -801,7 +792,7 @@ MonoBehaviour:
   - {fileID: 1203735473992918}
   - {fileID: 1232976213497476}
   - {fileID: 1300159694386238}
-  repousse: {fileID: 1216153459730528, guid: 4c034197cbf8a9241959ffbc33345e5b, type: 2}
+  repousse: {fileID: 0}
   transcendance: 0
   projectileShake: 0
 --- !u!114 &114915059078695548
@@ -817,7 +808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 4
+  life: 3
   damage: 1
   invincible: 0
   invincibleTime: 2
