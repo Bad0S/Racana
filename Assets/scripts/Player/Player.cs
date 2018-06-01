@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
 using XInputDotNetPure;
 
@@ -66,7 +65,6 @@ public class Player: MonoBehaviour
 
 	//Repousse
 	public GameObject repousse;
-	public PrefabUtility repoussePrefab;
 
 	//Rythm
 	public bool transcendance = false;
@@ -304,17 +302,24 @@ public class Player: MonoBehaviour
 	IEnumerator repousseCoroutine()
 	{
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
-		repousseInstance.SetActive (true);
-		repousseInstance.GetComponent<RepousseScript> ().particSysParams.startColor = Color.black;// - (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg);
-		repousseInstance.GetComponent<RepousseScript>().particSys.Emit (repousseInstance.GetComponent<RepousseScript> ().particSysParams, 1);
-
-		repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
-		repousseInstance.transform.SetParent (transform);
-		repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
-		repousseInstance.transform.SetParent (null);
-
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
-		repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
+
+		repousseInstance.SetActive (true);
+		repousseInstance.GetComponent<RepousseScript>().particSys.Emit ( 1);
+		if (Input.GetAxisRaw ("Horizontal") != 0 || Input.GetAxisRaw ("Vertical") != 0) {
+			repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
+			repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
+			repousseInstance.transform.SetParent (transform);
+			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
+			repousseInstance.transform.SetParent (null);
+		}
+		else{
+			repousseInstance.GetComponent <RepousseScript>().direction = new Vector3 (0,1,0) ;
+			repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,0);
+			repousseInstance.transform.SetParent (transform);
+			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x , 1+déplacement.y*30, repousseInstance.transform.localPosition.z);
+			repousseInstance.transform.SetParent (null);
+		}
 		repousseInstance.GetComponent <Rigidbody2D>().freezeRotation = true;
 
 
