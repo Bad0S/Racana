@@ -244,6 +244,25 @@ public class EnemyBehaviour : MonoBehaviour {
 
 			}
 		}
+		if (other.gameObject.tag == "PlayerAttaqueRepousse") 
+		{
+			timerWaitRepousse = 0;
+			aEteRepousse = true;
+			StopCoroutine ("FightSequence");
+			if(!canGrab)
+				NormalSprite ();
+			isJumping = false;
+			if(isGrabbing){
+				StopCoroutine ("GrabSequence");
+				speed /= speedBurst;
+				isGrabbing = false;
+				timerGrabbing = 0;
+			}
+			anim.SetBool ("IsAttacking", false);
+			GetComponent<BoxCollider2D> ().isTrigger = false;
+			rb2D.velocity = Vector2.zero;
+			rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*12*dashMultiplicator,ForceMode2D.Impulse);
+		}
 	}
 	private void OnCollisionStay2D(Collision2D other){
 		if (other.gameObject.tag == "Player") 
@@ -273,26 +292,6 @@ public class EnemyBehaviour : MonoBehaviour {
 				target.GetComponent <Player>().GrabUngrab () ;
 
 			}
-		}
-
-		if (other.tag == "PlayerAttaqueRepousse") 
-		{
-			timerWaitRepousse = 0;
-			aEteRepousse = true;
-			StopCoroutine ("FightSequence");
-			if(!canGrab)
-				NormalSprite ();
-			isJumping = false;
-			if(isGrabbing){
-				StopCoroutine ("GrabSequence");
-				speed /= speedBurst;
-				isGrabbing = false;
-				timerGrabbing = 0;
-			}
-			anim.SetBool ("IsAttacking", false);
-			GetComponent<BoxCollider2D> ().isTrigger = false;
-			rb2D.velocity = Vector2.zero;
-			rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*12*dashMultiplicator,ForceMode2D.Impulse);
 		}
 	}
 

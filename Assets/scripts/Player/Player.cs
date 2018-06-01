@@ -71,6 +71,11 @@ public class Player: MonoBehaviour
 
 	public bool projectileShake;
 
+	//récup armes
+	public bool canMusic;
+
+	public bool hadTuto;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -96,19 +101,23 @@ public class Player: MonoBehaviour
 
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
-		if (chargeAttaque > beat && tauxCharge < 4) {
+		if(canMusic == true){
+			if (chargeAttaque > beat && tauxCharge < 4) {
 
-			tauxCharge++;
-			DisableListElements (paliers);
-			paliers [tauxCharge-1].SetActive (true);
-			chargeAttaque = 0;
+				tauxCharge++;
+				DisableListElements (paliers);
+				paliers [tauxCharge-1].SetActive (true);
+				chargeAttaque = 0;
+			}
+			else if (chargeAttaque > beat && tauxCharge >= 4){
+				tauxCharge = 1;
+				DisableListElements (paliers);
+				paliers [tauxCharge-1].SetActive (true);
+				chargeAttaque = 0;
+			}
 		}
-		else if (chargeAttaque > beat && tauxCharge >= 4){
-			tauxCharge = 1;
-			DisableListElements (paliers);
-			paliers [tauxCharge-1].SetActive (true);
-			chargeAttaque = 0;
-		}
+
+
 		//Le dash en transcendance
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
 		dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
@@ -244,7 +253,7 @@ public class Player: MonoBehaviour
 				dashTranscendanceTargeter.transform.localPosition = déplacement;
 				dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
 
-				if (Input.GetButtonDown ("Fire3")&& déplacement != new Vector2(0f,0f)) 
+				if (Input.GetButtonDown ("Fire3")&& déplacement != new Vector2(0f,0f)&& canMusic) 
 				{
 					StartCoroutine (dashCoroutine ());
 				}
@@ -315,14 +324,14 @@ public class Player: MonoBehaviour
 			repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
 			repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
 			repousseInstance.transform.SetParent (transform);
-			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
+			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*15, repousseInstance.transform.localPosition.y+déplacement.y*15, repousseInstance.transform.localPosition.z);
 			repousseInstance.transform.SetParent (null);
 		}
 		else{
 			repousseInstance.GetComponent <RepousseScript>().direction = new Vector3 (0,1,0) ;
 			repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,0);
 			repousseInstance.transform.SetParent (transform);
-			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x , 1+déplacement.y*30, repousseInstance.transform.localPosition.z);
+			repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x , 1+déplacement.y*15, repousseInstance.transform.localPosition.z);
 			repousseInstance.transform.SetParent (null);
 		}
 		repousseInstance.GetComponent <Rigidbody2D>().freezeRotation = true;

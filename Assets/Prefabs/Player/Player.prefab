@@ -161,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1673587254044118
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4033338677476802
 Transform:
   m_ObjectHideFlags: 1
@@ -795,6 +795,8 @@ MonoBehaviour:
   repousse: {fileID: 0}
   transcendance: 0
   projectileShake: 0
+  canMusic: 1
+  hadTuto: 0
 --- !u!114 &114915059078695548
 MonoBehaviour:
   m_ObjectHideFlags: 1

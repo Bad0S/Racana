@@ -49,9 +49,9 @@ public class dialTutoManager : MonoBehaviour {
 			GetComponent<health>().life = 8;
 		}
 		//l'activation de la repousse
-		if(player.GetComponent <PlayerTuto>().attaqueRepousse.activeSelf == true && fifthDial == false && fourthDial == true){
-			fifthDial = true;
-		}
+		//if(player.GetComponent <PlayerTuto>().attaqueRepousse.activeSelf == true && fifthDial == false && fourthDial == true){
+	//		fifthDial = true;
+	//	}
 
 
 
