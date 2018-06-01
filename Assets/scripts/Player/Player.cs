@@ -157,11 +157,16 @@ public class Player: MonoBehaviour
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
-				if(body.velocity.x <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.x >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash) )){
-					if(body.velocity.y <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.y >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) )
-					body.velocity += (déplacement*MovSpeed*speedMultiplicator);
-
+				if(DashSpeed*timerDash > 0.2f ){
+					if(body.velocity.x <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.x >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash) )){
+						if(body.velocity.y <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.y >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) )
+							body.velocity += (déplacement*MovSpeed*speedMultiplicator);
+					}
 				}
+				else{
+					body.velocity = déplacement*MovSpeed*speedMultiplicator;
+				}
+
 
 				anim.SetBool ("IsIdleFighting", false);
 				anim.SetBool ("IsIdle", false);
