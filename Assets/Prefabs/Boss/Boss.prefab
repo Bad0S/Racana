@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 114584271973545540}
   - component: {fileID: 114729905854326702}
   - component: {fileID: 114465851471972396}
-  - component: {fileID: 60826952232537394}
-  m_Layer: 0
+  - component: {fileID: 60715960906908610}
+  - component: {fileID: 95735461924765210}
+  m_Layer: 11
   m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ GameObject:
   - component: {fileID: 4579137763488026}
   - component: {fileID: 212880417694772234}
   - component: {fileID: 114876004791760966}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterDroit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 4368231862398546}
   - component: {fileID: 212433727600736718}
   - component: {fileID: 114554178086526814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterExterneDroit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +76,7 @@ GameObject:
   - component: {fileID: 4723642550452746}
   - component: {fileID: 212332829012579206}
   - component: {fileID: 114750775557378814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterExterneBas2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +93,7 @@ GameObject:
   - component: {fileID: 4609819070473968}
   - component: {fileID: 212419233143451180}
   - component: {fileID: 114699339018487828}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterExterneBas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +110,7 @@ GameObject:
   - component: {fileID: 4206658075654282}
   - component: {fileID: 212041774394282244}
   - component: {fileID: 114556337781206388}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterExterneGauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +127,7 @@ GameObject:
   - component: {fileID: 4661402719425798}
   - component: {fileID: 212764703409269864}
   - component: {fileID: 114593244079758260}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CasterGauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,8 +218,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006081655161628}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -327.75, y: 1340, z: 0.21768975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -328.2006, y: 231.70149, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4661402719425798}
@@ -230,7 +231,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60826952232537394
+--- !u!60 &60715960906908610
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -245,7 +246,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47840455, y: 0.41064495}
+    pivot: {x: 0.48035777, y: 0.4131339}
     oldSize: {x: 179, y: 199}
     newSize: {x: 1.79, y: 1.99}
     adaptiveTilingThreshold: 0.5
@@ -254,10 +255,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 12.3703, y: -70.39526}
-      - {x: 15.064453, y: -10.703369}
-      - {x: -14.816162, y: -10.087891}
-      - {x: -10.191223, y: -71.3457}
+    - - {x: 10.279175, y: -72.81377}
+      - {x: -10.5920105, y: -73.41528}
+      - {x: -17.136108, y: -40.648422}
+      - {x: 17.071594, y: -40.813797}
+--- !u!95 &95735461924765210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1006081655161628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37870c7fc8737a64b9a2e6a205a4fe96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114465851471972396
 MonoBehaviour:
   m_ObjectHideFlags: 1

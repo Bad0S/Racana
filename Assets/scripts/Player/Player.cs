@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEditor;
+using UnityEditor;
 using UnityEngine.UI;
 using XInputDotNetPure;
 
@@ -49,6 +49,8 @@ public class Player: MonoBehaviour
 	//ANIM
 	public bool inDanger;
 
+	//FX
+	public List<GameObject> paliers;
 
 	//FightEnemies
 	public bool grabbed;
@@ -59,10 +61,12 @@ public class Player: MonoBehaviour
 	public bool canDash = true;
 	public float DashSpeed = 4;
 	public Transform dashTarget;
+	public List<GameObject>  dashFX;
+	float timerDash;
 
 	//Repousse
 	public GameObject repousse;
-
+	public PrefabUtility repoussePrefab;
 
 	//Rythm
 	public bool transcendance = false;
@@ -83,6 +87,7 @@ public class Player: MonoBehaviour
         soundRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
         soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);*/
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+
     }
 
 	// Update is called once per frame
@@ -90,21 +95,27 @@ public class Player: MonoBehaviour
 	{
 		//charge sur beat
 		//print (body.velocity);
+
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
 		if (chargeAttaque > beat && tauxCharge < 4) {
+
 			tauxCharge++;
+			DisableListElements (paliers);
+			paliers [tauxCharge-1].SetActive (true);
 			chargeAttaque = 0;
 		}
 		else if (chargeAttaque > beat && tauxCharge >= 4){
 			tauxCharge = 1;
+			DisableListElements (paliers);
+			paliers [tauxCharge-1].SetActive (true);
 			chargeAttaque = 0;
 		}
 		//Le dash en transcendance
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
 		dashTranscendanceTargeter.transform.localRotation = Quaternion.Euler (0, 0, ((Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg)+90));
 		Attack ();
-
+	//	DashFx ();
 		//	Debug.Log (body.velocity.sqrMagnitude);
 		if (body.velocity.sqrMagnitude > 2f) 
 		{
@@ -133,6 +144,10 @@ public class Player: MonoBehaviour
 	void FixedUpdate()
 	{
 		Move ();
+		if(isDashing == true){
+			timerDash -= Time.deltaTime;
+		}
+
 		//désactivation du collider lors du dash
 	}
 
@@ -144,7 +159,12 @@ public class Player: MonoBehaviour
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
-				body.velocity = (déplacement*MovSpeed*speedMultiplicator);
+				if(body.velocity.x <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.x >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash) )){
+					if(body.velocity.y <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.y >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) )
+					body.velocity += (déplacement*MovSpeed*speedMultiplicator);
+
+				}
+
 				anim.SetBool ("IsIdleFighting", false);
 				anim.SetBool ("IsIdle", false);
 				anim.SetBool ("IsMoving", true);
@@ -228,6 +248,7 @@ public class Player: MonoBehaviour
 			}
 		}
 	}
+		
 
 	/*private void OnTriggerEnter2D(Collider2D other)
 	{
@@ -282,8 +303,11 @@ public class Player: MonoBehaviour
 	}
 	IEnumerator repousseCoroutine()
 	{
-
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
+		repousseInstance.SetActive (true);
+		repousseInstance.GetComponent<RepousseScript> ().particSysParams.startColor = Color.black;// - (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg);
+		repousseInstance.GetComponent<RepousseScript>().particSys.Emit (repousseInstance.GetComponent<RepousseScript> ().particSysParams, 1);
+
 		repousseInstance.transform.localRotation = Quaternion.Euler (180, 0,- (Mathf.Atan2 (Input.GetAxisRaw ("Horizontal"), (Input.GetAxisRaw ("Vertical"))) * -Mathf.Rad2Deg));
 		repousseInstance.transform.SetParent (transform);
 		repousseInstance.transform.localPosition  = new Vector3 (repousseInstance.transform.localPosition.x + déplacement.x*30, repousseInstance.transform.localPosition.y+déplacement.y*30, repousseInstance.transform.localPosition.z);
@@ -291,8 +315,8 @@ public class Player: MonoBehaviour
 
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		repousseInstance.GetComponent <RepousseScript>().direction = déplacement ;
-
 		repousseInstance.GetComponent <Rigidbody2D>().freezeRotation = true;
+
 
 
 		//attaqueRepousse.SetActive (true);
@@ -306,10 +330,15 @@ public class Player: MonoBehaviour
 
 	}
 
+
 	IEnumerator dashCoroutine()
 	{
+		timerDash = 0.5f;
 		canDash = false;
 		isDashing=true;
+		dashFX[0].SetActive  (true);
+		dashFX[2].SetActive  (true);
+
 
 		GetComponent <health> ().invincible = true;
 		GetComponent <health> ().currentTime =GetComponent <health> ().invincibleTime - 1 ;
@@ -326,15 +355,28 @@ public class Player: MonoBehaviour
 			body.AddForce ( vecTmp*7 , ForceMode2D.Impulse);
 		}
 		yield return new WaitForSeconds (0.5f);
+		dashFX[0].SetActive  (false);
+		dashFX[2].SetActive  (false);
+		//dashFX[1].SetActive  (true);
 
 		isDashing=false;
 
+		//dashFX.SetActive (false);
 
 		yield return new WaitForSeconds (0.5f);
 		canDash = true;
+
+		//dashFX[1].SetActive  (false);
+
 	}
 	void FlipX(){
 		GetComponent <SpriteRenderer>().flipX = !GetComponent <SpriteRenderer>().flipX ;
+	}
+	void DisableListElements(List<GameObject> liste){
+		for (int i = 0; i < liste.Count ; i++) {
+			liste [i].SetActive (false) ;
+		}
+
 	}
 
 }

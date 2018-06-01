@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: eb6b10b2f4a0f4c46aec04a797f9aabe
-timeCreated: 1521118972
+guid: 7ddf91df3da101e42bc76224f744979a
+timeCreated: 1527765833
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character_Attack_G_0
-    21300002: Character_Attack_G_1
-    21300004: Character_Attack_G_2
-    21300006: Character_Attack_G_3
-    21300008: Character_Attack_G_4
-    21300010: Character_Attack_G_5
+    21300000: bossv2-Sheet_0
+    21300002: bossv2-Sheet_1
+    21300004: bossv2-Sheet_2
+    21300006: bossv2-Sheet_3
+    21300008: bossv2-Sheet_4
+    21300010: bossv2-Sheet_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -83,159 +83,89 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: Tizen
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: Samsung TV
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Attack_G_0
+      name: bossv2-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 36
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.53, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_G_1
+      name: bossv2-Sheet_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 273
         y: 0
-        width: 46
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.65, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_G_2
+      name: bossv2-Sheet_2
       rect:
         serializedVersion: 2
-        x: 85
+        x: 546
         y: 0
-        width: 46
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.78, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_G_3
+      name: bossv2-Sheet_3
       rect:
         serializedVersion: 2
-        x: 135
+        x: 819
         y: 0
-        width: 51
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.67, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_G_4
+      name: bossv2-Sheet_4
       rect:
         serializedVersion: 2
-        x: 189
+        x: 1092
         y: 0
-        width: 47
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.62, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_Attack_G_5
+      name: bossv2-Sheet_5
       rect:
         serializedVersion: 2
-        x: 243
+        x: 1365
         y: 0
-        width: 38
-        height: 52
+        width: 273
+        height: 204
       alignment: 9
-      pivot: {x: 0.5, y: 0.36}
+      pivot: {x: 0.4618385, y: 0.4291465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

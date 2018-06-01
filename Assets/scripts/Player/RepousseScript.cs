@@ -8,24 +8,26 @@ public class RepousseScript : MonoBehaviour {
 	public float speedGrowth=0.01f;
 	private Rigidbody2D rb;
 	public Vector3 direction;
-	private Color alphaColor;
-	float timerFade;
+	public ParticleSystem.MainModule particSysMain;
+	public ParticleSystem particSys;
+	public ParticleSystem.EmitParams particSysParams;
+
 
 	// Use this for initialization
-	void Start () {
-		Destroy (gameObject, beat * 2);
+	void Awake () {
+		Destroy (gameObject,  2);
 		rb = GetComponent <Rigidbody2D> ();
-		alphaColor = GetComponent<SpriteRenderer>().color;
-		alphaColor.a = 0;
+		//particSys = GetComponentInChildren <ParticleSystem> ();
+		print (particSys);
+		particSysMain = particSys.main;
+		particSysParams.startSize = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		rb.velocity = direction * speed;
-		transform.localScale = new Vector3 (transform.localScale.x + speedGrowth,transform.localScale.y + speedGrowth, 0); 
-		timerFade += Time.deltaTime;
+		transform.localScale = new Vector3 (transform.localScale.x + speedGrowth,transform.localScale.y + speedGrowth, 1); 
 
-		GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, alphaColor,timerFade-beat);
 	}
 
 	private void OnCollisionEnter2D(Collision2D other){
