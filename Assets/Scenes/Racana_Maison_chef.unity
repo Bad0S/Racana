@@ -1080,7 +1080,7 @@ Prefab:
     - target: {fileID: 114467377950700396, guid: 4e95e2874ad0fea4b9f892e4c250f27b,
         type: 2}
       propertyPath: elementsPasseArriere.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4967211592315090, guid: 4e95e2874ad0fea4b9f892e4c250f27b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1144,6 +1144,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 20.327507
       objectReference: {fileID: 0}
+    - target: {fileID: 114467377950700396, guid: 4e95e2874ad0fea4b9f892e4c250f27b,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.data[3]
+      value: 
+      objectReference: {fileID: 1801815835}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e95e2874ad0fea4b9f892e4c250f27b, type: 2}
   m_IsPrefabParent: 0
@@ -1371,6 +1376,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1047201595}
+    - target: {fileID: 4393810306067828, guid: f7f8f6b79445a984e83cfe2b95631e59, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -229.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393810306067828, guid: f7f8f6b79445a984e83cfe2b95631e59, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 38.36543
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7f8f6b79445a984e83cfe2b95631e59, type: 2}
   m_IsPrefabParent: 0
@@ -1580,7 +1593,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2a7f3b1c404cbf04c9373272ecf6e232, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
