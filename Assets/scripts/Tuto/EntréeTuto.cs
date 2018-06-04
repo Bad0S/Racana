@@ -16,6 +16,10 @@ public class EntréeTuto : MonoBehaviour {
 	}
 	public string scene;
 	// Update is called once per frame
+	void Start(){
+		player = GameObject.FindWithTag ("Player");
+	}
+
 	void Update () {
 		if (player.GetComponent <Player>().hadTuto ==false){
 			GetComponent <SceneChange>().scene = "Racana_Tuto";
