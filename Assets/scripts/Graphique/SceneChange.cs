@@ -26,9 +26,9 @@ public class SceneChange : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player"){
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
-			//SceneManager.LoadScene("Showcase");
-
-		}
+            //SceneManager.LoadScene("Showcase");
+            other.GetComponent<Rythme>().MusicStop();
+        }
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 
 	{
@@ -60,8 +60,8 @@ public class SceneChange : MonoBehaviour
 		fadeOutUIImage.color = new Color (fadeOutUIImage.color.r,fadeOutUIImage.color.g, fadeOutUIImage.color.b, alpha);
 		alpha += Time.deltaTime * (1.0f / fadeSpeed) * ((fadeDirection == FadeDirection.Out)? -1 : 1) ;
 	}
+
+            
 }
 
-			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
-            //SceneManager.LoadScene("Showcase");
-            other.GetComponent<Rythme>().MusicStop();
+			
