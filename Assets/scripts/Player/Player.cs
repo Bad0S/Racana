@@ -224,7 +224,7 @@ public class Player: MonoBehaviour
 				StartCoroutine(slashCoroutine ());
             }
 
-			if (Input.GetButtonDown ("Fire2") && isAttacking == false && canMusic) 
+			if (Input.GetButtonDown ("Fire2") && isAttacking == false ) 
 			{
 
 

@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 4720305662160228}
   - component: {fileID: 212551638888372362}
   - component: {fileID: 114841462141412520}
+  - component: {fileID: 114755953746499626}
   - component: {fileID: 114915059078695548}
   - component: {fileID: 61897494316016688}
   - component: {fileID: 50229310063831686}
@@ -215,6 +216,7 @@ GameObject:
   - component: {fileID: 114061833848478418}
   - component: {fileID: 114049315844223938}
   - component: {fileID: 114556869141637456}
+  - component: {fileID: 114040472637099224}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -366,8 +368,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 249, y: -214, z: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1271, y: -720, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -610,6 +612,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114040472637099224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804523527741744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e5e588b2fb8f41a8f5845a68875e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameScene: 
+  previousName: 
 --- !u!114 &114049315844223938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,7 +684,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0ae5f7e6dce1045bd513822ac6dbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementsPasseArriere: []
+  elementsPasseArriere:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114547591711496900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -699,6 +722,19 @@ MonoBehaviour:
   sprite: {fileID: 0}
   spriteLayer: Default
   spriteLayerOrder: -11
+--- !u!114 &114755953746499626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804523527741744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e5e588b2fb8f41a8f5845a68875e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameScene: 
+  previousName: 
 --- !u!114 &114841462141412520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -724,7 +760,7 @@ MonoBehaviour:
   dashTranscendanceTargeter: {fileID: 1752530113218724}
   chargeAttaque: 0
   tauxCharge: 1
-  inDanger: 1
+  inDanger: 0
   paliers:
   - {fileID: 1242420918421144}
   - {fileID: 1673587254044118}
@@ -740,7 +776,7 @@ MonoBehaviour:
   - {fileID: 1203735473992918}
   - {fileID: 1232976213497476}
   - {fileID: 1300159694386238}
-  repousse: {fileID: 0}
+  repousse: {fileID: 1216153459730528, guid: 4c034197cbf8a9241959ffbc33345e5b, type: 2}
   transcendance: 0
   projectileShake: 0
   canMusic: 0

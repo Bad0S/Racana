@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1507978317026106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 348, y: 96.25, z: 0}
+  m_LocalPosition: {x: -107.7208, y: 97.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4562296332287426}
@@ -83,10 +83,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -8.02}
+  m_Offset: {x: 2.354824, y: 1.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -97,7 +97,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 74.2, y: 84.9}
+  m_Size: {x: 39.143303, y: 66.0633}
   m_EdgeRadius: 0
 --- !u!61 &61809721201558104
 BoxCollider2D:
@@ -154,9 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - actorName: Jaya
-    line: 'Bonjour, Ohm. '
+    line: "Est-ce que tu peux surveiller ta soeur s'il te pla\xEEt?"
   - actorName: Jaya
-    line: Comment vont tes parents?
+    line: "Elle m'inqui\xE8te \xE0 courir partout pendant que je suis occup\xE9e \xE0
+      l'int\xE9rieur."
   dialogueBox: {fileID: 0}
   delayBetweenEachLetter: 0.01
   skipKey: 323
