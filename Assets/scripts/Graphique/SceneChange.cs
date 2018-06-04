@@ -10,22 +10,24 @@ public class SceneChange : MonoBehaviour
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
 	public enum FadeDirection
-
 	{
 		In, //Alpha = 1
 		Out // Alpha = 0
 	}
 	public string scene;
+
+
 	void OnEnable()
 	{
 		StartCoroutine(Fade(FadeDirection.Out));
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player"){
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
-            //SceneManager.LoadScene("Showcase");
-            other.GetComponent<Rythme>().MusicStop();
+			//SceneManager.LoadScene("Showcase");
+
 		}
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 
@@ -59,3 +61,7 @@ public class SceneChange : MonoBehaviour
 		alpha += Time.deltaTime * (1.0f / fadeSpeed) * ((fadeDirection == FadeDirection.Out)? -1 : 1) ;
 	}
 }
+
+			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
+            //SceneManager.LoadScene("Showcase");
+            other.GetComponent<Rythme>().MusicStop();
