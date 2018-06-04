@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569406207449264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -326.4, y: 155.4, z: 0}
+  m_LocalPosition: {x: 1003, y: -564, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4233132571657142}
@@ -256,6 +256,7 @@ MonoBehaviour:
   currentTime: 0
   LifeBar: []
   pvVide: {fileID: 0}
+  selectsoundHurt: event:/Hit
 --- !u!212 &212042963162822186
 SpriteRenderer:
   m_ObjectHideFlags: 1

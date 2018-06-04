@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class Rythme : MonoBehaviour
 {
@@ -16,42 +17,85 @@ public class Rythme : MonoBehaviour
     public PostProcessingProfile transe;
 	public PostProcessingProfile Transcendance;
 	public bool isBeating;
+    public bool boss;
 
-    public string selectsoundNormal;
-    public string selectsoundTranse;
-    public string selectsoundTranscendance;
- //   FMOD.Studio.EventInstance soundNormal;
-   // FMOD.Studio.EventInstance soundTranse;
- //   FMOD.Studio.EventInstance soundTranscendance;
+    [FMODUnity.EventRef]
+    public string selectsoundVillage;
+    [FMODUnity.EventRef]
+    public string selectsoundForêt;
+    [FMODUnity.EventRef]
+    public string selectsoundForêtBase;
+    [FMODUnity.EventRef]
+    public string selectsoundForêtTranse;
+    [FMODUnity.EventRef]
+    public string selectsoundForêtTranscendance;
+    [FMODUnity.EventRef]
+    public string selectsoundDonjonBase;
+    [FMODUnity.EventRef]
+    public string selectsoundDonjonTranse;
+    [FMODUnity.EventRef]
+    public string selectsoundDonjonTranscendance;
+    [FMODUnity.EventRef]
+    public string selectsoundBossBase;
+    [FMODUnity.EventRef]
+    public string selectsoundBossTranse;
+    [FMODUnity.EventRef]
+    public string selectsoundBossTranscendance;
+    FMOD.Studio.EventInstance sndTheme;
+    FMOD.Studio.EventInstance sndBase;
+    FMOD.Studio.EventInstance sndTranse;
+    FMOD.Studio.EventInstance sndTranscendance;
     // Use this for initialization
 
-	//diminution combo
-	float timerComboPas;
+    //diminution combo
+    float timerComboPas;
 	public float timerCombo;
 	public float timerComboSpeed;
 	public float comboDecreaseSpeed =1;
 
+
     void Start()
     {
-     // 	soundNormal = FMODUnity.RuntimeManager.CreateInstance(selectsoundNormal);
-     //   soundTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranse);
-     //   soundTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundTranscendance);
-        
+        if (SceneManager.GetActiveScene().name == "Racana_Village" || SceneManager.GetActiveScene().name == "Racana_Tuto")
+        {
+            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
+        }
+        if (SceneManager.GetActiveScene().name == "Racana_Foret" )
+        {
+            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundForêt);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundForêtBase);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundForêtTranse);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundForêtTranscendance);
+        }
+        if (SceneManager.GetActiveScene().name == "Racana_Donjon_LD")
+        {
+            gameObject.GetComponent<Player>().canMusic = true;
+            combo = 0;
+            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonBase);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonBase);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranse);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranscendance);
+        }
         bpm = bpmInitial;
-    //	FMOD.Studio.PLAYBACK_STATE fmodPbState;
-     //   soundNormal.getPlaybackState(out fmodPbState);
-     //   if (fmodPbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
-     //   {
-    //        soundNormal.start();
-    //        soundTranse.start();
-    //        soundTranscendance.start();
-     //   }
+
+        MusicPlay();
     }
 
     // Update is called once per frame
     void Update()
     {
-		timerCombo+= Time.deltaTime;
+        if (boss == true)
+        {
+            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranse);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranscendance);
+        }
+
+        timerCombo += Time.deltaTime;
 		timerComboSpeed+= Time.deltaTime;
 		timerComboPas += Time.deltaTime;
 		if(timerCombo> timeBetweenBeatsInSeconds *4*comboDecreaseSpeed&&timerComboPas>timeBetweenBeatsInSeconds&& combo>0){
@@ -84,32 +128,58 @@ public class Rythme : MonoBehaviour
         {
             isBeating = false;
 		}
-		if (combo <= 0) 
+        if (combo < 0)
+        {
+            sndTheme.setVolume(1f);
+            sndBase.setVolume(0f);
+            sndTranse.setVolume(0f);
+            sndTranscendance.setVolume(0f);
+        }
+        if (combo == 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic) 
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = initial;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-         //   soundNormal.setVolume(1f);
-         //   soundTranse.setVolume(0f);
-         //   soundTranscendance.setVolume(0f);
+            sndTheme.setVolume(0f);
+            sndBase.setVolume(1f);
+            sndTranse.setVolume(0f);
+            sndTranscendance.setVolume(0f);
         }
-		if (combo < 20 && combo > 0)
+		if (combo < 20 && combo > 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
-			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-			GetComponent<Player> ().MovSpeed = 200 + combo*2;
-           // soundNormal.setVolume(0f);
-          //  soundTranse.setVolume(combo/30);
-          //  soundTranscendance.setVolume(0f);
+            //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
+            GetComponent<Player> ().MovSpeed = 200 + combo*2;
+            sndTheme.setVolume(0f);
+            sndBase.setVolume(0f);
+            sndTranse.setVolume(1f);
+            sndTranscendance.setVolume(0f);
         }
-		if (combo >= 20)
+		if (combo >= 20 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
-			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
-			GetComponent<Player> ().MovSpeed = 250;
+            //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
+            GetComponent<Player> ().MovSpeed = 250;
 			GetComponent<Player> ().transcendance = true;
-         //   soundNormal.setVolume(0f);
-			//soundTranse.setVolume (0f);
-          //  soundTranscendance.setVolume(1f);
+            sndTheme.setVolume(0f);
+            sndBase.setVolume(0f);
+			sndTranse.setVolume (0f);
+            sndTranscendance.setVolume(1f);
         }
+    }
+
+    public void MusicStop()
+    {
+        sndTheme.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void MusicPlay()
+    {
+        sndTheme.start();
+        sndBase.start();
+        sndTranse.start();
+        sndTranscendance.start();
     }
 }

@@ -24,7 +24,12 @@ public class health : MonoBehaviour {
 	private SpriteRenderer rend;
 	private Color couleurDeBase;
 
-	private GameObject player;
+    [FMODUnity.EventRef]
+    public string selectsoundHurt;
+
+    FMOD.Studio.EventInstance sndHurt;
+
+    private GameObject player;
 	// Use this for initialization
 	void Start () 
 	{
@@ -33,7 +38,8 @@ public class health : MonoBehaviour {
 		rend = GetComponent <SpriteRenderer> ();
 		couleurDeBase = rend.color;
 		player = GameObject.FindGameObjectWithTag ("Player");
-	}
+        sndHurt = FMODUnity.RuntimeManager.CreateInstance(selectsoundHurt);
+    }
 	//si se fait soigner
 	public void Heal( int lifeToGain)// la fonction pour soigner
 	{
@@ -58,6 +64,7 @@ public class health : MonoBehaviour {
 			}
 			if (gameObject.tag == "Enemy") 
 			{
+                sndHurt.start();
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
 				StartCoroutine (Vibration (0.05f, 0.9f));
 				player.GetComponent <Rythme>().combo += lifeToLose ;

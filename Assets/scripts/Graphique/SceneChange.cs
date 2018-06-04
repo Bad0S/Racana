@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneChange : MonoBehaviour {
+public class SceneChange : MonoBehaviour
+{
 
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
@@ -24,7 +25,6 @@ public class SceneChange : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player"){
-			DontDestroyOnLoad (other);
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 			//SceneManager.LoadScene("Showcase");
 
@@ -61,3 +61,7 @@ public class SceneChange : MonoBehaviour {
 		alpha += Time.deltaTime * (1.0f / fadeSpeed) * ((fadeDirection == FadeDirection.Out)? -1 : 1) ;
 	}
 }
+
+			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
+            //SceneManager.LoadScene("Showcase");
+            other.GetComponent<Rythme>().MusicStop();
