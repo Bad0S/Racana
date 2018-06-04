@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 
 public class PositionSetter : MonoBehaviour {
-	private GameObject[] players;
+	private List<GameObject> players;
 	private Scene scenePlaying;
 	public string nameScene;
 	public string previousName;
+	public bool positionReseted;
+	public bool sceneSorted;
 	// Use this for initialization
 	void Awake (){
 		SceneManager.sceneLoaded += OnSceneLoaded;
@@ -19,32 +22,38 @@ public class PositionSetter : MonoBehaviour {
 		scenePlaying = SceneManager.GetActiveScene ();
 		previousName = nameScene;
 		nameScene = scenePlaying.name;
-		players = GameObject.FindGameObjectsWithTag ("Player");
+		players = GameObject.FindGameObjectsWithTag ("Player").ToList<GameObject>();
 		print (players [0]);
-		if(players [0] == gameObject){
-			for (int i = 0; i < players.Length ; i++) {
+		if(players [1] == gameObject){
+			for (int i = 1; i < players.Count ; i++) {
 				players[i].GetComponent <Player>().canMusic =players[0].GetComponent <Player>().canMusic;
 				players[i].GetComponent <Player>().inDanger =players[0].GetComponent <Player>().inDanger;
-				players[i].GetComponent <PositionSetter>().nameScene =players[0].GetComponent <PositionSetter>().nameScene;
+				//players[i].GetComponent <PositionSetter>().nameScene =players[0].GetComponent <PositionSetter>().nameScene;
 				players[i].GetComponent <PositionSetter>().previousName =players[0].GetComponent <PositionSetter>().previousName;
-				SetPosition (players[i]);
+				print (players[i].GetComponent <PositionSetter>().previousName);
 			}
+			players[0].GetComponent <PositionSetter>().sceneSorted = true;
 		}
-		while((players.Length>1)){
-			Destroy (players[0]);
-			players.Remove(players[0]) ;
+		if(sceneSorted){
+			for (int i = 0; i < players.Count; i++) {
+				SetPosition (players[i]);
+
+			}
+			sceneSorted = false;
+			positionReseted = true;
 		}
 
 	}
 	void SetPosition(GameObject player){ //no checkpoint yet, but implementable easily through bools
 
 		if(nameScene == "Racana_Village" ){
-			print ("bite");
 			if(previousName == "Racana_Maison_chef"){
 				player.transform.position = new Vector3 (-1336f, -204.6f, 0);
 			}
 			if(previousName == "Racana_Maison_hero"){
 				player.transform.position = new Vector3 (-1387f, -656f, 0);
+				print ("bite");
+
 			}			
 			if(previousName == "Racana_Foret"){
 				player.transform.position = new Vector3 (-144f, -657.6f, 0);
@@ -77,6 +86,14 @@ public class PositionSetter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		if(positionReseted){
+			while((players.Count>1)){
+				Destroy (players[0]);
+				players.RemoveAt (0);
+				print (players.Count ());
+			}
+			positionReseted = false;
+		}
+
 	}
 }

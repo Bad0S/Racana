@@ -186,9 +186,6 @@ public class Player: MonoBehaviour
 				if (isDashing == false)
                 {
 					body.velocity = Vector3.zero;
-					print((Input.GetAxisRaw ("Horizontal") ) );
-
-
 				}
 				if(inDanger){
 					anim.SetBool ("IsIdleFighting", true);
