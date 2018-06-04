@@ -33,11 +33,12 @@ public class BambouBehaviour : MonoBehaviour {
 
 	int damage =1;
 
-	//public List<AudioClip> groupieClips;
-	//private AudioSource groupieSource;
+    [FMODUnity.EventRef]
+    public string selectsoundBambou;
+    FMOD.Studio.EventInstance sndBambou;
 
-	//ATTENTION IL VA ATTAQUER
-	private SpriteRenderer enemyRenderer;
+    //ATTENTION IL VA ATTAQUER
+    private SpriteRenderer enemyRenderer;
 	private Shader shaderDeCouleur;
 	private Shader shaderDeBase;
 	public Color couleurDeBase;
@@ -69,8 +70,8 @@ public class BambouBehaviour : MonoBehaviour {
 		shaderDeBase = Shader.Find("Sprites/Default"); // or whatever sprite shader is being used
 
 		enemyRenderer = GetComponent <SpriteRenderer>();
-		//	groupieSource = GetComponent<AudioSource>();
-		couleurDeBase = enemyRenderer.color;
+        sndBambou = FMODUnity.RuntimeManager.CreateInstance(selectsoundBambou);
+        couleurDeBase = enemyRenderer.color;
 		playerRB= target.GetComponent <Rigidbody2D>();
 
 	}
@@ -166,6 +167,7 @@ public class BambouBehaviour : MonoBehaviour {
 		print (angleShoot);
 		anim.SetTrigger ("IsAttacking");
 
+        sndBambou.start();
 		GameObject herbeTirInstance = (GameObject)Instantiate (herbeTir, transform.position,Quaternion.Euler(0, 0, angleShoot/2));
 		herbeTirInstance.SetActive (true);
 		herbeTirInstance.transform.localScale = new Vector3 (1.2f, 1.2f, 1);

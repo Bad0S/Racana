@@ -64,8 +64,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	public int rythmeRangeMax;
 	private int counterRythme;
 
-    public string selectsoundAttaqueGroupie;
-    //FMOD.Studio.EventInstance soundAttaqueGroupie;
+    [FMODUnity.EventRef]
+    public string selectsoundGroupie;
+    FMOD.Studio.EventInstance sndGroupie;
 
     void Start ()
     {
@@ -88,7 +89,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		couleurDeBase = enemyRenderer.color;
 		playerRB= target.GetComponent <Rigidbody2D>();
 
-//        soundAttaqueGroupie = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaqueGroupie);
+        sndGroupie = FMODUnity.RuntimeManager.CreateInstance(selectsoundGroupie);
 
     }
 
@@ -220,6 +221,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		yield return new WaitForSeconds (0.14f);
 		targetVectorAttacking = targetVector;
 		yield return new WaitForSeconds (0.2f);
+        sndGroupie.start();
 		anim.SetBool ("IsAttacking", true);
      //   soundAttaqueGroupie.start();
 

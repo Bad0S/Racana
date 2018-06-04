@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 249, y: -214, z: -1}
+  m_LocalPosition: {x: 249, y: -155, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -698,7 +698,7 @@ MonoBehaviour:
   localRotation: {x: 0, y: 180, z: -180}
   sprite: {fileID: 0}
   spriteLayer: Default
-  spriteLayerOrder: -11
+  spriteLayerOrder: -12
 --- !u!114 &114841462141412520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -711,8 +711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectsoundSlash: event:/Woosh
-  selectsoundDash: event:/Woosh
-  selectsoundRepousse: event:/Woosh
+  selectsoundDash: event:/Dash
+  selectsoundRepousse: event:/Repousse
   selectsoundWoosh: event:/Woosh
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 4
+  life: 3
   damage: 1
   invincible: 0
   invincibleTime: 2
@@ -769,6 +769,7 @@ MonoBehaviour:
   - {fileID: 0}
   pvVide: {fileID: 21300000, guid: 003b3ee5018fd82408ccd61f89c339e1, type: 3}
   selectsoundHurt: event:/Hit
+  selectPlayerHit: snapshot:/PlayerHit
 --- !u!198 &198097314004209326
 ParticleSystem:
   m_ObjectHideFlags: 1

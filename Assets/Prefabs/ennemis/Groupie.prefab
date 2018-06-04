@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105373812463650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -315.9, y: 127.7, z: 0}
+  m_LocalPosition: {x: -87.25, y: 641.5, z: 1.0970763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   aEteRepousse: 0
   beatAllowAttack: 0
   rythmeRangeMax: 4
-  selectsoundAttaqueGroupie: event:/Groupie_Attaque
+  selectsoundGroupie: event:/AttaqueGroupie
 --- !u!114 &114146336610939310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,6 +160,7 @@ MonoBehaviour:
   currentTime: 0
   LifeBar: []
   pvVide: {fileID: 0}
+  selectsoundHurt: event:/Hit
 --- !u!212 &212489112934010194
 SpriteRenderer:
   m_ObjectHideFlags: 1
