@@ -30,10 +30,7 @@ public class PositionSetter : MonoBehaviour {
 				SetPosition (players[i]);
 			}
 		}
-		while((players.Length>1)){
-			Destroy (players[0]);
-			players.Remove(players[0]) ;
-		}
+		
 
 	}
 	void SetPosition(GameObject player){ //no checkpoint yet, but implementable easily through bools

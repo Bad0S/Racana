@@ -368,8 +368,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1271, y: -720, z: -1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -243, y: -1661, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -435,7 +435,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 7
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -721,7 +721,7 @@ MonoBehaviour:
   localRotation: {x: 0, y: 180, z: -180}
   sprite: {fileID: 0}
   spriteLayer: Default
-  spriteLayerOrder: -11
+  spriteLayerOrder: -12
 --- !u!114 &114755953746499626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,7 +753,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
   canMove: 1
-  MovSpeed: 200
+  MovSpeed: 280
   canAttack: 0
   attaqueSlash: {fileID: 1492656577959142}
   attaqueRepousse: {fileID: 1955622777952468}

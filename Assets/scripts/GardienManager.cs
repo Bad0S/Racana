@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GardienManager : MonoBehaviour
 {
+	
     [FMODUnity.EventRef]
     public string selectsoundTransitionGardien;
     [FMODUnity.EventRef]
@@ -14,13 +15,21 @@ public class GardienManager : MonoBehaviour
     FMOD.Studio.EventInstance sndBeatGardien;
     FMOD.Studio.EventInstance sndTransition;
 
+	public Vector3 Pos1;
+	public Vector3 Pos2;
+	public Vector3 Pos3;
     public float portée;
     public float distance;
-
+	public bool active;
+	public GameObject bambou;
 
     // Use this for initialization
     void Start ()
     {
+		Pos1 = new Vector3 (-1104f, -210f);
+		Pos2 = new Vector3 (-758f,-223f);
+		Pos3 = new Vector3 (-932f, -370f);
+		active = false;
         sndTransitionGardien = FMODUnity.RuntimeManager.CreateInstance(selectsoundTransitionGardien);
         sndBeatGardien = FMODUnity.RuntimeManager.CreateInstance(selectsoundBeatGardien);
         sndTransition = FMODUnity.RuntimeManager.CreateInstance(selectsoundTransition);
@@ -37,13 +46,20 @@ public class GardienManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false)
+		if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false && active == false)
         {
             sndTransition.start();
             sndTransitionGardien.start();
             collision.GetComponent<Player>().canMusic = true;
             collision.GetComponent<Rythme>().combo = 0f;
             sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+			
+			print ("spawn_stele");
+			GameObject Bambou = (GameObject)Instantiate (bambou, Pos1 ,Quaternion.identity);
+			GameObject Bambou2 = (GameObject)Instantiate (bambou, Pos2 ,Quaternion.identity);
+			GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
+			active = true;
+
         }
     }
 }
