@@ -25,7 +25,7 @@ public class SceneChange : MonoBehaviour
 		if (other.tag == "Player"){
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
             //SceneManager.LoadScene("Showcase");
-            other.GetComponent<Rythme>().Music = false;
+            other.GetComponent<Rythme>().MusicStop();
 		}
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 

@@ -17,7 +17,7 @@ public class Rythme : MonoBehaviour
     public PostProcessingProfile transe;
 	public PostProcessingProfile Transcendance;
 	public bool isBeating;
-    public bool Music;
+    public bool boss;
 
     [FMODUnity.EventRef]
     public string selectsoundVillage;
@@ -81,22 +81,18 @@ public class Rythme : MonoBehaviour
         }
         bpm = bpmInitial;
 
-        Music = true;
-        sndTheme.start();
-        sndBase.start();
-        sndTranse.start();
-        sndTranscendance.start();
+        MusicPlay();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Music == false)
+        if (boss == true)
         {
-            sndTheme.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranse);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranscendance);
         }
 
         timerCombo += Time.deltaTime;
@@ -169,5 +165,21 @@ public class Rythme : MonoBehaviour
 			sndTranse.setVolume (0f);
             sndTranscendance.setVolume(1f);
         }
+    }
+
+    public void MusicStop()
+    {
+        sndTheme.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void MusicPlay()
+    {
+        sndTheme.start();
+        sndBase.start();
+        sndTranse.start();
+        sndTranscendance.start();
     }
 }

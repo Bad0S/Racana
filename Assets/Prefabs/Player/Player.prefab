@@ -196,7 +196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1804523527741744
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 191, y: -1619, z: -1}
+  m_LocalPosition: {x: 249, y: -214, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -433,7 +433,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 7
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -643,6 +643,7 @@ MonoBehaviour:
   transe: {fileID: 11400000, guid: 9ae8379bd52baa34dbe5a16af30afb9f, type: 2}
   Transcendance: {fileID: 11400000, guid: 0c433e990ee8b824cbd5872a21080699, type: 2}
   isBeating: 0
+  boss: 0
   selectsoundVillage: event:/ThemeVillage
   "selectsoundFor\xEAt": "event:/ThemeFor\xEAt"
   "selectsoundFor\xEAtBase": "event:/CombatFor\xEAtBase"
@@ -716,7 +717,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
   canMove: 1
-  MovSpeed: 280
+  MovSpeed: 200
   canAttack: 0
   attaqueSlash: {fileID: 1492656577959142}
   attaqueRepousse: {fileID: 1955622777952468}
@@ -757,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 3
+  life: 4
   damage: 1
   invincible: 0
   invincibleTime: 2

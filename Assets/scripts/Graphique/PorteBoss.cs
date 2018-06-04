@@ -32,15 +32,19 @@ public class PorteBoss : MonoBehaviour {
 			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2.5f, 0.003f,0.05f);
 			StartCoroutine (Vibration (2.5f, 0.5f));
 			StartCoroutine(EmitParticle(2f));
-		}
+
+            other.GetComponent<Rythme>().MusicStop();
+            other.GetComponent<Rythme>().boss = true;
+        }
 	}
 
 	IEnumerator Vibration(float duree, float puissance){
 		GamePad.SetVibration (0,puissance,0);// POUR LA FREQUECNE, DEMANDER A MICHAEL
 		yield return new WaitForSeconds(duree);
 		GamePad.SetVibration (0,0f,0f);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicPlay();
 
-	}
+    }
 
 
 
@@ -111,8 +115,14 @@ public class PorteBoss : MonoBehaviour {
 		}
 	}
 
-    IEnumerator EmitParticle(float duree)    {        Particle.SetActive(true);
-		yield return new WaitForSeconds(duree);        Particle.SetActive(false);
-    }
-
-}
+    IEnumerator EmitParticle(float duree)
+    {
+        Particle.SetActive(true);
+		yield return new WaitForSeconds(duree);
+        Particle.SetActive(false);
+    }
+
+
+
+
+}
