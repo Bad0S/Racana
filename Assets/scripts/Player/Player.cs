@@ -8,15 +8,15 @@ using XInputDotNetPure;
 public class Player: MonoBehaviour 
 {
     //Sound
-//    [FMODUnity.EventRef]
-    public string selectsoundCharge;
-    public string selectsoundAttaque;
-    public string selectsoundRepousse;
+    [FMODUnity.EventRef]
+    public string selectsoundSlash;
     public string selectsoundDash;
-   /* FMOD.Studio.EventInstance soundCharge;
-    FMOD.Studio.EventInstance soundAttaque;
-    FMOD.Studio.EventInstance soundRepousse;
-    FMOD.Studio.EventInstance soundDash;*/
+    public string selectsoundRepousse;
+    public string selectsoundWoosh;
+    FMOD.Studio.EventInstance sndSlash;
+    FMOD.Studio.EventInstance sndDash;
+    FMOD.Studio.EventInstance sndRepousse;
+    FMOD.Studio.EventInstance sndWoosh;
 
 
     //Visual
@@ -85,11 +85,10 @@ public class Player: MonoBehaviour
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
-      /*  soundCharge = FMODUnity.RuntimeManager.CreateInstance(selectsoundCharge);
-        soundAttaque = FMODUnity.RuntimeManager.CreateInstance(selectsoundAttaque);
-        soundRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
-        soundDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);*/
-		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+        sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash);
+        sndDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
+        sndRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
+        sndWoosh = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
 
     }
 
@@ -102,8 +101,8 @@ public class Player: MonoBehaviour
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
 		if(canMusic == true){
-			if (chargeAttaque > beat && tauxCharge < 4) {
-
+			if (chargeAttaque > beat && tauxCharge < 4)
+            {
 				tauxCharge++;
 				DisableListElements (paliers);
 				paliers [tauxCharge-1].SetActive (true);
@@ -184,7 +183,8 @@ public class Player: MonoBehaviour
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
 			} else 
 			{
-				if (isDashing == false){
+				if (isDashing == false)
+                {
 					body.velocity = Vector3.zero;
 					print((Input.GetAxisRaw ("Horizontal") ) );
 
@@ -222,12 +222,9 @@ public class Player: MonoBehaviour
 
 
 				StartCoroutine(slashCoroutine ());
-
-
-               // soundCharge.start();
             }
 
-			if (Input.GetButtonDown ("Fire2") && isAttacking == false) 
+			if (Input.GetButtonDown ("Fire2") && isAttacking == false && canMusic) 
 			{
 
 
@@ -294,9 +291,14 @@ public class Player: MonoBehaviour
 
 	IEnumerator slashCoroutine()
     {
-      //  soundAttaque.start();
-     //  soundCharge.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-       // soundAttaque.start();
+        if (canMusic == false)
+        {
+            sndWoosh.start();
+        }
+        if (canMusic)
+        {
+            sndSlash.start();
+        }
 		anim.SetBool("IsAttacking", true);
 
 		anim.SetTrigger ("Attack_Slash");

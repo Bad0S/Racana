@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 241, y: 1919, z: -1}
+  m_LocalPosition: {x: 191, y: -1619, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -433,7 +433,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 7
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -638,14 +638,22 @@ MonoBehaviour:
   timeBetweenBeatsInSeconds: 0.75
   musicTime: 0
   beats: 1
-  combo: 0
+  combo: -1
   initial: {fileID: 11400000, guid: f224147513273c94093cad963d4df7ee, type: 2}
   transe: {fileID: 11400000, guid: 9ae8379bd52baa34dbe5a16af30afb9f, type: 2}
   Transcendance: {fileID: 11400000, guid: 0c433e990ee8b824cbd5872a21080699, type: 2}
   isBeating: 0
-  selectsoundNormal: event:/Fond Musical
-  selectsoundTranse: event:/Transe
-  selectsoundTranscendance: event:/Transcendance
+  selectsoundVillage: event:/ThemeVillage
+  "selectsoundFor\xEAt": "event:/ThemeFor\xEAt"
+  "selectsoundFor\xEAtBase": "event:/CombatFor\xEAtBase"
+  "selectsoundFor\xEAtTranse": "event:/CombatFor\xEAtTranse"
+  "selectsoundFor\xEAtTranscendance": "event:/CombatFor\xEAtTranscendance"
+  selectsoundDonjonBase: event:/CombatDonjonBase
+  selectsoundDonjonTranse: event:/CombatDonjonTranse
+  selectsoundDonjonTranscendance: event:/CombatDonjonTranscendance
+  selectsoundBossBase: event:/CombatBossBase
+  selectsoundBossTranse: event:/CombatBossTranse
+  selectsoundBossTranscendance: event:/CombatBossTranscendance
   timerCombo: 0
   timerComboSpeed: 0
   comboDecreaseSpeed: 1
@@ -660,68 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0ae5f7e6dce1045bd513822ac6dbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementsPasseArriere:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  elementsPasseArriere: []
 --- !u!114 &114547591711496900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -762,14 +709,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26f18062469b2e4eab83fab7d738a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectsoundCharge: event:/Charge
-  selectsoundAttaque: event:/Attaque
-  selectsoundRepousse: event:/Repousse
-  selectsoundDash: event:/Dash
+  selectsoundSlash: event:/Woosh
+  selectsoundDash: event:/Woosh
+  selectsoundRepousse: event:/Woosh
+  selectsoundWoosh: event:/Woosh
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
   canMove: 1
-  MovSpeed: 200
+  MovSpeed: 280
   canAttack: 0
   attaqueSlash: {fileID: 1492656577959142}
   attaqueRepousse: {fileID: 1955622777952468}
@@ -786,7 +733,7 @@ MonoBehaviour:
   speedMultiplicator: 1
   isDashing: 0
   canDash: 1
-  DashSpeed: 625
+  DashSpeed: 450
   dashTarget: {fileID: 0}
   dashFX:
   - {fileID: 1203735473992918}
@@ -795,7 +742,7 @@ MonoBehaviour:
   repousse: {fileID: 0}
   transcendance: 0
   projectileShake: 0
-  canMusic: 1
+  canMusic: 0
   hadTuto: 0
 --- !u!114 &114915059078695548
 MonoBehaviour:
@@ -820,6 +767,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   pvVide: {fileID: 21300000, guid: 003b3ee5018fd82408ccd61f89c339e1, type: 3}
+  selectsoundHurt: event:/Hit
 --- !u!198 &198097314004209326
 ParticleSystem:
   m_ObjectHideFlags: 1
