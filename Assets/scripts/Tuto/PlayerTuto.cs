@@ -9,12 +9,15 @@ public class PlayerTuto : MonoBehaviour {
 	public GameObject fader;
 	// Use this for initialization
 	void Start () {
+		Camera.main.GetComponent <CameraTuto>().enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		dials [0].SetActive (true);
-
+		try{
+			
+		
 		if(enemy.GetComponent <health>().life<8){
 			dials [1].SetActive (true);
 			enemy.GetComponent <EnemyBehaviour> ().target = null;
@@ -31,17 +34,21 @@ public class PlayerTuto : MonoBehaviour {
 			enemy.GetComponent <EnemyBehaviour> ().target = gameObject;
 
 		}
-		if(enemy.GetComponent<health> (). life == 1){
-			Destroy (enemy);
-			fader.SetActive (true);
+		}
+		catch{}
+		if(enemy== null){
+			dials [3].SetActive ((true));
+			fader.GetComponent <BoxCollider2D>().enabled = true;
 			GetComponent <Player> ().hadTuto = true;
+			Camera.main.GetComponent <CameraTuto>().enabled = true;
+
 		}
 	}
 
 	IEnumerator dial3(){
 		yield return new WaitForSeconds (0.1f);
 		print (dials);
-		if(enemy.GetComponent <EnemyBehaviour> ().timerWaitRepousse <01f ){
+		if(enemy.GetComponent <EnemyBehaviour> ().timerWaitRepousse <02f ){
 			dials [2].SetActive ((true));
 			enemy.GetComponent <EnemyBehaviour> ().target = null;
 

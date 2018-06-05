@@ -26,8 +26,11 @@ public class health : MonoBehaviour {
 
     [FMODUnity.EventRef]
     public string selectsoundHurt;
+    [FMODUnity.EventRef]
+    public string selectPlayerHit;
 
     FMOD.Studio.EventInstance sndHurt;
+    FMOD.Studio.EventInstance playerHit;
 
     private GameObject player;
 	// Use this for initialization
@@ -53,6 +56,7 @@ public class health : MonoBehaviour {
 		{
 			if (gameObject.tag == "Player") 
 			{
+                playerHit.start();
 				LifeBar [life-1].sprite = pvVide;
 				StartCoroutine (Vibration (0.07f, 0.6f));
 
@@ -183,7 +187,8 @@ public class health : MonoBehaviour {
 		rend.color = couleurDeBase ;
 		Destroy (gameObject);
 	}
-	IEnumerator Damage(float timeRed , float timeShake, float magShake ){
+	IEnumerator Damage(float timeRed , float timeShake, float magShake )
+    {
 		rend.material.shader = shaderDeCouleur;
 		rend.color = Color.red;
 		Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (timeShake, timeShake,0.04f);

@@ -161,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1673587254044118
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1804523527741744
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4033338677476802
 Transform:
   m_ObjectHideFlags: 1
@@ -368,7 +368,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804523527741744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -243, y: -1661, z: -1}
+  m_LocalPosition: {x: 249, y: -155, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4648566300039106}
@@ -434,7 +434,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 7
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -719,8 +719,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9e5e588b2fb8f41a8f5845a68875e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
   nameScene: 
   previousName: 
+  positionReseted: 0
+  sceneSorted: 0
 --- !u!114 &114841462141412520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -733,13 +736,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectsoundSlash: event:/Woosh
-  selectsoundDash: event:/Woosh
-  selectsoundRepousse: event:/Woosh
+  selectsoundDash: event:/Dash
+  selectsoundRepousse: event:/Repousse
   selectsoundWoosh: event:/Woosh
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
   canMove: 1
-  MovSpeed: 280
+  MovSpeed: 200
   canAttack: 0
   attaqueSlash: {fileID: 1492656577959142}
   attaqueRepousse: {fileID: 1955622777952468}
@@ -762,7 +765,7 @@ MonoBehaviour:
   - {fileID: 1203735473992918}
   - {fileID: 1232976213497476}
   - {fileID: 1300159694386238}
-  repousse: {fileID: 1216153459730528, guid: 4c034197cbf8a9241959ffbc33345e5b, type: 2}
+  repousse: {fileID: 0}
   transcendance: 0
   projectileShake: 0
   canMusic: 0
@@ -780,7 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 4
+  life: 3
   damage: 1
   invincible: 0
   invincibleTime: 2
@@ -791,6 +794,7 @@ MonoBehaviour:
   - {fileID: 0}
   pvVide: {fileID: 21300000, guid: 003b3ee5018fd82408ccd61f89c339e1, type: 3}
   selectsoundHurt: event:/Hit
+  selectPlayerHit: snapshot:/PlayerHit
 --- !u!198 &198097314004209326
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -45,12 +45,16 @@ public class TigreBehavior : MonoBehaviour {
 
 	int damage =1;
 
-	//SON
-	//public List<AudioClip> groupieClips;
-	//private AudioSource groupieSource;
+    //SON
+    [FMODUnity.EventRef]
+    public string selectsoundFauveCri;
+    [FMODUnity.EventRef]
+    public string selectsoundFauveMorsure;
+    FMOD.Studio.EventInstance sndFauveCri;
+    FMOD.Studio.EventInstance sndFauveMorsure;
 
-	//ATTENTION IL VA ATTAQUER
-	private SpriteRenderer enemyRenderer;
+    //ATTENTION IL VA ATTAQUER
+    private SpriteRenderer enemyRenderer;
 	private Shader shaderDeCouleur;
 	private Shader shaderDeBase;
 	public Color couleurDeBase;
@@ -86,8 +90,9 @@ public class TigreBehavior : MonoBehaviour {
 		shaderDeBase = Shader.Find("Sprites/Default"); // or whatever sprite shader is being used
 
 		enemyRenderer = GetComponent <SpriteRenderer>();
-	//	groupieSource = GetComponent<AudioSource>();
-		couleurDeBase = enemyRenderer.color;
+        sndFauveCri = FMODUnity.RuntimeManager.CreateInstance(selectsoundFauveCri);
+        sndFauveMorsure = FMODUnity.RuntimeManager.CreateInstance(selectsoundFauveMorsure);
+        couleurDeBase = enemyRenderer.color;
 		playerRB= target.GetComponent <Rigidbody2D>();
 		head = GetComponent <EdgeCollider2D> ();
 	}
@@ -236,7 +241,8 @@ public class TigreBehavior : MonoBehaviour {
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
 		anim.SetBool ("IsJumping",true);
-		rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+        sndFauveMorsure.start();
+        rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
 
 		//Instantiate (attackHitbox, transform);
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/2);
@@ -269,7 +275,7 @@ public class TigreBehavior : MonoBehaviour {
 		anim.SetBool ("IsMoving", false);
 
 		anim.SetBool ("IsAttacking",true);
-
+        sndFauveCri.start();
 		//anim.SetBool ("IsAttack", true);
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1.35f);
 		GameObject laserInstance = (GameObject)Instantiate (attackRoar, transform);
