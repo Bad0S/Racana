@@ -9,6 +9,7 @@ public class EntréeTuto : MonoBehaviour {
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
 	bool inDial;
+	public bool changeMusic;
 
 	public enum FadeDirection
 
@@ -47,6 +48,10 @@ public class EntréeTuto : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other){
 		if (other.tag == "Player" && inDial == false  && GetComponentInChildren <StartDialTuto>().entered == true) {
+			if (changeMusic && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto) 
+			{
+				other.GetComponent<Rythme> ().MusicStop ();
+			}
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 			player.GetComponent <Player> ().hadTuto = true;
 

@@ -15,7 +15,7 @@ public class SceneChange : MonoBehaviour
 		Out // Alpha = 0
 	}
 	public string scene;
-
+	public bool changeMusic;
 
 	void OnEnable()
 	{
@@ -28,7 +28,10 @@ public class SceneChange : MonoBehaviour
 		{
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
             //SceneManager.LoadScene("Showcase");
-            other.GetComponent<Rythme>().MusicStop();
+			if (changeMusic && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto) 
+			{
+				other.GetComponent<Rythme> ().MusicStop ();
+			}
         }
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 

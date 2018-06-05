@@ -63643,6 +63643,7 @@ MonoBehaviour:
   player: {fileID: 211740999}
   fadeOutUIImage: {fileID: 1652316138}
   fadeSpeed: 0.8
+  changeMusic: 1
   scene: Racana_Tuto
 --- !u!61 &1221184928
 BoxCollider2D:
@@ -68431,6 +68432,7 @@ MonoBehaviour:
   RespawnPos: []
   canMusic: 0
   hadTuto: 0
+  scenes: []
 --- !u!4 &1334082748
 Transform:
   m_ObjectHideFlags: 0
