@@ -1003,6 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78317031}
   - component: {fileID: 78317030}
+  - component: {fileID: 78317032}
   m_Layer: 0
   m_Name: caisse2
   m_TagString: Untagged
@@ -1067,6 +1068,31 @@ Transform:
   m_Father: {fileID: 1454134217}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &78317032
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 78317029}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.4409943, y: 0.4116974}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19, y: 19}
+    newSize: {x: 19, y: 19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.118011, y: 18.176605}
+  m_EdgeRadius: 0
 --- !u!1001 &81959549
 Prefab:
   m_ObjectHideFlags: 0
@@ -22704,6 +22730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491902315}
   - component: {fileID: 491902314}
+  - component: {fileID: 491902316}
   m_Layer: 0
   m_Name: caisse
   m_TagString: Untagged
@@ -22768,6 +22795,31 @@ Transform:
   m_Father: {fileID: 1454134217}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &491902316
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491902313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.5237579, y: 0.41557312}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19, y: 19}
+    newSize: {x: 19, y: 19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.952484, y: 18.168854}
+  m_EdgeRadius: 0
 --- !u!1 &494907882
 GameObject:
   m_ObjectHideFlags: 0
@@ -32707,7 +32759,7 @@ Prefab:
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -32746,6 +32798,11 @@ Prefab:
       propertyPath: inDanger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.data[0]
+      value: 
+      objectReference: {fileID: 1822103272}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
@@ -81069,7 +81126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1822103272}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1504396370
 SpriteRenderer:
@@ -96960,11 +97017,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694455335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -157.3, y: -70.6, z: 0}
+  m_LocalPosition: {x: 7.7, y: -77.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1822103272}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1698699727
 Prefab:
@@ -101652,8 +101709,8 @@ Transform:
   m_LocalPosition: {x: -1450.0701, y: 182.7771, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1504396369}
   - {fileID: 1694455336}
+  - {fileID: 1504396369}
   m_Father: {fileID: 772946905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102669,6 +102726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957193726}
   - component: {fileID: 1957193727}
+  - component: {fileID: 1957193728}
   m_Layer: 0
   m_Name: caisse (1)
   m_TagString: Untagged
@@ -102733,6 +102791,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1957193728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957193725}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.4544983, y: 0.5540924}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19, y: 19}
+    newSize: {x: 19, y: 19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.091003, y: 17.891815}
+  m_EdgeRadius: 0
 --- !u!1 &1968830622
 GameObject:
   m_ObjectHideFlags: 0
@@ -102911,6 +102994,26 @@ Prefab:
         type: 2}
       propertyPath: m_MaskInteraction
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61773865522615758, guid: 6ed069a7e16616e439a88f2e2cfb5573,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -13.59668
+      objectReference: {fileID: 0}
+    - target: {fileID: 61773865522615758, guid: 6ed069a7e16616e439a88f2e2cfb5573,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 36.80664
+      objectReference: {fileID: 0}
+    - target: {fileID: 61773865522615758, guid: 6ed069a7e16616e439a88f2e2cfb5573,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 16.090204
+      objectReference: {fileID: 0}
+    - target: {fileID: 61773865522615758, guid: 6ed069a7e16616e439a88f2e2cfb5573,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -5.954892
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ed069a7e16616e439a88f2e2cfb5573, type: 2}
@@ -113865,6 +113968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037373152}
   - component: {fileID: 2037373153}
+  - component: {fileID: 2037373154}
   m_Layer: 0
   m_Name: caisse (2)
   m_TagString: Untagged
@@ -113929,6 +114033,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &2037373154
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037373151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.5036011, y: 0.41558838}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19, y: 19}
+    newSize: {x: 19, y: 19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.992798, y: 18.168823}
+  m_EdgeRadius: 0
 --- !u!1 &2042983283
 GameObject:
   m_ObjectHideFlags: 0
