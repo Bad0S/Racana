@@ -24,13 +24,11 @@ public class SceneChange : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Player"){
+		if (other.tag == "Player")
+		{
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
             //SceneManager.LoadScene("Showcase");
-            if (SceneManager.GetActiveScene().name != "Racana_Village" || SceneManager.GetActiveScene().name != "Racana_Maison_chef" || SceneManager.GetActiveScene().name != "Racana_Maison_hero")
-            {
-                other.GetComponent<Rythme>().MusicStop();
-            }
+            other.GetComponent<Rythme>().MusicStop();
         }
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 
