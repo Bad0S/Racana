@@ -23,6 +23,8 @@ public class health : MonoBehaviour {
 	private Shader shaderDeBase;
 	private SpriteRenderer rend;
 	private Color couleurDeBase;
+	private GameObject hitFX;
+
 
     [FMODUnity.EventRef]
     public string selectsoundHurt;
@@ -71,6 +73,8 @@ public class health : MonoBehaviour {
                 sndHurt.start();
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
 				StartCoroutine (Vibration (0.05f, 0.9f));
+				StartCoroutine (PlayerHitFX (player));
+
 				player.GetComponent <Rythme>().combo += lifeToLose ;
 				player.GetComponent <Rythme>().timerCombo =0 ;
 				player.GetComponent <Rythme>().timerComboSpeed =0 ;
@@ -80,6 +84,7 @@ public class health : MonoBehaviour {
 			{
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
 				StartCoroutine (Vibration (0.05f, 01f));
+				StartCoroutine (PlayerHitFX (player));
 
 				player.GetComponent <Rythme>().combo += lifeToLose ;
 				player.GetComponent <Rythme>().timerCombo =0 ;
@@ -108,6 +113,7 @@ public class health : MonoBehaviour {
 					
 				}
 				GamePad.SetVibration (0,0,0);
+				hitFX.SetActive (false);
 				Destroy (gameObject);
 
 			}
@@ -168,6 +174,21 @@ public class health : MonoBehaviour {
 	IEnumerator BossDeath(float duree){
 		yield return new WaitForSeconds (duree);
 		Destroy (gameObject);
+
+	}
+
+	IEnumerator PlayerHitFX(GameObject player){
+		print ("test");
+		hitFX = player.GetComponentInParent<Player> ().hitFX [player.GetComponentInParent<Player> ().tauxCharge-1];
+		hitFX.SetActive (true);
+
+		hitFX.GetComponent<ParticleSystem> ().Emit (1);
+		hitFX.transform.position = new Vector3 (transform.position.x,transform.position.y, 0);
+
+		yield return new WaitForSeconds(0.4f);
+
+		hitFX.SetActive (false);
+
 
 	}
 

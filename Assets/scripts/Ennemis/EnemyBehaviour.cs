@@ -285,6 +285,8 @@ public class EnemyBehaviour : MonoBehaviour {
 			if (timerDegats > 0.28f) {
 				GetComponent <health> ().Hurt (target.GetComponentInParent<health> ().damage);
 				timerDegats = 0;
+
+
 			}
 			isJumping = false;
 			StartCoroutine (Knockback ());

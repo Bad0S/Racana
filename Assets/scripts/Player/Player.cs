@@ -55,6 +55,7 @@ public class Player: MonoBehaviour
 
 	//FX
 	public List<GameObject> paliers;
+	public List<GameObject> hitFX;
 
 	//FightEnemies
 	public bool grabbed;
