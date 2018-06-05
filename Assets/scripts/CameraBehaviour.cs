@@ -16,8 +16,8 @@ public class CameraBehaviour : MonoBehaviour
 	void Start()
 	{
 		cam = GetComponent<Camera>();
+		target = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 	}
-	//si on appuie sur R, recharge la scène
 	public IEnumerator ScreenShake (float TimeToShake, float magnitude, float frequency)
 	{
 		Effect = true;
@@ -52,13 +52,13 @@ public class CameraBehaviour : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Fire4"))
-		{
-
-			ScreenShakeFunction(0.2f,0.15f,0.04f);
-
-
-		}
+//		if (Input.GetButtonDown("Fire4"))
+//		{
+//
+//			ScreenShakeFunction(0.2f,0.15f,0.04f);
+//
+//
+//		}
 
 
 		/*if (target.position.y > trigger1.position.y && target.position.y < trigger2.position.y) 

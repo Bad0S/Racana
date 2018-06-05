@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using XInputDotNetPure;
+using UnityEngine.SceneManagement;
 
 
 public class Player: MonoBehaviour 
@@ -78,6 +79,8 @@ public class Player: MonoBehaviour
 	public bool canMusic;
 
 	public bool hadTuto;
+	public int sceneIndex;
+	public Scene scene;
 
 	// Use this for initialization
 	void Start () 
@@ -92,7 +95,11 @@ public class Player: MonoBehaviour
         sndDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
         sndRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
         sndWoosh = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
-
+		scene = SceneManager.GetActiveScene ();
+		sceneIndex = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().scenes.LastIndexOf (scene.name);
+		print (sceneIndex);
+		print (scene.name);
+		transform.position = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().RespawnPos [sceneIndex];
     }
 
 	// Update is called once per frame
