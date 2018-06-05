@@ -8,6 +8,8 @@ public class EntréeTuto : MonoBehaviour {
 	public GameObject player;
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
+	bool inDial;
+
 	public enum FadeDirection
 
 	{
@@ -23,10 +25,18 @@ public class EntréeTuto : MonoBehaviour {
 	void Update () {
 		player.GetComponent <Player> ().inDanger = false;
 		if (player.GetComponent <Player>().hadTuto ==false){
-			GetComponent <SceneChange>().scene = "Racana_Tuto";
+			scene = "Racana_Tuto";
 		}
 		else{
-			GetComponent <SceneChange>().scene = "Racana_Foret";
+			scene = "Racana_Foret";
+
+		}
+		inDial = GetComponentInChildren <DialogueComponent> ().inDialogue;
+		if(inDial == true){
+			GetComponent <BoxCollider2D> ().enabled = false;
+
+		}else {
+			GetComponent <BoxCollider2D> ().enabled = true;
 
 		}
 	}
@@ -35,8 +45,8 @@ public class EntréeTuto : MonoBehaviour {
 		StartCoroutine(Fade(FadeDirection.Out));
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Player"){
+	void OnTriggerStay2D(Collider2D other){
+		if (other.tag == "Player" && inDial == false  && GetComponentInChildren <StartDialTuto>().entered == true) {
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 			player.GetComponent <Player> ().hadTuto = true;
 
