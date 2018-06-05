@@ -10,8 +10,11 @@ public class Player: MonoBehaviour
     //Sound
     [FMODUnity.EventRef]
     public string selectsoundSlash;
+    [FMODUnity.EventRef]
     public string selectsoundDash;
+    [FMODUnity.EventRef]
     public string selectsoundRepousse;
+    [FMODUnity.EventRef]
     public string selectsoundWoosh;
     FMOD.Studio.EventInstance sndSlash;
     FMOD.Studio.EventInstance sndDash;
@@ -314,6 +317,7 @@ public class Player: MonoBehaviour
 	}
 	IEnumerator repousseCoroutine()
 	{
+        sndRepousse.start();
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 
@@ -351,6 +355,7 @@ public class Player: MonoBehaviour
 
 	IEnumerator dashCoroutine()
 	{
+        sndDash.start();
 		timerDash = 0.5f;
 		canDash = false;
 		isDashing=true;

@@ -70,8 +70,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569406207449264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1003, y: -564, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1105.8196, y: 178.26062, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4233132571657142}
@@ -230,6 +230,8 @@ MonoBehaviour:
   bite: {fileID: 1654800405480728}
   vitesseBond: 10
   timerWaitRepousse: 0
+  selectsoundFauveCri: event:/AttaqueFauveCri
+  selectsoundFauveMorsure: event:/AttaqueFauveMorsure
   couleurDeBase: {r: 0, g: 0, b: 0, a: 0}
   opacityShader: 0
   aEteRepousse: 0

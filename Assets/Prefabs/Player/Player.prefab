@@ -733,8 +733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectsoundSlash: event:/Woosh
-  selectsoundDash: event:/Woosh
-  selectsoundRepousse: event:/Woosh
+  selectsoundDash: event:/Dash
+  selectsoundRepousse: event:/Repousse
   selectsoundWoosh: event:/Woosh
   anim: {fileID: 0}
   "d\xE9placement": {x: 0, y: 0}
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 4
+  life: 3
   damage: 1
   invincible: 0
   invincibleTime: 2
@@ -791,6 +791,7 @@ MonoBehaviour:
   - {fileID: 0}
   pvVide: {fileID: 21300000, guid: 003b3ee5018fd82408ccd61f89c339e1, type: 3}
   selectsoundHurt: event:/Hit
+  selectPlayerHit: snapshot:/PlayerHit
 --- !u!198 &198097314004209326
 ParticleSystem:
   m_ObjectHideFlags: 1
