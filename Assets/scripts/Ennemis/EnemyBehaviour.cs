@@ -201,10 +201,10 @@ public class EnemyBehaviour : MonoBehaviour {
 		timerGrabbing = 0;
 	}
 
-	void WhiteSprite() {
+	/*void WhiteSprite() {
 		enemyRenderer.material.shader = shaderDeCouleur;
 		enemyRenderer.color = new Color(1f,0.9f,0.9f);
-	}
+	}*/
 
 	void NormalSprite() {
 		enemyRenderer.material.shader = shaderDeBase;
@@ -214,13 +214,13 @@ public class EnemyBehaviour : MonoBehaviour {
 	IEnumerator FightSequence()
 	{
 		yield return new WaitForSeconds (0.15f);
-		WhiteSprite ();
+		//WhiteSprite ();
 		isFighting = true;
 		yield return new WaitForSeconds (0.16f);
 		NormalSprite ();
 		yield return new WaitForSeconds (0.14f);
 		targetVectorAttacking = targetVector;
-		yield return new WaitForSeconds (0.2f);
+		yield return new WaitForSeconds (0.3f);
         sndGroupie.start();
 		anim.SetBool ("IsAttacking", true);
      //   soundAttaqueGroupie.start();
@@ -331,7 +331,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 		GetComponent<BoxCollider2D> ().isTrigger = false;
 		rb2D.velocity = Vector2.zero;
-		rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*20f,ForceMode2D.Impulse);
+		rb2D.AddForce (new Vector2(-targetVector.x,-targetVector.y).normalized*500f,ForceMode2D.Impulse);
 		yield return new WaitForSeconds(0.07f);
 		yield return new WaitForSeconds(0.07f);
 
@@ -339,7 +339,8 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	IEnumerator PlayerDamage(){
 		playerRB.velocity = Vector2.zero;
-		playerRB.AddForce (new Vector2(targetVector.x,targetVector.y).normalized*2f,ForceMode2D.Impulse);
+		target.GetComponent <Player>().StartCoroutine (target.GetComponent <Player>(). Knocked (new Vector2(targetVector.x,targetVector.y).normalized));
+
 		yield return new WaitForSeconds(0.10f);
 	}
 
@@ -347,7 +348,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	{
 		idleCanMove = false;
 		idling = true;
-		rb2D.velocity = (new Vector2 (Random.Range(-5,5),Random.Range(-5,5)));
+		rb2D.velocity = (new Vector2 (Random.Range(-0.3f*25f,0.3f*25f),Random.Range(-0.3f*25f,0.3f*25f)));
 		anim.SetBool ("IsMoving", true);
 		yield return new WaitForSeconds(secMove);
 		rb2D.velocity = (new Vector2 (0,0));

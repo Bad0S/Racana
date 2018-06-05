@@ -47,6 +47,7 @@ public class Player: MonoBehaviour
 	public float chargeAttaque;
 	public int tauxCharge=1;
 	private float beat;
+	private bool knocked;
 
 	//ANIM
 	public bool inDanger;
@@ -64,7 +65,7 @@ public class Player: MonoBehaviour
 	public float DashSpeed = 4;
 	public Transform dashTarget;
 	public List<GameObject>  dashFX;
-	float timerDash;
+	public float timerDash;
 
 	//Repousse
 	public GameObject repousse;
@@ -153,7 +154,7 @@ public class Player: MonoBehaviour
 	void FixedUpdate()
 	{
 		Move ();
-		if(isDashing == true){
+		if(isDashing == true|| knocked == true){
 			timerDash -= Time.deltaTime;
 		}
 
@@ -168,7 +169,7 @@ public class Player: MonoBehaviour
 			{
 				déplacement = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
                 déplacement = déplacement.normalized;
-				if(DashSpeed*timerDash > 0.2f ){
+				if(timerDash > 0.2f ){
 					if(body.velocity.x <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.x >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash) )){
 						if(body.velocity.y <= ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) && body.velocity.y >=- ((MovSpeed*speedMultiplicator)+(DashSpeed*timerDash)) )
 							body.velocity += (déplacement*MovSpeed*speedMultiplicator);
@@ -186,7 +187,7 @@ public class Player: MonoBehaviour
 				//body.transform.rotation = Quaternion.Euler(0, 0, angle);
 			} else 
 			{
-				if (isDashing == false)
+				if (isDashing == false&& knocked== false)
                 {
 					body.velocity = Vector3.zero;
 				}
@@ -375,7 +376,7 @@ public class Player: MonoBehaviour
 		else
 		{
 			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			body.AddForce ( vecTmp*7 , ForceMode2D.Impulse);
+			body.AddForce ( vecTmp*175 , ForceMode2D.Impulse);
 		}
 		yield return new WaitForSeconds (0.5f);
 		dashFX[0].SetActive  (false);
@@ -390,6 +391,18 @@ public class Player: MonoBehaviour
 		canDash = true;
 
 		//dashFX[1].SetActive  (false);
+
+	}
+	public IEnumerator Knocked(Vector2 vecTmp)
+	{
+		print ("test");
+
+		knocked = true;
+		timerDash += 0.25f;
+		body.AddForce ( vecTmp*500, ForceMode2D.Impulse);
+		yield return new WaitForSeconds (0.25f);
+
+		knocked = false;
 
 	}
 	void FlipX(){

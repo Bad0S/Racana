@@ -63,7 +63,7 @@ public class PositionSetter : MonoBehaviour {
 
 		}
 		else if (nameScene == "Racana_Tuto") {
-			player.transform.position = new Vector3 (303f, 70f, 0);
+			player.transform.position = new Vector3 (-286f, 50f, 0);
 
 		}
 		else if(nameScene == "Racana_Maison_chef"){
