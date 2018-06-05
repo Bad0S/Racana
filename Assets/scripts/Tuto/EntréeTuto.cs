@@ -21,6 +21,7 @@ public class EntréeTuto : MonoBehaviour {
 	}
 
 	void Update () {
+		player.GetComponent <Player> ().inDanger = false;
 		if (player.GetComponent <Player>().hadTuto ==false){
 			GetComponent <SceneChange>().scene = "Racana_Tuto";
 		}
