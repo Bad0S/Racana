@@ -45,6 +45,7 @@ public class Rythme : MonoBehaviour
     FMOD.Studio.EventInstance sndBase;
     FMOD.Studio.EventInstance sndTranse;
     FMOD.Studio.EventInstance sndTranscendance;
+	FMOD.Studio.PLAYBACK_STATE playState;
     // Use this for initialization
 
     //diminution combo
@@ -53,10 +54,12 @@ public class Rythme : MonoBehaviour
 	public float timerComboSpeed;
 	public float comboDecreaseSpeed =1;
 
+	public bool tuto;
+
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Racana_Village" || SceneManager.GetActiveScene().name == "Racana_Tuto")
+		if (SceneManager.GetActiveScene().name != "Racana_Foret" && SceneManager.GetActiveScene().name != "Racana_Donjon_LD")
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
             sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
@@ -81,7 +84,10 @@ public class Rythme : MonoBehaviour
         }
         bpm = bpmInitial;
 
-        MusicPlay();
+		if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
+		{
+			MusicPlay ();
+		}
     }
 
     // Update is called once per frame

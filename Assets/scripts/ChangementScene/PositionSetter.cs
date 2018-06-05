@@ -12,6 +12,7 @@ public class PositionSetter : MonoBehaviour
 	public bool canMusic;
 	public bool hadTuto;
 	public List<string> scenes;
+	public static bool hasPlayed;
 
 	void Awake ()
 	{
@@ -22,6 +23,14 @@ public class PositionSetter : MonoBehaviour
 	void OnEnable()
 	{
 		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+	void Start ()
+	{
+		if (!hasPlayed) 
+		{
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rythme> ().MusicPlay ();
+			hasPlayed = true;
+		}
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{

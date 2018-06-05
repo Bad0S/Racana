@@ -97,8 +97,6 @@ public class Player: MonoBehaviour
         sndWoosh = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
 		scene = SceneManager.GetActiveScene ();
 		sceneIndex = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().scenes.LastIndexOf (scene.name);
-		print (sceneIndex);
-		print (scene.name);
 		transform.position = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().RespawnPos [sceneIndex];
     }
 

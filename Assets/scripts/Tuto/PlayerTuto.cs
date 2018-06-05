@@ -7,6 +7,7 @@ public class PlayerTuto : MonoBehaviour {
 	public List<GameObject> dials;
 	public GameObject enemy;
 	public GameObject fader;
+	public GameObject loin;
 	// Use this for initialization
 	void Start () {
 	}
@@ -17,7 +18,7 @@ public class PlayerTuto : MonoBehaviour {
 
 		if(enemy.GetComponent <health>().life<8){
 			dials [1].SetActive (true);
-			enemy.GetComponent <EnemyBehaviour> ().target = null;
+			enemy.GetComponent <EnemyBehaviour> ().target = loin;
 		}
 		if(dials[1].activeSelf == true && Input.GetButtonDown ("Fire2")){
 			StartCoroutine (dial3 ());
