@@ -216,7 +216,6 @@ public class health : MonoBehaviour {
 	}
 	IEnumerator Damage(float timeRed , float timeShake, float magShake )
     {
-		print ("bite");
 		rend.material.shader = shaderDeCouleur;
 		rend.color = Color.red;
 		Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (timeShake, timeShake,0.04f);

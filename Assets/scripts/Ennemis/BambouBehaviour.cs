@@ -61,10 +61,11 @@ public class BambouBehaviour : MonoBehaviour {
 	{
 		rythmeRange = Random.Range (1, rythmeRangeMax +1);
 		//print (rythmeRange); 
+
+		target = GameObject.FindGameObjectWithTag ("Player");
 		rythmeScript = target.GetComponent <Rythme> ();
 		anim = GetComponent<Animator> ();
 		rb2D = GetComponent<Rigidbody2D> ();
-		//target = GameObject.FindGameObjectWithTag ("Player");
 
 		shaderDeCouleur = Shader.Find("GUI/Text Shader");
 		shaderDeBase = Shader.Find("Sprites/Default"); // or whatever sprite shader is being used
