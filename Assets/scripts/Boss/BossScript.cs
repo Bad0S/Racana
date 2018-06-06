@@ -18,7 +18,7 @@ public class BossScript : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		BossBarFill.fillAmount = GetComponent <health> ().life / 72;
+		BossBarFill.fillAmount = (float)GetComponent <health> ().life / 72;
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

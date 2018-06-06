@@ -3345,7 +3345,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -647003198
+  randomSeed: 1464048753
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6816,7 +6816,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -121
+      value: -111
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7460,7 +7460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -121
+      value: -111
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_RootOrder
@@ -7559,12 +7559,12 @@ Prefab:
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[4]
       value: 
-      objectReference: {fileID: 1893797025}
+      objectReference: {fileID: 825383651}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[5]
       value: 
-      objectReference: {fileID: 1742080507}
+      objectReference: {fileID: 825383651}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[6]
@@ -24457,7 +24457,7 @@ EdgeCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765284577}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -24466,7 +24466,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.89206, y: 155.42372}
+  - {x: 11.3451805, y: 156.49255}
   - {x: -312.31274, y: 152.16808}
   - {x: -311.535, y: 115.99387}
   - {x: -325.46124, y: 117.9762}
@@ -24487,7 +24487,7 @@ EdgeCollider2D:
   - {x: 302.90274, y: 29.6852}
   - {x: 324.72925, y: 30.88035}
   - {x: 324.55524, y: 150.79538}
-  - {x: 18.827272, y: 156.3837}
+  - {x: 8.496151, y: 156.38367}
 --- !u!114 &765284581
 MonoBehaviour:
   m_ObjectHideFlags: 0
