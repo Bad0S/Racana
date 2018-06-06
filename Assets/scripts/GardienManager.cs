@@ -75,26 +75,23 @@ public class GardienManager : MonoBehaviour
 		player.GetComponent<Player> ().canDash = false;
 		yield return new WaitForSeconds (1.1f);
 
-		yield return new WaitForSeconds (1.1f);
-
 		scene = SceneManager.GetActiveScene();
 		respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
 		respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
 		player.GetComponent<Player> ().canMusic = true;
+		yield return new WaitForSeconds (1.1f);
 		player.GetComponent<Rythme> ().combo = 0f;
 		respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
 		respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
 
 		yield return new WaitForSeconds (1.1f);
-
 		sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 		player.GetComponent<Rythme> ().MusicPlay();
-
-		yield return new WaitForSeconds (1.1f);
-
 		player.GetComponent<Player> ().canDash = true;
 		player.GetComponent<Player> ().canMove = true;
 		player.GetComponent<Player> ().canAttack = true;
+
+		yield return new WaitForSeconds (1.1f);
 		if (!bambouSpawn) 
 		{
 			Instantiate (bambou, Pos1, Quaternion.identity);
