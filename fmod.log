@@ -205,6 +205,7 @@
 [LOG] SystemI::createSound                     :     add node to async list : head = 000000003E891EB8.  list count = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSound                     :     setdata soundi = 000000003E99B0D8 : node = 0000000047665630
 [LOG] SystemI::createSound                     :     add node to async list : head = 000000003E891EB8.  list count = 2
