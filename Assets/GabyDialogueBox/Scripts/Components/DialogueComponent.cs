@@ -84,10 +84,14 @@ public class DialogueComponent : MonoBehaviour
 		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
 		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
 		player.GetComponent <Player>().enabled = false ;
-		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Ennemis");
-		//List<GameObject> ennemisList = new List<GameObject>(ennemisArray);
-		//ennemisList.ForEach (GetComponent<EnemyBehaviour> ().enabled = false);
-		//ennemisList.ForEach (GetComponent<BambouBehaviour> ().enabled = false);
+		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject ennemi in ennemisArray) 
+		{
+			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+			{ennemi.GetComponent<EnemyBehaviour> ().enabled = false;}
+			if (ennemi.GetComponent<BambouBehaviour> () != null) 
+			{ennemi.GetComponent<BambouBehaviour> ().enabled = false;}
+		}
 
 
         // On établit où est-ce qu'on en est
@@ -153,8 +157,13 @@ public class DialogueComponent : MonoBehaviour
         // Si on est sorti de la boucle, c'est qu'on a affiché toutes les lignes, on peut donc désactiver l'UI de la boite de dialogue
         dialogueBox.SetActive(false);
 		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
-		//ennemisList.ForEach (GetComponent<EnemyBehaviour> ().enabled = false);
-		//ennemisList.ForEach (GetComponent<BambouBehaviour> ().enabled = false);
+		foreach (GameObject ennemi in ennemisArray) 
+		{
+			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+			{ennemi.GetComponent<EnemyBehaviour> ().enabled = true;}
+			if (ennemi.GetComponent<BambouBehaviour> () != null) 
+			{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
+		}
 
         // On dit qu'on peut relancer le dialogue
         inDialogue = false;
