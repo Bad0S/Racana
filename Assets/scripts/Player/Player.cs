@@ -162,7 +162,7 @@ public class Player: MonoBehaviour
 	void FixedUpdate()
 	{
 		Move ();
-		if(isDashing == true|| knocked == true){
+		if(timerDash>0.2f){
 			timerDash -= Time.deltaTime;
 		}
 
@@ -316,7 +316,7 @@ public class Player: MonoBehaviour
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
-		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds/2);
+		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds);
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
 		anim.SetBool("IsAttacking", false);
@@ -352,7 +352,7 @@ public class Player: MonoBehaviour
 
 		//attaqueRepousse.SetActive (true);
 		isAttacking = true;
-		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds/2);
+		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds);
         //attaqueRepousse.SetActive (false);
         isAttacking = false;
 		//anim.ResetTrigger ("Attack_Repousse");

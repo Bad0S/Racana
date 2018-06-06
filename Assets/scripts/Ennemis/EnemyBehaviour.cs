@@ -93,9 +93,12 @@ public class EnemyBehaviour : MonoBehaviour {
 
     }
 
+	void FixedUpdate(){
+		beatAllowAttack = rythmeScript.isBeating;
+
+	}
 	void Update () 
 	{
-		beatAllowAttack = rythmeScript.isBeating;
 		/*if (beatAllowAttack == true){
 			if(counterRythme <= rythmeRangeMax){
 

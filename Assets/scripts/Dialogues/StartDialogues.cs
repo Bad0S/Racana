@@ -20,5 +20,18 @@ public class StartDialogues : MonoBehaviour {
 
 			}
 		}
+	}	
+	private void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Player"  ) 
+		{
+			GetComponent <SpriteRenderer>().enabled = true;
+		}
+	}	
+	private void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "Player" ) 
+		{
+			GetComponent <SpriteRenderer>().enabled = false;
+
+		}
 	}
 }

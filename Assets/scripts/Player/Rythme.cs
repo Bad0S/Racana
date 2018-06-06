@@ -97,7 +97,7 @@ public class Rythme : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 		if (!GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic && gameObject.tag == "Player")
         { 
@@ -166,7 +166,7 @@ public class Rythme : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = transe;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
-            GetComponent<Player> ().MovSpeed = 200 + combo*2;
+            GetComponent<Player> ().MovSpeed = 150 + combo*2;
             sndTheme.setVolume(0f);
             sndBase.setVolume(0f);
             sndTranse.setVolume(1f);
@@ -176,7 +176,7 @@ public class Rythme : MonoBehaviour
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
-            GetComponent<Player> ().MovSpeed = 250;
+            GetComponent<Player> ().MovSpeed = 200;
 			GetComponent<Player> ().transcendance = true;
             sndTheme.setVolume(0f);
             sndBase.setVolume(0f);

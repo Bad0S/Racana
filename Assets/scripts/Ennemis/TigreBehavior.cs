@@ -97,6 +97,10 @@ public class TigreBehavior : MonoBehaviour {
 		head = GetComponent <EdgeCollider2D> ();
 	}
 	// Update is called once per frame
+	void FixedUpdate(){
+		beatAllowAttack = rythmeScript.isBeating;
+
+	}
 	void Update () 
 	{
 		timerFlip += Time.deltaTime;
@@ -104,7 +108,6 @@ public class TigreBehavior : MonoBehaviour {
 		timerWaitRepousse += Time.deltaTime;
 		timerDegats += Time.deltaTime;
 		timerChase += Time.deltaTime;
-		beatAllowAttack = rythmeScript.isBeating;
 		//print (rb2D.velocity);
 		/*if (beatAllowAttack == true){
 			if(counterRythme <= rythmeRangeMax){

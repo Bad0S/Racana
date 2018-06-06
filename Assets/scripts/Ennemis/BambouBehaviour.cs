@@ -76,9 +76,12 @@ public class BambouBehaviour : MonoBehaviour {
 
 	}
 	// Update is called once per frame
+	void FixedUpdate(){
+		beatAllowAttack = rythmeScript.isBeating;
+
+	}
 	void Update () 
 	{
-		beatAllowAttack = rythmeScript.isBeating;
 		/*if (beatAllowAttack == true){
 			if(counterRythme <= rythmeRangeMax){
 
@@ -170,6 +173,8 @@ public class BambouBehaviour : MonoBehaviour {
 		GameObject herbeTirInstance = (GameObject)Instantiate (herbeTir, transform.position,Quaternion.Euler(0, 0, angleShoot/2));
 		herbeTirInstance.SetActive (true);
 		herbeTirInstance.transform.localScale = new Vector3 (1.2f, 1.2f, 1);
+		herbeTirInstance.GetComponent <TirHerbe>().beat = rythmeScript.timeBetweenBeatsInSeconds;
+
 
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds);
 
