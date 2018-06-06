@@ -24,14 +24,6 @@ public class PositionSetter : MonoBehaviour
 	{
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
-	void Start ()
-	{
-		if (!hasPlayed) 
-		{
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rythme> ().MusicPlay ();
-			hasPlayed = true;
-		}
-	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
 		scenes.Insert (0,scene.name);

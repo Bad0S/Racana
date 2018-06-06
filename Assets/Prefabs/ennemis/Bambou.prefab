@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328815842497554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -675.6835, y: 319.30927, z: 1.0970763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   LifeBar: []
   pvVide: {fileID: 0}
   selectsoundHurt: event:/Hit
+  selectPlayerHit: 
 --- !u!114 &114351700486098980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  herbeTir: {fileID: 0}
+  herbeTir: {fileID: 1113528576208064, guid: d36dba896b5f6c94bb0fa8588bff9c1f, type: 2}
   maxDetectionRange: 300
   attackRangeMax: 250
   target: {fileID: 0}

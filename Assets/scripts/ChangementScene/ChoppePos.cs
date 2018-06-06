@@ -24,6 +24,8 @@ public class ChoppePos : MonoBehaviour
 			scene = SceneManager.GetActiveScene ();
 			GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().RespawnPos.Add (GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ().position);
 			GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().scenes.Add (scene.name);
-		}
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
+        }
 	}
 }
