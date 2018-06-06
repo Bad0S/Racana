@@ -138,7 +138,8 @@ public class Rythme : MonoBehaviour
         {
 			beats += 1;
 			isBeating = true;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canAttack = true;
+			if (beats % 2 == 0) 
+			{GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ().canAttack = true;}
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canDash = true;
         }
         else

@@ -22,6 +22,10 @@ public class Cheats : MonoBehaviour
 			GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 		}
+		if (Input.GetKeyDown (KeyCode.Escape) == true )
+		{
+			Application.Quit ();
+		}
 		if (Input.GetKeyDown (KeyCode.H) == true) 
 		{
 			gameObject.GetComponent<health>().Hurt(1);

@@ -27,6 +27,7 @@ public class GardienManager : MonoBehaviour
 	public GameObject player;
 	public GameObject respawn;
 	public GameObject FX;
+	public bool bambouSpawn;
 
     // Use this for initialization
     void Start ()
@@ -69,31 +70,35 @@ public class GardienManager : MonoBehaviour
 
 	IEnumerator GardienCoroutine()
 	{
-		yield return new WaitForSeconds (1.1f);
-		player.GetComponent<Player> ().canMusic = true;
-		player.GetComponent<Player> ().canMove = true;
-		player.GetComponent<Player> ().canAttack = true;
-		player.GetComponent<Player> ().canDash = true;
-		player.GetComponent<Rythme> ().combo = 0f;
-
+		player.GetComponent<Player> ().canMove = false;
+		player.GetComponent<Player> ().canAttack = false;
+		player.GetComponent<Player> ().canDash = false;
 		yield return new WaitForSeconds (1.1f);
 
 		scene = SceneManager.GetActiveScene();
 		respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
 		respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
+		player.GetComponent<Player> ().canMusic = true;
+		yield return new WaitForSeconds (1.1f);
+		player.GetComponent<Rythme> ().combo = 0f;
 		respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
 		respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
 
 		yield return new WaitForSeconds (1.1f);
-
 		sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 		player.GetComponent<Rythme> ().MusicPlay();
+		player.GetComponent<Player> ().canDash = true;
+		player.GetComponent<Player> ().canMove = true;
+		player.GetComponent<Player> ().canAttack = true;
 
 		yield return new WaitForSeconds (1.1f);
-
-		GameObject Bambou = (GameObject)Instantiate (bambou, Pos1 ,Quaternion.identity);
-		GameObject Bambou2 = (GameObject)Instantiate (bambou, Pos2 ,Quaternion.identity);
-		GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
+		if (!bambouSpawn) 
+		{
+			Instantiate (bambou, Pos1, Quaternion.identity);
+			Instantiate (bambou, Pos2, Quaternion.identity);
+			Instantiate (bambou, Pos3, Quaternion.identity);
+			bambouSpawn = true;
+		}
 		active = true;
 	}
 }
