@@ -51,14 +51,19 @@ public class patternTir : MonoBehaviour {
 			if (GetComponent <health>().life<= 3&& inPattern == false&& finalPhase<2){
 				if(finalPhase == 1){
 					phase = 4;
+					target.GetComponent <health>().life++;
+
 					finalPhase++;
 				}
 			}
 			else if(GetComponent <health>().life<= (originalLife/6)*3){
 				phase = 3;
+				target.GetComponent <health>().life++;
+
 			}
 			else if (GetComponent <health>().life<= (originalLife/6)*5&&GetComponent <health>().life>= (originalLife/6)*4){
 				phase = 2;
+				target.GetComponent <health>().life++;
 			}
 		
 			 
@@ -198,6 +203,7 @@ public class patternTir : MonoBehaviour {
 
 	void TirGauche(){
 		GetComponentInChildren <CasterGauche> ().timerCasting = 0;
+		GetComponentInChildren <CasterGauche> ().petitLaserFX.SetActive (false);
 
 		GetComponentInChildren <CasterGauche> ().shoot = true;
 
@@ -237,18 +243,14 @@ public class patternTir : MonoBehaviour {
 		inPattern = true;
 		yield return new WaitForSeconds(2*dureeBeat);
 		TirGauche ();
-		GetComponentInChildren <CasterGauche> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
 		yield return new WaitForSeconds(2*dureeBeat);
 		TirDroit ();
-		GetComponentInChildren <CasterDroit> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
 
 		yield return new WaitForSeconds(2*dureeBeat);
 		TirGauche ();
-		GetComponentInChildren <CasterGauche> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
 
 		yield return new WaitForSeconds(2*dureeBeat);
 		TirDroit ();
-		GetComponentInChildren <CasterDroit> ().playerDirection =  new Vector3 (target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y, 0);
 
 		inPattern = false;
 	}

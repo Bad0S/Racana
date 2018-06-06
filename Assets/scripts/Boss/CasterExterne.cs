@@ -68,7 +68,7 @@ public class CasterExterne : MonoBehaviour {
 		//transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), 0);
 
 
-		if (timerCasting >= timeCast - player.GetComponent <Rythme> ().timeBetweenBeatsInSeconds && decasting == false&& casting == true) {
+		if (timerCasting >= 0 && decasting == false&& casting == true) {
 			if (isAiming == 1) {
 				isAiming = 2;
 			}	
@@ -121,10 +121,11 @@ public class CasterExterne : MonoBehaviour {
 			if (hit.collider != null) {
 
 				petitLaserFX.SetActive (false);
+				print ("sexe");
 				laserFX.SetActive (true);
 				laserFXSphere.transform.position = new Vector3 (hitV3.x, hitV3.y, 0);
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position + hitV3) / 2, Quaternion.Euler (0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength / 4, 004f, 1);
+				laserInstance.transform.localScale = new Vector3 (laserLength / 4, 002f, 1);
 				laserInstance.transform.parent = gameObject.transform.parent;
 				hasShoot = true;
 

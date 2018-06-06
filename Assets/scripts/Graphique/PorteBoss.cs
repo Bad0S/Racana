@@ -50,6 +50,10 @@ public class PorteBoss : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if(Camera.main.transform.position.y > transform.position.y){
+			cacheBoss.SetActive (false);
+		}
+
 
 		if (activation == true && descending<=1){
 			if (disable== false){

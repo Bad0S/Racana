@@ -84,7 +84,7 @@ public class DialogueComponent : MonoBehaviour
 		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
 		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
 		player.GetComponent <Player>().enabled = false ;
-		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Ennemis");
+		//GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Ennemis");
 		//List<GameObject> ennemisList = new List<GameObject>(ennemisArray);
 		//ennemisList.ForEach (GetComponent<EnemyBehaviour> ().enabled = false);
 		//ennemisList.ForEach (GetComponent<BambouBehaviour> ().enabled = false);

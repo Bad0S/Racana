@@ -10,14 +10,14 @@ public class StartDialTuto : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 	}
 	private void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player" &&GetComponent<DialogueComponent>().inDialogue == false ) 
 		{
 			if(other.GetComponent <Player>().hadTuto == false){
-				GetComponent<DialogueComponent>().StartDialogue();
 				entered = true;
+
+				GetComponent<DialogueComponent>().StartDialogue();
 
 			}
 		}

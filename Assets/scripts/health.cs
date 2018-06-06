@@ -24,7 +24,7 @@ public class health : MonoBehaviour {
 	private SpriteRenderer rend;
 	private Color couleurDeBase;
 	private GameObject hitFX;
-
+	bool hitFXRoutine;
 
     [FMODUnity.EventRef]
     public string selectsoundHurt;
@@ -95,6 +95,11 @@ public class health : MonoBehaviour {
 			life -= lifeToLose;
 		}
 		//fait drop un objet de soin
+	}
+		
+	// Update is called once per frame
+	void Update () 
+	{
 		if (life <= 0f)
 		{
 			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot")
@@ -110,11 +115,12 @@ public class health : MonoBehaviour {
 				}
 				catch 
 				{
-					
+
 				}
-				GamePad.SetVibration (0,0,0);
-				hitFX.SetActive (false);
-				Destroy (gameObject);
+				if(hitFXRoutine== false){
+					Destroy (gameObject);
+
+				}
 
 			}
 			if ( gameObject.tag == "Boss"){
@@ -134,14 +140,9 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Player") 
 			{
 				StartCoroutine (PlayerDeath());
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMove = false;
-            }
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMove = false;
+			}
 		}
-	}
-		
-	// Update is called once per frame
-	void Update () 
-	{
 		// /!\NE PAS TOUCHER, pour les futurs combos
 		/*counterHeal = combo.counter;//appelle dans combo
 		if (counterHeal >= 5){
@@ -178,15 +179,18 @@ public class health : MonoBehaviour {
 	}
 
 	IEnumerator PlayerHitFX(GameObject player){
+		hitFXRoutine = true;
+		player.GetComponentInParent<Player> ().inDanger = true;
 		hitFX = player.GetComponentInParent<Player> ().hitFX [player.GetComponentInParent<Player> ().tauxCharge-1];
 		hitFX.SetActive (true);
 
 		hitFX.GetComponent<ParticleSystem> ().Emit (1);
 		hitFX.transform.position = new Vector3 (transform.position.x,transform.position.y, 0);
 
-		yield return new WaitForSeconds(0.4f);
+		yield return new WaitForSeconds(0.35f);
 
 		hitFX.SetActive (false);
+		hitFXRoutine = false;
 
 
 	}
@@ -210,6 +214,7 @@ public class health : MonoBehaviour {
 	}
 	IEnumerator Damage(float timeRed , float timeShake, float magShake )
     {
+		print ("bite");
 		rend.material.shader = shaderDeCouleur;
 		rend.color = Color.red;
 		Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (timeShake, timeShake,0.04f);

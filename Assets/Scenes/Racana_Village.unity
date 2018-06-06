@@ -17260,7 +17260,7 @@ Prefab:
     - target: {fileID: 114493931015298734, guid: d998a436cb7f82a43b33d8aaf5ab436e,
         type: 2}
       propertyPath: dialogues.Array.data[2].line
-      value: Il vient de prouver qu'on pouvait dormimr debout.
+      value: Il vient de prouver qu'on pouvait dormir debout.
       objectReference: {fileID: 0}
     - target: {fileID: 61644630877355194, guid: d998a436cb7f82a43b33d8aaf5ab436e,
         type: 2}
@@ -64926,6 +64926,96 @@ PolygonCollider2D:
       - {x: -214.42291, y: -96.65381}
       - {x: -197.50317, y: -108.88214}
       - {x: -197.85199, y: -129.46259}
+--- !u!1 &1235825604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1201227616024770, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1235825605}
+  - component: {fileID: 1235825608}
+  - component: {fileID: 1235825607}
+  - component: {fileID: 1235825606}
+  m_Layer: 0
+  m_Name: DialStarter (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235825605
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4675385157981970, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235825604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.1746416}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1998086595}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1235825606
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 61644630877355194, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235825604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -8.02}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 51.2, y: 69.1}
+  m_EdgeRadius: 0
+--- !u!114 &1235825607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114493931015298734, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235825604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actorName: Suri
+    line: "J'arrive pas \xE0 croire que tu peux aller dehors!."
+  dialogueBox: {fileID: 1431673084}
+  delayBetweenEachLetter: 0.01
+  skipKey: 323
+  inDialogue: 0
+--- !u!114 &1235825608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114593369171119170, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235825604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101c433d8da4f2747851a2b64101c094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1254188365
 GameObject:
   m_ObjectHideFlags: 0
@@ -80777,7 +80867,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 53b83e86fafb7ef49b321c4375d46028, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -80795,7 +80885,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1442961469}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -30}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1420705827}
@@ -114039,6 +114129,7 @@ GameObject:
   - component: {fileID: 1998086595}
   - component: {fileID: 1998086594}
   - component: {fileID: 1998086593}
+  - component: {fileID: 1998086596}
   m_Layer: 0
   m_Name: pnj2
   m_TagString: Untagged
@@ -114116,10 +114207,36 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -242.65002, y: -241.59998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1235825605}
   m_Father: {fileID: 2001276799}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1998086596
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998086592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11, y: 41}
+    newSize: {x: 11, y: 41}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11, y: 23.69}
+  m_EdgeRadius: 0
 --- !u!1 &2001276798
 GameObject:
   m_ObjectHideFlags: 0

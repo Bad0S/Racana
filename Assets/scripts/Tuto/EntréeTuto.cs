@@ -55,6 +55,10 @@ public class EntréeTuto : MonoBehaviour {
 			//SceneManager.LoadScene("Showcase");
 
 		}
+		else if(other.tag == "Player" && other.GetComponent <Player>().hadTuto == true){
+			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
+
+		}
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 
 	{
