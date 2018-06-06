@@ -3932,95 +3932,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcb0e3826333f24284f4bc0355f3e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  Camspeed: 0
-  trigger1: {fileID: 0}
-  trigger2: {fileID: 0}
-  "triggerEntr\xE9e": {fileID: 0}
-  Effect: 0
---- !u!1 &2086753228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1379379633205662, guid: 0da030397369c2f40ac6817d6cb0552d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2086753229}
-  - component: {fileID: 2086753230}
-  m_Layer: 0
-  m_Name: dalle 1 (20)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2086753229
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4084129871067446, guid: 0da030397369c2f40ac6817d6cb0552d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086753228}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 396, y: 72.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 531841586}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2086753230
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 212929051672645556, guid: 0da030397369c2f40ac6817d6cb0552d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086753228}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20d4f09c13000e743bb5ed25c1a0e432, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.36, y: 0.36}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &2140386428 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4110429329911850, guid: a8045d43eaf7751459968899ba72e335,
-    type: 2}
-  m_PrefabInternal: {fileID: 1860078702}
---- !u!4 &2142998501 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4783226022484130, guid: 19c629d84f2e99b4faced52cdabfaa98,
-    type: 2}
-  m_PrefabInternal: {fileID: 1417697137}
+  dialogues:
+  - actorName: Abhaya
+    line: "On va revoir les bases avant de te lacher dans la nature.Va frapper avec
+      X ce monstre que j\u2019ai deja affaibli, la-bas."
+  - actorName: Abhaya
+    line: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
+      l\u2019ennemi. Utilise RB ou A pour l\u2019invoquer !"
+  - actorName: Abhaya
+    line: "c\u2019est genial ! il ne reste que quelques coup avant qu\u2019il ne soit
+      K.O. defonce le !\r\n"
+  - actorName: Abhaya
+    line: "tu t\u2019en tires parfaitement bien ! j\u2019ai confiance en toi sur cette
+      mission. Bon courage ma petite Racana !\r\n"
+  dialogueBox: {fileID: 1867943379}
+  delayBetweenEachLetter: 0.01
+  skipKey: 323
+  inDialogue: 0
