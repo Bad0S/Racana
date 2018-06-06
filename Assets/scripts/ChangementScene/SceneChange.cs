@@ -28,10 +28,10 @@ public class SceneChange : MonoBehaviour
 		{
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
             //SceneManager.LoadScene("Showcase");
-			if (changeMusic && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto) 
-			{
-				other.GetComponent<Rythme> ().MusicStop ();
-			}
+			//if (changeMusic && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto) 
+			
+			other.GetComponent<Rythme> ().MusicStop ();
+			
         }
 	}
 	private IEnumerator Fade(FadeDirection fadeDirection) 
