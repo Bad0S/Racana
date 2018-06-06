@@ -1126,11 +1126,6 @@ Prefab:
     m_Modifications:
     - target: {fileID: 224163699482550804, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
         type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224163699482550804, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
-        type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1219,6 +1214,30 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114617055785048020, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114617055785048020, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309803158105914, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309803158105914, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215098195599784, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
   m_IsPrefabParent: 0
@@ -1257,6 +1276,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1461467537}
     m_Modifications:
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4238126388481600, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
       propertyPath: m_LocalPosition.x
       value: 17.41098
@@ -1312,7 +1336,7 @@ Prefab:
     - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "Ne d\xE9range pas trop longemps le chef Devajr."
+      value: J'espere que tu pourra nous aider pour notre quete !
       objectReference: {fileID: 0}
     - target: {fileID: 61441029176995402, guid: bfd53763c1b66b640aff26b0e509b725,
         type: 2}
@@ -1337,6 +1361,26 @@ Prefab:
         type: 2}
       propertyPath: m_Offset.y
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Isha
+      objectReference: {fileID: 0}
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: "Il a d'autres reponsabilit\xE9s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Isha
+      objectReference: {fileID: 0}
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: Plus importantes.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
@@ -2185,7 +2229,7 @@ Prefab:
     - target: {fileID: 114493931015298734, guid: d998a436cb7f82a43b33d8aaf5ab436e,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: "Le chef est un homme occup\xE9."
+      value: Le chef est un homme occupe.
       objectReference: {fileID: 0}
     - target: {fileID: 61644630877355194, guid: d998a436cb7f82a43b33d8aaf5ab436e,
         type: 2}
@@ -2210,6 +2254,11 @@ Prefab:
         type: 2}
       propertyPath: m_Offset.y
       value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493931015298734, guid: d998a436cb7f82a43b33d8aaf5ab436e,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: C'est pas trop tot !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d998a436cb7f82a43b33d8aaf5ab436e, type: 2}
@@ -2775,7 +2824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 212257427398263066, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -3046,6 +3095,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1461467537}
     m_Modifications:
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4588869276235450, guid: 7ae15adbb9d3a8a47964d2f7b419b221, type: 2}
       propertyPath: m_LocalPosition.x
       value: -31.875336
@@ -3106,7 +3160,7 @@ Prefab:
     - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
         type: 2}
       propertyPath: dialogues.Array.data[0].actorName
-      value: Devajr
+      value: Akshan
       objectReference: {fileID: 0}
     - target: {fileID: 61011361257381152, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
         type: 2}
@@ -3118,6 +3172,57 @@ Prefab:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 769575842}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: "Racana, j\u2019ai besoin de ton aide."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: 'Certains de nos gardes forestiers ont decouvert une relique sortie de
+        terre.
+
+        Elle semble attirer les elements corrompus.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: "Les gardes n\u2019ont pas reussis a l\u2019inspecter avec la horde d'infectes
+        autour de cette zone."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: Connaissant ta discretion et ta dexterite, je te de demande d'inspecter
+        cette ruine.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301578883451826, guid: 7ae15adbb9d3a8a47964d2f7b419b221,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].line
+      value: "Retrouve ton instructeur a la sortie du village, il t\u2019expliquera
+        comment acceder a ta mission. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ae15adbb9d3a8a47964d2f7b419b221, type: 2}
   m_IsPrefabParent: 0

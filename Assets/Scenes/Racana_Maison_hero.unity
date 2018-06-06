@@ -553,7 +553,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 277a9c3aa503f6947a5e19379c74ecc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -685,7 +685,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d99dd99372c553e4d80c75fcf0902d58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1045,8 +1045,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9e5e588b2fb8f41a8f5845a68875e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
   nameScene: 
   previousName: 
+  positionReseted: 0
+  sceneSorted: 0
 --- !u!114 &261692807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,6 +1368,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1215098195599784, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
   m_IsPrefabParent: 0
@@ -1417,7 +1424,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d99dd99372c553e4d80c75fcf0902d58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1938,7 +1945,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d99dd99372c553e4d80c75fcf0902d58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2291,6 +2298,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4615234726123266, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -107.7208
@@ -2328,6 +2340,37 @@ Prefab:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 1419587310}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Maman
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Maman
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: Un des gardes est venu me voir ce matin, avec un air inquiet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: Coucou ma petite Raca ! Bien dormi ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Maman
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124572255624582, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: "Il voulait que tu ailles voir le chef du village dans sa maison en hauteur,
+        apparement c\u2019est urgent. Depeche toi !"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f, type: 2}
   m_IsPrefabParent: 0
@@ -5932,7 +5975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b928d21d607284d43a7fc9d9defcad5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6078,7 +6121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d99dd99372c553e4d80c75fcf0902d58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9942,6 +9985,10 @@ Prefab:
       value: Racana_Village
       objectReference: {fileID: 0}
     - target: {fileID: 1230284039276636, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -16994,7 +17041,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f6438904fc453a14b9215f8a4f9d91f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

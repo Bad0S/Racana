@@ -1450,14 +1450,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - actorName: Savitr
-    line: "Bon, petites r\xE9visions avant de te l\xE2cher dans la nature."
-  - actorName: Savitr
-    line: "On d'abord v\xE9rifier ta condition physique, ne prenons pas de risques."
-  - actorName: Savitr
-    line: "Va frapper ce monstre, l\xE0-bas."
-  - actorName: Savitr
-    line: "Ne t'inqui\xE8te pas, je l'ai d\xE9j\xE0 affaibli."
+  - actorName: Abhaya
+    line: "On va revoir les bases avant de te lacher dans la nature.Va frapper avec
+      X ce monstre que j\u2019ai deja affaibli, la-bas."
+  - actorName: Abhaya
+    line: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
+      l\u2019ennemi. Utilise RB ou A pour l\u2019invoquer !"
+  - actorName: Abhaya
+    line: "c\u2019est genial ! il ne reste que quelques coup avant qu\u2019il ne soit
+      K.O. defonce le !\r\n"
+  - actorName: Abhaya
+    line: "tu t\u2019en tires parfaitement bien ! j\u2019ai confiance en toi sur cette
+      mission. Bon courage ma petite Racana !\r\n"
   dialogueBox: {fileID: 1867943379}
   delayBetweenEachLetter: 0.01
   skipKey: 323
