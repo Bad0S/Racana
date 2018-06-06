@@ -74457,11 +74457,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1431673084 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1215098195599784, guid: eb4db789ef8ffcb459d7a3f90d6e76e2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1121739551}
 --- !u!1 &1436131966
 GameObject:
   m_ObjectHideFlags: 0
@@ -103052,7 +103047,7 @@ Prefab:
         type: 2}
       propertyPath: dialogueBox
       value: 
-      objectReference: {fileID: 1431673084}
+      objectReference: {fileID: 1668244354}
     - target: {fileID: 61587605927643578, guid: 0b4605b556a9dc44a9ee6b99b945f955,
         type: 2}
       propertyPath: m_IsTrigger
