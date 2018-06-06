@@ -59,6 +59,11 @@ public class Rythme : MonoBehaviour
 
     void Start()
     {
+        if (PositionSetter.hasPlayed)
+        {
+            MusicPlay();
+            PositionSetter.hasPlayed = false;
+        }
 		if (SceneManager.GetActiveScene().name != "Racana_Foret" && SceneManager.GetActiveScene().name != "Racana_Donjon_LD")
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);

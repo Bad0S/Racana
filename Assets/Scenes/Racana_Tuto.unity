@@ -155,12 +155,12 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.x
-      value: 50.38318
+      value: 53.09723
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Size.y
-      value: 357.1087
+      value: 358.24985
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
@@ -188,12 +188,12 @@ Prefab:
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Offset.x
-      value: 457.38666
+      value: 54.34732
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
       propertyPath: m_Offset.y
-      value: -94.02927
+      value: 3.1404877
       objectReference: {fileID: 0}
     - target: {fileID: 114598738511987808, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -480,22 +480,22 @@ Prefab:
     - target: {fileID: 61015532704635876, guid: 06950f2bd93fc8443a24de73520f2268,
         type: 2}
       propertyPath: m_Offset.x
-      value: 408.16077
+      value: 5.54628
       objectReference: {fileID: 0}
     - target: {fileID: 61015532704635876, guid: 06950f2bd93fc8443a24de73520f2268,
         type: 2}
       propertyPath: m_Size.x
-      value: 46.21924
+      value: 45.374115
       objectReference: {fileID: 0}
     - target: {fileID: 61015532704635876, guid: 06950f2bd93fc8443a24de73520f2268,
         type: 2}
       propertyPath: m_Offset.y
-      value: -94.58034
+      value: 2.791214
       objectReference: {fileID: 0}
     - target: {fileID: 61015532704635876, guid: 06950f2bd93fc8443a24de73520f2268,
         type: 2}
       propertyPath: m_Size.y
-      value: 358.7474
+      value: 358.01016
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06950f2bd93fc8443a24de73520f2268, type: 2}
@@ -547,72 +547,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bb76593aad57444c9dc41858b34bdf6, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &159305496
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1980837712677514, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 159305499}
-  - component: {fileID: 159305498}
-  - component: {fileID: 159305497}
-  m_Layer: 0
-  m_Name: Dial4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &159305497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 159305496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbba697096f78947a7883892e96d47f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &159305498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114053710879666628, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 159305496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - actorName: Savitr
-    line: Tu t'en tireras parfaitement.
-  - actorName: Savitr
-    line: Au revoir.
-  - actorName: Savitr
-    line: "Et n'oublie jamais, le rythme est la cl\xE9."
-  dialogueBox: {fileID: 1867943379}
-  delayBetweenEachLetter: 0.01
-  skipKey: 323
-  inDialogue: 0
---- !u!4 &159305499
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4569085918667026, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 159305496}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 30, z: -0.17464161}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 315634610}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159868044
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,30 +772,6 @@ Transform:
   m_Father: {fileID: 737841121}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &315634598 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1804523527741744, guid: 7ceec7312b3913249886d2dc6adb66d5,
-    type: 2}
-  m_PrefabInternal: {fileID: 462924445}
---- !u!114 &315634599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 315634598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94bcf79a8822b66489541a464546e13d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dials:
-  - {fileID: 2044589696}
-  - {fileID: 976017079}
-  - {fileID: 1344184574}
-  - {fileID: 159305496}
-  enemy: {fileID: 1839758098}
-  fader: {fileID: 1199353089}
-  loin: {fileID: 1655985364}
 --- !u!4 &315634610 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5,
@@ -972,6 +882,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -317
@@ -1004,25 +919,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: canMusic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955622777952468, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492656577959142, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: repousse
-      value: 
-      objectReference: {fileID: 1216153459730528, guid: 4c034197cbf8a9241959ffbc33345e5b,
-        type: 2}
     - target: {fileID: 114915059078695548, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: LifeBar.Array.data[0]
@@ -1038,9 +934,104 @@ Prefab:
       propertyPath: LifeBar.Array.data[2]
       value: 
       objectReference: {fileID: 1747990678}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1867943379}
+    - target: {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1839758098}
+    - target: {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: fader
+      value: 
+      objectReference: {fileID: 1199353089}
+    - target: {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: loin
+      value: 
+      objectReference: {fileID: 1655985364}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1867943379}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1867943379}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1867943379}
+    - target: {fileID: 1669280310087962, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625809246089234, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091862211691046, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013571815464936, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &462924446 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1804523527741744, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 462924445}
+--- !u!114 &462924447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462924446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bcf79a8822b66489541a464546e13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dials:
+  - {fileID: 462924451}
+  - {fileID: 462924450}
+  - {fileID: 462924449}
+  - {fileID: 462924448}
+  enemy: {fileID: 1839758098}
+  fader: {fileID: 1199353089}
+  loin: {fileID: 1655985364}
+--- !u!1 &462924448 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1669280310087962, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 462924445}
+--- !u!1 &462924449 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1013571815464936, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 462924445}
+--- !u!1 &462924450 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1625809246089234, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 462924445}
+--- !u!1 &462924451 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1091862211691046, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 462924445}
 --- !u!1 &531841585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1207,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 588988648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 263, y: -71, z: 0}
+  m_LocalPosition: {x: 317.8, y: -71, z: 0}
   m_LocalScale: {x: 13.5, y: 145.4, z: 1.126305}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1695,20 +1686,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &961284117
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4873892164578732, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 312931911}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -380, y: 78, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &967171171
 Prefab:
   m_ObjectHideFlags: 0
@@ -1751,72 +1728,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a977e5148ccd6414d95dabbccb7bf94d, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &976017079
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1980837712677514, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 976017080}
-  - component: {fileID: 976017082}
-  - component: {fileID: 976017081}
-  m_Layer: 0
-  m_Name: Dial2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &976017080
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4569085918667026, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 976017079}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 30, z: -0.17464161}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 315634610}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &976017081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 976017079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbba697096f78947a7883892e96d47f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &976017082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114053710879666628, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 976017079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - actorName: Savitr
-    line: La grande forme!
-  - actorName: Savitr
-    line: "Bon, maintenant je veux voir le r\xE9sultat de ton apprentissage."
-  - actorName: Savitr
-    line: Repousse-moi cet ennemi!
-  dialogueBox: {fileID: 1867943379}
-  delayBetweenEachLetter: 0.01
-  skipKey: 323
-  inDialogue: 0
 --- !u!1001 &979474628
 Prefab:
   m_ObjectHideFlags: 0
@@ -2449,7 +2360,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219741091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21, y: -243, z: 0}
+  m_LocalPosition: {x: 21, y: -270.4, z: 0}
   m_LocalScale: {x: 307.1, y: 22, z: 1.126305}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2593,6 +2504,11 @@ Prefab:
       propertyPath: attackRangeMax
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 114146336610939310, guid: a680bfd1d36469c4ca4b449a3ed7c85f,
+        type: 2}
+      propertyPath: life
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a680bfd1d36469c4ca4b449a3ed7c85f, type: 2}
   m_IsPrefabParent: 0
@@ -2643,76 +2559,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b73c3aa9d206c543b39e36e0b8e14c8, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1344184574
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1980837712677514, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1344184575}
-  - component: {fileID: 1344184577}
-  - component: {fileID: 1344184576}
-  m_Layer: 0
-  m_Name: Dial3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1344184575
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4569085918667026, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344184574}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 30, z: -0.17464161}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 315634610}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1344184576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344184574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbba697096f78947a7883892e96d47f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1344184577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114053710879666628, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344184574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - actorName: Savitr
-    line: "Bien. Tr\xE8s bien, m\xEAme. Il ne doit plus rester que quelques coups
-      pour l'achever."
-  - actorName: Savitr
-    line: Finis-le.
-  - actorName: Savitr
-    line: "Et grave \xE7a dans ta m\xE9moire:"
-  - actorName: Savitr
-    line: "En ce monde, tout, toi, moi, les monstres dehors, ABSOLUMENT tout est r\xE9gi
-      par la musique. Utilise-la \xE0 ton avantage."
-  dialogueBox: {fileID: 1867943379}
-  delayBetweenEachLetter: 0.01
-  skipKey: 323
-  inDialogue: 0
 --- !u!1001 &1369330128
 Prefab:
   m_ObjectHideFlags: 0
@@ -3490,58 +3336,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1747990677}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1001 &1751265905
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -97
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -46
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307595915174986, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114816446050764968, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 20079801336551240, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
-        type: 2}
-      propertyPath: orthographic size
-      value: 177.40402
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1753804176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,7 +3429,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1753804176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -105, y: 150, z: 0}
+  m_LocalPosition: {x: -105, y: 175, z: 0}
   m_LocalScale: {x: 307.1, y: 22, z: 1.126305}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3795,7 +3589,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872788821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -450, y: -64, z: 0}
+  m_LocalPosition: {x: -515.5, y: -64, z: 0}
   m_LocalScale: {x: 13.5, y: 145.4, z: 1.126305}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3984,6 +3778,7 @@ GameObject:
   - component: {fileID: 2015935279}
   - component: {fileID: 2015935277}
   - component: {fileID: 2015935278}
+  - component: {fileID: 2015935285}
   m_Layer: 0
   m_Name: camera
   m_TagString: MainCamera
@@ -4122,74 +3917,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2044589696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1980837712677514, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2044589697}
-  - component: {fileID: 2044589699}
-  - component: {fileID: 2044589698}
-  m_Layer: 0
-  m_Name: Dial1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2044589697
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4569085918667026, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2044589696}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 30, z: -0.17464161}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 315634610}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2044589698
+--- !u!114 &2015935285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2044589696}
+  m_GameObject: {fileID: 2015935276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbba697096f78947a7883892e96d47f, type: 3}
+  m_Script: {fileID: 11500000, guid: cbcb0e3826333f24284f4bc0355f3e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2044589699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114053710879666628, guid: 0b4605b556a9dc44a9ee6b99b945f955,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2044589696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - actorName: Savitr
-    line: "On va revoir les bases avant de te l\xE2cher dans la nature."
-  - actorName: Savitr
-    line: "Va frapper ce monstre, l\xE0-bas."
-  - actorName: Savitr
-    line: "Je veux v\xE9rifier ta condition physique."
-  - actorName: Savitr
-    line: "Ne t'inqui\xE8te pas, je l'ai d\xE9j\xE0 affaibli."
-  dialogueBox: {fileID: 1867943379}
-  delayBetweenEachLetter: 0.01
-  skipKey: 323
-  inDialogue: 0
+  target: {fileID: 0}
+  Camspeed: 0
+  trigger1: {fileID: 0}
+  trigger2: {fileID: 0}
+  "triggerEntr\xE9e": {fileID: 0}
+  Effect: 0
 --- !u!1 &2086753228
 GameObject:
   m_ObjectHideFlags: 0

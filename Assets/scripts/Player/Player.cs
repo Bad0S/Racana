@@ -100,6 +100,8 @@ public class Player: MonoBehaviour
 		scene = SceneManager.GetActiveScene ();
 		sceneIndex = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().scenes.LastIndexOf (scene.name);
 		transform.position = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().RespawnPos [sceneIndex];
+        canMusic = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic;
+        hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
     }
 
 	// Update is called once per frame

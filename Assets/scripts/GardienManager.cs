@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GardienManager : MonoBehaviour
 {
-	
+    public Scene scene;
     [FMODUnity.EventRef]
     public string selectsoundTransitionGardien;
     [FMODUnity.EventRef]
@@ -48,6 +49,12 @@ public class GardienManager : MonoBehaviour
     {
 		if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false && active == false)
         {
+            scene = SceneManager.GetActiveScene();
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().scenes.Add(scene.name);
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
+            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
+
             sndTransition.start();
             sndTransitionGardien.start();
             collision.GetComponent<Player>().canMusic = true;

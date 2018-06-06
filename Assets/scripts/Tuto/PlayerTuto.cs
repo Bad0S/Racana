@@ -19,7 +19,7 @@ public class PlayerTuto : MonoBehaviour {
 		try{
 			
 		
-		if(enemy.GetComponent <health>().life<8){
+		if(enemy.GetComponent <health>().life<4){
 			dials [1].SetActive (true);
 			enemy.GetComponent <EnemyBehaviour> ().target = loin;
 		}
@@ -51,7 +51,7 @@ public class PlayerTuto : MonoBehaviour {
 		print (dials);
 		if(enemy.GetComponent <EnemyBehaviour> ().timerWaitRepousse <02f ){
 			dials [2].SetActive ((true));
-			enemy.GetComponent <EnemyBehaviour> ().target = null;
+			enemy.GetComponent <EnemyBehaviour> ().target = loin;
 
 		}
 	}

@@ -53,7 +53,6 @@ public class EntréeTuto : MonoBehaviour {
 				other.GetComponent<Rythme> ().MusicStop ();
 			}
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
-			player.GetComponent <Player> ().hadTuto = true;
 
 			//SceneManager.LoadScene("Showcase");
 
