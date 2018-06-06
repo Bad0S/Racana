@@ -48,10 +48,13 @@ public class GardienManager : MonoBehaviour
         sndBeatGardien.setVolume((portée-distance)/portée);
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-		if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false && active == false)
+		if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false && active == false&& GetComponentInChildren <StarDialGardien>().read == true)
         {
+			FX.SetActive (true);
+			player.GetComponent <Player>().canMusic = true;
+
             scene = SceneManager.GetActiveScene();
             GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
             GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().scenes.Add(scene.name);
@@ -70,8 +73,6 @@ public class GardienManager : MonoBehaviour
 			GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
 			active = true;
 
-			FX.SetActive (true);
-			player.GetComponent <Player>().canMusic = true;
 
         }
     }
