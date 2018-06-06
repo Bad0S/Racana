@@ -95,8 +95,11 @@ public class Rythme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
-        { combo = 0; }
+		if (!GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic && gameObject.tag == "Player")
+        { 
+			combo = -1;
+			GetComponent<Player> ().MovSpeed = 150;
+		}
         if (boss == true)
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
@@ -148,7 +151,8 @@ public class Rythme : MonoBehaviour
         if (combo == 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic) 
 		{
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = initial;
-            //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
+			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
+			GetComponent<Player> ().MovSpeed = 150;
             sndTheme.setVolume(0f);
             sndBase.setVolume(1f);
             sndTranse.setVolume(0f);
