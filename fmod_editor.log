@@ -20,6 +20,143 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SoundI::release                          : Village (00000000402577F8)
+[LOG] SoundI::release                          :     Village (000000004ECFFF88)
+[LOG] SoundI::release                          :     Village (000000004EDFBFC8)
+[LOG] SoundI::release                          : Village (0000000040256C28)
+[LOG] SoundI::release                          :     Village (000000004ECFFDE8)
+[LOG] SoundI::release                          :     Village (000000004EDFB5A8)
+[LOG] SoundI::release                          : Village (0000000040257648)
+[LOG] SoundI::release                          :     Village (000000004ED00608)
+[LOG] SoundI::release                          :     Village (000000004EDFC9E8)
+[LOG] SoundI::release                          : Village (0000000040256F88)
+[LOG] SoundI::release                          :     Village (000000004ED00FC8)
+[LOG] SoundI::release                          :     Village (0000000040256DD8)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004EDFB758 : node = 000000004E76C4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004ED012B8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004EDFB758
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004EDFBC68 : node = 000000004E76AFF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004E76C608
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004ED012B8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004EDFB5A8 : node = 000000004E76B920
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004ED012B8.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004EDFBAB8 : node = 000000004E76B3E0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004ED012B8.  list count = 2
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004EDFB758
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004EDFBC68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004E76B108
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004EDFBC68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004EDFB5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004E76BA38
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004EDFB5A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004EDFBAB8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004E76B4F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004EDFBAB8
+[LOG] SoundI::getSubSound                      : sound 000000004EDFB758.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000004EDFBC68.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000004EDFB5A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000004EDFBAB8.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SoundI::release                          : Village (000000004EDFB5A8)
+[LOG] SoundI::release                          :     Village (000000004ED01308)
+[LOG] SoundI::release                          :     Village (000000004EDFBFC8)
+[LOG] SoundI::release                          : Village (000000004EDFBC68)
+[LOG] SoundI::release                          :     Village (000000004ECFF5C8)
+[LOG] SoundI::release                          :     Village (000000004EDFBE18)
+[LOG] SoundI::release                          : Village (000000004EDFB758)
+[LOG] SoundI::release                          :     Village (000000004ED00468)
+[LOG] SoundI::release                          :     Village (000000004EDFB908)
+[LOG] SoundI::release                          : Village (000000004EDFBAB8)
+[LOG] SoundI::release                          :     Village (000000004ECFF908)
+[LOG] SoundI::release                          :     Village (000000004EDFC9E8)
+[LOG] SoundI::release                          :  (000000004E774C78)
+[LOG] SoundI::release                          :     FauveCri (00000000402205F8)
+[LOG] SoundI::release                          :  (000000004E7746B8)
+[LOG] SoundI::release                          :     Bambou (00000000402217D8)
+[LOG] SoundI::release                          :  (000000004E775688)
+[LOG] SoundI::release                          :     Dash (0000000040220C78)
+[LOG] SoundI::release                          :  (000000004E7757F8)
+[LOG] SoundI::release                          :     Repousse (000000004ECFF768)
+[LOG] SoundI::release                          :  (000000004E774B08)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (0000000040220E18)
+[LOG] SoundI::release                          :  (000000004E775C48)
+[LOG] SoundI::release                          :     Groupie (00000000402212F8)
+[LOG] SoundI::release                          :  (000000004E773E18)
+[LOG] SoundI::release                          :     CombatBossTranscendance (0000000040221638)
+[LOG] SoundI::release                          :  (000000004E774998)
+[LOG] SoundI::release                          :     CombatBossTranse (0000000040220938)
+[LOG] SoundI::release                          :  (000000004E775968)
+[LOG] SoundI::release                          :     CombatBossBase (000000004ED00E28)
+[LOG] SoundI::release                          :  (000000004E775518)
+[LOG] SoundI::release                          :     FauveMorsure (000000004ED00C88)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
@@ -27,4 +164,6 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
