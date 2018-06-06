@@ -24,6 +24,9 @@ public class GardienManager : MonoBehaviour
 	public bool active;
 	public GameObject bambou;
 
+	public GameObject player;
+	public GameObject FX;
+
     // Use this for initialization
     void Start ()
     {
@@ -66,6 +69,9 @@ public class GardienManager : MonoBehaviour
 			GameObject Bambou2 = (GameObject)Instantiate (bambou, Pos2 ,Quaternion.identity);
 			GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
 			active = true;
+
+			FX.SetActive (true);
+			player.GetComponent <Player>().canMusic = true;
 
         }
     }

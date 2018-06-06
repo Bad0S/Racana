@@ -13,6 +13,7 @@ public class BiteScript : MonoBehaviour {
 
 	void OnEnable () {
 		if(bite == false){
+			anim =GetComponent <Animator>();
 			anim.SetTrigger ("StartBite");
 			bite = true;
 		}
