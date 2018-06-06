@@ -19,6 +19,7 @@ public class Cheats : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.R) == true || Input.GetKey(KeyCode.JoystickButton6))
 		{
+			GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 		}
 		if (Input.GetKeyDown (KeyCode.H) == true) 

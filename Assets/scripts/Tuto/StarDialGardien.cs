@@ -14,7 +14,7 @@ public class StarDialGardien : MonoBehaviour {
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Player" &&GetComponent<DialogueComponent>().inDialogue == false ) 
+		if (other.tag == "Player" && GetComponent<DialogueComponent>().inDialogue == false && read == false ) 
 		{
 				GetComponent<DialogueComponent>().StartDialogue();
 			reading = true;

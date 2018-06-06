@@ -25,6 +25,7 @@ public class GardienManager : MonoBehaviour
 	public GameObject bambou;
 
 	public GameObject player;
+	public GameObject respawn;
 	public GameObject FX;
 
     // Use this for initialization
@@ -39,6 +40,8 @@ public class GardienManager : MonoBehaviour
         sndTransition = FMODUnity.RuntimeManager.CreateInstance(selectsoundTransition);
         sndBeatGardien.start();
         sndBeatGardien.setVolume(0f);
+		player = GameObject.FindGameObjectWithTag ("Player");
+		respawn = GameObject.FindGameObjectWithTag ("Respawn");
 	}
 	
 	// Update is called once per frame
@@ -53,27 +56,44 @@ public class GardienManager : MonoBehaviour
 		if (collision.tag == "Player" && collision.GetComponent<Player>().canMusic == false && active == false&& GetComponentInChildren <StarDialGardien>().read == true)
         {
 			FX.SetActive (true);
-			player.GetComponent <Player>().canMusic = true;
+			StartCoroutine (GardienCoroutine ());
+            //sndTransition.start();
+			//sndTransitionGardien.start();
+			player.GetComponent<Rythme> ().MusicStop();
 
-            scene = SceneManager.GetActiveScene();
-            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
-            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().scenes.Add(scene.name);
-            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
-            GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
 
-            sndTransition.start();
-            sndTransitionGardien.start();
-            collision.GetComponent<Player>().canMusic = true;
-            collision.GetComponent<Rythme>().combo = 0f;
-            sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-			
-			print ("spawn_stele");
-			GameObject Bambou = (GameObject)Instantiate (bambou, Pos1 ,Quaternion.identity);
-			GameObject Bambou2 = (GameObject)Instantiate (bambou, Pos2 ,Quaternion.identity);
-			GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
-			active = true;
 
 
         }
     }
+
+	IEnumerator GardienCoroutine()
+	{
+		yield return new WaitForSeconds (1.1f);
+		player.GetComponent<Player> ().canMusic = true;
+		player.GetComponent<Player> ().canMove = true;
+		player.GetComponent<Player> ().canAttack = true;
+		player.GetComponent<Player> ().canDash = true;
+		player.GetComponent<Rythme> ().combo = 0f;
+
+		yield return new WaitForSeconds (1.1f);
+
+		scene = SceneManager.GetActiveScene();
+		respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
+		respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
+		respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
+		respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
+
+		yield return new WaitForSeconds (1.1f);
+
+		sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+		player.GetComponent<Rythme> ().MusicPlay();
+
+		yield return new WaitForSeconds (1.1f);
+
+		GameObject Bambou = (GameObject)Instantiate (bambou, Pos1 ,Quaternion.identity);
+		GameObject Bambou2 = (GameObject)Instantiate (bambou, Pos2 ,Quaternion.identity);
+		GameObject Bambou3 = (GameObject)Instantiate (bambou, Pos3 ,Quaternion.identity);
+		active = true;
+	}
 }

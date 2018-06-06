@@ -141,7 +141,9 @@ public class health : MonoBehaviour {
 			{
 				StartCoroutine (PlayerDeath());
 				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMove = false;
-			}
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canAttack = false;
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canDash = false;
+            }
 		}
 		// /!\NE PAS TOUCHER, pour les futurs combos
 		/*counterHeal = combo.counter;//appelle dans combo

@@ -82,6 +82,10 @@ public class Rythme : MonoBehaviour
             sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranse);
             sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranscendance);
         }
+		if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic && gameObject.tag == "Player")
+		{ 
+			combo = 0;
+		} 
         bpm = bpmInitial;
 
         //if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 

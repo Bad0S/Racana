@@ -84,6 +84,7 @@ public class DialogueComponent : MonoBehaviour
 		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
 		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
 		player.GetComponent <Player>().enabled = false ;
+		player.GetComponent <Rigidbody2D>().velocity = Vector3.zero ;
 		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
 		foreach (GameObject ennemi in ennemisArray) 
 		{
