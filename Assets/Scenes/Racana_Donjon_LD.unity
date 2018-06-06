@@ -7465,7 +7465,7 @@ Prefab:
     - target: {fileID: 114915059078695548, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: life
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
@@ -44430,6 +44430,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1397254566388616, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114836005177532282, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:

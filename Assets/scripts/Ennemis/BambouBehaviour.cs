@@ -164,7 +164,6 @@ public class BambouBehaviour : MonoBehaviour {
 
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds);
 		angleShoot = Mathf.Atan2(targetVector.y, targetVector.x) * Mathf.Rad2Deg;
-		print (angleShoot);
 		anim.SetTrigger ("IsAttacking");
 
         sndBambou.start();

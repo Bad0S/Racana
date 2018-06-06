@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RepousseScript : MonoBehaviour {
-	public float beat=100;
+	public float beat=130;
 	public float speed;
-	public float speedGrowth=0.01f;
+	public float speedGrowth=0.002f;
 	private Rigidbody2D rb;
 	public Vector3 direction;
 	public ParticleSystem particSys;
@@ -15,8 +15,11 @@ public class RepousseScript : MonoBehaviour {
 	void Awake () {
 		Destroy (gameObject, beat*2 );
 		rb = GetComponent <Rigidbody2D> ();
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
+        {
+            speedGrowth = 0.01f;
+        }
 		//particSys = GetComponentInChildren <ParticleSystem> ();
-		print (particSys);
 	}
 	
 	// Update is called once per frame

@@ -76,7 +76,6 @@ public class PorteBoss : MonoBehaviour {
 				}
 				disable = true;
 			}
-			print (descending);
 
 			descending += Time.deltaTime/(1/speed);
 			transform.position = new Vector3(transform.position.x,Mathf.Lerp(originalPos, originalPos-100, descending),0);

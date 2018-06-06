@@ -95,6 +95,8 @@ public class Rythme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
+        { combo = 0; }
         if (boss == true)
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);

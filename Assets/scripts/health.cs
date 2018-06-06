@@ -178,7 +178,6 @@ public class health : MonoBehaviour {
 	}
 
 	IEnumerator PlayerHitFX(GameObject player){
-		print ("test");
 		hitFX = player.GetComponentInParent<Player> ().hitFX [player.GetComponentInParent<Player> ().tauxCharge-1];
 		hitFX.SetActive (true);
 
@@ -201,8 +200,9 @@ public class health : MonoBehaviour {
 
 	IEnumerator PlayerDeath()
 	{
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 		gameObject.GetComponent<Animator>().SetTrigger ("Mort");
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (2f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		rend.material.shader = shaderDeBase;
 		rend.color = couleurDeBase ;

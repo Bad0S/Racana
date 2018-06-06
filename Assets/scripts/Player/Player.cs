@@ -378,7 +378,6 @@ public class Player: MonoBehaviour
         if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
 		{
 			body.AddForce (déplacement * DashSpeed, ForceMode2D.Impulse);
-			print (déplacement);
 
 		}
 		else
@@ -403,8 +402,6 @@ public class Player: MonoBehaviour
 	}
 	public IEnumerator Knocked(Vector2 vecTmp)
 	{
-		print ("test");
-
 		knocked = true;
 		timerDash += 0.25f;
 		body.AddForce ( vecTmp*500, ForceMode2D.Impulse);

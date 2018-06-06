@@ -48,7 +48,6 @@ public class PlayerTuto : MonoBehaviour {
 
 	IEnumerator dial3(){
 		yield return new WaitForSeconds (0.1f);
-		print (dials);
 		if(enemy.GetComponent <EnemyBehaviour> ().timerWaitRepousse <02f ){
 			dials [2].SetActive ((true));
 			enemy.GetComponent <EnemyBehaviour> ().target = loin;
