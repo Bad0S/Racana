@@ -11,7 +11,7 @@ public class patternTir : MonoBehaviour {
 	public int phase = 1;
 	private float timerEntrePatterns;
 	private float prochainPattern;
-	private bool inPattern;
+	public bool inPattern;
 	public float beatLength;
 
 	// casters externes
@@ -48,18 +48,21 @@ public class patternTir : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (inPattern == false){
-			if (GetComponent <health>().life<= (originalLife/6)*5&&GetComponent <health>().life>= (originalLife/6)*4){
-				phase = 2;
-			}
-			else if(GetComponent <health>().life<= (originalLife/6)*3){
-				phase = 3;
-			}
-			else if (GetComponent <health>().life<= 3&& inPattern == false){
+			if (GetComponent <health>().life<= 3&& inPattern == false&& finalPhase<2){
 				if(finalPhase == 1){
 					phase = 4;
 					finalPhase++;
 				}
 			}
+			else if(GetComponent <health>().life<= (originalLife/6)*3){
+				phase = 3;
+			}
+			else if (GetComponent <health>().life<= (originalLife/6)*5&&GetComponent <health>().life>= (originalLife/6)*4){
+				phase = 2;
+			}
+		
+			 
+		
 			timerEntrePatterns += Time.deltaTime;
 		}
 		if (phase == 1) {
@@ -144,13 +147,14 @@ public class patternTir : MonoBehaviour {
 		} else if (phase == 4) {
 			if(finalPhase ==2){
 				StartCoroutine (Pattern0Etat4 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
-				timerDeath += Time.deltaTime/4;
 
 
 			}
 			else if(finalPhase == 3){
+				timerDeath += Time.deltaTime/4;
+
 				beatLength = 120;
-				GetComponent <PolygonCollider2D>().enabled = true;
+				//GetComponent <PolygonCollider2D>().enabled = true;
 
 				externesBas [0].SetActive (true);
 				externesBas [1].SetActive (true);
@@ -181,7 +185,7 @@ public class patternTir : MonoBehaviour {
 				externesCotes[0]. GetComponent <CasterExterne> ().canShoot = true;
 				externesCotes[1]. GetComponent <CasterExterne> ().canShoot = true;
 
-				GetComponent <SpriteRenderer>().color = new Color(0f, 0,0);
+				GetComponent <SpriteRenderer>().color = new Color(1f, 0.9f,0.9f);
 
 			}	
 			else if(finalPhase == 4){
@@ -495,6 +499,7 @@ public class patternTir : MonoBehaviour {
 		TirBas2 ();
 
 		firstPattern3 = true;
+		inPattern = false;
 
 	}
 
@@ -584,9 +589,9 @@ public class patternTir : MonoBehaviour {
 		inPattern = false;
 	}
 	IEnumerator Pattern0Etat4(float dureeBeat){
-		inPattern = true;
-		GetComponent <PolygonCollider2D>().enabled = false;
-		GetComponent <SpriteRenderer>().color = new Color(0.3f, 0,0);
+		//inPattern = true;
+		//GetComponent <PolygonCollider2D>().enabled = false;
+		//GetComponent <SpriteRenderer>().color = new Color(1f, 0.9f,0.9f);
 		yield return new WaitForSeconds (3 * dureeBeat);
 		TirDroit ();
 

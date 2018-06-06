@@ -123,7 +123,7 @@ public class health : MonoBehaviour {
 				}
 				else{
 					Time.timeScale = 0.2f;
-					gameObject.GetComponent <patternTir>().finalPhase = 3;
+					if(	gameObject.GetComponent <patternTir>().finalPhase == 3);
 					StartCoroutine (BossDeath(1));
 				}
 

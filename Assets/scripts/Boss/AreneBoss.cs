@@ -18,9 +18,9 @@ public class AreneBoss : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			GetComponent <EdgeCollider2D>().enabled = true;
-
+			//zoneMurs.SetActive (true);
 			boss.enabled = true;
-			GetComponent <BoxCollider>().enabled = false;
+			//GetComponent <BoxCollider>().enabled = false;
 
 		}
 	}

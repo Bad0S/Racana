@@ -382,7 +382,7 @@ public class Player: MonoBehaviour
 		else
 		{
 			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			body.AddForce ( vecTmp*175 , ForceMode2D.Impulse);
+			body.AddForce ( vecTmp*25 , ForceMode2D.Impulse);
 		}
 		yield return new WaitForSeconds (0.5f);
 		dashFX[0].SetActive  (false);

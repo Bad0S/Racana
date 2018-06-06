@@ -23,6 +23,14 @@ public class CasterExterne : MonoBehaviour {
 	public float frame = 0.5f; // frame d'esquive du player
 	public LayerMask layerLaser;
 
+	//FX 
+	public GameObject casterFX;
+	public GameObject chargeTirFX;
+	public GameObject laserFX;
+	public GameObject laserFXSphere;
+	public GameObject petitLaserFX;
+	public float timerLaser;
+	public bool hasShoot;
 	//ce qui dit tire au caster
 	public bool shoot;
 
@@ -34,42 +42,50 @@ public class CasterExterne : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (shoot){
+		if (shoot) {
 			casting = true;
 			decasting = false;
 			shoot = false;
+			casterFX.SetActive (true);
+			chargeTirFX.SetActive (true);
+
 		}
 
-		if(casting==true){
+		if (casting == true) {
+			//	casterFX.SetActive (true);
+
 			timerCasting += Time.deltaTime;
-		}
-		else if(decasting == true){
+		} else if (decasting == true) {
 			timerCasting -= Time.deltaTime;
 		}
 
-		transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), 0);
+		if (hasShoot == true) {
+			timerLaser += Time.deltaTime;
+		}
+
+		//casterFX.GetComponentInChildren <ParticleSystem>().Play ();
+
+		//transform.localScale = new Vector3(Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), Mathf.Lerp(casterFrom,casterTo, timerCasting*(timeCast)), 0);
 
 
-		if(timerCasting>=timeCast  - player.GetComponent <Rythme>().timeBetweenBeatsInSeconds && decasting == false ){
-			if(isAiming == 1){
-				isAiming= 2;
+		if (timerCasting >= timeCast - player.GetComponent <Rythme> ().timeBetweenBeatsInSeconds && decasting == false&& casting == true) {
+			if (isAiming == 1) {
+				isAiming = 2;
 			}	
 
-			if(isAiming == 2){
-				if(deathPhase ==false){
+			if (isAiming == 2) {
+				if (deathPhase == false) {
 					playerDirection = new Vector3 (player.position.x - transform.position.x, player.position.y - transform.position.y, 0);
 
 				}
-				hit = Physics2D.Raycast(transform.position, playerDirection,Mathf.Infinity, layerLaser);
+				hit = Physics2D.Raycast (transform.position, playerDirection, Mathf.Infinity, layerLaser);
 				laserLength = hit.distance;
 				hitV3 = new Vector3 (hit.point.x, hit.point.y, 0);
-				angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
+				angleShoot = Mathf.Atan2 (playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 
-				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength/4,00.8f,1);
-				laserInstance.transform.parent = gameObject.transform.parent;
-				laserInstance.GetComponent <BoxCollider2D>().enabled = false;
-				isAiming= 3;
+				petitLaserFX.SetActive (true);
+				petitLaserFX.transform.rotation = Quaternion.Euler (0, 0, angleShoot + 90);
+				isAiming = 3;
 
 			}
 
@@ -77,7 +93,7 @@ public class CasterExterne : MonoBehaviour {
 
 
 
-		if (timerCasting >= timeCast&& casting ==true) {
+		if (timerCasting >= timeCast && casting == true) {
 			timerCasting = 1;
 			casting = false;
 			canShoot = true;
@@ -85,36 +101,44 @@ public class CasterExterne : MonoBehaviour {
 			speedGrowth *= 2;
 		}
 
-		if (timerCasting <= 0 &&decasting == true){
+		if (timerCasting <= 0 && decasting == true) {
 			timerCasting = 0;
 			decasting = false;
 			speedGrowth /= 2;
 		}
 		// créé le cast
-		if (canShoot == true){
-			if(deathPhase == true){
-				hit = Physics2D.Raycast(transform.position, playerDirection,Mathf.Infinity, layerLaser);
+		if (canShoot == true) {
+			if (deathPhase == true) {
+				hit = Physics2D.Raycast (transform.position, playerDirection, Mathf.Infinity, layerLaser);
 				laserLength = hit.distance;
 				hitV3 = new Vector3 (hit.point.x, hit.point.y, 0);
-				angleShoot = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
+				angleShoot = Mathf.Atan2 (playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
+				petitLaserFX.SetActive (true);
+				petitLaserFX.transform.rotation = Quaternion.Euler (0, 0, angleShoot);
 
-				GameObject laserInstanceMini = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstanceMini.transform.localScale = new Vector3 (laserLength/4,00.8f,1);
-				laserInstanceMini.transform.parent = gameObject.transform.parent;
-				laserInstanceMini.GetComponent <BoxCollider2D>().enabled = false;
-				isAiming= 3;
+				isAiming = 3;
 			}
-			if (hit.collider != null)
-			{
+			if (hit.collider != null) {
 
-				print ("yes");
-				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position+hitV3)/2, Quaternion.Euler(0, 0, angleShoot));
-				laserInstance.transform.localScale = new Vector3 (laserLength/4,004f,1);
+				petitLaserFX.SetActive (false);
+				laserFX.SetActive (true);
+				laserFXSphere.transform.position = new Vector3 (hitV3.x, hitV3.y, 0);
+				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position + hitV3) / 2, Quaternion.Euler (0, 0, angleShoot));
+				laserInstance.transform.localScale = new Vector3 (laserLength / 4, 004f, 1);
 				laserInstance.transform.parent = gameObject.transform.parent;
+				hasShoot = true;
+
 				isAiming = 1;
 			}
 			canShoot = false;
 		}
+		if (timerLaser > GetComponentInParent <patternTir> ().beatLength) {
+			casterFX.SetActive (false);
+			chargeTirFX.SetActive (true);
 
+			laserFX.SetActive (false);
+			timerLaser = 0;
+			hasShoot = false;
+		}
 	}
 }
