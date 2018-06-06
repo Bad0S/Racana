@@ -59,11 +59,6 @@ public class Rythme : MonoBehaviour
 
     void Start()
     {
-        if (PositionSetter.hasPlayed)
-        {
-            MusicPlay();
-            PositionSetter.hasPlayed = false;
-        }
 		if (SceneManager.GetActiveScene().name != "Racana_Foret" && SceneManager.GetActiveScene().name != "Racana_Donjon_LD")
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
@@ -89,10 +84,12 @@ public class Rythme : MonoBehaviour
         }
         bpm = bpmInitial;
 
-		if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
-		{
-			MusicPlay ();
-		}
+        //if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
+        if (!tuto)
+        {
+            MusicPlay();
+        }
+		
     }
 
     // Update is called once per frame

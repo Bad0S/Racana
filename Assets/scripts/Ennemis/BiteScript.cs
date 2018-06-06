@@ -12,7 +12,8 @@ public class BiteScript : MonoBehaviour {
 	}
 
 	void OnEnable () {
-		if(bite == false){
+		if(bite == false)
+        {
 			anim.SetTrigger ("StartBite");
 			bite = true;
 		}
