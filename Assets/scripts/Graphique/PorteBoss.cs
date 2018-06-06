@@ -58,25 +58,25 @@ public class PorteBoss : MonoBehaviour {
 		if (activation == true && descending<=1){
 			if (disable== false){
 				foreach (var vivant in disabling) {
+					try{
+						
+					
 					if(vivant.tag == "Player"){
 						vivant.GetComponent <Player>().enabled = false;
 						vivant.GetComponent <Animator>().speed=0;
 
 					}
 					else{
-						try{
+						
 							vivant.GetComponent <EnemyBehaviour>().enabled = false;
 							vivant.GetComponent <Animator>().speed=0;
 
-						}
-						catch{}
-						try{
+
 							vivant.GetComponent <BambouBehaviour>().enabled = false;
 							vivant.GetComponent <Animator>().speed=0;
 
-						}
-						catch{}
-					}
+						}}
+					catch{}
 				}
 				disable = true;
 			}

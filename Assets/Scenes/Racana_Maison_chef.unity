@@ -1705,6 +1705,11 @@ Prefab:
       propertyPath: dialogues.Array.data[2].line
       value: Plus importantes.
       objectReference: {fileID: 0}
+    - target: {fileID: 114561657979270528, guid: bfd53763c1b66b640aff26b0e509b725,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Hari
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
   m_IsPrefabParent: 0
@@ -2005,7 +2010,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2042,12 +2047,12 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[0].actorName
-      value: Devajr
+      value: Akshan
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: Eh bien, mon enfant, que viens-tu faire ici?
+      value: "Racana, j\u2019ai besoin de ton aide."
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2057,12 +2062,13 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[1].actorName
-      value: Radha
+      value: Akshan
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: Ron...
+      value: "Certains de nos gardes forestiers ont d\xE9couverts une reliques sorties
+        de terre. Elle semble attirer les \xE9l\xE9ments corrompus."
       objectReference: {fileID: 0}
     - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2074,6 +2080,49 @@ Prefab:
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: " Les gardes n\u2019ont pas r\xE9ussis \xE0 l\u2019inspecter avec la
+        horde de monstres autour de cette zone ."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: "Connaissant ta discr\xE9tion et ta dext\xE9rit\xE9, je te de demande
+        d'inspecter cette ruine.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].line
+      value: "Retrouve ton instructeur \xE0 la sortie du village, il t\u2019expliquera
+        comment acc\xE9der \xE0 ta mission. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[5].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[5].line
+      value: "Racana, j\u2019ai besoin de ton aide."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97c83e412690da3429b47189abf7181b, type: 2}
@@ -3525,7 +3574,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "Ne d\xE9range pas trop longemps le chef Devajr."
+      value: "Ne d\xE9range pas trop longemps le chef Akshan."
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}

@@ -105,29 +105,14 @@ public class Player: MonoBehaviour
         hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
     }
 
-	// Update is called once per frame
+
+
 	void Update () 
 	{
 		//charge sur beat
 		//print (body.velocity);
 
-		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
-		chargeAttaque += Time.deltaTime;
-		if(canMusic == true){
-			if (chargeAttaque > beat*2 && tauxCharge < 4)
-            {
-				tauxCharge++;
-				DisableListElements (paliers);
-				paliers [tauxCharge-1].SetActive (true);
-				chargeAttaque = 0;
-			}
-			else if (chargeAttaque > beat*2 && tauxCharge >= 4){
-				tauxCharge = 1;
-				DisableListElements (paliers);
-				paliers [tauxCharge-1].SetActive (true);
-				chargeAttaque = 0;
-			}
-		}
+
 
 
 		//Le dash en transcendance
@@ -166,7 +151,23 @@ public class Player: MonoBehaviour
 		if(timerDash>0.2f){
 			timerDash -= Time.deltaTime;
 		}
-
+		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+		chargeAttaque += Time.deltaTime;
+		if(canMusic == true){
+			if (chargeAttaque > beat*2 && tauxCharge < 4)
+			{
+				tauxCharge++;
+				DisableListElements (paliers);
+				paliers [tauxCharge-1].SetActive (true);
+				chargeAttaque = 0;
+			}
+			else if (chargeAttaque > beat*2 && tauxCharge >= 4){
+				tauxCharge = 1;
+				DisableListElements (paliers);
+				paliers [tauxCharge-1].SetActive (true);
+				chargeAttaque = 0;
+			}
+		}
 		//désactivation du collider lors du dash
 	}
 

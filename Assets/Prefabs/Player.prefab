@@ -811,6 +811,7 @@ MonoBehaviour:
   timerCombo: 0
   timerComboSpeed: 0
   comboDecreaseSpeed: 1
+  tuto: 0
 --- !u!114 &114467377950700396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -925,6 +926,7 @@ MonoBehaviour:
   "d\xE9placement": {x: 0, y: 0}
   canMove: 1
   MovSpeed: 200
+  "lastD\xE9placement": {x: 0, y: 0}
   canAttack: 0
   attaqueSlash: {fileID: 1768130151752490}
   attaqueRepousse: {fileID: 1396843238928744}
@@ -1473,7 +1475,7 @@ ParticleSystem:
         m_RotationOrder: 4
   ShapeModule:
     serializedVersion: 5
-    enabled: 1
+    enabled: 0
     type: 5
     angle: 25
     length: 5
@@ -11564,7 +11566,7 @@ ParticleSystem:
         m_RotationOrder: 4
   ShapeModule:
     serializedVersion: 5
-    enabled: 1
+    enabled: 0
     type: 5
     angle: 25
     length: 5
@@ -28461,7 +28463,7 @@ ParticleSystem:
         m_RotationOrder: 4
   ShapeModule:
     serializedVersion: 5
-    enabled: 1
+    enabled: 0
     type: 5
     angle: 25
     length: 5
@@ -35230,7 +35232,7 @@ ParticleSystem:
         m_RotationOrder: 4
   ShapeModule:
     serializedVersion: 5
-    enabled: 1
+    enabled: 0
     type: 5
     angle: 25
     length: 5

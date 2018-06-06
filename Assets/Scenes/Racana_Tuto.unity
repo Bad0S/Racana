@@ -1005,6 +1005,26 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.size
@@ -1012,11 +1032,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -317
+      value: -266
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 31
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1107,6 +1127,151 @@ Prefab:
     - target: {fileID: 1013571815464936, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Abhaya
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Abhaya
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Abhaya
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Abhaya
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: "PAs mal ! il ne reste que quelques coup avant qu\u2019il ne soit K.O.
+        defonce le !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
+        l\u2019ennemi. Utilise Y pour l\u2019invoquer !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: "tu t\u2019en tires parfaitement bien ! j\u2019ai confiance en toi sur
+        cette mission. Bon courage ma petite Racana !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: "On va revoir les bases avant de te lacher dans la nature.Va frapper
+        avec X ce monstre que j\u2019ai deja affaibli, la-bas.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: Au revoir.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: "Et n'oublie jamais, le rythme est la cl\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: Finis-le.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: "Et grave \xE7a dans ta m\xE9moire:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: "En ce monde, tout, toi, moi, les monstres dehors, ABSOLUMENT tout est
+        r\xE9gi par la musique. Utilise-la \xE0 ton avantage."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: "Bon, maintenant je veux voir le r\xE9sultat de ton apprentissage."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: Repousse-moi cet ennemi!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: "Va frapper ce monstre, l\xE0-bas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: "Je veux v\xE9rifier ta condition physique."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Savitr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: "Ne t'inqui\xE8te pas, je l'ai d\xE9j\xE0 affaibli."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
@@ -2261,7 +2426,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3ee30b0eab7411f4bb0d5937afc428ac,
+      objectReference: {fileID: 21300000, guid: b5df99383bf21624392270d2e15b9fd8,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
