@@ -43,9 +43,7 @@ public class RoarScript : MonoBehaviour {
 		{
 			
 			other.gameObject.GetComponent<health>().Hurt(damage);
-			if(other.GetComponent <Player>().isDashing== false){
-
-			}
+			print ("test");
 		
 		}
 	}

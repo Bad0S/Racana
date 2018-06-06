@@ -84,7 +84,6 @@ public class CasterDroit : MonoBehaviour {
 				angleShoot = Mathf.Atan2 (playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
 
 				petitLaserFX.SetActive (true);
-				print ("sexe");
 
 				petitLaserFX.transform.rotation = Quaternion.Euler (0, 0, angleShoot + 90);
 				isAiming = 3;
