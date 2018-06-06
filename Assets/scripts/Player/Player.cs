@@ -303,7 +303,8 @@ public class Player: MonoBehaviour
         if (canMusic == false)
         {
             sndWoosh.start();
-        }
+		}
+		canAttack = false;
         if (canMusic)
         {
             sndSlash.start();
@@ -315,18 +316,17 @@ public class Player: MonoBehaviour
 		GetComponent<health> ().damage = tauxCharge;
 		attaqueSlash.SetActive (true);
 		isAttacking = true;
-        canAttack = false;
-		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds);
+		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds/2);
 		attaqueSlash.SetActive (false);
 		isAttacking = false;
-		canAttack = true;
 		anim.SetBool("IsAttacking", false);
 
 		//anim.ResetTrigger("Attack_Slash");
 	}
 	IEnumerator repousseCoroutine()
 	{
-        sndRepousse.start();
+		sndRepousse.start();
+		canAttack = false;
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 
@@ -352,11 +352,9 @@ public class Player: MonoBehaviour
 
 		//attaqueRepousse.SetActive (true);
 		isAttacking = true;
-        canAttack = false;
-        yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (GetComponent <Rythme>().timeBetweenBeatsInSeconds/2);
         //attaqueRepousse.SetActive (false);
         isAttacking = false;
-		canAttack = true;
 		//anim.ResetTrigger ("Attack_Repousse");
 
 	}
@@ -364,43 +362,37 @@ public class Player: MonoBehaviour
 
 	IEnumerator dashCoroutine()
 	{
-        sndDash.start();
+		sndDash.start ();
 		timerDash = 0.5f;
 		canDash = false;
-		isDashing=true;
-		dashFX[0].SetActive  (true);
-		dashFX[2].SetActive  (true);
+		isDashing = true;
+		dashFX [0].SetActive (true);
+		dashFX [2].SetActive (true);
 
 
 		GetComponent <health> ().invincible = true;
-		GetComponent <health> ().currentTime =GetComponent <health> ().invincibleTime - 1 ;
-       // soundDash.start();
-        if (transcendance == false||GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) 
-		{
+		GetComponent <health> ().currentTime = GetComponent <health> ().invincibleTime - 1;
+		// soundDash.start();
+		if (transcendance == false || GetComponentInChildren <DashTranscendance> ().enemyList.Count == 0) {
 			body.AddForce (déplacement * DashSpeed, ForceMode2D.Impulse);
 
-		}
-		else
-		{
+		} else {
 			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			body.AddForce ( vecTmp*25 , ForceMode2D.Impulse);
+			body.AddForce (vecTmp * 25, ForceMode2D.Impulse);
 		}
 		yield return new WaitForSeconds (0.5f);
-		dashFX[0].SetActive  (false);
-		dashFX[2].SetActive  (false);
+		dashFX [0].SetActive (false);
+		dashFX [2].SetActive (false);
 		//dashFX[1].SetActive  (true);
 
-		isDashing=false;
+		isDashing = false;
 
 		//dashFX.SetActive (false);
-
-		yield return new WaitForSeconds (0.5f);
-		canDash = true;
 
 		//dashFX[1].SetActive  (false);
 
 	}
-	public IEnumerator Knocked(Vector2 vecTmp)
+	public IEnumerator	 Knocked(Vector2 vecTmp)
 	{
 		knocked = true;
 		timerDash += 0.25f;

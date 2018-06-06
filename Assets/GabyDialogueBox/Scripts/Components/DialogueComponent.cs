@@ -80,10 +80,14 @@ public class DialogueComponent : MonoBehaviour
     {
         // On empêche le dialogue de se lancer deux fois
         inDialogue = true;
-		GameObject player=  GameObject.FindGameObjectWithTag ("Player") ;	
+		GameObject player=  GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
 		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
 		player.GetComponent <Player>().enabled = false ;
+		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Ennemis");
+		//List<GameObject> ennemisList = new List<GameObject>(ennemisArray);
+		//ennemisList.ForEach (GetComponent<EnemyBehaviour> ().enabled = false);
+		//ennemisList.ForEach (GetComponent<BambouBehaviour> ().enabled = false);
 
 
         // On établit où est-ce qu'on en est
@@ -149,6 +153,8 @@ public class DialogueComponent : MonoBehaviour
         // Si on est sorti de la boucle, c'est qu'on a affiché toutes les lignes, on peut donc désactiver l'UI de la boite de dialogue
         dialogueBox.SetActive(false);
 		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
+		//ennemisList.ForEach (GetComponent<EnemyBehaviour> ().enabled = false);
+		//ennemisList.ForEach (GetComponent<BambouBehaviour> ().enabled = false);
 
         // On dit qu'on peut relancer le dialogue
         inDialogue = false;
