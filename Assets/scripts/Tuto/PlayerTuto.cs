@@ -8,6 +8,9 @@ public class PlayerTuto : MonoBehaviour {
 	public GameObject enemy;
 	public GameObject fader;
 	public GameObject loin;
+	public GameObject X;
+	public GameObject Y;
+	bool offY = true;
 	// Use this for initialization
 	void Start () {
 		Camera.main.GetComponent <CameraTuto>().enabled = false;
@@ -16,12 +19,23 @@ public class PlayerTuto : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		dials [0].SetActive (true);
+		if(enemy != null){
+			if (enemy.GetComponent <health> ().life > 3 ) {
+				X.SetActive (true);
+			}
+		}
+
 		try{
 			
 		
 		if(enemy.GetComponent <health>().life<4){
 			dials [1].SetActive (true);
 			enemy.GetComponent <EnemyBehaviour> ().target = loin;
+				if(dials[1].activeSelf == true&& offY == true){
+					Y.SetActive (true);
+
+				}
+
 		}
 		if(dials[1].activeSelf == true && Input.GetButtonDown ("Fire2")){
 			StartCoroutine (dial3 ());
@@ -43,6 +57,14 @@ public class PlayerTuto : MonoBehaviour {
 			GetComponent <Player> ().hadTuto = true;
 			Camera.main.GetComponent <CameraTuto>().enabled = true;
 
+		}
+
+		if(Input.GetButtonDown ("Fire1")== true){
+			X.SetActive (false);
+		}
+		if(Input.GetButtonDown ("Fire2")== true){
+			Y.SetActive (false);
+			offY = false;
 		}
 	}
 

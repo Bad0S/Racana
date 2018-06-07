@@ -13,11 +13,13 @@ public class CameraTuto : MonoBehaviour
 	private Camera cam;
 	private Vector3 originalPos;
 	public bool Effect;
+	Transform transCam;
+
 	void Start()
 	{
 		cam = GetComponent<Camera>();
-	}
-	//si on appuie sur R, recharge la scène
+		transCam = cam.transform;
+	}	//si on appuie sur R, recharge la scène
 	public IEnumerator ScreenShake (float TimeToShake, float magnitude, float frequency)
 	{
 		Effect = true;
@@ -53,6 +55,12 @@ public class CameraTuto : MonoBehaviour
 	void Update()
 	{
 
+		if(transCam.position.x<=-153 ){
+			transCam.position = new Vector3( -153, transCam.position.y, transCam.position.z);
+		}
+		if(transCam.position.x>=-30 ){
+			transCam.position = new Vector3( -30, transCam.position.y, transCam.position.z);
+		}
 
 
 		/*if (target.position.y > trigger1.position.y && target.position.y < trigger2.position.y) 
