@@ -21,11 +21,11 @@ public class PasseArriere : MonoBehaviour
             childrenTrans = getFirstChildren(checkPasseArriere);
 			if (childrenTrans.position.y > transform.position.y) 
 			{
-				elementRend.sortingOrder = 1;
+				elementRend.sortingOrder = 4;
 			}
 			if (childrenTrans.position.y < transform.position.y) 
 			{
-				elementRend.sortingOrder = 3;
+				elementRend.sortingOrder = 6;
 			}
 		}
 	}
