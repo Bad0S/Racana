@@ -36,6 +36,14 @@ public class health : MonoBehaviour {
 
     private GameObject player;
 	// Use this for initialization
+
+	//bossDeath
+	private Color alphaColor;
+	private float timerFade;
+	public bool startFade = false;
+	public bool killedboss;
+
+
 	void Start () 
 	{
 		shaderDeCouleur = Shader.Find("GUI/Text Shader");
@@ -44,6 +52,9 @@ public class health : MonoBehaviour {
 		couleurDeBase = rend.color;
 		player = GameObject.FindGameObjectWithTag ("Player");
         sndHurt = FMODUnity.RuntimeManager.CreateInstance(selectsoundHurt);
+
+		alphaColor = GetComponent<SpriteRenderer>().color;
+		alphaColor.a = 0;
     }
 	//si se fait soigner
 	public void Heal( int lifeToGain)// la fonction pour soigner
@@ -111,6 +122,7 @@ public class health : MonoBehaviour {
 	{
 		if (life <= 0f)
 		{
+
 			if(gameObject.tag == "Enemy" ||gameObject.tag == "EnemyShoot")
 			{
 				//GameObject drop = (GameObject)Instantiate (healItem, transform.position, transform.rotation);
@@ -137,9 +149,8 @@ public class health : MonoBehaviour {
 					life = 1;
 				}
 				else{
-					Time.timeScale = 0.2f;
 					if(	gameObject.GetComponent <patternTir>().finalPhase == 3);
-					StartCoroutine (BossDeath(1));
+					StartCoroutine (BossDeath(2));
 				}
 
 				//Events stylés et Fx!
@@ -174,8 +185,12 @@ public class health : MonoBehaviour {
 			invincible = false;
 
 		}
-		GamePad.SetVibration (0,0f,0f);
 
+		if(startFade == true){
+			timerFade += Time.deltaTime;
+			GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, alphaColor,timerFade-1);
+
+		}
 	}
 
 	/*void OnTriggerEnter2D (Collider2D other)
@@ -186,8 +201,15 @@ public class health : MonoBehaviour {
 		}
 	}*/
 	IEnumerator BossDeath(float duree){
-		yield return new WaitForSeconds (duree);
+		Time.timeScale = 0.2f;
+		startFade = true;
+		yield return new WaitForSeconds (duree/10);
+		killedboss = true;
+		yield return new WaitForSeconds (duree/10);
+		Time.timeScale = 1f;
+
 		Destroy (gameObject);
+
 
 	}
 
@@ -201,6 +223,7 @@ public class health : MonoBehaviour {
 		hitFX.transform.position = new Vector3 (transform.position.x,transform.position.y, 0);
 
 		yield return new WaitForSeconds(0.35f);
+		GamePad.SetVibration (0,0f,0f);
 
 		hitFX.SetActive (false);
 		hitFXRoutine = false;

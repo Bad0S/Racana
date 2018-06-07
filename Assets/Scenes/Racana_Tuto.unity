@@ -947,7 +947,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284967944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -345.5, y: 10.800003, z: 0}
+  m_LocalPosition: {x: -323.9, y: -65.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1310012026}
@@ -1077,7 +1077,7 @@ Prefab:
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
@@ -1087,7 +1087,7 @@ Prefab:
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1095,7 +1095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 61
+      value: -73.64581
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1210,46 +1210,47 @@ Prefab:
     - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "PAs mal ! il ne reste que quelques coup avant qu\u2019il ne soit K.O.
-        defonce le !"
+      value: "PAs mal ! il ne reste que quelques coup avant qu\u2019il ne soit K.O..
+        Ach\xE8ve le !"
       objectReference: {fileID: 0}
     - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
-        l\u2019ennemi. Utilise Y pour l\u2019invoquer !"
+      value: "Whoa la grande forme ! Montre-moi ta technique maintenant. Elle repousse
+        les ennemis, c'est \xE7a? "
       objectReference: {fileID: 0}
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "tu t\u2019en tires parfaitement bien ! j\u2019ai confiance en toi sur
-        cette mission. Bon courage ma petite Racana !"
+      value: "tu t\u2019en tireras parfaitement bien ! j\u2019ai confiance en toi
+        pour cette mission. Bon courage ma petite Racana !"
       objectReference: {fileID: 0}
     - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: "On va revoir les bases avant de te lacher dans la nature.Va frapper
-        avec X ce monstre que j\u2019ai deja affaibli, la-bas.\r\n"
+      value: "On va revoir les bases avant de te l\xE2cher dans la nature. Va frapper
+        ce monstre faiblard, la-bas.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[1].actorName
-      value: Savitr
+      value: Abhaya
       objectReference: {fileID: 0}
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: Au revoir.
+      value: "Ah, et ne t'inqui\xE8te pas. "
       objectReference: {fileID: 0}
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[2].actorName
-      value: Savitr
+      value: Abhaya
       objectReference: {fileID: 0}
     - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: dialogues.Array.data[2].line
-      value: "Et n'oublie jamais, le rythme est la cl\xE9."
+      value: "si tu te sens perdue, tu n'as qu'\xE0 suivre les st\xE8les, comme celle
+        sur laquelle je m'appuie."
       objectReference: {fileID: 0}
     - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
@@ -1377,6 +1378,21 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[7]
       value: 
       objectReference: {fileID: 1860078703}
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.data[8]
+      value: 
+      objectReference: {fileID: 1477957207}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Abhaya
+      objectReference: {fileID: 0}
+    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: Comme celui sur lequel je m'appuie
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
@@ -2586,7 +2602,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1655249698756516, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1215098195599784, guid: eb4db789ef8ffcb459d7a3f90d6e76e2, type: 2}
       propertyPath: m_IsActive
@@ -3004,11 +3020,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4515103499957060, guid: a680bfd1d36469c4ca4b449a3ed7c85f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -165
+      value: -113.8
       objectReference: {fileID: 0}
     - target: {fileID: 4515103499957060, guid: a680bfd1d36469c4ca4b449a3ed7c85f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -58
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4515103499957060, guid: a680bfd1d36469c4ca4b449a3ed7c85f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3179,7 +3195,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389491026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1785, y: -0.5114, z: 0}
+  m_LocalPosition: {x: 1.132, y: -0.249, z: 0}
   m_LocalScale: {x: 1.2268673, y: 0.7428172, z: 1}
   m_Children: []
   m_Father: {fileID: 1274870046}
@@ -3275,6 +3291,53 @@ Transform:
   m_PrefabParentObject: {fileID: 4783226022484130, guid: 19c629d84f2e99b4faced52cdabfaa98,
     type: 2}
   m_PrefabInternal: {fileID: 1417697137}
+--- !u!1001 &1477957206
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1701994539}
+    m_Modifications:
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -214
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -112.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 577b7c3403bd1284b96726d0ee8d4441, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1477957207 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4104856070440818, guid: 577b7c3403bd1284b96726d0ee8d4441,
+    type: 2}
+  m_PrefabInternal: {fileID: 1477957206}
 --- !u!1001 &1489999883
 Prefab:
   m_ObjectHideFlags: 0
@@ -3599,6 +3662,7 @@ Transform:
   - {fileID: 1127672690}
   - {fileID: 1860078703}
   - {fileID: 376519383}
+  - {fileID: 1477957207}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4082,7 +4146,7 @@ Prefab:
     - target: {fileID: 212409269458340934, guid: 547318981e282fc4eb39a208a7989068,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 547318981e282fc4eb39a208a7989068, type: 2}
@@ -4309,7 +4373,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015935276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -153.67, y: -46, z: -10}
+  m_LocalPosition: {x: -174, y: -16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

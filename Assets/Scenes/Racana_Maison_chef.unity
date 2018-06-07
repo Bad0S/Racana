@@ -1014,6 +1014,11 @@ Prefab:
     - {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &662003878 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1804523527741744, guid: 7ceec7312b3913249886d2dc6adb66d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 662003877}
 --- !u!1 &675147404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1092,161 @@ Transform:
   m_Father: {fileID: 185145581}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &703725856
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1692036951}
+    m_Modifications:
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 22.099998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.1746416
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[0].line
+      value: Merci de l'avoir vaincu le musicien corrompu, Racana.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 769575842}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[1].line
+      value: "Tu nous as sauv\xE9s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da4111192a3b8d94ba4e06fb9eb00413,
+        type: 3}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[2].line
+      value: " Les gardes n\u2019ont pas r\xE9ussis \xE0 l\u2019inspecter avec la
+        horde de monstres autour de cette zone ."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[3].line
+      value: "Connaissant ta discr\xE9tion et ta dext\xE9rit\xE9, je te demande d'inspecter
+        cette ruine.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[4].line
+      value: "Retrouve ton instructeur \xE0 la sortie du village, il te donnera les
+        d\xE9tils de la mission. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[5].actorName
+      value: Akshan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: dialogues.Array.data[5].line
+      value: "Racana, j\u2019ai besoin de ton aide."
+      objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -53.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098046851016568, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+      propertyPath: m_Name
+      value: DialStarter (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 97c83e412690da3429b47189abf7181b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &703725857 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 703725856}
+--- !u!1 &703725858 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1098046851016568, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 703725856}
 --- !u!1 &724485116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1503,7 @@ GameObject:
   - component: {fileID: 1692036951}
   - component: {fileID: 863454239}
   - component: {fileID: 863454238}
+  - component: {fileID: 863454240}
   - component: {fileID: 863454237}
   m_Layer: 0
   m_Name: Chef_Village
@@ -1440,6 +1601,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &863454240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863454236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116485b7b395330488d05b5986e06027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  withKill: {fileID: 703725858}
+  withoutKill: {fileID: 1266449698}
+  player: {fileID: 662003878}
 --- !u!1 &908684468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1887,7 @@ Prefab:
     - target: {fileID: 61441029176995402, guid: bfd53763c1b66b640aff26b0e509b725,
         type: 2}
       propertyPath: m_Offset.y
-      value: 3.53
+      value: -37.99
       objectReference: {fileID: 0}
     - target: {fileID: 61441029176995402, guid: bfd53763c1b66b640aff26b0e509b725,
         type: 2}
@@ -1746,7 +1921,7 @@ Prefab:
       objectReference: {fileID: 769575842}
     - target: {fileID: 4572785370094376, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -15
+      value: 34.6
       objectReference: {fileID: 0}
     - target: {fileID: 61882163447718924, guid: bfd53763c1b66b640aff26b0e509b725,
         type: 2}
@@ -1826,6 +2001,10 @@ Prefab:
         type: 2}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572785370094376, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd53763c1b66b640aff26b0e509b725, type: 2}
@@ -2186,7 +2365,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.26
+      value: 22.1
       objectReference: {fileID: 0}
     - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2235,7 +2414,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: "Certains de nos gardes forestiers ont d\xE9couverts une reliques sorties
+      value: "Certains de nos gardes forestiers ont d\xE9couverts une relique sortis
         de terre. Elle semble attirer les \xE9l\xE9ments corrompus."
       objectReference: {fileID: 0}
     - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
@@ -2257,8 +2436,8 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[2].line
-      value: " Les gardes n\u2019ont pas r\xE9ussis \xE0 l\u2019inspecter avec la
-        horde de monstres autour de cette zone ."
+      value: " Les gardes n\u2019ont pas r\xE9ussi \xE0 l\u2019inspecter avec la horde
+        de monstres autour de cette zone ."
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2268,8 +2447,8 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[3].line
-      value: "Connaissant ta discr\xE9tion et ta dext\xE9rit\xE9, je te de demande
-        d'inspecter cette ruine.\r\n"
+      value: "Connaissant ta discr\xE9tion et ta dext\xE9rit\xE9, je te demande d'inspecter
+        cette ruine.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2279,8 +2458,8 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[4].line
-      value: "Retrouve ton instructeur \xE0 la sortie du village, il t\u2019expliquera
-        comment acc\xE9der \xE0 ta mission. \r\n"
+      value: "Retrouve ton instructeur \xE0 la sortie du village, il te donnera les
+        d\xE9tails de la mission. \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2292,12 +2471,32 @@ Prefab:
       propertyPath: dialogues.Array.data[5].line
       value: "Racana, j\u2019ai besoin de ton aide."
       objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -53.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97c83e412690da3429b47189abf7181b, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1266449697 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266449696}
+--- !u!1 &1266449698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1098046851016568, guid: 97c83e412690da3429b47189abf7181b,
     type: 2}
   m_PrefabInternal: {fileID: 1266449696}
 --- !u!1 &1279509142
@@ -3083,10 +3282,6 @@ PolygonCollider2D:
       - {x: -36.053482, y: 5.850464}
       - {x: -35.991394, y: -1.9006653}
       - {x: -27.960312, y: -1.8912277}
-      - {x: -27.979874, y: -7.410307}
-      - {x: -29.83287, y: -9.4489155}
-      - {x: 26.881317, y: -9.539164}
-      - {x: 25.075775, y: -7.487402}
       - {x: 25.075775, y: -1.9066086}
       - {x: 32.948242, y: -1.9129105}
       - {x: 33.009766, y: 6.125885}
@@ -3259,6 +3454,7 @@ Transform:
   m_Children:
   - {fileID: 1564227890}
   - {fileID: 1266449697}
+  - {fileID: 703725857}
   m_Father: {fileID: 1461467537}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3907,6 +4103,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97c83e412690da3429b47189abf7181b, type: 2}
   m_IsPrefabParent: 0
@@ -4053,7 +4254,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: da4111192a3b8d94ba4e06fb9eb00413, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

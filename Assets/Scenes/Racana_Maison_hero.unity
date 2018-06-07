@@ -1600,13 +1600,18 @@ Prefab:
     - target: {fileID: 114224348303389540, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
         type: 2}
       propertyPath: dialogues.Array.data[2].line
-      value: "Il voulait que tu ailles voir le chef du village dans sa maison en hauteur,
-        apparement c\u2019est urgent. Depeche toi !"
+      value: "Il voulait que tu ailles voir le chef du village dans sa maison, en
+        haut, et apparement c\u2019est urgent. Depeche toi !"
       objectReference: {fileID: 0}
     - target: {fileID: 212975356697846792, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
         type: 2}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 212053446998487358, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c9b6b5dd8066ee43a6bf1a0c4d83f4f, type: 2}

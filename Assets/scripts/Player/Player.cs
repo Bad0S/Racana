@@ -87,6 +87,8 @@ public class Player: MonoBehaviour
 	public int sceneIndex;
 	public Scene scene;
 
+	public bool killedBoss;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -104,7 +106,8 @@ public class Player: MonoBehaviour
 		sceneIndex = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().scenes.LastIndexOf (scene.name);
 		transform.position = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<PositionSetter> ().RespawnPos [sceneIndex];
         canMusic = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic;
-        hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
+		hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
+		killedBoss = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().killedBoss;
     }
 
 

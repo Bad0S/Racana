@@ -11,6 +11,7 @@ public class PositionSetter : MonoBehaviour
 	public List<Vector2> RespawnPos;
 	public bool canMusic;
 	public bool hadTuto;
+	public bool killedBoss;
 	public List<string> scenes;
 	public static bool hasPlayed;
 
