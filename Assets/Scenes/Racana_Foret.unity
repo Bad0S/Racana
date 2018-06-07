@@ -13489,6 +13489,8 @@ MonoBehaviour:
   - actorName: 
     line: "Le chemin est long et difficile pour acceder au maitre, mais ton nouveau
       pouvoir te permettra de vaincre et de liberer ta contree de la corruption.\r\n"
+  - actorName: 
+    line: "Et puisse-tu recevoir l'utlime b\xE9n\xE9diction des musiciens d'antan."
   dialogueBox: {fileID: 417300978}
   delayBetweenEachLetter: 0.01
   skipKey: 323
@@ -13662,7 +13664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &309154152
 Transform:
   m_ObjectHideFlags: 0
@@ -21324,11 +21326,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -429
+      value: -397
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1618.4
+      value: -1681
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21778,6 +21780,83 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[78]
       value: 
       objectReference: {fileID: 62472957}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: RB
+      value: 
+      objectReference: {fileID: 1515637096}
+    - target: {fileID: 4197969755958838, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033338677476802, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537096303852138, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660521498894616, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105390777743034, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160341157481674, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571466612241536, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985249101113294, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566832300853312, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648566300039106, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388607533710940, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798453888538506, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474328825379520, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828849577589612, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892404985821152, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584035383604250, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043597740190000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585106209107632, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
@@ -30865,6 +30944,161 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198950361108757796, guid: d9e95c74f3e6f2a45b3c9ac793d79430,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9e95c74f3e6f2a45b3c9ac793d79430, type: 2}
   m_IsPrefabParent: 0
@@ -34431,11 +34665,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4026206022094406, guid: a2bb72f1abf8929438e7d406bb70ba91, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1769
       objectReference: {fileID: 0}
     - target: {fileID: 4026206022094406, guid: a2bb72f1abf8929438e7d406bb70ba91, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 28.7
+      value: -1854
       objectReference: {fileID: 0}
     - target: {fileID: 4026206022094406, guid: a2bb72f1abf8929438e7d406bb70ba91, type: 2}
       propertyPath: m_LocalPosition.z
@@ -43132,16 +43366,149 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83a273b799a2a86419c060f8029012a7, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1409746043 stripped
+--- !u!1 &1409746043
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1098046851016568, guid: 97c83e412690da3429b47189abf7181b,
     type: 2}
-  m_PrefabInternal: {fileID: 1542636171}
---- !u!4 &1409746044 stripped
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1409746044}
+  - component: {fileID: 1409746048}
+  - component: {fileID: 1409746047}
+  - component: {fileID: 1409746046}
+  - component: {fileID: 1409746045}
+  m_Layer: 0
+  m_Name: DialStarter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409746044
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b,
     type: 2}
-  m_PrefabInternal: {fileID: 1542636171}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409746043}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.88, y: 29.86, z: -1.1746416}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1133215861}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1409746045
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409746043}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: da4111192a3b8d94ba4e06fb9eb00413, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 11, y: 11}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!61 &1409746046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409746043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -54.03189, y: -32.04}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11, y: 11}
+    newSize: {x: 11, y: 11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 311.0703, y: 69.09999}
+  m_EdgeRadius: 0
+--- !u!114 &1409746047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409746043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8b29d74bcd68f4baaf42e0cf66ba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actorName: 
+    line: "Humble voyageur tu t\u2019apprete a rentrer dans l\u2019antre du maitre."
+  - actorName: 
+    line: "Fais attention, il a ete corrompu par le chant n\xE9faste de ces terres."
+  - actorName: 
+    line: "Sans instrument sp\xE9cifique ton chemin sera beaucoup plus ardu."
+  - actorName: 
+    line: "Retourne sur tes pas ou fais face a sa col\xE8re.\r\n"
+  dialogueBox: {fileID: 417300978}
+  delayBetweenEachLetter: 0.01
+  skipKey: 323
+  inDialogue: 0
+--- !u!114 &1409746048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409746043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc5e5e06cbdb4d42b419391cc5acef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gardien: {fileID: 0}
+  read: 0
 --- !u!1 &1410219093
 GameObject:
   m_ObjectHideFlags: 0
@@ -45113,6 +45480,11 @@ EdgeCollider2D:
   m_Points:
   - {x: -56.5, y: 0}
   - {x: 56.5, y: 0}
+--- !u!1 &1515637096 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1645445596641802, guid: a2bb72f1abf8929438e7d406bb70ba91,
+    type: 2}
+  m_PrefabInternal: {fileID: 1154864384}
 --- !u!1001 &1516175274
 Prefab:
   m_ObjectHideFlags: 0
@@ -46076,113 +46448,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
---- !u!1001 &1542636171
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1133215861}
-    m_Modifications:
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 29.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.1746416
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055590107813314, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -54.03189
-      objectReference: {fileID: 0}
-    - target: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 311.0703
-      objectReference: {fileID: 0}
-    - target: {fileID: 61042444447237954, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 69.09999
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].actorName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].line
-      value: "Sans instrument sp\xE9cifique ton chemin sera beaucoup plus ardu."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].actorName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].line
-      value: "Retourne sur tes pas ou fais face a sa col\xE8re.\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].actorName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].actorName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].line
-      value: "Humble voyageur tu t\u2019apprete a rentrer dans l\u2019antre du maitre."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].line
-      value: "Fais attention, il a ete corrompu par le chant n\xE9faste de ces terres."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
-        type: 2}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 417300978}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 97c83e412690da3429b47189abf7181b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1543063833
 GameObject:
   m_ObjectHideFlags: 0
@@ -54577,13 +54842,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - actorName: 
-    line: "Il est \xE9crit: \u201CQuiconque s\u2019empare de cet instrument est condamne
-      a subir la Malediction.\""
-  - actorName: 
-    line: "\"Dorenavant il vivra selon le rythme de l\u2019Univers."
-  - actorName: 
-    line: "\"S\u2019il suit le rythme, il sera puissant, mais malheur a lui s\u2019il
-      essaie d\u2019y r\xE9sister !\u201D"
+    line: "Une voix s'\xE9l\xE8ve, venant de la statue."
+  - actorName: Gardien
+    line: "Re\xE7ois le don des musiciens. "
+  - actorName: Gardien
+    line: Il te permettra de comprendre la musique, et de savoir quand frapper.
+  - actorName: Gardien
+    line: Tu verras quel est ton temps fort. Utilise-le sagement.
   dialogueBox: {fileID: 417300978}
   delayBetweenEachLetter: 0.01
   skipKey: 323

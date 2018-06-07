@@ -49,7 +49,15 @@ public class health : MonoBehaviour {
 	public void Heal( int lifeToGain)// la fonction pour soigner
 	{
 		life += lifeToGain;
-		LifeBar [life-1].sprite = LifeBar [0].sprite;
+		if(lifeToGain == 1){
+			LifeBar [life-1].sprite = LifeBar [0].sprite;
+
+		}
+		if(lifeToGain == 2){
+			LifeBar [life-1].sprite = LifeBar [0].sprite;
+			LifeBar [life-2].sprite = LifeBar [0].sprite;
+
+		}
 	}
 	//si prend du dégât
 	public void Hurt( int lifeToLose)

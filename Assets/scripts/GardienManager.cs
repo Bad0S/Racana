@@ -83,13 +83,13 @@ public class GardienManager : MonoBehaviour
 		yield return new WaitForSeconds (1.1f);
 
 		scene = SceneManager.GetActiveScene();
-		respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
-		respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
+		//respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
+		//respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
 		player.GetComponent<Player> ().canMusic = true;
 		yield return new WaitForSeconds (3f);
 		player.GetComponent<Rythme> ().combo = 0f;
-		respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
-		respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
+		//respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
+		//respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
 		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
 		foreach (GameObject ennemi in ennemisArray) 
 		{
@@ -107,6 +107,7 @@ public class GardienManager : MonoBehaviour
 		player.GetComponent<Player> ().canAttack = true;
 		player.GetComponent<health> ().enabled = true;
 		player.GetComponent <Player>().RB.SetActive (true);
+		print ("test");
 
 
 		yield return new WaitForSeconds (1.1f);
