@@ -20,5 +20,10 @@ public class CameraBlockVillage : MonoBehaviour {
 		else if(transCam.position.x<-225 &&transCam.position.y < -750 ){
 			transCam.position = new Vector3( transCam.position.x, -750, transCam.position.z);
 		}
+		if(transCam.position.x<-1480  ){
+			transCam.position = new Vector3( -1480, transCam.position.y, transCam.position.z);
+		}
+
+
 	}
 }
