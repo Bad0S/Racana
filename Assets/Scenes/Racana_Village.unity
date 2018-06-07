@@ -28535,7 +28535,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4002830344186664, guid: 06950f2bd93fc8443a24de73520f2268, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -19.2
       objectReference: {fileID: 0}
     - target: {fileID: 4002830344186664, guid: 06950f2bd93fc8443a24de73520f2268, type: 2}
       propertyPath: m_LocalPosition.z
@@ -65260,13 +65260,13 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221184925}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 112.16765, y: 0}
+  m_Offset: {x: 78.94588, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -65277,7 +65277,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 189.06784, y: 213.39}
+  m_Size: {x: 255.51138, y: 213.39}
   m_EdgeRadius: 0
 --- !u!212 &1221184929
 SpriteRenderer:
@@ -69777,6 +69777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entered: 0
+  faderBox: {fileID: 1221184928}
 --- !u!1 &1316680506
 GameObject:
   m_ObjectHideFlags: 0
@@ -73653,7 +73654,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4092872137883344, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -175.3
+      value: -166.2
       objectReference: {fileID: 0}
     - target: {fileID: 4092872137883344, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_LocalPosition.z

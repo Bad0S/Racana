@@ -49,6 +49,7 @@ public class health : MonoBehaviour {
 	public void Heal( int lifeToGain)// la fonction pour soigner
 	{
 		life += lifeToGain;
+		LifeBar [life-1].sprite = LifeBar [0].sprite;
 	}
 	//si prend du dégât
 	public void Hurt( int lifeToLose)
@@ -165,6 +166,8 @@ public class health : MonoBehaviour {
 			invincible = false;
 
 		}
+		GamePad.SetVibration (0,0f,0f);
+
 	}
 
 	/*void OnTriggerEnter2D (Collider2D other)

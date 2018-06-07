@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StartDialTuto : MonoBehaviour {
 	public bool entered;
+	bool dialEnd;
+	public BoxCollider2D faderBox;
 	void Start () {
 
 	}
@@ -18,8 +20,13 @@ public class StartDialTuto : MonoBehaviour {
 				entered = true;
 
 				GetComponent<DialogueComponent>().StartDialogue();
+				dialEnd = true;
 
 			}
 		}
+		if(dialEnd == true &&GetComponent<DialogueComponent>().inDialogue == false ){
+			faderBox.enabled = true;
+		}
 	}
+
 }

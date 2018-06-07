@@ -52,7 +52,7 @@ public class patternTir : MonoBehaviour {
 				if(finalPhase == 1){
 					phase = 4;
 					if(target.GetComponent <health>().life<3){
-						target.GetComponent <health>().life++;
+						target.GetComponent <health>().Heal (1);
 
 					}
 
@@ -62,7 +62,7 @@ public class patternTir : MonoBehaviour {
 			else if(GetComponent <health>().life<= (originalLife/6)*3){
 				phase = 3;
 				if(target.GetComponent <health>().life<3){
-					target.GetComponent <health>().life++;
+					target.GetComponent <health>().Heal (1);
 
 				}
 
@@ -70,7 +70,7 @@ public class patternTir : MonoBehaviour {
 			else if (GetComponent <health>().life<= (originalLife/6)*5&&GetComponent <health>().life>= (originalLife/6)*4){
 				phase = 2;
 				if(target.GetComponent <health>().life<3){
-					target.GetComponent <health>().life++;
+					target.GetComponent <health>().Heal (1);
 
 				}
 			}

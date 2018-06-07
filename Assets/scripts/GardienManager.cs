@@ -29,6 +29,7 @@ public class GardienManager : MonoBehaviour
 	public GameObject FX;
 	public bool bambouSpawn;
 
+
     // Use this for initialization
     void Start ()
     {
@@ -43,6 +44,7 @@ public class GardienManager : MonoBehaviour
         sndBeatGardien.setVolume(0f);
 		player = GameObject.FindGameObjectWithTag ("Player");
 		respawn = GameObject.FindGameObjectWithTag ("Respawn");
+
 	}
 	
 	// Update is called once per frame
@@ -62,9 +64,6 @@ public class GardienManager : MonoBehaviour
 			//sndTransitionGardien.start();
 			player.GetComponent<Rythme> ().MusicStop();
 
-
-
-
         }
     }
 
@@ -73,16 +72,32 @@ public class GardienManager : MonoBehaviour
 		player.GetComponent<Player> ().canMove = false;
 		player.GetComponent<Player> ().canAttack = false;
 		player.GetComponent<Player> ().canDash = false;
+		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject ennemi in ennemisArray) 
+		{
+			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+			{ennemi.GetComponent<EnemyBehaviour> ().enabled = false;}
+			if (ennemi.GetComponent<BambouBehaviour> () != null) 
+			{ennemi.GetComponent<BambouBehaviour> ().enabled = false;}
+		}
 		yield return new WaitForSeconds (1.1f);
 
 		scene = SceneManager.GetActiveScene();
 		respawn.GetComponent<PositionSetter>().RespawnPos.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position);
 		respawn.GetComponent<PositionSetter>().scenes.Add(scene.name);
 		player.GetComponent<Player> ().canMusic = true;
-		yield return new WaitForSeconds (1.1f);
+		yield return new WaitForSeconds (3f);
 		player.GetComponent<Rythme> ().combo = 0f;
 		respawn.GetComponent<PositionSetter>().canMusic = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic;
 		respawn.GetComponent<PositionSetter>().hadTuto = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().hadTuto;
+		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
+		foreach (GameObject ennemi in ennemisArray) 
+		{
+			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+			{ennemi.GetComponent<EnemyBehaviour> ().enabled = true;}
+			if (ennemi.GetComponent<BambouBehaviour> () != null) 
+			{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
+		}
 
 		yield return new WaitForSeconds (1.1f);
 		sndBeatGardien.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
@@ -90,6 +105,9 @@ public class GardienManager : MonoBehaviour
 		player.GetComponent<Player> ().canDash = true;
 		player.GetComponent<Player> ().canMove = true;
 		player.GetComponent<Player> ().canAttack = true;
+		player.GetComponent<health> ().enabled = true;
+		player.GetComponent <Player>().RB.SetActive (true);
+
 
 		yield return new WaitForSeconds (1.1f);
 		if (!bambouSpawn) 

@@ -80,6 +80,8 @@ public class Player: MonoBehaviour
 
 	//récup armes
 	public bool canMusic;
+	public GameObject RB;
+	bool RBActive;
 
 	public bool hadTuto;
 	public int sceneIndex;
@@ -111,9 +113,6 @@ public class Player: MonoBehaviour
 	{
 		//charge sur beat
 		//print (body.velocity);
-
-
-
 
 		//Le dash en transcendance
 		dashTranscendanceTargeter.transform.localPosition = déplacement;
@@ -264,6 +263,9 @@ public class Player: MonoBehaviour
 				if (Input.GetButtonDown ("Fire3")&& déplacement != new Vector2(0f,0f)&& canMusic) 
 				{
 					StartCoroutine (dashCoroutine ());
+					if(RB.activeSelf == true){
+						RB.SetActive (false);
+					}
 				}
 			}
 		}
