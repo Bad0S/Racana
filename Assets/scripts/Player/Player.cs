@@ -385,8 +385,7 @@ public class Player: MonoBehaviour
 			body.AddForce (déplacement * DashSpeed, ForceMode2D.Impulse);
 
 		} else {
-			Vector2 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
-			vecTmp = transform.position - vecTmp;
+			Vector3 vecTmp = GetComponentInChildren <DashTranscendance> ().SelectEnemy (GetComponentInChildren <DashTranscendance> ().enemyList);
 			body.AddForce (vecTmp.normalized * 25, ForceMode2D.Impulse);
 		}
 		yield return new WaitForSeconds (0.5f);

@@ -28,10 +28,10 @@ public class DashTranscendance : MonoBehaviour {
 		}
 	}
 
-	public Vector2 SelectEnemy(List<Transform> sorted){
-		selection = new Vector2 (Mathf.Infinity, Mathf.Infinity);
+	public Vector3 SelectEnemy(List<Transform> sorted){
+		selection = new Vector3 (Mathf.Infinity, Mathf.Infinity,Mathf.Infinity);
 		for (int i = 0; i < sorted.Count; i++) {
-			temp = new Vector2 (sorted [i].position.x - self.position.x, sorted [i].position.y - self.position.y);
+			temp = new Vector3 (sorted [i].position.x - self.position.x, sorted [i].position.y - self.position.y, sorted [i].position.y - self.position.y);
 				if(selection.sqrMagnitude > temp.sqrMagnitude){
 			//	print (selection);
 
