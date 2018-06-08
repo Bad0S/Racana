@@ -19,6 +19,7 @@ public class GardienManager : MonoBehaviour
 	public Vector3 Pos1;
 	public Vector3 Pos2;
 	public Vector3 Pos3;
+    public Vector3 Pos4;
     public float portée;
     public float distance;
 	public bool active;
@@ -36,7 +37,8 @@ public class GardienManager : MonoBehaviour
 		Pos1 = new Vector3 (-1104f, -210f);
 		Pos2 = new Vector3 (-758f,-223f);
 		Pos3 = new Vector3 (-932f, -370f);
-		active = false;
+        Pos4 = new Vector3(-1300, -377f);
+        active = false;
         sndTransitionGardien = FMODUnity.RuntimeManager.CreateInstance(selectsoundTransitionGardien);
         sndBeatGardien = FMODUnity.RuntimeManager.CreateInstance(selectsoundBeatGardien);
         sndTransition = FMODUnity.RuntimeManager.CreateInstance(selectsoundTransition);
@@ -116,7 +118,8 @@ public class GardienManager : MonoBehaviour
 			Instantiate (bambou, Pos1, Quaternion.identity);
 			Instantiate (bambou, Pos2, Quaternion.identity);
 			Instantiate (bambou, Pos3, Quaternion.identity);
-			bambouSpawn = true;
+            Instantiate(bambou, Pos4, Quaternion.identity);
+            bambouSpawn = true;
 		}
 		active = true;
 	}
