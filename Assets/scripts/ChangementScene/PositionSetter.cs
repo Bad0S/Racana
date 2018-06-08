@@ -18,6 +18,10 @@ public class PositionSetter : MonoBehaviour
 	void Awake ()
 	{
 		DontDestroyOnLoad (gameObject);
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
 		created = true;
 		scenes = new List<string>();
         scenes.Add(SceneManager.GetActiveScene().name);
