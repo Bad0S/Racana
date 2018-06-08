@@ -7,19 +7,25 @@ using System.Linq;
 
 public class PositionSetter : MonoBehaviour 
 {
-	private static bool created;
+	private bool created;
 	public List<Vector2> RespawnPos;
 	public bool canMusic;
 	public bool hadTuto;
 	public bool killedBoss;
 	public List<string> scenes;
-	public static bool hasPlayed;
+	public bool hasPlayed;
 
 	void Awake ()
 	{
 		DontDestroyOnLoad (gameObject);
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
 		created = true;
 		scenes = new List<string>();
+        scenes.Add(SceneManager.GetActiveScene().name);
+        RespawnPos.Add(new Vector2(48.6f, 92.1f));
 	}
 	void OnEnable()
 	{
