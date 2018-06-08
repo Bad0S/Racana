@@ -43,6 +43,8 @@ public class health : MonoBehaviour {
 	public bool startFade = false;
 	public bool killedboss;
 
+	bool playerDiedededed;
+
 
 	void Start () 
 	{
@@ -159,7 +161,10 @@ public class health : MonoBehaviour {
 			}
 			if (gameObject.tag == "Player") 
 			{
-				StartCoroutine (PlayerDeath());
+				if(playerDiedededed == false){
+					StartCoroutine (PlayerDeath());
+					playerDiedededed = true;
+				}
 				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMove = false;
 				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canAttack = false;
 				GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canDash = false;

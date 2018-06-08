@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       :     Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] Thread::initThread                       :     Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       :     manager 000000004EC8D508 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       :     manager 000000004116DF78 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       :     Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       :     done
 [LOG] PlaybackSystem::init                     :     
@@ -26,14 +26,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='FauveCri', format=2, channels=2, frequency=48000, lengthbytes=72320, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.122681.
@@ -42,14 +42,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
@@ -58,14 +58,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='CombatBossTranse', format=2, channels=2, frequency=48000, lengthbytes=452608, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968140.
@@ -74,14 +74,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
@@ -90,14 +90,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='CombatDonjonTranscendance', format=2, channels=2, frequency=48000, lengthbytes=440832, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968628.
@@ -106,14 +106,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
@@ -122,14 +122,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='CombatBossTranscendance', format=2, channels=2, frequency=48000, lengthbytes=411232, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968140.
@@ -138,14 +138,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='CombatBossBase', format=2, channels=2, frequency=48000, lengthbytes=410976, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
@@ -154,14 +154,14 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='FauveMorsure', format=2, channels=2, frequency=48000, lengthbytes=29280, lengthpcm=33231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967651.
@@ -170,203 +170,814 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007E36F5FC
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000618DF5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FF8C33AE4B0
 [LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FF8C33AE480
 [LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FF8C33AE580
 [LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FF8C33AE640
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B33678
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 0000000059B36538
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Repousse', format=2, channels=2, frequency=48000, lengthbytes=79936, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
 [LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       :     Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     :     setdata soundi = 000000004F217408 : node = 000000004F585ED0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F079EA8.  list count = 0
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F217408
+[LOG] SystemI::createSound                     :     setdata soundi = 000000005F62C588 : node = 00000000410BC2F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000005F62C588
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F585FE8
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F2175B8 : node = 000000004F586170
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC408
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 0
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F217258 : node = 000000004F585D80
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 1
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F62C078 : node = 00000000410BBF00
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 0
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F2170A8 : node = 000000004F586800
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 2
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F62CC48 : node = 00000000410BC1A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F62C228 : node = 00000000410BC6E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 2
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005F62C738 : node = 00000000410BC830
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 3
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
 [LOG] Thread::initThread                       : Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F217408
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F2175B8
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000005F62C588
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000005F62C078
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F586288
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC018
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F2175B8
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F217258
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Forêt', format=2, channels=2, frequency=48000, lengthbytes=2348320, lengthpcm=2126768, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967957.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000005F62C078
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000005F62CC48
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F585E98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC2B8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F217258
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F2170A8
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatBase', format=2, channels=2, frequency=48000, lengthbytes=391488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968018.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000005F62CC48
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000005F62C228
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F586918
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC7F8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F2170A8
-[LOG] SoundI::getSubSound                      :     sound 000000004F217408.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F2175B8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F217258.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F2170A8.  Subsound index 0 / 1
-[LOG] SystemI::mixerSuspend                    :     Suspending output.
-[LOG] SystemI::mixerResume                     :     Resuming output.
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 0000000059C3FD58
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 0000000059C3FD58
-[LOG] SoundI::release                          :     Village (000000004F2170A8)
-[LOG] SoundI::release                          : Village (0000000041602D88)
-[LOG] SoundI::release                          : Village (0000000059C405C8)
-[LOG] SoundI::release                          :     Village (000000004F217258)
-[LOG] SoundI::release                          : Village (00000000416023C8)
-[LOG] SoundI::release                          : Village (0000000059C40418)
-[LOG] SoundI::release                          :     Village (000000004F2175B8)
-[LOG] SoundI::release                          : Village (0000000041602568)
-[LOG] SoundI::release                          : Village (0000000059C3F848)
-[LOG] SoundI::release                          :     Village (000000004F217408)
-[LOG] SoundI::release                          : Village (000000004F078358)
-[LOG] SoundI::release                          : Village (0000000059C3FD58)
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatTranse', format=2, channels=2, frequency=48000, lengthbytes=366176, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000005F62C228
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000005F62C738
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC948
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatTranscendance', format=2, channels=2, frequency=48000, lengthbytes=412160, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968475.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000005F62C738
+[LOG] SoundI::getSubSound                      :     sound 000000005F62C588.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000005F62C078.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000005F62CC48.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000005F62C228.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000005F62C738.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
 [LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000000004F2175B8 : node = 000000004ECD8240
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F079EA8.  list count = 0
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F2175B8
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F7325C8 : node = 00000000410BC440
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F7325C8
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F7325C8
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      :     sound 000000004F7325C8.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     GardienBeat (000000005F62C588)
+[LOG] SoundI::release                          : GardienBeat (000000004F079D58)
+[LOG] SoundI::release                          : GardienBeat (000000005F62CDF8)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F732778 : node = 00000000410BC980
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F732778
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BCA98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F732778
+[LOG] SoundI::getSubSound                      :     sound 000000004F732778.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     GardienBeat (000000004F7325C8)
+[LOG] SoundI::release                          : GardienBeat (0000000041603C28)
+[LOG] SoundI::release                          : GardienBeat (000000004F733198)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F732E38 : node = 00000000410BBDB0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F732E38
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BBEC8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F732E38
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      :     sound 000000004F732E38.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     GardienBeat (000000004F732778)
+[LOG] SoundI::release                          : GardienBeat (0000000041602D88)
+[LOG] SoundI::release                          : GardienBeat (000000004F733858)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F7340C8 : node = 00000000410BC980
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F7340C8
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     : setdata soundi = 000000004F732778 : node = 00000000410BCAD0
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F217408 : node = 000000004ECD8E10
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 0
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004ECD8358
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 0
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BCA98
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     : setdata soundi = 000000004F733A08 : node = 00000000410BC050
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 1
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F217258 : node = 000000004ECD80F0
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 1
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000004F2170A8 : node = 000000004ECD8390
-[LOG] SystemI::createSound                     : add node to async list : head = 000000004F079EA8.  list count = 2
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F2175B8
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F217408
+[LOG] SystemI::createSound                     : setdata soundi = 000000004F734278 : node = 00000000410BC2F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000004F078CC8.  list count = 2
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F7340C8
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F732778
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004ECD8F28
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BCBE8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F217408
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F217258
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatBase', format=2, channels=2, frequency=48000, lengthbytes=391488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968018.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F732778
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F733A08
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004ECD8208
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC168
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F217258
-[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F2170A8
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatTranse', format=2, channels=2, frequency=48000, lengthbytes=366176, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F733A08
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F734278
 [LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004ECD84A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC408
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
-[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F2170A8
-[LOG] SoundI::getSubSound                      :     sound 000000004F2175B8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F217408.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F217258.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      :     sound 000000004F2170A8.  Subsound index 0 / 1
-[LOG] SoundI::release                          :     Village (000000004F2175B8)
-[LOG] SoundI::release                          : Village (00000000416030C8)
-[LOG] SoundI::release                          : Village (0000000059C3EC78)
-[LOG] SoundI::release                          :     Village (000000004F2170A8)
-[LOG] SoundI::release                          : Village (0000000041603C28)
-[LOG] SoundI::release                          : Village (0000000059C3FF08)
-[LOG] SoundI::release                          :     Village (000000004F217258)
-[LOG] SoundI::release                          : Village (00000000416028A8)
-[LOG] SoundI::release                          : Village (0000000059C405C8)
-[LOG] SoundI::release                          :     Village (000000004F217408)
-[LOG] SoundI::release                          : Village (0000000041603A88)
-[LOG] SoundI::release                          : Village (0000000059C40268)
-[LOG] SoundI::release                          :      (000000004F1937C8)
-[LOG] SoundI::release                          : FauveCri (000000004F079538)
-[LOG] SoundI::release                          :      (000000004F193C18)
-[LOG] SoundI::release                          : Bambou (000000004F078698)
-[LOG] SoundI::release                          :      (000000004F1920C8)
-[LOG] SoundI::release                          : Dash (000000004F078B78)
-[LOG] SoundI::release                          :      (000000004F193938)
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='ForêtCombatTranscendance', format=2, channels=2, frequency=48000, lengthbytes=412160, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968475.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F734278
+[LOG] SoundI::getSubSound                      :     sound 000000004F7340C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000004F732778.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000004F733A08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 000000004F734278.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (000000005F62C738)
+[LOG] SoundI::release                          : ForêtCombatTranscendance (0000000041603A88)
+[LOG] SoundI::release                          : ForêtCombatTranscendance (000000004F732AD8)
+[LOG] SoundI::release                          :     ForêtCombatTranse (000000005F62C228)
+[LOG] SoundI::release                          : ForêtCombatTranse (0000000041602568)
+[LOG] SoundI::release                          : ForêtCombatTranse (000000005F62CA98)
+[LOG] SoundI::release                          :     ForêtCombatBase (000000005F62CC48)
+[LOG] SoundI::release                          : ForêtCombatBase (000000004F0784F8)
+[LOG] SoundI::release                          : ForêtCombatBase (000000005F62C8E8)
+[LOG] SoundI::release                          :     GardienBeat (000000004F732E38)
+[LOG] SoundI::release                          : GardienBeat (00000000416030C8)
+[LOG] SoundI::release                          : GardienBeat (000000004F7336A8)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F7336A8 : node = 00000000410BC440
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F7336A8
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F7336A8
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      :     sound 000000004F7336A8.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     GardienBeat (000000004F7340C8)
+[LOG] SoundI::release                          : GardienBeat (0000000041603C28)
+[LOG] SoundI::release                          : GardienBeat (000000004F733BB8)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000004F733198 : node = 00000000410BC1A0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000004F078CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 000000004F733198
+[LOG] SystemI::createSoundInternal             : Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000410BC2B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             : Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  :     Finished Asynchronous operation on sound 000000004F733198
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      :     sound 000000004F733198.  Subsound index 0 / 1
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     GardienBeat (000000004F7336A8)
+[LOG] SoundI::release                          : GardienBeat (0000000041603A88)
+[LOG] SoundI::release                          : GardienBeat (000000004F7325C8)
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          :     ForêtCombatTranse (000000004F733A08)
+[LOG] SoundI::release                          : ForêtCombatTranse (0000000041602228)
+[LOG] SoundI::release                          : ForêtCombatTranse (000000004F733858)
+[LOG] SoundI::release                          :     Forêt (000000005F62C078)
+[LOG] SoundI::release                          : Forêt (000000004F0796D8)
+[LOG] SoundI::release                          : Forêt (000000005F62C3D8)
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (000000004F734278)
+[LOG] SoundI::release                          : ForêtCombatTranscendance (00000000416023C8)
+[LOG] SoundI::release                          : ForêtCombatTranscendance (000000004F733348)
+[LOG] SoundI::release                          :     ForêtCombatBase (000000004F732778)
+[LOG] SoundI::release                          : ForêtCombatBase (0000000041603DC8)
+[LOG] SoundI::release                          : ForêtCombatBase (000000004F732C88)
+[LOG] SoundI::release                          :     GardienBeat (000000004F733198)
+[LOG] SoundI::release                          : GardienBeat (0000000041602568)
+[LOG] SoundI::release                          : GardienBeat (000000004F732AD8)
+[LOG] SoundI::release                          :      (000000004F192518)
+[LOG] SoundI::release                          : FauveCri (0000000038AA7E08)
+[LOG] SoundI::release                          :      (000000004F1934E8)
+[LOG] SoundI::release                          : Bambou (0000000038AA60C8)
+[LOG] SoundI::release                          :      (000000004F193658)
+[LOG] SoundI::release                          : Dash (000000004F078358)
+[LOG] SoundI::release                          :      (000000004F192C48)
 [LOG] SoundI::release                          : Repousse (000000004F079BB8)
 [LOG] SoundI::release                          :      (000000004F192238)
-[LOG] SoundI::release                          : CombatDonjonTranscendance (000000004F0796D8)
-[LOG] SoundI::release                          :      (000000004F1923A8)
-[LOG] SoundI::release                          : Groupie (000000004F078EB8)
+[LOG] SoundI::release                          : CombatDonjonTranscendance (000000004F07A098)
+[LOG] SoundI::release                          :      (000000004F192DB8)
+[LOG] SoundI::release                          : Groupie (000000004F078698)
+[LOG] SoundI::release                          :      (000000004F192AD8)
+[LOG] SoundI::release                          : CombatBossTranscendance (000000004F079878)
+[LOG] SoundI::release                          :      (000000004F1937C8)
+[LOG] SoundI::release                          : CombatBossTranse (000000004F078EB8)
+[LOG] SoundI::release                          :      (000000004F193938)
+[LOG] SoundI::release                          : CombatBossBase (000000004F079538)
 [LOG] SoundI::release                          :      (000000004F193AA8)
-[LOG] SoundI::release                          : CombatBossTranscendance (000000004F078838)
-[LOG] SoundI::release                          :      (000000004F193EF8)
-[LOG] SoundI::release                          : CombatBossTranse (000000004F07A098)
-[LOG] SoundI::release                          :      (000000004F193658)
-[LOG] SoundI::release                          : CombatBossBase (000000004F0784F8)
-[LOG] SoundI::release                          :      (000000004F192C48)
-[LOG] SoundI::release                          : FauveMorsure (000000004F079878)
+[LOG] SoundI::release                          : FauveMorsure (000000004F078838)
 [LOG] Thread::callback                         :     FMOD Studio update thread finished.
 [LOG] Thread::callback                         :     FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   :     Profiler disconnecting all clients
