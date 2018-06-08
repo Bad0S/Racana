@@ -85,6 +85,7 @@ public class DialogueComponent : MonoBehaviour
 		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
 		player.GetComponent <Player>().enabled = false ;
 		player.GetComponent <Rigidbody2D>().velocity = Vector3.zero ;
+		player.GetComponent <health>().enabled = false ;
 		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
 		foreach (GameObject ennemi in ennemisArray) 
 		{
@@ -165,6 +166,8 @@ public class DialogueComponent : MonoBehaviour
 			if (ennemi.GetComponent<BambouBehaviour> () != null) 
 			{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
 		}
+		player.GetComponent <health>().enabled = true ;
+
 
         // On dit qu'on peut relancer le dialogue
         inDialogue = false;

@@ -24,9 +24,9 @@ public class StartDialTuto : MonoBehaviour {
 		{
 			Camera.main.GetComponent <CameraBehaviour>().target = changeTargetTrainer;
 			if(other.GetComponent <Player>().hadTuto == false){
-				entered = true;
-
 				GetComponent<DialogueComponent>().StartDialogue();
+				StartCoroutine (Enter());
+
 				dialEnd = true;
 
 			}
@@ -36,5 +36,9 @@ public class StartDialTuto : MonoBehaviour {
 
 		}
 	}
+	IEnumerator Enter(){
+		yield return new WaitForSeconds (0.2f);
+		entered = true;
 
+	}
 }

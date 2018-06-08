@@ -81,8 +81,7 @@ public class Player: MonoBehaviour
 	//récup armes
 	public bool canMusic;
 	public GameObject RB;
-	bool RBActive;
-
+	public bool RBActivated;
 	public bool hadTuto;
 	public int sceneIndex;
 	public Scene scene;
@@ -266,8 +265,9 @@ public class Player: MonoBehaviour
 				if (Input.GetButtonDown ("Fire3")&& déplacement != new Vector2(0f,0f)&& canMusic) 
 				{
 					StartCoroutine (dashCoroutine ());
-					if(RB.activeSelf == true){
+					if(RB.activeSelf == true&& RBActivated == true){
 						RB.SetActive (false);
+						RBActivated = false;
 					}
 				}
 			}
@@ -375,6 +375,7 @@ public class Player: MonoBehaviour
 		isDashing = true;
 		dashFX [0].SetActive (true);
 		dashFX [2].SetActive (true);
+		gameObject.layer = 8;
 
 
 		GetComponent <health> ().invincible = true;
@@ -391,6 +392,7 @@ public class Player: MonoBehaviour
 		dashFX [0].SetActive (false);
 		dashFX [2].SetActive (false);
 		//dashFX[1].SetActive  (true);
+		gameObject.layer = 0;
 
 		isDashing = false;
 

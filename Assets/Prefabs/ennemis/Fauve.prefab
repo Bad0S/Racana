@@ -220,9 +220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebe5ce50746224468f8f8ba74410535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 300
+  speed: 150
   attackRoar: {fileID: 1858586831451386, guid: f3d5b3104bfbb624e8cacb1f065de383, type: 2}
-  maxDetectionRange: 375
+  maxDetectionRange: 225
   attackRangeMax: 200
   target: {fileID: 0}
   isFighting: 0
@@ -260,6 +260,8 @@ MonoBehaviour:
   pvVide: {fileID: 0}
   selectsoundHurt: event:/Hit
   selectPlayerHit: 
+  startFade: 0
+  killedboss: 0
 --- !u!212 &212042963162822186
 SpriteRenderer:
   m_ObjectHideFlags: 1
