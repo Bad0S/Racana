@@ -13,6 +13,9 @@ public class CameraBehaviour : MonoBehaviour
 	private Camera cam;
 	private Vector3 originalPos;
 	public bool Effect;
+	Vector3 targetPositionX;
+	Vector3 targetPositionY;
+
 	void Start()
 	{
 		cam = GetComponent<Camera>();
@@ -112,8 +115,11 @@ public class CameraBehaviour : MonoBehaviour
     void FixedUpdate()
     {
 		//création de 2 nouveaux vecteurs, un qui suit la target sur x, l'autre sur y, si le joueur s'éloigne trop du centre de l'écran(valeurs numériques float), la caméra le suit
-        Vector3 targetPositionX = new Vector3(target.position.x, transform.position.y, transform.position.z);
-        Vector3 targetPositionY = new Vector3(transform.position.x, target.position.y, transform.position.z);
+		if(Effect == false){
+			targetPositionX = new Vector3(target.position.x, transform.position.y, transform.position.z);
+			targetPositionY = new Vector3(transform.position.x, target.position.y, transform.position.z);
+		}
+
 		if (cinematique == false) 
 				{
 			if (target.position.x <= transform.position.x - 0.6f || target.position.x >= transform.position.x + 0.6f) {

@@ -11,6 +11,7 @@ public class PlayerTuto : MonoBehaviour {
 	public GameObject X;
 	public GameObject Y;
 	bool offY = true;
+	bool offX = true;
 	// Use this for initialization
 	void Start () {
 		Camera.main.GetComponent <CameraTuto>().enabled = false;
@@ -19,9 +20,10 @@ public class PlayerTuto : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		dials [0].SetActive (true);
-		if(enemy != null){
+		if(enemy != null&& offX == true){
 			if (enemy.GetComponent <health> ().life > 3 ) {
 				X.SetActive (true);
+				offX = false;
 			}
 		}
 

@@ -29,7 +29,7 @@ public class PorteBoss : MonoBehaviour {
 		{
 			activation = true;
 
-			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2.5f, 0.003f,0.05f);
+			Camera.main.GetComponent<CameraBehaviour> ().ScreenShakeFunction (2.5f, 0.001f,0.07f);
 			StartCoroutine (Vibration (2.5f, 0.5f));
 			StartCoroutine(EmitParticle(2f));
 
@@ -51,7 +51,7 @@ public class PorteBoss : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Camera.main.transform.position.y > transform.position.y){
-			cacheBoss.SetActive (false);
+			cacheBoss.GetComponent <CacheBossFader>().activation = true;
 		}
 
 
@@ -86,7 +86,7 @@ public class PorteBoss : MonoBehaviour {
 		}
 		else if(transform.position.y == originalPos-100){
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;
-			hitboxPorte.GetComponent <BoxCollider2D>().enabled = false;
+			hitboxPorte.layer = 13;
 			if (enable == false){
 				foreach (var vivant in disabling) {
 					if(vivant.tag == "Player"){

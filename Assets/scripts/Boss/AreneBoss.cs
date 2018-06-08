@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AreneBoss : MonoBehaviour {
 	public patternTir boss;
+	public List<GameObject> vieBoss;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,6 +22,9 @@ public class AreneBoss : MonoBehaviour {
 			GetComponent <EdgeCollider2D>().enabled = true;
 			//zoneMurs.SetActive (true);
 			boss.enabled = true;
+
+			vieBoss [0].SetActive (true);
+			vieBoss [1].SetActive (true);
 			//GetComponent <BoxCollider>().enabled = false;
 
 		}

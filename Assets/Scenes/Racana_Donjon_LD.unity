@@ -2486,7 +2486,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 173486532}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2500,7 +2500,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173486531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -60, z: 0}
+  m_LocalPosition: {x: 0, y: -55.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1607413276}
@@ -2651,7 +2651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &185996027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7049,7 +7049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114598738511987808, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -7259,15 +7259,15 @@ Prefab:
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.size
-      value: 95
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 249
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -179
+      value: 1469
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7911,7 +7911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -179
+      value: 1469
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_RootOrder
@@ -7919,7 +7919,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 249
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 1955622777952468, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_IsActive
@@ -8485,6 +8485,11 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[94]
       value: 
       objectReference: {fileID: 1197311740}
+    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: elementsPasseArriere.Array.data[95]
+      value: 
+      objectReference: {fileID: 1607413276}
     m_RemovedComponents:
     - {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
@@ -8919,7 +8924,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114598738511987808, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -10612,7 +10617,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -14949,7 +14954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &363704303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25594,6 +25599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 985005043}
+  vieBoss:
+  - {fileID: 185996026}
+  - {fileID: 363704302}
 --- !u!61 &765284582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45452,7 +45460,7 @@ GameObject:
   - component: {fileID: 1607413276}
   - component: {fileID: 1607413277}
   - component: {fileID: 1607413278}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: cadre_porte_boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}

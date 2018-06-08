@@ -37,6 +37,11 @@ public class patternTir : MonoBehaviour {
 	//patch
 	private int patchSize ;
 
+	//heal
+	bool heal1;
+	bool heal2;
+	bool heal3;
+
 	// Use this for initialization
 	void Start () {
 		beatLength = target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
@@ -51,8 +56,9 @@ public class patternTir : MonoBehaviour {
 			if (GetComponent <health>().life<= 3&& inPattern == false&& finalPhase<2){
 				if(finalPhase == 1){
 					phase = 4;
-					if(target.GetComponent <health>().life<3){
+					if(target.GetComponent <health>().life<3&& heal1 == false){
 						target.GetComponent <health>().Heal (1);
+						heal1 = true;
 
 					}
 
@@ -61,16 +67,18 @@ public class patternTir : MonoBehaviour {
 			}
 			else if(GetComponent <health>().life<= (originalLife/6)*3){
 				phase = 3;
-				if(target.GetComponent <health>().life<3){
+				if(target.GetComponent <health>().life<3&& heal2 == false){
 					target.GetComponent <health>().Heal (1);
+					heal2 = true;
 
 				}
 
 			}
 			else if (GetComponent <health>().life<= (originalLife/6)*5&&GetComponent <health>().life>= (originalLife/6)*4){
 				phase = 2;
-				if(target.GetComponent <health>().life<3){
+				if(target.GetComponent <health>().life<3&& heal3 == false){
 					target.GetComponent <health>().Heal (1);
+					heal3 = true;
 
 				}
 			}
