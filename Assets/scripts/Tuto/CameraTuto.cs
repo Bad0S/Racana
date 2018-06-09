@@ -58,8 +58,8 @@ public class CameraTuto : MonoBehaviour
 		if(transCam.position.x<=-153 ){
 			transCam.position = new Vector3( -153, transCam.position.y, transCam.position.z);
 		}
-		if(transCam.position.x>=-36 ){
-			transCam.position = new Vector3( -36, transCam.position.y, transCam.position.z);
+		if(transCam.position.x>=-30 ){
+			transCam.position = new Vector3( -30, transCam.position.y, transCam.position.z);
 		}
 
 

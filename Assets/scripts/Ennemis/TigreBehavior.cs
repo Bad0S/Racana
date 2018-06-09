@@ -225,13 +225,15 @@ public class TigreBehavior : MonoBehaviour {
 		}
 
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
+		WhiteSprite ();
 		anim.SetBool ("IsMoving", true);
 		targetVectorAttacking = targetVector;
 
 	//	yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 
 
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.5f);
+		NormalSprite ();
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*0.25f);
 
 		//anim.SetBool ("IsAttacking", true);
 		//groupieSource.Play();
@@ -241,12 +243,10 @@ public class TigreBehavior : MonoBehaviour {
 		//anim.SetBool ("Fighting",true);
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
+		anim.SetBool ("IsJumping",true);
+        sndFauveMorsure.start();
+        rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
 
-		if(targetVectorAttacking.magnitude<=attackRangeMax*1.5f){
-			rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
-			anim.SetBool ("IsJumping",true);
-			sndFauveMorsure.start();
-		}
 		//Instantiate (attackHitbox, transform);
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds/2);
 		rb2D.velocity = new Vector3 (0,0,0);
@@ -276,18 +276,16 @@ public class TigreBehavior : MonoBehaviour {
 		isFighting = true;
 
 		anim.SetBool ("IsMoving", false);
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1f);
-		rb2D.velocity = new Vector3 (0,0,0);
 
 		anim.SetBool ("IsAttacking",true);
+        sndFauveCri.start();
 		//anim.SetBool ("IsAttack", true);
-		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1f);
+		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds*1.35f);
 		GameObject laserInstance = (GameObject)Instantiate (attackRoar, transform);
 		laserInstance.SetActive (true);
 		laserInstance.GetComponent <RoarScript>().beat = rythmeScript.timeBetweenBeatsInSeconds;
 		laserInstance.transform.SetParent (null);
 		anim.SetBool ("IsAttacking",false);
-		sndFauveCri.start();
 
 		yield return new WaitForSeconds (rythmeScript.timeBetweenBeatsInSeconds);
 		isFighting = false;

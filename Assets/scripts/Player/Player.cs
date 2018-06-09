@@ -87,6 +87,7 @@ public class Player: MonoBehaviour
 	public Scene scene;
 
 	public bool killedBoss;
+	private GameObject menuInGame;
 
 	// Use this for initialization
 	void Start () 
@@ -107,6 +108,7 @@ public class Player: MonoBehaviour
         canMusic = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic;
 		hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
 		killedBoss = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().killedBoss;
+		menuInGame = GameObject.FindGameObjectWithTag ("Finish");
     }
 
 
@@ -140,10 +142,15 @@ public class Player: MonoBehaviour
         {
             chargeAttaque += 1;
         }
-        if (chargeAttaque == 5)
-        {
-            chargeAttaque = 1;
-        }
+		if (chargeAttaque == 5) 
+		{
+			chargeAttaque = 1;
+		}
+        
+			if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown (KeyCode.Joystick1Button7) && !menuInGame.activeInHierarchy) 
+		{
+				menuInGame.SetActive (true);
+		}
 	}
 
 	void FixedUpdate()
@@ -374,9 +381,8 @@ public class Player: MonoBehaviour
 		canDash = false;
 		isDashing = true;
 		dashFX [0].SetActive (true);
-		//dashFX [2].SetActive (true);
+		dashFX [2].SetActive (true);
 		gameObject.layer = 8;
-		GetComponent <SpriteRenderer> ().color = new Color(1,0.6f,0.9f,0.75f);
 
 
 		GetComponent <health> ().invincible = true;
@@ -394,7 +400,6 @@ public class Player: MonoBehaviour
 		dashFX [2].SetActive (false);
 		//dashFX[1].SetActive  (true);
 		gameObject.layer = 0;
-		GetComponent <SpriteRenderer> ().color = new Color(1,1,1,1);
 
 		isDashing = false;
 
