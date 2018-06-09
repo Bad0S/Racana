@@ -223,11 +223,14 @@ public class health : MonoBehaviour {
 	IEnumerator PlayerHitFX(GameObject player){
 		hitFXRoutine = true;
 		player.GetComponentInParent<Player> ().inDanger = true;
-		hitFX = player.GetComponentInParent<Player> ().hitFX [player.GetComponentInParent<Player> ().tauxCharge-1];
-		hitFX.SetActive (true);
+		if(player.GetComponentInParent<Player> ().tauxCharge>2){
+			hitFX = player.GetComponentInParent<Player> ().hitFX [player.GetComponentInParent<Player> ().tauxCharge-1];
+			hitFX.SetActive (true);
 
-		hitFX.GetComponent<ParticleSystem> ().Emit (1);
-		hitFX.transform.position = new Vector3 (transform.position.x,transform.position.y, 0);
+			hitFX.GetComponent<ParticleSystem> ().Emit (1);
+		}
+
+		//hitFX.transform.position = new Vector3 (transform.position.x,transform.position.y, 0);
 
 		yield return new WaitForSeconds(0.35f);
 		GamePad.SetVibration (0,0f,0f);

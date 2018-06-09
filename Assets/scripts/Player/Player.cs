@@ -374,8 +374,9 @@ public class Player: MonoBehaviour
 		canDash = false;
 		isDashing = true;
 		dashFX [0].SetActive (true);
-		dashFX [2].SetActive (true);
+		//dashFX [2].SetActive (true);
 		gameObject.layer = 8;
+		GetComponent <SpriteRenderer> ().color = new Color(1,0.6f,0.9f,0.75f);
 
 
 		GetComponent <health> ().invincible = true;
@@ -393,6 +394,7 @@ public class Player: MonoBehaviour
 		dashFX [2].SetActive (false);
 		//dashFX[1].SetActive  (true);
 		gameObject.layer = 0;
+		GetComponent <SpriteRenderer> ().color = new Color(1,1,1,1);
 
 		isDashing = false;
 
