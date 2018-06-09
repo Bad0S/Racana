@@ -13,6 +13,8 @@ public class patternTir : MonoBehaviour {
 	private float prochainPattern;
 	public bool inPattern;
 	public float beatLength;
+	public bool beatAllowAttack;
+	private Rythme rhythm;
 
 	// casters externes
 	public List<GameObject> externesBas;
@@ -44,12 +46,18 @@ public class patternTir : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		beatLength = target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
+		rhythm = target.GetComponent <Rythme> ();
+
 		prochainPattern = beatLength * (0 + (Random.Range ( 0 , 2)));
 		originalLife = GetComponent <health> ().life;
 	//	Time.timeScale = 0.5f;
 	}
-	
+
+	void FixedUpdate(){
+		beatAllowAttack = rhythm.isBeating;
+		beatLength= rhythm.timeBetweenBeatsInSeconds;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if (inPattern == false){
@@ -88,24 +96,23 @@ public class patternTir : MonoBehaviour {
 			timerEntrePatterns += Time.deltaTime;
 		}
 		if (phase == 1) {
-			if (timerEntrePatterns > prochainPattern && inPattern == false) {
+			if (timerEntrePatterns > prochainPattern && inPattern == false&& beatAllowAttack == true) {
 				int rand = Random.Range (0, 2);
 				if (rand == 0) {
-					StartCoroutine (Pattern1Etat1 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+					StartCoroutine (Pattern1Etat1 (beatLength));
 				} else if (rand == 1) {
-					StartCoroutine (Pattern2Etat1 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+					StartCoroutine (Pattern2Etat1 (beatLength));
 				}
 	
 				timerEntrePatterns = 0;
-				beatLength = target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 				prochainPattern = beatLength * (1 + (Random.Range (0, 2)));
 			}
 		} else if (phase == 2) {
-			if (timerEntrePatterns > prochainPattern && inPattern == false) {
+			if (timerEntrePatterns > prochainPattern && inPattern == false&& beatAllowAttack == true) {
 				if (firstPattern2 = false) {
 					firstPattern2 = true;
 
-					StartCoroutine (Pattern1Etat2 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+					StartCoroutine (Pattern1Etat2 (beatLength));
 
 				} else {
 					if (activationPhase2 == false) {
@@ -115,22 +122,21 @@ public class patternTir : MonoBehaviour {
 					}
 					int rand = Random.Range (0, 4);
 					if (rand == 0) {
-						StartCoroutine (Pattern2Etat2 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+						StartCoroutine (Pattern2Etat2 (beatLength));
 					} else if (rand == 1) {
-						StartCoroutine (Pattern3Etat2 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+						StartCoroutine (Pattern3Etat2 (beatLength));
 					} else if (rand == 2) {
-						StartCoroutine (Pattern4Etat2 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+						StartCoroutine (Pattern4Etat2 (beatLength));
 					} else if (rand == 3) {
-						StartCoroutine (Pattern5Etat2 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+						StartCoroutine (Pattern5Etat2 (beatLength));
 					}
 				}
 
 				timerEntrePatterns = 0;
-				beatLength = target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 				prochainPattern = beatLength * (1 + (Random.Range (0, 1)));
 			}
 		} else if (phase == 3) {
-			if (timerEntrePatterns > prochainPattern && inPattern == false) {
+			if (timerEntrePatterns > prochainPattern && inPattern == false&& beatAllowAttack == true) {
 				if (activationPhase3 == false) {
 					externesBas [0].SetActive (true);
 					externesBas [1].SetActive (true);
@@ -139,29 +145,28 @@ public class patternTir : MonoBehaviour {
 					activationPhase3 = true;
 				}
 				if (firstPattern3 == false) {
-					StartCoroutine (Pattern0Etat3 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));
+					StartCoroutine (Pattern0Etat3 (beatLength));
 				} else {
 					int rand = Random.Range (0, 4);
 					//int rand = 2;
 					if (rand == 0) {
 						print (rand + 1);
-						StartCoroutine (Pattern1Etat3 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));	
+						StartCoroutine (Pattern1Etat3 (beatLength));	
 
 					} else if (rand == 1) {
 						print (rand + 1);
 
-						StartCoroutine (Pattern2Etat3 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));	
+						StartCoroutine (Pattern2Etat3 (beatLength));	
 					} else if (rand == 2) {
 						print (rand + 1);
 
-						StartCoroutine (Pattern3Etat3 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));	
+						StartCoroutine (Pattern3Etat3 (beatLength));	
 					} else if (rand == 3) {
 						print (rand + 1);
 
-						StartCoroutine (Pattern4Etat3 (target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds));	
+						StartCoroutine (Pattern4Etat3 (beatLength));	
 					}
 					timerEntrePatterns = 0;
-					beatLength = target.GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 					prochainPattern = beatLength * (1);
 				}
 

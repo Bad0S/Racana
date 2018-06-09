@@ -231,7 +231,10 @@ public class EnemyBehaviour : MonoBehaviour {
 		//anim.SetTrigger ("Fighting");
 		rb2D.velocity = new Vector3 (0,0,0);
 		isJumping = true;
-		rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+		if(targetVectorAttacking.magnitude<=attackRangeMax){
+			rb2D.AddForce (targetVectorAttacking * vitesseBond, ForceMode2D.Impulse);
+
+		}
 		//Instantiate (attackHitbox, transform);
 		yield return new WaitForSeconds (0.36f);
 		isJumping = false;

@@ -112,7 +112,9 @@ public class health : MonoBehaviour {
 				player.GetComponent <Rythme>().timerCombo =0 ;
 				player.GetComponent <Rythme>().timerComboSpeed =0 ;
 				player.GetComponent <Rythme>().comboDecreaseSpeed =1 ;
-
+				if(lifeToLose == 4){
+					lifeToLose *= 2;
+				}
 			}
 			life -= lifeToLose;
 		}

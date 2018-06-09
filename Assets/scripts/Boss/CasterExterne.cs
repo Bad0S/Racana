@@ -121,7 +121,6 @@ public class CasterExterne : MonoBehaviour {
 			if (hit.collider != null) {
 
 				petitLaserFX.SetActive (false);
-				print ("sexe");
 				laserFX.SetActive (true);
 				laserFXSphere.transform.position = new Vector3 (hitV3.x, hitV3.y, 0);
 				GameObject laserInstance = (GameObject)Instantiate (laser, (transform.position + hitV3) / 2, Quaternion.Euler (0, 0, angleShoot));
