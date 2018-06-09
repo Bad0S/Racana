@@ -87,6 +87,7 @@ public class Player: MonoBehaviour
 	public Scene scene;
 
 	public bool killedBoss;
+	private GameObject menuInGame;
 
 	// Use this for initialization
 	void Start () 
@@ -107,6 +108,7 @@ public class Player: MonoBehaviour
         canMusic = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic;
 		hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
 		killedBoss = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().killedBoss;
+		menuInGame = GameObject.FindGameObjectWithTag ("Finish");
     }
 
 
@@ -140,10 +142,15 @@ public class Player: MonoBehaviour
         {
             chargeAttaque += 1;
         }
-        if (chargeAttaque == 5)
-        {
-            chargeAttaque = 1;
-        }
+		if (chargeAttaque == 5) 
+		{
+			chargeAttaque = 1;
+		}
+        
+			if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown (KeyCode.Joystick1Button7) && !menuInGame.activeInHierarchy) 
+		{
+				menuInGame.SetActive (true);
+		}
 	}
 
 	void FixedUpdate()
