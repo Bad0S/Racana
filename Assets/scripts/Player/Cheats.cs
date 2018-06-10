@@ -22,45 +22,10 @@ public class Cheats : MonoBehaviour
 			GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 		}
-		if (Input.GetKeyDown (KeyCode.Escape) == true )
-		{
-			Application.Quit ();
-		}
-		if (Input.GetKeyDown (KeyCode.H) == true) 
-		{
-			gameObject.GetComponent<health>().Hurt(1);
-		}
-		if (Input.GetKeyDown(KeyCode.Keypad0))
-		{
-			titresPartie.text = "Présentation du jeu";
-		}
-		if (Input.GetKeyDown(KeyCode.Keypad1))
-		{
-			titresPartie.text = "Ce qui a été fait jusqu'à maintenant";
-		}
-		if (Input.GetKeyDown(KeyCode.Keypad2))
-		{
-			titresPartie.text = "Ce que nous avons appris";
-		}
-		if (Input.GetKeyDown(KeyCode.Keypad3))
-		{
-			titresPartie.text = "Ce qu'il reste à faire";
-		}
-		if (Input.GetKeyDown (KeyCode.Keypad7) == true)
-		{
-			SceneManager.LoadScene ("scene_LD_0.1");
-		}
-		if (Input.GetKeyDown (KeyCode.Keypad8) == true)
-		{
-				SceneManager.LoadScene ("scene_enigmes");
-		}
-		if (Input.GetKeyDown (KeyCode.Keypad9) == true)
-		{
-			SceneManager.LoadScene ("Showcase");
-		}
-        if (Input.GetKeyDown(KeyCode.B) == true)
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            gameObject.transform.position = new Vector3 (60,73,0);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().combo = 29;
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
@@ -116,8 +81,3 @@ public class Cheats : MonoBehaviour
         }
     }
 }
-
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic = true;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().combo = 29;
