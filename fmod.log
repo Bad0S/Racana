@@ -244,6 +244,7 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053492F18
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000006EAA1708.  list count = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Village', format=2, channels=2, frequency=48000, lengthbytes=3856128, lengthpcm=4253537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968170.
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F252478

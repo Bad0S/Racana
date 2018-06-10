@@ -14,6 +14,7 @@ public class Rythme : MonoBehaviour
     public int beats = 1;
     public float combo;
     public PostProcessingProfile initial;
+	public PostProcessingProfile instrument;
     public PostProcessingProfile transe;
 	public PostProcessingProfile Transcendance;
 	public bool isBeating;
@@ -103,6 +104,7 @@ public class Rythme : MonoBehaviour
         { 
 			combo = -1;
 			GetComponent<Player> ().MovSpeed = 150;
+			GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<PostProcessingBehaviour> ().profile = initial;
 		}
         if (boss == true)
         {
@@ -155,7 +157,7 @@ public class Rythme : MonoBehaviour
         }
         if (combo == 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic) 
 		{
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = initial;
+			GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = instrument;
 			//GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled = false;
 			GetComponent<Player> ().MovSpeed = 150;
             sndTheme.setVolume(0f);
