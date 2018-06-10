@@ -4,15 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SlideSwitch : MonoBehaviour {
+	[System.Serializable]
+	public class GO
+	{
+		public List<GameObject> list;
+	}
+
+	[System.Serializable]
+	public class NestedGOList
+	{
+		public List<GO> list;
+	}
+
 	public int slide = 0;
 	public List<GameObject> slideObjet;
+	public NestedGOList Animations;
 	public List<GameObject> slideNumber;
 	public List<int> eventsParSlide;
-	public GameObject text1;
-	public GameObject image1;
+
 	// Use this for initialization
 	void Start () {
-
+		for (int i = 0; i < slideObjet.Count; i++) {
+			eventsParSlide [i] = Animations.list [i].list.Count;
+		}
 	}
 	
 	// Update is called once per frame
@@ -26,9 +40,7 @@ public class SlideSwitch : MonoBehaviour {
 
 			}
 			else{
-				Debug.Log ("bite");
-				Instantiate (text1,slideObjet[slide].transform);
-				Instantiate (image1,slideObjet[slide].transform);
+				Animations.list [slide].list [eventsParSlide [slide - 1]].GetComponent <Animator> ().SetBool ("animate", true);
 
 				eventsParSlide [slide]--;
 			}
