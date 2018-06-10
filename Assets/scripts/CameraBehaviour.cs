@@ -6,9 +6,10 @@ public class CameraBehaviour : MonoBehaviour
 {
     public Transform target;
     public float Camspeed;
-	public Transform trigger1;
-	public Transform trigger2;
-	public Transform triggerEntrée;
+	public Transform triggerForêt;
+	public Transform triggerEntréeDonjon;
+	public Transform triggerEntréeBoss;
+	public Transform triggerBoss;
 	private bool cinematique;
 	private Camera cam;
 	private Vector3 originalPos;
@@ -55,61 +56,30 @@ public class CameraBehaviour : MonoBehaviour
 
 	void Update()
 	{
-//		if (Input.GetButtonDown("Fire4"))
-//		{
-//
-//			ScreenShakeFunction(0.2f,0.15f,0.04f);
-//
-//
-//		}
 
 
-		/*if (target.position.y > trigger1.position.y && target.position.y < trigger2.position.y) 
-		{
-			cinematique = true;
-			transform.position = Vector3.Lerp(transform.position, new Vector3 (60.5f,101.5f,-10f),Time.deltaTime);
-			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 19f, Time.deltaTime*0.9f);
-		}
-		if (target.position.y > trigger2.position.y || (target.position.y < trigger1.position.y && target.position.y > triggerEntrée.position.y))
+		if (target.position.y > triggerForêt.position.y && target.position.y < triggerEntréeDonjon.position.y) 
 		{
 			cinematique = false;
-			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 7f, Time.deltaTime);
+			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 110f, Time.deltaTime*0.9f);
 		}
-		if (target.position.y < triggerEntrée.position.y) 
+		if (target.position.y >triggerEntréeDonjon.position.y )
 		{
 			cinematique = true;
-			transform.position = Vector3.Lerp(transform.position, new Vector3 (-2.6f,2.5f,-10f),Time.deltaTime);
-			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 17f, Time.deltaTime*0.9f);
-		}*/
-       /* if (GameObject.FindGameObjectWithTag("Enemy") == true && (GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehaviour>().idling == false))
-        {
-            if (camSource.clip == calme)
-            { camSource.volume -= 0.1f * Time.deltaTime * 5f; }
-            if (camSource.volume == 0f)
-            {
-                camSource.clip = combat;
-                camSource.Play();
-            }
-            if (camSource.volume < 1f && camSource.clip == combat)
-            {
-                camSource.volume += 0.1f * Time.deltaTime*5f;
-            }
-        }
-        if (GameObject.FindGameObjectWithTag("Enemy") == false ||(GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehaviour>().idling == true))
-        {
-            if (camSource.clip == combat)
-            { camSource.volume -= 0.1f * Time.deltaTime * 5f; }
-            if (camSource.volume == 0f)
-            {
-                camSource.clip = calme;
-                camSource.Play();
-            }
-            if (camSource.volume < 1f && camSource.clip == calme)
-            {
-                camSource.volume += 0.1f * Time.deltaTime * 5f;
-            }
-        }*/
-
+			transform.position = Vector3.Lerp(transform.position, new Vector3 (254f,1924f, -10f),Time.deltaTime);
+			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 240f, Time.deltaTime*0.7f);
+		}
+		if (target.position.y > triggerEntréeBoss.position.y && target.position.y < triggerBoss.position.y) 
+		{
+			cinematique = true;
+			transform.position = Vector3.Lerp(transform.position, new Vector3 (261f,2142f, -10f),Time.deltaTime);
+			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 486f, Time.deltaTime*0.9f);
+		}
+		if (target.position.y >triggerBoss.position.y )
+		{
+			cinematique = false;
+			cam.orthographicSize = Mathf.Lerp (cam.orthographicSize, 180f, Time.deltaTime*0.7f);
+		}
     }
 
     void FixedUpdate()
