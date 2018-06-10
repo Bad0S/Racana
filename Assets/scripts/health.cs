@@ -245,11 +245,11 @@ public class health : MonoBehaviour {
 
 	}
 
-	IEnumerator PlayerDeath()
+	public IEnumerator PlayerDeath()
 	{
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 		gameObject.GetComponent<Animator>().SetTrigger ("Mort");
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		rend.material.shader = shaderDeBase;
 		rend.color = couleurDeBase ;

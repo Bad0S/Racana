@@ -18,7 +18,6 @@ public class MenuInGame : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		Time.timeScale = 0f;
 		boutons [numSelect].image.color = selected;
 		boutons [1].image.color = unselected;
 		boutons [2].image.color = unselected;
@@ -28,30 +27,29 @@ public class MenuInGame : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown (KeyCode.Joystick1Button7) ) 
+		if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown (KeyCode.Joystick1Button7)) 
 		{
+			Time.timeScale = 1f;
 			gameObject.SetActive (false);
 		}
 		if (Input.GetButtonDown ("Submit")) {
 			switch (numSelect) {
 			case 0:
 				Time.timeScale = 1f;
-				Destroy (gameObject);
+				gameObject.SetActive(false);
 				break;
 			case 1:
 				Time.timeScale = 1f;
-				Destroy (gameObject);
+				gameObject.SetActive(false);
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 				break;
-
 			case 2:
 				Time.timeScale = 1f;
-				GameObject.FindGameObjectWithTag ("Player").GetComponent<health> ().StartCoroutine (PlayerDeath ());
-				Destroy (gameObject);
-				break;
-			case 3:
 				SceneManager.LoadScene("Racana_Menu");
 				break;
-			case 4:
+			case 3:
+				Time.timeScale = 1f;
 				QuitGame ();
 				break;
 			}
@@ -96,7 +94,7 @@ public class MenuInGame : MonoBehaviour
 
 	IEnumerator Pause()
 	{
-		yield return new WaitForSeconds (delayPause);
+		yield return new WaitForSecondsRealtime (delayPause);
 		pause = false;
 	}
 
