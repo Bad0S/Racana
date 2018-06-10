@@ -42,10 +42,9 @@ public class MenuInGame : MonoBehaviour
 				Time.timeScale = 1f;
 				Destroy (gameObject);
 				break;
-
 			case 2:
 				Time.timeScale = 1f;
-				GameObject.FindGameObjectWithTag ("Player").GetComponent<health> ().StartCoroutine (PlayerDeath ());
+				StartCoroutine (GameObject.FindGameObjectWithTag ("Player").GetComponent<health> ().PlayerDeath ());
 				Destroy (gameObject);
 				break;
 			case 3:

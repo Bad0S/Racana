@@ -245,7 +245,7 @@ public class health : MonoBehaviour {
 
 	}
 
-	IEnumerator PlayerDeath()
+	public IEnumerator PlayerDeath()
 	{
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
 		gameObject.GetComponent<Animator>().SetTrigger ("Mort");
