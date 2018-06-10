@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Snapshot" id="{e5cb871d-36b4-443b-aee5-4322371a20a8}">
+        <property name="name">
+            <value>PdV</value>
+        </property>
+        <property name="behavior">
+            <value>1</value>
+        </property>
+        <relationship name="mixer">
+            <destination>{3242272f-a5ad-48a6-aa8c-f30832e322c0}</destination>
+        </relationship>
+        <relationship name="automatableProperties">
+            <destination>{6ecdb8e7-e7f5-4e3b-80a8-3981624092a9}</destination>
+        </relationship>
+        <relationship name="markerTracks">
+            <destination>{8721f2c3-1f4a-4479-80fc-6e3fe4c257d3}</destination>
+        </relationship>
+        <relationship name="timeline">
+            <destination>{24824c94-bb50-42fc-a17c-0c6428773bd1}</destination>
+        </relationship>
+        <relationship name="snapshotMasterTrack">
+            <destination>{121bd7c9-8d60-45f3-a48e-c37d553ac5aa}</destination>
+        </relationship>
+    </object>
+    <object class="EventAutomatableProperties" id="{6ecdb8e7-e7f5-4e3b-80a8-3981624092a9}"/>
+    <object class="MarkerTrack" id="{8721f2c3-1f4a-4479-80fc-6e3fe4c257d3}"/>
+    <object class="Timeline" id="{24824c94-bb50-42fc-a17c-0c6428773bd1}"/>
+    <object class="SnapshotMasterTrack" id="{121bd7c9-8d60-45f3-a48e-c37d553ac5aa}"/>
+</objects>
