@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class MenuPrincipal : MonoBehaviour 
+public class MenuPrincipal : MonoBehaviour
 {
 	public List<Button> boutons;
 	public int numSelect = 0;
@@ -24,54 +24,32 @@ public class MenuPrincipal : MonoBehaviour
 	}
 
 	// Use this for initialization
-	void Start () 
-	{
-		boutons [numSelect].image.color = selected;
-		boutons [1].image.color = unselected;
+	void Start ()
+    {
+		
 	}
 	
 	// Update is called once per frame
-	void Update () 
-	{
-		if (Input.GetButtonDown ("Submit")) {
-			switch (numSelect) {
-			case 0:
-				StartCoroutine (StartGame ());
-				break;
-			case 1:
-				QuitGame ();
-				break;
-			}
-		} else if (Input.GetAxisRaw ("Vertical") > 0 && !pause) 
-		{
-			boutons [numSelect].image.color = unselected;
-			if (numSelect > 0)
-			{
-				numSelect--;
-			}
-			else if (numSelect == 0)
-			{
-				numSelect = boutons.Count - 1;
-			}
-			boutons [numSelect].image.color = selected;
-			pause = true;
-			StartCoroutine (Pause ());
-			
-		} else if (Input.GetAxisRaw ("Vertical") < 0 && !pause) 
-		{
-			boutons [numSelect].image.color = unselected;
-			if (numSelect < boutons.Count - 1)
-			{
-				numSelect++;
-			}
-			else if (numSelect == boutons.Count - 1)
-			{
-				numSelect = 0;
-			}
-			boutons [numSelect].image.color = selected;
-			pause = true;
-			StartCoroutine (Pause ());
-		}
+	void Update ()
+    {
+        if (Input.GetAxisRaw("Vertical") < 1)
+        {
+            boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0.5f);
+            if (selected == boutons.Count - 1)
+            { selected = 0; }
+            else
+            { selected += 1; }
+        }
+        if (Input.GetAxisRaw("Vertical") > 1)
+        {
+            boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0.5f);
+            if (selected == 0 )
+            { selected = boutons.Count - 1; }
+            else
+            { selected -= 1; }
+        }
+
+        boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f,1f);
 	}
 
 	void QuitGame()
@@ -129,3 +107,28 @@ public class MenuPrincipal : MonoBehaviour
 		alpha += Time.deltaTime * (1.0f / fadeSpeed) * ((fadeDirection == FadeDirection.Out)? -1 : 1) ;
 	}
 }
+
+public class MenuPrincipal : MonoBehaviour
+	void Start ()
+    {
+		
+	void Update ()
+    {
+        if (Input.GetAxisRaw("Vertical") < 1)
+        {
+            boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0.5f);
+            if (selected == boutons.Count - 1)
+            { selected = 0; }
+            else
+            { selected += 1; }
+        }
+        if (Input.GetAxisRaw("Vertical") > 1)
+        {
+            boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0.5f);
+            if (selected == 0 )
+            { selected = boutons.Count - 1; }
+            else
+            { selected -= 1; }
+        }
+
+        boutons[selected].GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f,1f);

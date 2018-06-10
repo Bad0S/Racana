@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Snapshot" id="{99180729-9e76-4999-848d-61dfa6c273eb}">
+        <property name="name">
+            <value>Transcendance</value>
+        </property>
+        <property name="behavior">
+            <value>1</value>
+        </property>
+        <relationship name="mixer">
+            <destination>{3242272f-a5ad-48a6-aa8c-f30832e322c0}</destination>
+        </relationship>
+        <relationship name="automatableProperties">
+            <destination>{f301553c-5848-42ea-bdb5-73be9f63b606}</destination>
+        </relationship>
+        <relationship name="markerTracks">
+            <destination>{a481ac51-1a05-4381-a2b6-6e0199a1365d}</destination>
+        </relationship>
+        <relationship name="timeline">
+            <destination>{fd3c5ade-edee-4a27-b3e7-f571cde14a1e}</destination>
+        </relationship>
+        <relationship name="snapshotMasterTrack">
+            <destination>{504c88c6-2d8c-4482-b4d8-060402405dcc}</destination>
+        </relationship>
+    </object>
+    <object class="EventAutomatableProperties" id="{f301553c-5848-42ea-bdb5-73be9f63b606}"/>
+    <object class="MarkerTrack" id="{a481ac51-1a05-4381-a2b6-6e0199a1365d}"/>
+    <object class="Timeline" id="{fd3c5ade-edee-4a27-b3e7-f571cde14a1e}"/>
+    <object class="SnapshotMasterTrack" id="{504c88c6-2d8c-4482-b4d8-060402405dcc}"/>
+</objects>

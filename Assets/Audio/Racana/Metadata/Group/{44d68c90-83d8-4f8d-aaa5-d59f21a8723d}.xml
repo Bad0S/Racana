@@ -17,17 +17,14 @@
     <object class="MixerBusEffectChain" id="{2494cbd8-d6b6-4fad-9840-bfe46c36ed13}">
         <relationship name="effects">
             <destination>{027c1143-4714-4bd9-b93b-1b177df8e7d2}</destination>
-            <destination>{0da744d4-cb2f-4747-9bba-87e5901ca252}</destination>
+            <destination>{741a910e-cb5b-456a-8581-0b8d002e75b7}</destination>
+            <destination>{4feafac2-b2f9-4b2c-9673-6f6325591c18}</destination>
+            <destination>{f917afc8-98eb-42e6-aaca-20954dfd6637}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{9c781a6a-9ab2-48bb-a5db-76fd78f8350b}"/>
     <object class="MixerBusFader" id="{027c1143-4714-4bd9-b93b-1b177df8e7d2}"/>
-    <object class="MixerSend" id="{0da744d4-cb2f-4747-9bba-87e5901ca252}">
-        <property name="inputFormat">
-            <value>1</value>
-        </property>
-        <relationship name="mixerReturn">
-            <destination>{ca849aa0-f59f-42d3-89cd-87635fdd4c01}</destination>
-        </relationship>
-    </object>
+    <object class="LowpassEffect" id="{741a910e-cb5b-456a-8581-0b8d002e75b7}"/>
+    <object class="ThreeEQEffect" id="{4feafac2-b2f9-4b2c-9673-6f6325591c18}"/>
+    <object class="DistortionEffect" id="{f917afc8-98eb-42e6-aaca-20954dfd6637}"/>
 </objects>
