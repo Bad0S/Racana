@@ -40,7 +40,7 @@ public class SlideSwitch : MonoBehaviour {
 
 			}
 			else{
-				Animations.list [slide].list [eventsParSlide [slide - 1]].GetComponent <Animator> ().SetBool ("animate", true);
+				Animations.list [slide].list [eventsParSlide [slide ]- 1].GetComponent <Animator> ().SetBool ("animate", true);
 
 				eventsParSlide [slide]--;
 			}
