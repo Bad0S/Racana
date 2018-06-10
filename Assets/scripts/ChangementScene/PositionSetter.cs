@@ -40,14 +40,17 @@ public class PositionSetter : MonoBehaviour
 		if (scene.name == "Racana_Village" && firstVillage == false) 
 		{
 			StartCoroutine (IntroVillage ());
+			firstVillage = true;
 		}
 	}
 
 	IEnumerator IntroVillage()
 	{
-		GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<CameraBehaviour> ().enabled = false;
 		camAnim = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Animator> ();
-
-		GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<CameraBehaviour> ().enabled = true;
+		camAnim.SetTrigger ("StartVillage");
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ().canMove = false;
+		yield return new WaitForSecondsRealtime (9.5f);
+		camAnim.enabled = false;
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ().canMove = true;
 	}
 }
