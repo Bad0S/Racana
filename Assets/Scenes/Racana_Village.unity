@@ -33723,9 +33723,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 775624670}
   Camspeed: 4
-  trigger1: {fileID: 0}
-  trigger2: {fileID: 0}
-  "triggerEntr\xE9e": {fileID: 0}
+  "triggerFor\xEAt": {fileID: 0}
+  "triggerEntr\xE9eDonjon": {fileID: 0}
+  "triggerEntr\xE9eBoss": {fileID: 0}
+  triggerBoss: {fileID: 0}
   Effect: 0
 --- !u!114 &791016615
 MonoBehaviour:
@@ -72046,7 +72047,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -186.3, y: 295.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2125681189}
   m_Father: {fileID: 1454134217}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

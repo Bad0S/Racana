@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114501951492569252}
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   EditorEvents:
   - {fileID: 114412702722657260}
   - {fileID: 114121288847542262}
@@ -40,18 +40,18 @@ MonoBehaviour:
   - {fileID: 114653590191732314}
   - {fileID: 114688212409437790}
   - {fileID: 114044892221201242}
-  - {fileID: 114326795107543704}
-  - {fileID: 114268805710905866}
-  - {fileID: 114505878549807836}
   - {fileID: 114360994841782070}
   - {fileID: 114505236190732460}
-  - {fileID: 114809910282370634}
-  - {fileID: 114615043564514614}
-  - {fileID: 114261264563213662}
   - {fileID: 114125113181460166}
-  MasterBankRef: {fileID: 114725846703081644}
+  - {fileID: 114257145034246944}
+  - {fileID: 114343523455283814}
+  - {fileID: 114127725416395140}
+  - {fileID: 114174883076801216}
+  - {fileID: 114887022590830282}
+  - {fileID: 114983975812637124}
+  MasterBankRef: {fileID: 114314893846657960}
   StringsBankRef: {fileID: 114501951492569252}
-  stringsBankWriteTime: 636643026653061974
+  stringsBankWriteTime: 636643211862167808
   cacheVersion: 2
 --- !u!114 &114008299464752604
 MonoBehaviour:
@@ -127,7 +127,7 @@ MonoBehaviour:
   Path: event:/Hit
   guid: bbed6749b95c6242962ad0386f193752
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -168,8 +168,8 @@ MonoBehaviour:
   Path: event:/CombatBossBase
   guid: ec6f8a9baaefe445a0319f0ade265b3f
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -208,8 +208,8 @@ MonoBehaviour:
   Path: event:/AttaqueBoss
   guid: 1b4ad34cfb92b94295a56e412001701c
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -305,7 +305,7 @@ MonoBehaviour:
   Path: event:/Transition
   guid: 979a33a78ded274e8f20dc4ae46f312d
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -328,8 +328,8 @@ MonoBehaviour:
   guid: 268dc3265cb0774bab467be633566d2e
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -390,7 +390,7 @@ MonoBehaviour:
   Path: event:/CombatDonjonBase
   guid: 4a97aff5984bb34ab059497296c28667
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -412,14 +412,37 @@ MonoBehaviour:
   Path: event:/CoupTemps4
   guid: f6799727041d804dbca284e7b75ee2aa
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 281
+--- !u!114 &114127725416395140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/TranseBass
+  guid: a47c81aed54e7e49922748ac0add2d5c
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114481662216904452}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &114139132323707672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,6 +544,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114174883076801216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Transe
+  guid: ccd87f13f340cf4b9124da6d2fcd4397
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114180568789146906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +580,7 @@ MonoBehaviour:
   Path: "event:/CombatFor\xEAtTranscendance"
   guid: c0ebb046ceb12242aa15d1db91ab6cbe
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -618,7 +663,7 @@ MonoBehaviour:
   Path: "event:/CombatFor\xEAtTranse"
   guid: faa73ba1ec0a23488a4e5e09c58f59b5
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -648,6 +693,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 218
+--- !u!114 &114257145034246944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/ThemeMenu
+  guid: 4e3fc648744e9c448c930687ba834b00
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
 --- !u!114 &114261037798689416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,8 +750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Life
   guid: ebd4c49f56fe4e4ba780495cce49c47b
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -706,8 +772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: snapshot:/Transcendance
   guid: 29071899769e9949848d61dfa6c273eb
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -749,14 +814,33 @@ MonoBehaviour:
   guid: f1e15b9e8ac00347a09b7311c89401eb
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 332
+--- !u!114 &114314893846657960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\leobo\Documents\Racana\Assets\Audio\Racana\LeBuild\Desktop\Master
+    Bank.bank
+  lastModified: 636643211864058546
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 13580000
+  Exists: 1
 --- !u!114 &114326795107543704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,8 +854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: snapshot:/PdV
   guid: 1d87cbe5b4363b44aee54322371a20a8
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -793,7 +876,7 @@ MonoBehaviour:
   Path: event:/CombatDonjonTranse
   guid: efa8e0fb58fec44f88db5a32298366fa
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -816,14 +899,36 @@ MonoBehaviour:
   guid: 2404a967b6182644a5a80c9295a72491
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
+--- !u!114 &114343523455283814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Life
+  guid: 6b994ccb33f9d541a3a5cfdb0e9f3168
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114347210614720938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,8 +944,8 @@ MonoBehaviour:
   guid: 905ccdb65f650d468f29b578d6d06107
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -882,8 +987,8 @@ MonoBehaviour:
   Path: event:/CoupTemps3
   guid: 51aa6ef1107a38488ac3e37ab86a186f
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -942,7 +1047,7 @@ MonoBehaviour:
   Path: event:/GardienTransition
   guid: 3a83c27f54f07542b1d48e21f63b3554
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1026,6 +1131,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &114481662216904452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Combo
+  Min: 0
+  Max: 500
+  Default: 0
 --- !u!114 &114481712691105552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,11 +1199,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Audio\Racana\LeBuild\Desktop\Master Bank.strings.bank
-  lastModified: 636643026653061974
+  lastModified: 636643211862167808
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 2270
+    Value: 2262
   Exists: 1
 --- !u!114 &114502123572314786
 MonoBehaviour:
@@ -1154,8 +1274,8 @@ MonoBehaviour:
   Path: event:/CoupTemps2
   guid: 56705ae906070648abe3d9c2d9789173
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1175,8 +1295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Lowpass
   guid: 291d8ac50dbb4f4a949c6f6ed84b5045
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1241,7 +1360,7 @@ MonoBehaviour:
   Path: "event:/ThemeFor\xEAt"
   guid: c53eec12e36f2d4bbd6ad44a72e06a76
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1304,7 +1423,7 @@ MonoBehaviour:
   Path: event:/ThemeVillage
   guid: 6c4b66c0a78a094e89d425f656b56c4d
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1326,8 +1445,8 @@ MonoBehaviour:
   Path: event:/CombatDonjonTranscendance
   guid: 945cccf658ca9242ab1854f43db7c338
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -1367,8 +1486,8 @@ MonoBehaviour:
   Path: event:/CombatBossTranscendance
   guid: c986cb5838778f41bdbd55a6a339da73
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -1389,7 +1508,7 @@ MonoBehaviour:
   Path: event:/GardienBeat
   guid: cf3e377f57b5064280ff6418ec07a532
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1429,8 +1548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: snapshot:/lowpass
   guid: da8e0fb9639b1c44837ea1e45b9413ea
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1532,8 +1650,8 @@ MonoBehaviour:
   guid: a38fdbc31e337e41a8b651ef5c12e396
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1552,10 +1670,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: snapshot:/PlayerHit
-  guid: afd4dc44fb390b4b9cdc1fc29d5d669d
+  guid: 36a937f0780a954dab377fc07000e8ac
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1596,14 +1714,14 @@ MonoBehaviour:
   Path: event:/Woosh
   guid: ba07f2ae4f713b4fac00ca32cb94fff6
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 218
+  Length: 203
 --- !u!114 &114670864616206624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1681,8 +1799,8 @@ MonoBehaviour:
   Path: event:/CoupTemps1
   guid: 18b354d1fed0c44fa0fe7dad241f9129
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1707,7 +1825,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 11540480
-  Exists: 1
+  Exists: 0
 --- !u!114 &114728926062175978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,8 +1860,8 @@ MonoBehaviour:
   guid: 6858ce4750906f46b062ef81ffc2d25b
   Banks:
   - {fileID: 114745878145330588}
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1844,8 +1962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: snapshot:/life
   guid: 73e2c36940efd443b62ad830287339b4
-  Banks:
-  - {fileID: 114725846703081644}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1867,8 +1984,8 @@ MonoBehaviour:
   Path: event:/CombatBossTranse
   guid: d751f6e6a05a8c4e8657032cedff59e5
   Banks:
-  - {fileID: 114725846703081644}
-  IsStream: 0
+  - {fileID: 114314893846657960}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -1938,6 +2055,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114887022590830282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/HitLowPass
+  guid: ebd4c49f56fe4e4ba780495cce49c47b
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
 --- !u!114 &114892115186992898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,6 +2139,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 88615
+--- !u!114 &114983975812637124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/ThemeFin
+  guid: fad7c0875a673447bc87c638446b3f5d
+  Banks:
+  - {fileID: 114314893846657960}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 29538
 --- !u!114 &114987844519399460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2194,7 @@ MonoBehaviour:
   Path: "event:/CombatFor\xEAtBase"
   guid: ca8bc6fc70c43c4dbbfcd58ed420f494
   Banks:
-  - {fileID: 114725846703081644}
+  - {fileID: 114314893846657960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0

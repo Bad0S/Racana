@@ -4,10 +4,10 @@
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 10.67ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000000C0C73A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000000E96A0A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,150 +16,15 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000003FC790F8 : node = 00000000493D75C0
-[LOG] SystemI::createSound                     : add node to async list : head = 0000000048BEA958.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003FC790F8
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSound                     :     setdata soundi = 000000003FC792A8 : node = 00000000493D7710
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11491616
-[LOG] SystemI::createSound                     :     add node to async list : head = 0000000048BEA958.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48864
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493D76D8
-[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     setdata soundi = 0000000049019988 : node = 00000000493D7860
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 0000000048BEA958.  list count = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=335584, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968109.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003FC790F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003FC792A8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11491616
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48864
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493D7828
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=335584, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968109.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003FC792A8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000049019988
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 11491616
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48864
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493D7978
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranse', format=2, channels=2, frequency=48000, lengthbytes=447552, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968292.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000049019988
-[LOG] SoundI::getSubSound                      : sound 000000003FC790F8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000003FC792A8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 0000000049019988.  Subsound index 0 / 1
-[LOG] SoundI::release                          : CombatDonjonTranse (000000000C07C808)
-[LOG] SoundI::release                          :     CombatDonjonTranse (0000000048BEACE8)
-[LOG] SoundI::release                          :     CombatDonjonTranse (000000003FC78888)
-[LOG] SoundI::release                          : CombatDonjonBase (000000003F573868)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000048BEA9A8)
-[LOG] SoundI::release                          :     CombatDonjonBase (000000000C07CB68)
-[LOG] SoundI::release                          : CombatDonjonBase (000000003F0E8348)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000048BEAB48)
-[LOG] SoundI::release                          :     CombatDonjonBase (000000003FC786D8)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SoundI::release                          : CombatDonjonTranse (0000000049019988)
-[LOG] SoundI::release                          :     CombatDonjonTranse (0000000048BF5328)
-[LOG] SoundI::release                          :     CombatDonjonTranse (0000000049019E98)
-[LOG] SoundI::release                          : CombatDonjonBase (000000003FC792A8)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000048BF5188)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000049019CE8)
-[LOG] SoundI::release                          : CombatDonjonBase (000000003FC790F8)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000048BF4FE8)
-[LOG] SoundI::release                          :     CombatDonjonBase (0000000049019B38)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SoundI::release                          :  (0000000049105B08)
-[LOG] SoundI::release                          :     Coup1 (0000000048BEA4C8)
-[LOG] SoundI::release                          :  (0000000049105998)
-[LOG] SoundI::release                          :     TirBoss13 (0000000048BEA328)
-[LOG] SoundI::release                          :  (000000004A3DD718)
-[LOG] SoundI::release                          :     TirBoss14 (000000003F0E29A8)
-[LOG] SoundI::release                          :  (000000004A3DD9F8)
-[LOG] SoundI::release                          :     TirBoss15 (000000003F0E2B48)
-[LOG] SoundI::release                          :  (00000000121193B8)
-[LOG] SoundI::release                          :     TirBoss16 (000000003FD0DA38)
-[LOG] SoundI::release                          :  (0000000012119528)
-[LOG] SoundI::release                          :     TirBoss1 (000000003F55BCA8)
-[LOG] SoundI::release                          :  (0000000049105828)
-[LOG] SoundI::release                          :     TirBoss2 (0000000048BEA188)
-[LOG] SoundI::release                          :  (0000000049104F88)
-[LOG] SoundI::release                          :     TirBoss3 (0000000049085408)
-[LOG] SoundI::release                          :  (0000000012119698)
-[LOG] SoundI::release                          :     TirBoss4 (000000003F55B968)
-[LOG] SoundI::release                          :  (000000004A3DDFB8)
-[LOG] SoundI::release                          :     TirBoss5 (0000000049084F28)
-[LOG] SoundI::release                          :  (00000000491050F8)
-[LOG] SoundI::release                          :     TirBoss6 (00000000490855A8)
-[LOG] SoundI::release                          :  (000000004A3DD888)
-[LOG] SoundI::release                          :     TirBoss7 (000000003F0E2CE8)
-[LOG] SoundI::release                          :  (0000000049105548)
-[LOG] SoundI::release                          :     TirBoss8 (0000000049085A88)
-[LOG] SoundI::release                          :  (0000000012119978)
-[LOG] SoundI::release                          :     TirBoss9 (000000003F55B148)
-[LOG] SoundI::release                          :  (000000004A3DD438)
-[LOG] SoundI::release                          :     TirBoss10 (000000003FD0DF18)
-[LOG] SoundI::release                          :  (0000000012119808)
-[LOG] SoundI::release                          :     TirBoss11 (000000003F55B628)
-[LOG] SoundI::release                          :  (0000000012118DF8)
-[LOG] SoundI::release                          :     TirBoss12 (000000003FD0DD78)
-[LOG] SoundI::release                          :  (0000000012119AE8)
-[LOG] SoundI::release                          :     FauveCri (000000003F55B2E8)
-[LOG] SoundI::release                          :  (0000000012119248)
-[LOG] SoundI::release                          :     Bambou (000000003F55AFA8)
-[LOG] SoundI::release                          :  (000000004A3DE128)
-[LOG] SoundI::release                          :     Coup3 (00000000490850C8)
-[LOG] SoundI::release                          :  (0000000049104E18)
-[LOG] SoundI::release                          :     Coup2 (0000000049085268)
-[LOG] SoundI::release                          :  (00000000121190D8)
-[LOG] SoundI::release                          :     Dash (000000003FD0DBD8)
-[LOG] SoundI::release                          :  (00000000491056B8)
-[LOG] SoundI::release                          :     Repousse (0000000048BE9FE8)
-[LOG] SoundI::release                          :  (000000004A3DDB68)
-[LOG] SoundI::release                          :     CombatDonjonTranscendance (000000003F0E2808)
-[LOG] SoundI::release                          :  (000000004A3DDCD8)
-[LOG] SoundI::release                          :     Groupie (000000003F0E2668)
-[LOG] SoundI::release                          :  (000000004A3DDE48)
-[LOG] SoundI::release                          :     CombatBossTranscendance (0000000049084D88)
-[LOG] SoundI::release                          :  (0000000012119C58)
-[LOG] SoundI::release                          :     CombatBossTranse (000000003FD0D898)
-[LOG] SoundI::release                          :  (0000000049105268)
-[LOG] SoundI::release                          :     CombatBossBase (0000000049085748)
-[LOG] SoundI::release                          :  (00000000491053D8)
-[LOG] SoundI::release                          :     FauveMorsure (00000000490858E8)
-[LOG] SoundI::release                          :  (0000000048A85FB8)
-[LOG] SoundI::release                          :     Coup4 (0000000048BEA668)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
