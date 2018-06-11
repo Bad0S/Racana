@@ -115,12 +115,14 @@ public class Player: MonoBehaviour
         canMusic = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().canMusic;
 		hadTuto = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().hadTuto;
 		killedBoss = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().killedBoss;
+		GetComponent<Rythme>().boss = GameObject.FindGameObjectWithTag("Respawn").GetComponent<PositionSetter>().boss;
     }
 
 
 
 	void Update () 
 	{
+
 		//charge sur beat
 		//print (body.velocity);
 
@@ -311,7 +313,10 @@ public class Player: MonoBehaviour
 		}
 	}
 		
-
+	IEnumerator stop(){
+		yield return new WaitForSeconds (0.1f);
+		GetComponent<Rythme> ().MusicStop ();
+	}
 	/*private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.name == "EnemyShoot") 

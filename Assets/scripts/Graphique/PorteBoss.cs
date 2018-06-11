@@ -42,15 +42,20 @@ public class PorteBoss : MonoBehaviour {
 		GamePad.SetVibration (0,puissance,0);// POUR LA FREQUECNE, DEMANDER A MICHAEL
 		yield return new WaitForSeconds(duree);
 		GamePad.SetVibration (0,0f,0f);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicPlay();
 
     }
 
 
-
+	public void StopMusic(){
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Rythme> ().MusicStop ();
+	
+	}
 	// Update is called once per frame
-	void Update () {
-		if(Camera.main.transform.position.y > transform.position.y){
+	void Update () 
+	{
+		
+		if(Camera.main.transform.position.y > transform.position.y)
+		{
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;
 		}
 
@@ -116,6 +121,7 @@ public class PorteBoss : MonoBehaviour {
 				}
 				catch{}
 				enable = true;
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicPlay();
 
 			}
 

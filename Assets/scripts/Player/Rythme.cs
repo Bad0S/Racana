@@ -24,6 +24,8 @@ public class Rythme : MonoBehaviour
     public string selectsoundVillage;
     [FMODUnity.EventRef]
     public string selectsoundForêt;
+	[FMODUnity.EventRef]
+	public string selectsoundFin;
     [FMODUnity.EventRef]
     public string selectsoundForêtBase;
     [FMODUnity.EventRef]
@@ -42,10 +44,10 @@ public class Rythme : MonoBehaviour
     public string selectsoundBossTranse;
     [FMODUnity.EventRef]
     public string selectsoundBossTranscendance;
-    FMOD.Studio.EventInstance sndTheme;
-    FMOD.Studio.EventInstance sndBase;
-    FMOD.Studio.EventInstance sndTranse;
-    FMOD.Studio.EventInstance sndTranscendance;
+    public FMOD.Studio.EventInstance sndTheme;
+	public FMOD.Studio.EventInstance sndBase;
+	public FMOD.Studio.EventInstance sndTranse;
+	public FMOD.Studio.EventInstance sndTranscendance;
 	FMOD.Studio.PLAYBACK_STATE playState;
     // Use this for initialization
 
@@ -63,9 +65,9 @@ public class Rythme : MonoBehaviour
 		if (SceneManager.GetActiveScene().name != "Racana_Foret" && SceneManager.GetActiveScene().name != "Racana_Donjon_LD")
         {
             sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
-            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
-            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
-            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundVillage);
+            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundFin);
+            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundFin);
+            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundFin);
         }
         if (SceneManager.GetActiveScene().name == "Racana_Foret" )
         {
@@ -78,10 +80,18 @@ public class Rythme : MonoBehaviour
         {
             gameObject.GetComponent<Player>().canMusic = true;
             combo = 0;
-            sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonBase);
-            sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonBase);
-            sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranse);
-            sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundDonjonTranscendance);
+			if (!boss) {
+				sndTheme = FMODUnity.RuntimeManager.CreateInstance (selectsoundDonjonBase);
+				sndBase = FMODUnity.RuntimeManager.CreateInstance (selectsoundDonjonBase);
+				sndTranse = FMODUnity.RuntimeManager.CreateInstance (selectsoundDonjonTranse);
+				sndTranscendance = FMODUnity.RuntimeManager.CreateInstance (selectsoundDonjonTranscendance);
+			} else 
+			{
+				sndTheme = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+				sndBase = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossBase);
+				sndTranse = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranse);
+				sndTranscendance = FMODUnity.RuntimeManager.CreateInstance(selectsoundBossTranscendance);
+			}
         }
 		if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic && gameObject.tag == "Player")
 		{ 
@@ -90,10 +100,7 @@ public class Rythme : MonoBehaviour
         bpm = bpmInitial;
 
         //if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
-        if (!tuto)
-        {
             MusicPlay();
-        }
 		
     }
 
@@ -200,6 +207,7 @@ public class Rythme : MonoBehaviour
         sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
     }
 
     public void MusicPlay()
@@ -208,5 +216,6 @@ public class Rythme : MonoBehaviour
         sndBase.start();
         sndTranse.start();
         sndTranscendance.start();
+
     }
 }
