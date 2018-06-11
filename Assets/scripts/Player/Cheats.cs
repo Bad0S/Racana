@@ -75,9 +75,9 @@ public class Cheats : MonoBehaviour
         }
 		if (Input.GetKeyDown(KeyCode.Keypad4))
 		{
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
-			SceneManager.LoadScene("Racana_Donjon_LD");
-			//GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraBehaviour>().triggerBoss.transform.position;
+			//GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
+			//SceneManager.LoadScene("Racana_Donjon_LD");
+			GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().position = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraBehaviour>().triggerBoss.GetComponent<Transform>().position;
 		}
 		if (Input.GetKeyDown(KeyCode.Keypad5))
 		{

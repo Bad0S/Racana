@@ -75,6 +75,7 @@ public class Player: MonoBehaviour
 
 	//Rythm
 	public bool transcendance = false;
+	public GameObject transCadre;
 
 	public bool projectileShake;
 
@@ -255,6 +256,7 @@ public class Player: MonoBehaviour
 
 			if (transcendance == true) 
 			{
+				transCadre.SetActive (true);
 				/*for (float i = 0f; i < 1f; i += 0.1f) 
 				{
 					RaycastHit2D hit = Physics2D.Raycast (transform.position, new Vector2(déplacement.x - 0.5f + i,déplacement.y), 6f);
@@ -263,6 +265,10 @@ public class Player: MonoBehaviour
 						dashTarget = hit.transform;
 					}
 				}*/
+			}
+			if (transcendance == false) 
+			{
+				transCadre.SetActive (false);
 			}
 			if(canDash==true)
             {

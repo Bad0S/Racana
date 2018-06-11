@@ -154,6 +154,8 @@ public class Rythme : MonoBehaviour
             sndBase.setVolume(0f);
             sndTranse.setVolume(0f);
             sndTranscendance.setVolume(0f);
+
+			GetComponent<Player> ().transcendance = false;
         }
         if (combo == 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic) 
 		{
@@ -164,6 +166,8 @@ public class Rythme : MonoBehaviour
             sndBase.setVolume(1f);
             sndTranse.setVolume(0f);
             sndTranscendance.setVolume(0f);
+
+			GetComponent<Player> ().transcendance = false;
         }
 		if (combo < 20 && combo > 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
         {
@@ -174,6 +178,8 @@ public class Rythme : MonoBehaviour
             sndBase.setVolume(0f);
             sndTranse.setVolume(1f);
             sndTranscendance.setVolume(0f);
+
+			GetComponent<Player> ().transcendance = false;
         }
 		if (combo >= 20 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
 		{
