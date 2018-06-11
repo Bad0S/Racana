@@ -173,13 +173,17 @@ public class Player: MonoBehaviour
 			{
 				tauxCharge++;
 				DisableListElements (paliers);
+
 				paliers [tauxCharge-1].SetActive (true);
+
 				chargeAttaque = 0;
 			}
 			else if (chargeAttaque > beat*2 && tauxCharge >= 4){
 				tauxCharge = 1;
 				DisableListElements (paliers);
+
 				paliers [tauxCharge-1].SetActive (true);
+
 				chargeAttaque = 0;
 			}
 		}

@@ -17535,7 +17535,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
@@ -34816,31 +34816,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: elementsPasseArriere.Array.size
-      value: 70
-      objectReference: {fileID: 0}
     - target: {fileID: 4720305662160228, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1383.1
@@ -34873,15 +34848,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: transCadre
+      value: 
+      objectReference: {fileID: 1023747755}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: menuInGame
+      value: 
+      objectReference: {fileID: 1210322799}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[0]
       value: 
       objectReference: {fileID: 867323610}
-    - target: {fileID: 1752530113218724, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[1]
@@ -34892,162 +34873,6 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[2]
       value: 
       objectReference: {fileID: 255169021}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: MovSpeed
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].line
-      value: "On va revoir les bases avant de te lacher dans la nature.Va frapper
-        avec X ce monstre que j\u2019ai deja affaibli, la-bas."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].actorName
-      value: Abhaya
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].actorName
-      value: Abhaya
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].actorName
-      value: Abhaya
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].actorName
-      value: Abhaya
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].line
-      value: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
-        l\u2019ennemi. Utilise RB ou A pour l\u2019invoquer !"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].line
-      value: "Je veux v\xE9rifier ta condition physique."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114296296015289104, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].line
-      value: "Ne t'inqui\xE8te pas, je l'ai d\xE9j\xE0 affaibli."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].line
-      value: "Bon, maintenant je veux voir le r\xE9sultat de ton apprentissage."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].line
-      value: Repousse-moi cet ennemi!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].line
-      value: Finis-le.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].line
-      value: "Et grave \xE7a dans ta m\xE9moire:"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[3].line
-      value: "En ce monde, tout, toi, moi, les monstres dehors, ABSOLUMENT tout est
-        r\xE9gi par la musique. Utilise-la \xE0 ton avantage."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[1].line
-      value: Au revoir.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].actorName
-      value: Savitr
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[2].line
-      value: "Et n'oublie jamais, le rythme est la cl\xE9."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].actorName
-      value: 'abhaya '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691990492440418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].line
-      value: "Whoa la grande forme ! la deuxieme technique te permettra de repousser
-        l\u2019ennemi. Utilise Y pour l\u2019invoquer !\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].actorName
-      value: Abhaya
-      objectReference: {fileID: 0}
-    - target: {fileID: 114198651966687912, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].line
-      value: "Pas mal !  il ne reste que quelques coup avant qu\u2019il ne soit K.O.
-        defonce le !"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].actorName
-      value: 'abhaya '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129241156187884, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: dialogues.Array.data[0].line
-      value: "tu t\u2019en tires parfaitement bien ! j\u2019ai confiance en toi sur
-        cette mission. Bon courage ma petite Racana !"
-      objectReference: {fileID: 0}
-    - target: {fileID: 212551638888372362, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[3]
@@ -35368,31 +35193,6 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[66]
       value: 
       objectReference: {fileID: 1185579508}
-    - target: {fileID: 199814356792081412, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 199475651054548392, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 199330249450651400, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 199855922400604904, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 199576375042746370, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
         type: 2}
       propertyPath: elementsPasseArriere.Array.data[67]
@@ -35408,38 +35208,6 @@ Prefab:
       propertyPath: elementsPasseArriere.Array.data[69]
       value: 
       objectReference: {fileID: 1742557942}
-    - target: {fileID: 114141408560518316, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: elementsPasseArriere.Array.data[70]
-      value: 
-      objectReference: {fileID: 1742557942}
-    - target: {fileID: 212759007458657628, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: menuInGame
-      value: 
-      objectReference: {fileID: 1210322799}
-    - target: {fileID: 114061833848478418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: initial
-      value: 
-      objectReference: {fileID: 11400000, guid: 115033ea693365c4eb33b973b8a27ef3,
-        type: 2}
-    - target: {fileID: 114061833848478418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: instrument
-      value: 
-      objectReference: {fileID: 11400000, guid: e5272e96a237ee4438c3311ccdf61bfb,
-        type: 2}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: transCadre
-      value: 
-      objectReference: {fileID: 1023747755}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_IsPrefabParent: 0
@@ -67251,7 +67019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1221184927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75878,7 +75646,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1158699079800954, guid: d4e831f036a4f8c40b825c3b8699c93a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61278580740541548, guid: d4e831f036a4f8c40b825c3b8699c93a,
         type: 2}
