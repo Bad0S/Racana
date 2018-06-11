@@ -32,7 +32,7 @@ public class health : MonoBehaviour {
     public string selectPlayerHit;
 
     FMOD.Studio.EventInstance sndHurt;
-    FMOD.Studio.EventInstance playerHit;
+	FMOD.Studio.EventInstance playerHit;
 
     private GameObject player;
 	// Use this for initialization
@@ -44,6 +44,7 @@ public class health : MonoBehaviour {
 	public bool killedboss;
 
 	bool playerDiedededed;
+
 
 
 	void Start () 

@@ -1264,9 +1264,9 @@ MonoBehaviour:
   musicTime: 0
   beats: 1
   combo: -1
-  initial: {fileID: 11400000, guid: 115033ea693365c4eb33b973b8a27ef3, type: 2}
-  instrument: {fileID: 11400000, guid: e5272e96a237ee4438c3311ccdf61bfb, type: 2}
-  transe: {fileID: 11400000, guid: 3f7fe93bb07d2164faa1a7844ebd4325, type: 2}
+  initial: {fileID: 11400000, guid: f224147513273c94093cad963d4df7ee, type: 2}
+  instrument: {fileID: 0}
+  transe: {fileID: 11400000, guid: 9ae8379bd52baa34dbe5a16af30afb9f, type: 2}
   Transcendance: {fileID: 11400000, guid: 0c433e990ee8b824cbd5872a21080699, type: 2}
   isBeating: 0
   boss: 0
@@ -1516,10 +1516,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26f18062469b2e4eab83fab7d738a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectsoundSlash1: 
-  selectsoundSlash2: 
-  selectsoundSlash3: 
-  selectsoundSlash4: 
+  selectsoundSlash1: event:/CoupTemps1
+  selectsoundSlash2: event:/CoupTemps2
+  selectsoundSlash3: event:/CoupTemps3
+  selectsoundSlash4: event:/CoupTemps4
   selectsoundDash: event:/Dash
   selectsoundRepousse: event:/Repousse
   selectsoundWoosh: event:/Woosh
