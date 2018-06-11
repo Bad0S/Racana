@@ -83,7 +83,7 @@ public class health : MonoBehaviour {
 			{
                 playerHit.start();
 				LifeBar [life-1].sprite = pvVide;
-				StartCoroutine (Vibration (0.07f, 0.6f));
+				StartCoroutine (Vibration (0.08f, 0.8f));
 
 				StartCoroutine (Damage (0.2f,0.14f, 0.02f));
 				invincible = true;

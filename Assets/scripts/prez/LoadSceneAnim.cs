@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LoadSceneAnim : MonoBehaviour {
 	public string scene;
-	public RawImage fadeOutUIImage;
+	public SpriteRenderer fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
 	public enum FadeDirection
 	{

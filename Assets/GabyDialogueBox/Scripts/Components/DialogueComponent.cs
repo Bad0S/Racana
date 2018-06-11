@@ -34,6 +34,8 @@ public class DialogueComponent : MonoBehaviour
     public bool inDialogue = false;
     private float timer = 0f;
     
+	GameObject[] ennemisArray;
+	GameObject player;
     // Pour utiliser cette fonction, appelle la depuis un autre script avec un GetComponent<DialogueComponent>().StartDialogue()
     public void StartDialogue()
     {
@@ -57,13 +59,14 @@ public class DialogueComponent : MonoBehaviour
 
         // On affiche la boîte de dialogue
         dialogueBox.SetActive(true);
-
         // On récupère les components de texte de l'UI
         TextMeshProUGUI textBox = GameObject.Find("TextPanelText").GetComponent<TextMeshProUGUI>();
         TextMeshProUGUI actorName = GameObject.Find("NamePanelLeftText").GetComponent<TextMeshProUGUI>();
 
         // On lance la fonction principale et on lui envoie tout ce dont elle a besoin
         StartCoroutine(DialogueCoroutine(textBox, actorName, dialogues));
+		print ("bite");
+
     }
 
     public void Update()
@@ -80,22 +83,26 @@ public class DialogueComponent : MonoBehaviour
     {
         // On empêche le dialogue de se lancer deux fois
         inDialogue = true;
-		GameObject player=  GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
-		player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
-		player.GetComponent <Player>().enabled = false ;
-		player.GetComponent <Rigidbody2D>().velocity = Vector3.zero ;
-		player.GetComponent <health>().enabled = false ;
-		GameObject[] ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
-		foreach (GameObject ennemi in ennemisArray) 
-		{
-			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
-			{ennemi.GetComponent<EnemyBehaviour> ().enabled = false;}
-			if (ennemi.GetComponent<BambouBehaviour> () != null) 
-			{ennemi.GetComponent<BambouBehaviour> ().enabled = false;}
-			if (ennemi.GetComponent<TigreBehavior> () != null) 
-			{ennemi.GetComponent<TigreBehavior> ().enabled = false;}
+		try{
+			player=  GameObject.FindGameObjectWithTag ("Player");
+			player.GetComponent <Player>().anim.SetBool ("IsIdle", true);
+			player.GetComponent <Player>().anim.SetBool ("IsMoving", false);
+			player.GetComponent <Player>().enabled = false ;
+			player.GetComponent <Rigidbody2D>().velocity = Vector3.zero ;
+			player.GetComponent <health>().enabled = false ;
+			ennemisArray = GameObject.FindGameObjectsWithTag ("Enemy");
+			foreach (GameObject ennemi in ennemisArray) 
+			{
+				if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+				{ennemi.GetComponent<EnemyBehaviour> ().enabled = false;}
+				if (ennemi.GetComponent<BambouBehaviour> () != null) 
+				{ennemi.GetComponent<BambouBehaviour> ().enabled = false;}
+				if (ennemi.GetComponent<TigreBehavior> () != null) 
+				{ennemi.GetComponent<TigreBehavior> ().enabled = false;}
+			}
+
 		}
+		catch{}
 
 
         // On établit où est-ce qu'on en est
@@ -160,18 +167,22 @@ public class DialogueComponent : MonoBehaviour
 
         // Si on est sorti de la boucle, c'est qu'on a affiché toutes les lignes, on peut donc désactiver l'UI de la boite de dialogue
         dialogueBox.SetActive(false);
-		GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
-		foreach (GameObject ennemi in ennemisArray) 
-		{
-			if (ennemi.GetComponent<EnemyBehaviour> () != null) 
-			{ennemi.GetComponent<EnemyBehaviour> ().enabled = true;}
-			if (ennemi.GetComponent<BambouBehaviour> () != null) 
-			{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
-			if (ennemi.GetComponent<TigreBehavior> () != null) 
-			{ennemi.GetComponent<TigreBehavior> ().enabled = true;}
+		try{
+			GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().enabled = true ;
+			foreach (GameObject ennemi in ennemisArray) 
+			{
+				if (ennemi.GetComponent<EnemyBehaviour> () != null) 
+				{ennemi.GetComponent<EnemyBehaviour> ().enabled = true;}
+				if (ennemi.GetComponent<BambouBehaviour> () != null) 
+				{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
+				if (ennemi.GetComponent<TigreBehavior> () != null) 
+				{ennemi.GetComponent<TigreBehavior> ().enabled = true;}
+			}
+			player.GetComponent <health>().enabled = true ;
 		}
-		player.GetComponent <health>().enabled = true ;
 
+
+		catch{}
 
         // On dit qu'on peut relancer le dialogue
         inDialogue = false;
