@@ -23,6 +23,7 @@ public class CasterDroit : MonoBehaviour {
 	public float frame = 0.5f; // frame d'esquive du player
 	public LayerMask layerLaser;
 
+
 	//FX 
 	public GameObject casterFX;
 	public GameObject chargeTirFX;
@@ -37,7 +38,9 @@ public class CasterDroit : MonoBehaviour {
 	//death
 	public bool deathPhase = false;
 
-	void Start(){
+	void Start()
+	{
+		
 	}
 
 	// Update is called once per frame

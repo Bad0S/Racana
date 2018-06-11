@@ -10,7 +10,13 @@ public class Player: MonoBehaviour
 {
     //Sound
     [FMODUnity.EventRef]
-    public string selectsoundSlash;
+    public string selectsoundSlash1;
+	[FMODUnity.EventRef]
+	public string selectsoundSlash2;
+	[FMODUnity.EventRef]
+	public string selectsoundSlash3;
+	[FMODUnity.EventRef]
+	public string selectsoundSlash4;
     [FMODUnity.EventRef]
     public string selectsoundDash;
     [FMODUnity.EventRef]
@@ -99,7 +105,7 @@ public class Player: MonoBehaviour
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
-        sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash);
+        sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
         sndDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
         sndRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
         sndWoosh = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
