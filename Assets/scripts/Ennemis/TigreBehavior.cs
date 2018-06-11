@@ -41,6 +41,10 @@ public class TigreBehavior : MonoBehaviour {
 	public float vitesseBond =1;
 	public float timerWaitRepousse=0;
 
+	//Idle
+	public bool idleCanMove;
+	public bool idling;
+
 	//fuite post morsure
 
 	int damage =1;
@@ -158,7 +162,10 @@ public class TigreBehavior : MonoBehaviour {
 
 		//PATHFINDING
 		if (targetVector.magnitude < maxDetectionRange && isFighting == false) {
-			
+			if (idling == true) 
+			{
+				StopCoroutine("MoveAndWait" ); 
+			}
 			anim.SetBool ("IsMoving", true);
 			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
 
@@ -187,7 +194,14 @@ public class TigreBehavior : MonoBehaviour {
 			pastFlip = rb2D.velocity.x;
 			timerFlip = 0;
 		}
-
+		if (idleCanMove == true && isFighting == false)
+		{
+			StartCoroutine(MoveAndWait(Random.Range(0.7f,1.2f),Random.Range(1f,1.5f)));
+		}
+		else if (idling == false)
+		{
+			idleCanMove = true;
+		}
 		/*if (Physics2D.OverlapCollider (GetComponent<Collider2D> (), cFilter, resultings) > 0) {
 			if (resultings [0].tag == "AttackHitbox") {
 				Vector3 KnockbackVector = Vector3.Normalize(transform.position - resultings[0].transform.position);
@@ -195,6 +209,19 @@ public class TigreBehavior : MonoBehaviour {
 			}
 		}*/			
 
+	}
+	IEnumerator MoveAndWait(float secMove,float secWait) // l'idle
+	{
+		idleCanMove = false;
+		idling = true;
+		rb2D.velocity = (new Vector2 (Random.Range(-0.3f,0.3f)*2000,Random.Range(-0.3f,0.3f)*2000));
+		anim.SetBool ("IsMoving", true);
+		yield return new WaitForSeconds(secMove);
+		rb2D.velocity = (new Vector2 (0,0));
+		anim.SetBool ("IsMoving", false);
+		yield return new WaitForSeconds (secWait);
+		idleCanMove = true;
+		idling = false;
 	}
 
 	IEnumerator BiteSequence()

@@ -29,6 +29,10 @@ public class BambouBehaviour : MonoBehaviour {
 	public float vitesseBond =1;
 	public float timerWaitRepousse=0;
 
+	//Idle
+	public bool idleCanMove;
+	public bool idling;
+
 	//fuite post morsure
 
 	int damage =1;
@@ -123,6 +127,10 @@ public class BambouBehaviour : MonoBehaviour {
 
 		//PATHFINDING
 		if (targetVector.magnitude < maxDetectionRange && isFighting == false) {
+			if (idling == true) 
+			{
+				StopCoroutine("MoveAndWait" ); 
+			}
 
 			anim.SetBool ("IsMoving", true);
 			if (timerWaitRepousse > 0.35f && aEteRepousse == false) {
@@ -141,13 +149,27 @@ public class BambouBehaviour : MonoBehaviour {
 		} else {
 			GetComponent<SpriteRenderer> ().flipX = false;
 		}
-		/*if (Physics2D.OverlapCollider (GetComponent<Collider2D> (), cFilter, resultings) > 0) {
-			if (resultings [0].tag == "AttackHitbox") {
-				Vector3 KnockbackVector = Vector3.Normalize(transform.position - resultings[0].transform.position);
-				StartCoroutine (Hurt(KnockbackVector,resultings[0].GetComponent<AttackEffect>())); 
-			}
-		}*/			
-
+		if (idleCanMove == true && isFighting == false)
+		{
+			StartCoroutine(MoveAndWait(Random.Range(0.7f,1.2f),Random.Range(1f,2f)));
+		}
+		else if (idling == false)
+		{
+			idleCanMove = true;
+		}
+	}
+	IEnumerator MoveAndWait(float secMove,float secWait) // l'idle
+	{
+		idleCanMove = false;
+		idling = true;
+		rb2D.velocity = (new Vector2 (Random.Range(-0.3f*25f,0.3f*25f),Random.Range(-0.3f*25f,0.3f*25f)));
+		anim.SetBool ("IsMoving", true);
+		yield return new WaitForSeconds(secMove);
+		rb2D.velocity = (new Vector2 (0,0));
+		anim.SetBool ("IsMoving", false);
+		yield return new WaitForSeconds (secWait);
+		idleCanMove = true;
+		idling = false;
 	}
 
 	IEnumerator ShootSequence()
