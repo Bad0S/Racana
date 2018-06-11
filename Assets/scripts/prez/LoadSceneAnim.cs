@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadSceneAnim : MonoBehaviour {
+	public string scene;
 	public RawImage fadeOutUIImage;
 	public float fadeSpeed = 0.8f; 
 	public enum FadeDirection
@@ -15,9 +16,9 @@ public class LoadSceneAnim : MonoBehaviour {
 	// Use this for initialization
 
 
-	void LoadScenePrez(string sceneToLoad){
+	void LoadScenePrez(){
 		print ("bit");
-		StartCoroutine (FadeAndLoadScene (FadeDirection.In, sceneToLoad));
+		StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 
 	}
 

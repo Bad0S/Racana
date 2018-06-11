@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000055265078 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000003FEAA508 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -26,14 +26,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='FauveCri', format=2, channels=2, frequency=48000, lengthbytes=72320, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.122681.
@@ -42,14 +42,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
@@ -58,14 +58,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CombatBossTranse', format=2, channels=2, frequency=48000, lengthbytes=452608, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968140.
@@ -74,14 +74,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
@@ -90,14 +90,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CombatDonjonTranscendance', format=2, channels=2, frequency=48000, lengthbytes=440832, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968628.
@@ -106,14 +106,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
@@ -122,14 +122,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CombatBossTranscendance', format=2, channels=2, frequency=48000, lengthbytes=411232, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968140.
@@ -138,14 +138,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CombatBossBase', format=2, channels=2, frequency=48000, lengthbytes=410976, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
@@ -154,14 +154,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='FauveMorsure', format=2, channels=2, frequency=48000, lengthbytes=29280, lengthpcm=33231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967651.
@@ -170,37 +170,1738 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 10356224
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 35104
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007678F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000073E8F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8C46BE4B0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8C46BE480
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8C46BE580
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8C46BE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001983DB38
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000005579C6B8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Repousse', format=2, channels=2, frequency=48000, lengthbytes=79936, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
-[LOG] SoundI::release                          :  (00000000374BA7F8)
-[LOG] SoundI::release                          :     FauveCri (000000003FEC8758)
-[LOG] SoundI::release                          :  (00000000374BA688)
-[LOG] SoundI::release                          :     Bambou (000000003FEC8278)
-[LOG] SoundI::release                          :  (00000000374BA968)
-[LOG] SoundI::release                          :     Dash (000000003FEC7718)
-[LOG] SoundI::release                          :  (0000000000171B18)
-[LOG] SoundI::release                          :     Repousse (000000003FEC8DD8)
-[LOG] SoundI::release                          :  (00000000374BA3A8)
-[LOG] SoundI::release                          :     CombatDonjonTranscendance (000000003FEC78B8)
-[LOG] SoundI::release                          :  (0000000000172248)
-[LOG] SoundI::release                          :     Groupie (000000003FEC7098)
-[LOG] SoundI::release                          :  (00000000001720D8)
-[LOG] SoundI::release                          :     CombatBossTranscendance (000000003FEC7D98)
-[LOG] SoundI::release                          :  (00000000374BA518)
-[LOG] SoundI::release                          :     CombatBossTranse (000000003FEC7F38)
-[LOG] SoundI::release                          :  (00000000001723B8)
-[LOG] SoundI::release                          :     CombatBossBase (000000003FEC7238)
-[LOG] SoundI::release                          :  (0000000000172528)
-[LOG] SoundI::release                          :     FauveMorsure (000000003FEC88F8)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000000003F8B9708 : node = 0000000055037180
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F8B9708
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000055037298
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003F8B98B8 : node = 0000000055036EE0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003F8B9A68 : node = 0000000055037420
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003F8B9558 : node = 0000000055037030
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000005537AAC8 : node = 00000000550372D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 3
+[ERR] assert                                   :     assertion: 'level >= 0.0f' failed
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F8B9708
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F8B98B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000055036FF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Forêt', format=2, channels=2, frequency=48000, lengthbytes=2348320, lengthpcm=2126768, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967957.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F8B98B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F8B9A68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000055037538
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatBase', format=2, channels=2, frequency=48000, lengthbytes=391488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968018.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F8B9A68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F8B9558
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000055037148
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatTranse', format=2, channels=2, frequency=48000, lengthbytes=366176, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F8B9558
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005537AAC8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000550373E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatTranscendance', format=2, channels=2, frequency=48000, lengthbytes=412160, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968475.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005537AAC8
+[LOG] SoundI::getSubSound                      : sound 000000003F8B9708.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003F8B98B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003F8B9A68.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003F8B9558.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000005537AAC8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003F871978 : node = 000000005537B8E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F871978
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B9F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F871978
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000003F871978.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000003F8B9708)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF530B8)
+[LOG] SoundI::release                          :     GardienBeat (000000000015A148)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003F871468 : node = 000000005537B3A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F871468
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B4B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F871468
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000003F871468.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000003F871978)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF552D8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF0FF8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003F8717C8 : node = 000000005537B790
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F8717C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B8A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F8717C8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000003F8717C8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000003F871468)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF53598)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF1868)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003F871978 : node = 000000005537B8E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F871978
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003F871468 : node = 000000005537B3A0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B9F8
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003F871618 : node = 000000005537B4F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000005513C3F8 : node = 000000005537B640
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000003FF52EC8.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F871978
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F871468
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B4B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatBase', format=2, channels=2, frequency=48000, lengthbytes=391488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968018.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F871468
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003F871618
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B608
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatTranse', format=2, channels=2, frequency=48000, lengthbytes=366176, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003F871618
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513C3F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ForêtCombatTranscendance', format=2, channels=2, frequency=48000, lengthbytes=412160, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968475.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513C3F8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000003F871978.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003F871468.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003F871618.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000005513C3F8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000003F8717C8)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF557B8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF1D78)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : ForêtCombatTranscendance (000000005537AAC8)
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (000000003FF533F8)
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (000000003FDDE478)
+[LOG] SoundI::release                          : ForêtCombatTranse (000000003F8B9558)
+[LOG] SoundI::release                          :     ForêtCombatTranse (000000003FF53DB8)
+[LOG] SoundI::release                          :     ForêtCombatTranse (0000000000159F98)
+[LOG] SoundI::release                          : ForêtCombatBase (000000003F8B9A68)
+[LOG] SoundI::release                          :     ForêtCombatBase (000000003FF54DF8)
+[LOG] SoundI::release                          :     ForêtCombatBase (0000000000159DE8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513B9D8 : node = 000000005537B790
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513B9D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B8A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513B9D8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513B9D8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000003F871978)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF530B8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF0FF8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513C248 : node = 000000005537B8E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513C248
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B9F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513C248
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513C248.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : ForêtCombatTranscendance (000000005513C3F8)
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (000000003FF552D8)
+[LOG] SoundI::release                          :     ForêtCombatTranscendance (0000000054BF0428)
+[LOG] SoundI::release                          : ForêtCombatTranse (000000003F871618)
+[LOG] SoundI::release                          :     ForêtCombatTranse (000000003FF51ED8)
+[LOG] SoundI::release                          :     ForêtCombatTranse (0000000054BF00C8)
+[LOG] SoundI::release                          : ForêtCombatBase (000000003F871468)
+[LOG] SoundI::release                          :     ForêtCombatBase (000000003FF51B98)
+[LOG] SoundI::release                          :     ForêtCombatBase (0000000054BF0C98)
+[LOG] SoundI::release                          : Forêt (000000003F8B98B8)
+[LOG] SoundI::release                          :     Forêt (000000003FF53A78)
+[LOG] SoundI::release                          :     Forêt (000000000015A2F8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513B9D8)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF52078)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF11A8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513B9D8 : node = 000000005537B3A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513B9D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B4B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513B9D8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513B9D8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513C248)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF53DB8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF1D78)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513C3F8 : node = 000000005537B640
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513C3F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513C3F8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513C3F8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513B9D8)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF51ED8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF00C8)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513B678 : node = 000000005537B3A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513B678
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B4B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513B678
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513B678.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513C3F8)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF52078)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF0428)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513C3F8 : node = 000000005537B4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513C3F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B608
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513C3F8
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513C3F8.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513B678)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF530B8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF0E48)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513BB88 : node = 000000005537B790
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513BB88
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B8A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513BB88
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513BB88.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513C3F8)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF552D8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF1D78)
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000005513C248 : node = 000000005537B640
+[LOG] SystemI::createSound                     : add node to async list : head = 000000003FF52EC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005513C248
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10356224
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 35104
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005537B758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GardienBeat', format=2, channels=2, frequency=48000, lengthbytes=71456, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005513C248
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::getSubSound                      : sound 000000005513C248.  Subsound index 0 / 1
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[ERR] assert                                   : assertion: 'level >= 0.0f' failed
+[LOG] SoundI::release                          : GardienBeat (000000005513C248)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF54DF8)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF1D78)
+[LOG] SoundI::release                          : GardienBeat (000000005513BB88)
+[LOG] SoundI::release                          :     GardienBeat (000000003FF55618)
+[LOG] SoundI::release                          :     GardienBeat (0000000054BF0938)
+[LOG] SoundI::release                          :  (000000003FEA5218)
+[LOG] SoundI::release                          :     FauveCri (000000003FF54918)
+[LOG] SoundI::release                          :  (000000003FEA5AB8)
+[LOG] SoundI::release                          :     Bambou (000000003FF52F18)
+[LOG] SoundI::release                          :  (000000003FEA54F8)
+[LOG] SoundI::release                          :     Dash (000000003FF52558)
+[LOG] SoundI::release                          :  (00000000551FB048)
+[LOG] SoundI::release                          :     Repousse (000000003FF54C58)
+[LOG] SoundI::release                          :  (000000003FEA57D8)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (000000003FF526F8)
+[LOG] SoundI::release                          :  (000000003FEA50A8)
+[LOG] SoundI::release                          :     Groupie (000000003FF53C18)
+[LOG] SoundI::release                          :  (000000003FEA5948)
+[LOG] SoundI::release                          :     CombatBossTranscendance (000000003FF53738)
+[LOG] SoundI::release                          :  (000000003FEA5388)
+[LOG] SoundI::release                          :     CombatBossTranse (000000003FF52BD8)
+[LOG] SoundI::release                          :  (000000003FEA4DC8)
+[LOG] SoundI::release                          :     CombatBossBase (000000003FF545D8)
+[LOG] SoundI::release                          :  (000000003FEA4F38)
+[LOG] SoundI::release                          :     FauveMorsure (000000003FF54778)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -210,4 +1911,6 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

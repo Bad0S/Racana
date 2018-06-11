@@ -16,7 +16,7 @@ public class SlideSwitch : MonoBehaviour {
 		public List<GO> list;
 	}
 
-	public int slide = 0;
+	public static int slide = 0;
 	public List<GameObject> slideObjet;
 	public NestedGOList Animations;
 	public List<GameObject> slideNumber;
