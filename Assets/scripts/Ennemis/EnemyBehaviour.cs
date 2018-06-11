@@ -356,7 +356,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	{
 		idleCanMove = false;
 		idling = true;
-		rb2D.velocity = (new Vector2 (Random.Range(-0.3f,0.3f)*2000,Random.Range(-0.3f,0.3f)*2000));
+		rb2D.velocity = (new Vector2 (Random.Range(-0.3f,0.3f)*100,Random.Range(-0.3f,0.3f)*100));
 		anim.SetBool ("IsMoving", true);
 		yield return new WaitForSeconds(secMove);
 		rb2D.velocity = (new Vector2 (0,0));

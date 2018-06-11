@@ -183,7 +183,7 @@ public class Player: MonoBehaviour
 		beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
 		chargeAttaque += Time.deltaTime;
 		if(canMusic == true){
-			if (chargeAttaque > beat*2 && tauxCharge < 4)
+			if (chargeAttaque > beat && tauxCharge < 4)
 			{
 				tauxCharge++;
 				DisableListElements (paliers);
@@ -192,7 +192,7 @@ public class Player: MonoBehaviour
 
 				chargeAttaque = 0;
 			}
-			else if (chargeAttaque > beat*2 && tauxCharge >= 4){
+			else if (chargeAttaque > beat && tauxCharge >= 4){
 				tauxCharge = 1;
 				DisableListElements (paliers);
 
