@@ -43,9 +43,9 @@ public class health : MonoBehaviour {
 	public bool startFade = false;
 	public bool killedboss;
 
-	bool playerDiedededed;
+	public bool playerDiedededed;
 
-
+	public GameObject porteBoss;
 
 	void Start () 
 	{
@@ -164,7 +164,8 @@ public class health : MonoBehaviour {
 			}
 			if (gameObject.tag == "Player") 
 			{
-				if(playerDiedededed == false){
+				if(playerDiedededed == false)
+				{
 					StartCoroutine (PlayerDeath());
 					playerDiedededed = true;
 				}
@@ -248,7 +249,7 @@ public class health : MonoBehaviour {
 
 	public IEnumerator PlayerDeath()
 	{
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Rythme>().MusicStop();
+        GetComponent<Rythme>().MusicStop();
 		gameObject.GetComponent<Animator>().SetTrigger ("Mort");
 		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
