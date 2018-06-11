@@ -93,6 +93,8 @@ public class DialogueComponent : MonoBehaviour
 			{ennemi.GetComponent<EnemyBehaviour> ().enabled = false;}
 			if (ennemi.GetComponent<BambouBehaviour> () != null) 
 			{ennemi.GetComponent<BambouBehaviour> ().enabled = false;}
+			if (ennemi.GetComponent<TigreBehavior> () != null) 
+			{ennemi.GetComponent<TigreBehavior> ().enabled = false;}
 		}
 
 
@@ -165,6 +167,8 @@ public class DialogueComponent : MonoBehaviour
 			{ennemi.GetComponent<EnemyBehaviour> ().enabled = true;}
 			if (ennemi.GetComponent<BambouBehaviour> () != null) 
 			{ennemi.GetComponent<BambouBehaviour> ().enabled = true;}
+			if (ennemi.GetComponent<TigreBehavior> () != null) 
+			{ennemi.GetComponent<TigreBehavior> ().enabled = true;}
 		}
 		player.GetComponent <health>().enabled = true ;
 

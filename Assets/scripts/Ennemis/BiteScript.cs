@@ -22,7 +22,6 @@ public class BiteScript : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player") 
 		{
-			print ("test");
 			other.gameObject.GetComponent<health>().Hurt(damage);
 			other.GetComponent <Rigidbody2D>().velocity = Vector2.zero;
 			other.GetComponent <Rigidbody2D>().AddForce (new Vector2( other.transform.position.x -transform.position.x,other.transform.position.y -transform.position.y).normalized*2f,ForceMode2D.Impulse);

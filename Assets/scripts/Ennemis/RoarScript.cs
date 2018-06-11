@@ -17,7 +17,6 @@ public class RoarScript : MonoBehaviour {
 	void Start () {
 	//	beat = GetComponentInParent <TigreBehavior> ().rythmeScript.timeBetweenBeatsInSeconds;
 		Destroy (gameObject,beat*2);
-		print ((beat)); 
 		canShake = true;
 		//transform.SetParent (transform);
 		alphaColor = GetComponent<SpriteRenderer>().color;
@@ -44,7 +43,6 @@ public class RoarScript : MonoBehaviour {
 			if(damaged == false){
 				other.gameObject.GetComponent<health>().Hurt(damage);
 				damaged = true;
-				print ("bite");
 			}
 		
 		}

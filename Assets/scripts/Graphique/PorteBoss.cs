@@ -88,29 +88,33 @@ public class PorteBoss : MonoBehaviour {
 			cacheBoss.GetComponent <CacheBossFader>().activation = true;
 			hitboxPorte.layer = 13;
 			if (enable == false){
-				foreach (var vivant in disabling) {
-					if(vivant.tag == "Player"){
-						vivant.GetComponent <Player>().enabled = true;
-						vivant.GetComponent <Animator>().speed=1;
-
-					}
-					else{
-						try{
-							vivant.GetComponent <EnemyBehaviour>().enabled = true;
+				try
+				{
+					foreach (var vivant in disabling) 
+					{
+						if(vivant.tag == "Player")
+						{
+							vivant.GetComponent <Player>().enabled = true;
 							vivant.GetComponent <Animator>().speed=1;
-
 						}
-						catch{}
-						try{
-							vivant.GetComponent <BambouBehaviour>().enabled = true;
-							vivant.GetComponent <Animator>().speed=1;
-
-
-
+						else
+						{
+							try
+							{
+								vivant.GetComponent <EnemyBehaviour>().enabled = true;
+								vivant.GetComponent <Animator>().speed=1;
+							}
+							catch{}
+							try
+							{
+								vivant.GetComponent <BambouBehaviour>().enabled = true;
+								vivant.GetComponent <Animator>().speed=1;
+							}
+							catch{}
 						}
-						catch{}
 					}
 				}
+				catch{}
 				enable = true;
 
 			}

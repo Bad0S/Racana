@@ -56,6 +56,7 @@ public class EntréeTuto : MonoBehaviour {
 
 		}
 		else if(other.tag == "Player" && other.GetComponent <Player>().hadTuto == true){
+			other.GetComponent<Rythme> ().MusicStop ();
 			StartCoroutine (FadeAndLoadScene (FadeDirection.In, scene));
 
 		}
