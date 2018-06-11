@@ -475,7 +475,6 @@ MonoBehaviour:
   killedBoss: 0
   scenes: []
   hasPlayed: 0
-  firstVillage: 0
 --- !u!4 &123144937
 Transform:
   m_ObjectHideFlags: 0
@@ -1159,12 +1158,6 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114023193623213992, guid: ef52ed1dd9ea9ab479d98841bbd3a92d,
-        type: 2}
-      propertyPath: profile
-      value: 
-      objectReference: {fileID: 11400000, guid: 115033ea693365c4eb33b973b8a27ef3,
-        type: 2}
     m_RemovedComponents:
     - {fileID: 114714012819051866, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ef52ed1dd9ea9ab479d98841bbd3a92d, type: 2}
@@ -2315,23 +2308,6 @@ Prefab:
       propertyPath: menuInGame
       value: 
       objectReference: {fileID: 567530615}
-    - target: {fileID: 114061833848478418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: initial
-      value: 
-      objectReference: {fileID: 11400000, guid: 115033ea693365c4eb33b973b8a27ef3,
-        type: 2}
-    - target: {fileID: 114061833848478418, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: instrument
-      value: 
-      objectReference: {fileID: 11400000, guid: e5272e96a237ee4438c3311ccdf61bfb,
-        type: 2}
-    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
-        type: 2}
-      propertyPath: transCadre
-      value: 
-      objectReference: {fileID: 700873474}
     m_RemovedComponents:
     - {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}

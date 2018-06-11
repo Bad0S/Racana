@@ -10,13 +10,7 @@ public class Player: MonoBehaviour
 {
     //Sound
     [FMODUnity.EventRef]
-    public string selectsoundSlash1;
-	[FMODUnity.EventRef]
-	public string selectsoundSlash2;
-	[FMODUnity.EventRef]
-	public string selectsoundSlash3;
-	[FMODUnity.EventRef]
-	public string selectsoundSlash4;
+    public string selectsoundSlash;
     [FMODUnity.EventRef]
     public string selectsoundDash;
     [FMODUnity.EventRef]
@@ -81,7 +75,6 @@ public class Player: MonoBehaviour
 
 	//Rythm
 	public bool transcendance = false;
-	public GameObject transCadre;
 
 	public bool projectileShake;
 
@@ -105,7 +98,7 @@ public class Player: MonoBehaviour
 		render = GetComponent<SpriteRenderer> ();
 		playerColl = GetComponent<Collider2D> ();
 		shaderDeBase = Shader.Find("Sprites/Default");
-        sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
+        sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash);
         sndDash = FMODUnity.RuntimeManager.CreateInstance(selectsoundDash);
         sndRepousse = FMODUnity.RuntimeManager.CreateInstance(selectsoundRepousse);
         sndWoosh = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
@@ -262,7 +255,6 @@ public class Player: MonoBehaviour
 
 			if (transcendance == true) 
 			{
-				transCadre.SetActive (true);
 				/*for (float i = 0f; i < 1f; i += 0.1f) 
 				{
 					RaycastHit2D hit = Physics2D.Raycast (transform.position, new Vector2(déplacement.x - 0.5f + i,déplacement.y), 6f);
@@ -271,10 +263,6 @@ public class Player: MonoBehaviour
 						dashTarget = hit.transform;
 					}
 				}*/
-			}
-			if (transcendance == false) 
-			{
-				transCadre.SetActive (false);
 			}
 			if(canDash==true)
             {
