@@ -123,9 +123,13 @@ public class GardienManager : MonoBehaviour
 			Instantiate (bambou, Pos1, Quaternion.identity);
 			Instantiate (bambou, Pos2, Quaternion.identity);
 			Instantiate (bambou, Pos3, Quaternion.identity);
-			Instantiate(bambou, Pos4, Quaternion.identity);
-			Instantiate(bambou, Pos5, Quaternion.identity);
-			Instantiate(bambou, Pos6, Quaternion.identity);
+			GameObject bambouCopy1 = Instantiate(bambou, Pos4, Quaternion.identity);
+			bambouCopy1.GetComponent <BambouBehaviour>().attackRangeMax *=0.5f;
+			GameObject bambouCopy2 = Instantiate(bambou, Pos5, Quaternion.identity);
+			bambouCopy1.GetComponent <BambouBehaviour>().attackRangeMax *=0.5f;
+			GameObject bambouCopy3 = Instantiate(bambou, Pos6, Quaternion.identity);
+			bambouCopy1.GetComponent <BambouBehaviour>().attackRangeMax *=0.5f;
+
             bambouSpawn = true;
 		}
 		active = true;

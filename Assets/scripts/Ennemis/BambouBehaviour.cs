@@ -9,7 +9,7 @@ public class BambouBehaviour : MonoBehaviour {
 	[SerializeField]private float speed;
 	public GameObject herbeTir;
 	[SerializeField]private float maxDetectionRange;
-	[SerializeField]private float attackRangeMax;
+	public float attackRangeMax;
 	public GameObject target;
 	private ContactFilter2D cFilter; 
 	private Collider2D[] resultings = new Collider2D[1];

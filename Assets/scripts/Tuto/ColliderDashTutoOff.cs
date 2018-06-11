@@ -10,6 +10,10 @@ public class ColliderDashTutoOff : MonoBehaviour {
 				other.GetComponent <Player> ().RB.SetActive (false);
 
 			}
+			else if(other.GetComponent <Player> ().isDashing == false){
+				other.GetComponent <Player> ().RBActivated = true;
+
+			}
 		} 
 	}
 }
