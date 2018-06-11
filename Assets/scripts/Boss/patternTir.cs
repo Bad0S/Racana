@@ -44,8 +44,13 @@ public class patternTir : MonoBehaviour {
 	bool heal2;
 	bool heal3;
 
+	[FMODUnity.EventRef]
+	public string selectsoundTirBoss;
+	FMOD.Studio.EventInstance sndTirBoss;
+
 	// Use this for initialization
 	void Start () {
+		sndTirBoss = FMODUnity.RuntimeManager.CreateInstance(selectsoundTirBoss);
 		rhythm = target.GetComponent <Rythme> ();
 
 		prochainPattern = beatLength * (0 + (Random.Range ( 0 , 2)));
@@ -224,6 +229,7 @@ public class patternTir : MonoBehaviour {
 	}
 
 	void TirGauche(){
+		sndTirBoss.start ();
 		GetComponentInChildren <CasterGauche> ().timerCasting = 0;
 		GetComponentInChildren <CasterGauche> ().petitLaserFX.SetActive (false);
 
@@ -231,30 +237,35 @@ public class patternTir : MonoBehaviour {
 
 	}
 	void TirDroit(){
+		sndTirBoss.start ();
 		GetComponentInChildren <CasterDroit> ().timerCasting = 0;
 
 		GetComponentInChildren <CasterDroit> ().shoot = true;
 
 	}
 	void TirBas1(){
+		sndTirBoss.start ();
 		externesBas [0].GetComponent <CasterExterne>().timerCasting = 0;
 
 		externesBas[0].GetComponent <CasterExterne> ().shoot = true;
 
 	}
 	void TirBas2(){
+		sndTirBoss.start ();
 		externesBas [1].GetComponent <CasterExterne>().timerCasting = 0;
 
 		externesBas[1].GetComponent <CasterExterne> ().shoot = true;
 
 	}
 	void TirExterneGauche(){
+		sndTirBoss.start ();
 		externesCotes [0].GetComponent <CasterExterne>().timerCasting = 0;
 
 		externesCotes[0].GetComponent <CasterExterne> ().shoot = true;
 
 	}
 	void TirExterneDroit(){
+		sndTirBoss.start ();
 		externesCotes [1].GetComponent <CasterExterne>().timerCasting = 0;
 
 		externesCotes[1].GetComponent <CasterExterne> ().shoot = true;
