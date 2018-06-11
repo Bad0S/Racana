@@ -138,7 +138,21 @@ public class Player: MonoBehaviour
 		{
 			Physics2D.IgnoreLayerCollision (8, 11, false);
 		}
-
+		if (canMusic) 
+		{
+			if ((GetComponent<Rythme> ().beats - 1) % 4 == 0) 
+			{sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash1);}
+			if ((GetComponent<Rythme> ().beats - 2) % 4 == 0) 
+			{sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash2);}
+			if ((GetComponent<Rythme> ().beats - 3) % 4 == 0) 
+			{sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash3);}
+			if (GetComponent<Rythme> ().beats % 4 == 0) 
+			{sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundSlash4);}
+		}
+		if (!canMusic) 
+		{
+			sndSlash = FMODUnity.RuntimeManager.CreateInstance(selectsoundWoosh);
+		}
 		if(projectileShake == true)
         {
 			StartCoroutine (Vibration (0.07f, 0.6f));

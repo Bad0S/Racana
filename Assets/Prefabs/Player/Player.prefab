@@ -1265,6 +1265,7 @@ MonoBehaviour:
   beats: 1
   combo: -1
   initial: {fileID: 11400000, guid: f224147513273c94093cad963d4df7ee, type: 2}
+  instrument: {fileID: 0}
   transe: {fileID: 11400000, guid: 9ae8379bd52baa34dbe5a16af30afb9f, type: 2}
   Transcendance: {fileID: 11400000, guid: 0c433e990ee8b824cbd5872a21080699, type: 2}
   isBeating: 0
@@ -1550,7 +1551,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26f18062469b2e4eab83fab7d738a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectsoundSlash: event:/Woosh
+  selectsoundSlash1: event:/CoupTemps1
+  selectsoundSlash2: event:/CoupTemps2
+  selectsoundSlash3: event:/CoupTemps3
+  selectsoundSlash4: event:/CoupTemps4
   selectsoundDash: event:/Dash
   selectsoundRepousse: event:/Repousse
   selectsoundWoosh: event:/Woosh
@@ -1589,6 +1593,7 @@ MonoBehaviour:
   timerDash: 0
   repousse: {fileID: 1216153459730528, guid: 4c034197cbf8a9241959ffbc33345e5b, type: 2}
   transcendance: 0
+  transCadre: {fileID: 0}
   projectileShake: 0
   canMusic: 0
   RB: {fileID: 1272942243294308}
@@ -1596,6 +1601,7 @@ MonoBehaviour:
   hadTuto: 0
   sceneIndex: 0
   killedBoss: 0
+  menuInGame: {fileID: 0}
 --- !u!114 &114915059078695548
 MonoBehaviour:
   m_ObjectHideFlags: 1

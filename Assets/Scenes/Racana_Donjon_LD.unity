@@ -8607,6 +8607,31 @@ Prefab:
       propertyPath: transCadre
       value: 
       objectReference: {fileID: 50257126}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: selectsoundSlash1
+      value: event:/CoupTemps1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: selectsoundSlash2
+      value: event:/CoupTemps2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: selectsoundSlash3
+      value: event:/CoupTemps3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114841462141412520, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: selectsoundSlash4
+      value: event:/CoupTemps4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114915059078695548, guid: 7ceec7312b3913249886d2dc6adb66d5,
+        type: 2}
+      propertyPath: selectPlayerHit
+      value: event:/HitLowPass
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114343835145307282, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7ceec7312b3913249886d2dc6adb66d5, type: 2}
