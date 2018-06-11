@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healItem: {fileID: 0}
   counterHeal: 0
-  life: 8
+  life: 6
   damage: 1
   invincible: 0
   invincibleTime: 0
@@ -162,6 +162,8 @@ MonoBehaviour:
   pvVide: {fileID: 0}
   selectsoundHurt: event:/Hit
   selectPlayerHit: 
+  startFade: 0
+  killedboss: 0
 --- !u!212 &212489112934010194
 SpriteRenderer:
   m_ObjectHideFlags: 1

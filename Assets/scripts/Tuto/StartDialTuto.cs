@@ -32,6 +32,7 @@ public class StartDialTuto : MonoBehaviour {
 			}
 		}
 		if(dialEnd == true &&GetComponent<DialogueComponent>().inDialogue == false ){
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rythme> ().MusicStop ();
 			faderBox.enabled = true;
 
 		}

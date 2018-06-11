@@ -16,6 +16,8 @@ public class PositionSetter : MonoBehaviour
 	public bool hasPlayed;
 	public bool firstVillage;
 	private Animator camAnim;
+	private Scene scene;
+	public bool boss;
 
 	void Awake ()
 	{
@@ -41,6 +43,11 @@ public class PositionSetter : MonoBehaviour
 		{
 			StartCoroutine (IntroVillage ());
 			firstVillage = true;
+		}
+		else if (scene.name == "Racana_Village" && firstVillage == true) 
+		{
+			camAnim = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Animator> ();
+			camAnim.enabled = false;
 		}
 	}
 

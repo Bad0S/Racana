@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000005113E1D8 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000055B18418 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -24,163 +24,1193 @@
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 00000000506D5048 : node = 0000000050CE9A70
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000486EAC98.  list count = 0
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EDE8 : node = 0000000056D8DB40
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EDE8
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D5048
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000506D53A8 : node = 0000000050CE9D10
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000486EAC98.  list count = 0
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000619A0228 : node = 0000000056D8E320
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8DC58
 [LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE9B88
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000506D51F8 : node = 0000000050CE8D50
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000486EAC98.  list count = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199F2F8 : node = 0000000056D8E5C0
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 1
 [LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000506D4118 : node = 0000000050CE93E0
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000486EAC98.  list count = 2
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199F4A8 : node = 0000000056D8E860
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 2
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D5048
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D53A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0228
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE9E28
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E438
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D53A8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D51F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0228
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F2F8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE8E68
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E6D8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranse', format=2, channels=2, frequency=48000, lengthbytes=411488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967743.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D51F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D4118
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F2F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F4A8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE94F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E978
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranscendance', format=2, channels=2, frequency=48000, lengthbytes=428672, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968536.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D4118
-[LOG] SoundI::getSubSound                      : sound 00000000506D5048.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 00000000506D53A8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 00000000506D51F8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 00000000506D4118.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F4A8
+[LOG] SoundI::getSubSound                      : sound 000000006199EDE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000619A0228.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199F2F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199F4A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EF98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EF98
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000000506D38A8 : node = 0000000050CE8EA0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000486EAC98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D38A8
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FB68 : node = 0000000056D8F580
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE8FB8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8F698
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D38A8
-[LOG] SoundI::getSubSound                      : sound 00000000506D38A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] SoundI::getSubSound                      : sound 000000006199FB68.  Subsound index 0 / 1
 [LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
 [LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D42C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
 [LOG] AsyncThread::threadFunc                  :     done setposition
 [LOG] AsyncThread::threadFunc                  :     done flush
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D42C8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D42C8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D42C8
-[LOG] SoundI::release                          : Groupie (00000000506D38A8)
-[LOG] SoundI::release                          :     Groupie (00000000486E8FA8)
-[LOG] SoundI::release                          :     Groupie (00000000506D42C8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::release                          : Groupie (000000006199FB68)
+[LOG] SoundI::release                          :     Groupie (000000001CF18AE8)
+[LOG] SoundI::release                          :     Groupie (00000000619A03D8)
 [LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000000506D42C8 : node = 0000000050CE8EA0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000486EAC98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D42C8
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A03D8 : node = 0000000056D8DDE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE8FB8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8DEF8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D42C8
-[LOG] SoundI::release                          : Groupie (00000000506D42C8)
-[LOG] SoundI::release                          :     Groupie (00000000486E9B08)
-[LOG] SoundI::release                          :     Groupie (00000000506D3A58)
-[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000000506D4988 : node = 0000000050CE8570
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000486EAC98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D4988
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000050CE8688
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D4988
-[LOG] SoundI::getSubSound                      : sound 00000000506D4988.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::getSubSound                      : sound 00000000619A03D8.  Subsound index 0 / 1
 [LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
 [LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D4B38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
 [LOG] AsyncThread::threadFunc                  :     done setposition
 [LOG] AsyncThread::threadFunc                  :     done flush
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D4B38
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000506D4B38
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000506D4B38
-[LOG] SoundI::release                          : Groupie (00000000506D4988)
-[LOG] SoundI::release                          :     Groupie (00000000486EA328)
-[LOG] SoundI::release                          :     Groupie (00000000506D4B38)
-[LOG] SoundI::release                          : CombatDonjonTranscendance (00000000506D4118)
-[LOG] SoundI::release                          :     CombatDonjonTranscendance (00000000486E9968)
-[LOG] SoundI::release                          :     CombatDonjonTranscendance (00000000506D47D8)
-[LOG] SoundI::release                          : CombatDonjonTranse (00000000506D51F8)
-[LOG] SoundI::release                          :     CombatDonjonTranse (00000000486E97C8)
-[LOG] SoundI::release                          :     CombatDonjonTranse (00000000506D5558)
-[LOG] SoundI::release                          : CombatDonjonBase (00000000506D5048)
-[LOG] SoundI::release                          :     CombatDonjonBase (00000000486E9628)
-[LOG] SoundI::release                          :     CombatDonjonBase (00000000506D4628)
-[LOG] SoundI::release                          : CombatDonjonBase (00000000506D53A8)
-[LOG] SoundI::release                          :     CombatDonjonBase (00000000486E8E08)
-[LOG] SoundI::release                          :     CombatDonjonBase (00000000506D4E98)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FB68 : node = 0000000056D8F430
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8F548
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199FD18 : node = 0000000056D8E1D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup4', format=2, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967590.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FD18
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E2E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FD18
+[LOG] SoundI::getSubSound                      : sound 000000006199FB68.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199FD18.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F658
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F658
+[LOG] SoundI::release                          : Groupie (00000000619A03D8)
+[LOG] SoundI::release                          :     Groupie (000000001CF18AE8)
+[LOG] SoundI::release                          :     Groupie (00000000619A0588)
+[LOG] SoundI::release                          : Coup4 (000000006199FB68)
+[LOG] SoundI::release                          :     Coup4 (000000001CF18C88)
+[LOG] SoundI::release                          :     Coup4 (000000006199FEC8)
+[LOG] SoundI::release                          : Hit (000000006199FD18)
+[LOG] SoundI::release                          :     Hit (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Hit (00000000619A0738)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FB68 : node = 0000000056D8DDE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8DEF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup2', format=2, channels=2, frequency=48000, lengthbytes=21920, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967804.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] SoundI::getSubSound                      : sound 000000006199FB68.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A0738 : node = 0000000056D8E1D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0738
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E2E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0738
+[LOG] SoundI::getSubSound                      : sound 00000000619A0738.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FEC8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FEC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FEC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FEC8
+[LOG] SoundI::release                          : Coup2 (000000006199FB68)
+[LOG] SoundI::release                          :     Coup2 (0000000056AA5A98)
+[LOG] SoundI::release                          :     Coup2 (000000006199FD18)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A03D8 : node = 0000000056D8EC50
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8ED68
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::release                          : Groupie (00000000619A0738)
+[LOG] SoundI::release                          :     Groupie (0000000056AA4F38)
+[LOG] SoundI::release                          :     Groupie (000000006199FEC8)
+[LOG] SoundI::getSubSound                      : sound 00000000619A03D8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FD18 : node = 0000000056D8F430
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FD18
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8F548
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup4', format=2, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967590.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FD18
+[LOG] SoundI::getSubSound                      : sound 000000006199FD18.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A0588 : node = 0000000056D8E9B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8EAC8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000619A0738 : node = 0000000056D8E1D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D807A8 : node = 0000000056D8DDE0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D80958 : node = 0000000056D8F580
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D7FF38 : node = 0000000056203070
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0738
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8E2E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D807A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8DEF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D807A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D80958
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056D8F698
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranse', format=2, channels=2, frequency=48000, lengthbytes=411488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967743.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D80958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D7FF38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203188
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranscendance', format=2, channels=2, frequency=48000, lengthbytes=428672, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968536.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D7FF38
+[LOG] SoundI::getSubSound                      : sound 00000000619A0738.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D807A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D80958.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D7FF38.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000619A0588.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Groupie (00000000619A03D8)
+[LOG] SoundI::release                          :     Groupie (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Groupie (000000006199FB68)
+[LOG] SoundI::release                          : CombatDonjonTranscendance (000000006199F4A8)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (0000000056AA4D98)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (000000006199F808)
+[LOG] SoundI::release                          : CombatDonjonBase (000000006199EDE8)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA6AD8)
+[LOG] SoundI::release                          :     CombatDonjonBase (000000006199F9B8)
+[LOG] SoundI::release                          : CombatDonjonBase (00000000619A0228)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA6118)
+[LOG] SoundI::release                          :     CombatDonjonBase (000000006199EF98)
+[LOG] SoundI::release                          : Coup4 (000000006199FD18)
+[LOG] SoundI::release                          :     Coup4 (0000000056AA6938)
+[LOG] SoundI::release                          :     Coup4 (000000006199FEC8)
+[LOG] SoundI::release                          : CombatDonjonTranse (000000006199F2F8)
+[LOG] SoundI::release                          :     CombatDonjonTranse (0000000056AA62B8)
+[LOG] SoundI::release                          :     CombatDonjonTranse (000000006199F658)
+[LOG] SoundI::release                          : Hit (00000000619A0588)
+[LOG] SoundI::release                          :     Hit (0000000056AA6458)
+[LOG] SoundI::release                          :     Hit (0000000041D80448)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041D80448 : node = 00000000562025F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D80448
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D80448
+[LOG] SoundI::getSubSound                      : sound 0000000041D80448.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F808
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F808
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A0228 : node = 00000000562035B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0228
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562036C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup3', format=2, channels=2, frequency=48000, lengthbytes=21728, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967773.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0228
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199F2F8 : node = 0000000056203460
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSound                     :     setdata soundi = 00000000619A03D8 : node = 0000000056203700
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203578
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 00000000619A0228.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F2F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203818
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::getSubSound                      : sound 000000006199F2F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000000619A03D8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Groupie (0000000041D80448)
+[LOG] SoundI::release                          :     Groupie (0000000056AA5C38)
+[LOG] SoundI::release                          :     Groupie (000000006199F808)
+[LOG] SoundI::release                          : Coup3 (00000000619A0228)
+[LOG] SoundI::release                          :     Coup3 (0000000056AA6798)
+[LOG] SoundI::release                          :     Coup3 (000000006199EDE8)
+[LOG] SoundI::release                          : Hit (00000000619A03D8)
+[LOG] SoundI::release                          :     Hit (0000000056AA5278)
+[LOG] SoundI::release                          :     Hit (000000006199F4A8)
+[LOG] SoundI::release                          : Hit (000000006199F2F8)
+[LOG] SoundI::release                          :     Hit (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Hit (000000006199EF98)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EDE8 : node = 0000000056204180
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EDE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056204298
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EDE8
+[LOG] SoundI::getSubSound                      : sound 000000006199EDE8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FEC8 : node = 00000000562025F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FEC8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FEC8
+[LOG] SoundI::getSubSound                      : sound 000000006199FEC8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (000000006199EDE8)
+[LOG] SoundI::release                          :     Dash (0000000056AA62B8)
+[LOG] SoundI::release                          :     Dash (000000006199F658)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EF98 : node = 0000000056203C40
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EF98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203D58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EF98
+[LOG] SoundI::getSubSound                      : sound 000000006199EF98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (000000006199FEC8)
+[LOG] SoundI::release                          :     Dash (0000000056AA5C38)
+[LOG] SoundI::release                          :     Dash (00000000619A03D8)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199F2F8 : node = 0000000056204180
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056204298
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199F4A8 : node = 0000000056203D90
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F4A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203EA8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 000000006199F2F8.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F4A8
+[LOG] SoundI::release                          : Dash (000000006199EF98)
+[LOG] SoundI::release                          :     Dash (0000000056AA6118)
+[LOG] SoundI::release                          :     Dash (000000006199EDE8)
+[LOG] SoundI::getSubSound                      : sound 000000006199F4A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EDE8 : node = 00000000562035B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EDE8
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199EF98 : node = 00000000562025F0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562036C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EF98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EF98
+[LOG] SoundI::getSubSound                      : sound 000000006199EDE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199EF98.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199F808 : node = 0000000056203460
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F808
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203578
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SoundI::release                          :     Groupie (000000006199F4A8)
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :         exinfo->initialseekpostype = 1
+[LOG] SoundI::release                          :         Groupie (0000000056AA4D98)
+[LOG] SoundI::release                          :         Groupie (000000006199FB68)
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F808
+[LOG] SoundI::getSubSound                      : sound 000000006199F808.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (000000006199F2F8)
+[LOG] SoundI::release                          :     Dash (0000000056AA6938)
+[LOG] SoundI::release                          :     Dash (00000000619A0588)
+[LOG] SoundI::release                          : Bambou (000000006199EF98)
+[LOG] SoundI::release                          :     Bambou (0000000056AA6458)
+[LOG] SoundI::release                          :     Bambou (000000006199F658)
+[LOG] SoundI::release                          : Bambou (000000006199EDE8)
+[LOG] SoundI::release                          :     Bambou (0000000056AA62B8)
+[LOG] SoundI::release                          :     Bambou (000000006199FD18)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EDE8 : node = 00000000562035B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EDE8
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199F9B8 : node = 00000000562029E0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562036C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F9B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202AF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F9B8
+[LOG] SoundI::getSubSound                      : sound 000000006199EDE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] SoundI::getSubSound                      : sound 000000006199F9B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FD18
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FD18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FD18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FD18
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EF98 : node = 00000000562025F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EF98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EF98
+[LOG] SoundI::getSubSound                      : sound 000000006199EF98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (000000006199F808)
+[LOG] SoundI::release                          :     Dash (0000000056AA5C38)
+[LOG] SoundI::release                          :     Dash (000000006199F4A8)
+[LOG] SoundI::release                          : Groupie (000000006199F9B8)
+[LOG] SoundI::release                          :     Groupie (0000000056AA5278)
+[LOG] SoundI::release                          :     Groupie (000000006199FD18)
+[LOG] SoundI::release                          : Groupie (000000006199EDE8)
+[LOG] SoundI::release                          :     Groupie (0000000056AA4D98)
+[LOG] SoundI::release                          :     Groupie (000000006199FB68)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199FB68 : node = 0000000056203D90
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199FB68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203EA8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199FB68
+[LOG] SoundI::getSubSound                      : sound 000000006199FB68.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A03D8 : node = 0000000056203C40
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203D58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::getSubSound                      : sound 00000000619A03D8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (000000006199EF98)
+[LOG] SoundI::release                          :     Dash (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Dash (00000000619A0228)
+[LOG] SoundI::release                          : Groupie (000000006199FB68)
+[LOG] SoundI::release                          :     Groupie (0000000056AA4D98)
+[LOG] SoundI::release                          :     Groupie (00000000619A0588)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199F2F8 : node = 0000000056204180
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056204298
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000006199EF98 : node = 0000000056202890
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EF98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562029A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SoundI::getSubSound                      :     sound 000000006199F2F8.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EF98
+[LOG] SoundI::getSubSound                      : sound 000000006199EF98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Dash (00000000619A03D8)
+[LOG] SoundI::release                          :     Dash (0000000056AA5C38)
+[LOG] SoundI::release                          :     Dash (000000006199EDE8)
+[LOG] SoundI::release                          : Bambou (000000006199F2F8)
+[LOG] SoundI::release                          :     Bambou (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Bambou (00000000619A0228)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A0228 : node = 00000000562029E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0228
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202AF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup4', format=2, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967590.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0228
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A03D8 : node = 0000000056203460
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A03D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203578
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 00000000619A0228.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A03D8
+[LOG] SoundI::getSubSound                      : sound 00000000619A03D8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000619A0588 : node = 00000000562042D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000619A0588
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199EDE8 : node = 00000000562035B0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562043E8
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199F9B8 : node = 0000000056203C40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000000006199F2F8 : node = 00000000562025F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000619A0588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199EDE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562036C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonBase', format=2, channels=2, frequency=48000, lengthbytes=419296, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968048.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199EDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F9B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203D58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranse', format=2, channels=2, frequency=48000, lengthbytes=411488, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967743.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F9B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatDonjonTranscendance', format=2, channels=2, frequency=48000, lengthbytes=428672, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968536.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F2F8
+[LOG] SoundI::getSubSound                      : sound 00000000619A0588.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199EDE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199F9B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000006199F2F8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : CombatDonjonTranscendance (0000000041D7FF38)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (0000000056AA4F38)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (0000000041D80298)
+[LOG] SoundI::release                          : CombatDonjonBase (0000000041D807A8)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA5A98)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000041D7FD88)
+[LOG] SoundI::release                          : CombatDonjonBase (00000000619A0738)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA50D8)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000041D80B08)
+[LOG] SoundI::release                          : CombatDonjonTranse (0000000041D80958)
+[LOG] SoundI::release                          :     CombatDonjonTranse (0000000056AA65F8)
+[LOG] SoundI::release                          :     CombatDonjonTranse (0000000041D800E8)
+[LOG] SoundI::release                          : Coup4 (00000000619A0228)
+[LOG] SoundI::release                          :     Coup4 (0000000056AA5C38)
+[LOG] SoundI::release                          :     Coup4 (000000006199FB68)
+[LOG] SoundI::release                          : Dash (000000006199EF98)
+[LOG] SoundI::release                          :     Dash (0000000056AA62B8)
+[LOG] SoundI::release                          :     Dash (000000006199FD18)
+[LOG] SoundI::release                          : Hit (00000000619A03D8)
+[LOG] SoundI::release                          :     Hit (0000000056AA5DD8)
+[LOG] SoundI::release                          :     Hit (000000006199FEC8)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004256F998 : node = 0000000056203460
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256F998
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203578
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup2', format=2, channels=2, frequency=48000, lengthbytes=21920, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967804.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256F998
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004256F488 : node = 0000000056203070
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256F488
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203188
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 000000004256F998.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256F488
+[LOG] SoundI::getSubSound                      : sound 000000004256F488.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004256FEA8 : node = 0000000056203D90
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256FEA8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203EA8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256FEA8
+[LOG] SoundI::getSubSound                      : sound 000000004256FEA8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Coup2 (000000004256F998)
+[LOG] SoundI::release                          :     Coup2 (0000000056AA5A98)
+[LOG] SoundI::release                          :     Coup2 (000000004256F128)
+[LOG] SoundI::release                          : Hit (000000004256F488)
+[LOG] SoundI::release                          :     Hit (0000000056AA6AD8)
+[LOG] SoundI::release                          :     Hit (000000004256F638)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004256F128 : node = 0000000056202740
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256F128
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202858
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Coup4', format=2, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967590.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256F128
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004256F488 : node = 0000000056203070
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256F488
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203188
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 000000004256F128.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Hit', format=2, channels=2, frequency=48000, lengthbytes=34880, lengthpcm=26480, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256F488
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004256EF78
+[LOG] SoundI::getSubSound                      :     sound 000000004256F488.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004256EF78
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041D7FF38 : node = 0000000056202890
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D7FF38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562029A8
+[LOG] SoundI::release                          :     Hit (000000004256FEA8)
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :         exinfo->suggestedsoundtype = 5
+[LOG] SoundI::release                          :         Hit (0000000056AA4D98)
+[LOG] SystemI::createSoundInternal             :         exinfo->initialseekpostype = 1
+[LOG] SoundI::release                          :         Hit (000000004256F7E8)
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bambou', format=2, channels=2, frequency=48000, lengthbytes=15808, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968781.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D7FF38
+[LOG] SoundI::getSubSound                      : sound 0000000041D7FF38.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Coup4 (000000004256F128)
+[LOG] SoundI::release                          :     Coup4 (0000000056AA5418)
+[LOG] SoundI::release                          :     Coup4 (000000004256F638)
+[LOG] SoundI::release                          : Bambou (0000000041D7FF38)
+[LOG] SoundI::release                          :     Bambou (0000000056AA6938)
+[LOG] SoundI::release                          :     Bambou (0000000041D80448)
+[LOG] SoundI::release                          : Hit (000000004256F488)
+[LOG] SoundI::release                          :     Hit (0000000056AA62B8)
+[LOG] SoundI::release                          :     Hit (000000004256F998)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041D807A8 : node = 0000000056203D90
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D807A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203EA8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dash', format=2, channels=2, frequency=48000, lengthbytes=80928, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.845215.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D807A8
+[LOG] SoundI::getSubSound                      : sound 0000000041D807A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006199F808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006199F808
+[LOG] SoundI::release                          : Dash (0000000041D807A8)
+[LOG] SoundI::release                          :     Dash (0000000056AA4F38)
+[LOG] SoundI::release                          :     Dash (0000000041D800E8)
+[LOG] SoundI::release                          : CombatDonjonTranscendance (000000006199F2F8)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (0000000056AA6458)
+[LOG] SoundI::release                          :     CombatDonjonTranscendance (000000004256EF78)
+[LOG] SoundI::release                          : CombatDonjonTranse (000000006199F9B8)
+[LOG] SoundI::release                          :     CombatDonjonTranse (0000000056AA6798)
+[LOG] SoundI::release                          :     CombatDonjonTranse (000000006199F808)
+[LOG] SoundI::release                          : CombatDonjonBase (000000006199EDE8)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA6118)
+[LOG] SoundI::release                          :     CombatDonjonBase (000000006199F658)
+[LOG] SoundI::release                          : CombatDonjonBase (00000000619A0588)
+[LOG] SoundI::release                          :     CombatDonjonBase (0000000056AA5F78)
+[LOG] SoundI::release                          :     CombatDonjonBase (000000006199F4A8)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041D807A8 : node = 0000000056202890
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D807A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562029A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 140
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Groupie', format=2, channels=2, frequency=48000, lengthbytes=18944, lengthpcm=22154, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D807A8
+[LOG] SoundI::getSubSound                      : sound 0000000041D807A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D80958
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D80958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D80958
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D80958
+[LOG] SoundI::release                          : Groupie (0000000041D807A8)
+[LOG] SoundI::release                          :     Groupie (0000000056AA6458)
+[LOG] SoundI::release                          :     Groupie (0000000041D80958)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041D7FD88 : node = 00000000562025F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D7FD88
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D800E8 : node = 0000000056203070
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056202708
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D7FF38 : node = 0000000056203460
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000041D80448 : node = 00000000562035B0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001CF18F78.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatBossBase', format=2, channels=2, frequency=48000, lengthbytes=409792, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D7FD88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D800E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203188
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatBossBase', format=2, channels=2, frequency=48000, lengthbytes=409792, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968689.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D800E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D7FF38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000056203578
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatBossTranse', format=2, channels=2, frequency=48000, lengthbytes=455104, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968414.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D7FF38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D80448
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Racana\LeBuild\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13530240
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 49760
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000562036C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CombatBossTranscendance', format=2, channels=2, frequency=48000, lengthbytes=419520, lengthpcm=354462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968536.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D80448
+[LOG] SoundI::getSubSound                      : sound 0000000041D7FD88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D800E8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D7FF38.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000041D80448.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041D807A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041D807A8
+[LOG] SoundI::release                          : CombatBossTranscendance (0000000041D80448)
+[LOG] SoundI::release                          :     CombatBossTranscendance (0000000056AA5A98)
+[LOG] SoundI::release                          :     CombatBossTranscendance (0000000041D80958)
+[LOG] SoundI::release                          : CombatBossTranse (0000000041D7FF38)
+[LOG] SoundI::release                          :     CombatBossTranse (0000000056AA6798)
+[LOG] SoundI::release                          :     CombatBossTranse (0000000041D807A8)
+[LOG] SoundI::release                          : CombatBossBase (0000000041D800E8)
+[LOG] SoundI::release                          :     CombatBossBase (0000000056AA6938)
+[LOG] SoundI::release                          :     CombatBossBase (0000000041D80298)
+[LOG] SoundI::release                          : CombatBossBase (0000000041D7FD88)
+[LOG] SoundI::release                          :     CombatBossBase (0000000056AA50D8)
+[LOG] SoundI::release                          :     CombatBossBase (0000000041D80B08)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

@@ -114,7 +114,6 @@ public class GardienManager : MonoBehaviour
 		player.GetComponent<health> ().enabled = true;
 		player.GetComponent <Player>().RB.SetActive (true);
 		player.GetComponent <Player>().RBActivated = true;
-		print ("test");
 
 
 		yield return new WaitForSeconds (1.1f);

@@ -155,19 +155,15 @@ public class patternTir : MonoBehaviour {
 					int rand = Random.Range (0, 4);
 					//int rand = 2;
 					if (rand == 0) {
-						print (rand + 1);
 						StartCoroutine (Pattern1Etat3 (beatLength));	
 
 					} else if (rand == 1) {
-						print (rand + 1);
 
 						StartCoroutine (Pattern2Etat3 (beatLength));	
 					} else if (rand == 2) {
-						print (rand + 1);
 
 						StartCoroutine (Pattern3Etat3 (beatLength));	
 					} else if (rand == 3) {
-						print (rand + 1);
 
 						StartCoroutine (Pattern4Etat3 (beatLength));	
 					}

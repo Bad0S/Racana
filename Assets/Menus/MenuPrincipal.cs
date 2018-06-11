@@ -22,12 +22,17 @@ public class MenuPrincipal : MonoBehaviour
 		In, //Alpha = 1
 		Out // Alpha = 0
 	}
+	[FMODUnity.EventRef]
+	public string selectsoundMenu;
+	FMOD.Studio.EventInstance sndMenu;
 
 	// Use this for initialization
 	void Start () 
 	{
 		boutons [numSelect].image.color = selected;
 		boutons [1].image.color = unselected;
+		sndMenu = FMODUnity.RuntimeManager.CreateInstance(selectsoundMenu);
+		sndMenu.start ();
 	}
 	
 	// Update is called once per frame
@@ -88,6 +93,7 @@ public class MenuPrincipal : MonoBehaviour
 	{
 		animMenu.SetTrigger ("Start");
 		yield return new WaitForSeconds (0.8f);
+		sndMenu.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 		StartCoroutine (FadeAndLoadScene (FadeDirection.In, sceneToLoad)); 
 	}
 
