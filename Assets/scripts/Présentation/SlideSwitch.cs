@@ -27,12 +27,17 @@ public class SlideSwitch : MonoBehaviour {
 		for (int i = 0; i < slideObjet.Count; i++) {
 			eventsParSlide [i] = Animations.list [i].list.Count;
 		}
+		slideObjet [0].SetActive (true);
+		numberSlide (slide);
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
+		if(slide!=0){
+			slideObjet [0].SetActive (false);
+		}
 
 		if(Input.GetButtonDown ("DiapoSuivant") == true){
 			if(eventsParSlide[slide] ==0){
@@ -60,11 +65,24 @@ public class SlideSwitch : MonoBehaviour {
 
 	}
 	void numberSlide(int page){
-		for (int i = 0; i < slideNumber.Count; i++) {
-			slideNumber [i].GetComponent <Text> ().fontSize = 23;
-			slideNumber [i].GetComponent <Text> ().color = Color.grey;
+		if(page == 0 ||page == slideNumber.Count - 1){
+			for (int i = 0; i < slideNumber.Count; i++) {
+				slideNumber [i].SetActive (false);
+			}
+
 		}
-		slideNumber [page].GetComponent <Text> ().fontSize = 42;
-		slideNumber [page].GetComponent <Text> ().color = Color.white;
+		else{
+			for (int i = 0; i < slideNumber.Count; i++) {
+				slideNumber [i].SetActive (true);
+
+				slideNumber [i].GetComponent <Text> ().fontSize = 23;
+				slideNumber [i].GetComponent <Text> ().color = Color.grey;
+			}
+			slideNumber [page].SetActive (true);
+
+			slideNumber [page].GetComponent <Text> ().fontSize = 42;
+			slideNumber [page].GetComponent <Text> ().color = Color.white;
+		}
+
 	}
 }
