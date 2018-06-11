@@ -351,7 +351,10 @@ public class Player: MonoBehaviour
 	}
 	IEnumerator repousseCoroutine()
 	{
-		sndRepousse.start();
+		if (canMusic) 
+		{sndRepousse.start ();}
+		if (!canMusic) 
+		{sndWoosh.start ();}
 		canAttack = false;
 		GameObject repousseInstance = (GameObject)Instantiate (repousse, (transform.position), Quaternion.identity);
 		repousseInstance.GetComponent <RepousseScript>().beat = GetComponent <Rythme> ().timeBetweenBeatsInSeconds;
