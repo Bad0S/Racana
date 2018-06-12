@@ -100,13 +100,17 @@ public class Rythme : MonoBehaviour
         bpm = bpmInitial;
 
         //if (playState != FMOD.Studio.PLAYBACK_STATE.PLAYING) 
-            MusicPlay();
-		
+		if(boss == false){
+			MusicPlay();
+
+		}
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
 		if (!GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic && gameObject.tag == "Player")
         { 
 			combo = -1;
@@ -190,6 +194,8 @@ public class Rythme : MonoBehaviour
         }
 		if (combo >= 20 && GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canMusic)
 		{
+			print ("bite");
+
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PostProcessingBehaviour>().profile = Transcendance;
             //GameObject.FindGameObjectWithTag ("MainCamera").GetComponentInChildren<SpriteRenderer> ().enabled= true;
             GetComponent<Player> ().MovSpeed = 200;
@@ -207,7 +213,6 @@ public class Rythme : MonoBehaviour
         sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
     }
 
     public void MusicPlay()
@@ -216,6 +221,7 @@ public class Rythme : MonoBehaviour
         sndBase.start();
         sndTranse.start();
         sndTranscendance.start();
+
 
     }
 }

@@ -95,7 +95,14 @@ public class health : MonoBehaviour {
 			{
                 sndHurt.start();
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
-				StartCoroutine (Vibration (0.05f, 0.9f));
+				if(GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().tauxCharge<4){
+					StartCoroutine (Vibration (0.05f, 0.5f));
+
+				}
+				else{
+					StartCoroutine (Vibration (0.05f, 0.9f));
+
+				}
 				StartCoroutine (PlayerHitFX (player));
 
 				player.GetComponent <Rythme>().combo += lifeToLose ;
@@ -106,8 +113,14 @@ public class health : MonoBehaviour {
 			if (gameObject.tag == "Boss") 
 			{
 				StartCoroutine (Damage (0.2f,0.05f, 0.1f));
-				StartCoroutine (Vibration (0.05f, 01f));
-				StartCoroutine (PlayerHitFX (player));
+				if(GameObject.FindGameObjectWithTag ("Player").GetComponent <Player>().tauxCharge<4){
+					StartCoroutine (Vibration (0.05f, 0.7f));
+
+				}
+				else{
+					StartCoroutine (Vibration (0.05f, 1f));
+
+				}				StartCoroutine (PlayerHitFX (player));
 
 				player.GetComponent <Rythme>().combo += lifeToLose ;
 				player.GetComponent <Rythme>().timerCombo =0 ;
@@ -249,7 +262,11 @@ public class health : MonoBehaviour {
 
 	public IEnumerator PlayerDeath()
 	{
-        GetComponent<Rythme>().MusicStop();
+		GetComponent<Rythme>(). sndTheme.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+		GetComponent<Rythme>(). sndBase.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+		GetComponent<Rythme>(). sndTranse.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+		GetComponent<Rythme>(). sndTranscendance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
 		gameObject.GetComponent<Animator>().SetTrigger ("Mort");
 		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

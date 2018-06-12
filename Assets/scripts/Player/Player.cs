@@ -354,7 +354,7 @@ public class Player: MonoBehaviour
             sndWoosh.start();
 		}
 		canAttack = false;
-        if (canMusic)
+		if (canMusic&& tauxCharge == 4)
         {
             sndSlash.start();
         }
