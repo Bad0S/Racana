@@ -6,7 +6,8 @@ public class fresque : MonoBehaviour {
 	public GameObject texte1;
 	bool started;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 	}
 	
 	// Update is called once per frame
