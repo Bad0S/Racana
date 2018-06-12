@@ -1180,7 +1180,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[0].line
-      value: Merci de l'avoir vaincu le musicien corrompu, Racana.
+      value: "Merci d'avoir vaincu ce musicien corrompu, Racana. Tu nous a tous sauv\xE9s"
       objectReference: {fileID: 0}
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -1195,7 +1195,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: "Tu nous as sauv\xE9s."
+      value: "Peut-\xEAtre cela marque-t-il le retour des musiciens cr\xE9ateurs..."
       objectReference: {fileID: 0}
     - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
@@ -2562,7 +2562,7 @@ Prefab:
     - target: {fileID: 114477341656547860, guid: 97c83e412690da3429b47189abf7181b,
         type: 2}
       propertyPath: dialogues.Array.data[1].line
-      value: "Certains de nos gardes forestiers ont d\xE9couverts une relique sortis
+      value: "Certains de nos gardes forestiers ont d\xE9couvert une relique sortie
         de terre. Elle semble attirer les \xE9l\xE9ments corrompus."
       objectReference: {fileID: 0}
     - target: {fileID: 212138451647566568, guid: 97c83e412690da3429b47189abf7181b,
